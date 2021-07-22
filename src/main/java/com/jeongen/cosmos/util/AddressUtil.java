@@ -1,6 +1,7 @@
 package com.jeongen.cosmos.util;
 
 import com.jeongen.cosmos.crypro.CosmosCredentials;
+import io.netty.util.internal.StringUtil;
 import org.bitcoinj.core.Bech32;
 import org.bitcoinj.core.ECKey;
 import org.bitcoinj.core.Utils;
@@ -8,7 +9,6 @@ import org.bitcoinj.crypto.ChildNumber;
 import org.bitcoinj.crypto.DeterministicKey;
 import org.bitcoinj.wallet.DeterministicKeyChain;
 import org.bitcoinj.wallet.DeterministicSeed;
-import org.springframework.util.StringUtils;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
@@ -54,11 +54,11 @@ public class AddressUtil {
     }
 
     public static CosmosCredentials getCredentials(String mnemonic, String password, String derivePath) {
-        if (StringUtils.isEmpty(derivePath)) {
+        if (StringUtil.isNullOrEmpty(derivePath)) {
             return null;
         }
 
-        String[] mnemonicArr = StringUtils.split(mnemonic, " ");
+        String[] mnemonicArr = mnemonic.split(" ");
 
         DeterministicSeed deterministicSeed = new DeterministicSeed(Arrays.asList(mnemonicArr), null, password, 0);
         DeterministicKeyChain deterministicKeyChain = DeterministicKeyChain.builder().seed(deterministicSeed).build();

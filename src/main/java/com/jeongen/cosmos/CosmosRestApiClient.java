@@ -2,7 +2,6 @@ package com.jeongen.cosmos;
 
 import com.google.protobuf.Any;
 import com.google.protobuf.ByteString;
-import com.google.protobuf.InvalidProtocolBufferException;
 import com.google.protobuf.util.JsonFormat;
 import com.jeongen.cosmos.crypro.CosmosCredentials;
 import com.jeongen.cosmos.util.ATOMUnitUtil;
@@ -20,11 +19,11 @@ import cosmos.tx.signing.v1beta1.Signing;
 import cosmos.tx.v1beta1.ServiceOuterClass;
 import cosmos.tx.v1beta1.TxOuterClass;
 import io.netty.util.internal.StringUtil;
+import org.apache.commons.collections4.MultiValuedMap;
+import org.apache.commons.collections4.multimap.ArrayListValuedHashMap;
 import org.bitcoinj.core.Sha256Hash;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
 import org.web3j.crypto.ECKeyPair;
 import org.web3j.crypto.Sign;
 
@@ -62,7 +61,7 @@ public class CosmosRestApiClient {
         this.chainId = chainId;
     }
 
-    public BigDecimal getBalanceInAtom(String address) {
+    public BigDecimal getBalanceInAtom(String address) throws Exception {
         String path = String.format("/cosmos/bank/v1beta1/balances/%s/%s", address, this.token);
         QueryOuterClass.QueryBalanceResponse balanceResponse = client.get(path, QueryOuterClass.QueryBalanceResponse.class);
         if (balanceResponse.hasBalance()) {
@@ -73,31 +72,31 @@ public class CosmosRestApiClient {
         }
     }
 
-    public ServiceOuterClass.GetTxResponse getTx(String hash) {
+    public ServiceOuterClass.GetTxResponse getTx(String hash) throws Exception {
         String path = String.format("/cosmos/tx/v1beta1/txs/%s", hash);
         return client.get(path, ServiceOuterClass.GetTxResponse.class);
     }
 
-    public Query.GetLatestBlockResponse getLatestBlock() {
+    public Query.GetLatestBlockResponse getLatestBlock() throws Exception {
         String path = "/cosmos/base/tendermint/v1beta1/blocks/latest";
         return client.get(path, Query.GetLatestBlockResponse.class);
     }
 
-    public Query.GetBlockByHeightResponse getBlockByHeight(Long height) {
+    public Query.GetBlockByHeightResponse getBlockByHeight(Long height) throws Exception {
         String path = String.format("/cosmos/base/tendermint/v1beta1/blocks/%d", height);
         return client.get(path, Query.GetBlockByHeightResponse.class);
     }
 
-    public ServiceOuterClass.GetTxsEventResponse getTxsEventByHeight(Long height, String nextKey) {
-        MultiValueMap<String, String> queryMap = new LinkedMultiValueMap<>();
-        queryMap.add("events", "tx.height=" + height);
-        queryMap.add("events", "message.action='send'");
-        queryMap.add("pagination.key", nextKey);
+    public ServiceOuterClass.GetTxsEventResponse getTxsEventByHeight(Long height, String nextKey) throws Exception {
+        MultiValuedMap<String, String> queryMap = new ArrayListValuedHashMap<>();
+        queryMap.put("events", "tx.height=" + height);
+        queryMap.put("events", "message.action='send'");
+        queryMap.put("pagination.key", nextKey);
         ServiceOuterClass.GetTxsEventResponse eventResponse = client.get("/cosmos/tx/v1beta1/txs", queryMap, ServiceOuterClass.GetTxsEventResponse.class);
         return eventResponse;
     }
 
-    public QueryAccountResponse queryAccount(String address) {
+    public QueryAccountResponse queryAccount(String address) throws Exception {
         String path = String.format("/cosmos/auth/v1beta1/accounts/%s", address);
         return client.get(path, QueryAccountResponse.class);
     }
@@ -132,13 +131,13 @@ public class CosmosRestApiClient {
         throw new RuntimeException("account not found:" + address);
     }
 
-    public ServiceOuterClass.BroadcastTxResponse broadcastTx(ServiceOuterClass.BroadcastTxRequest req) throws InvalidProtocolBufferException {
+    public ServiceOuterClass.BroadcastTxResponse broadcastTx(ServiceOuterClass.BroadcastTxRequest req) throws Exception {
         String reqBody = printer.print(req);
         ServiceOuterClass.BroadcastTxResponse broadcastTxResponse = client.post("/cosmos/tx/v1beta1/txs", reqBody, ServiceOuterClass.BroadcastTxResponse.class);
         return broadcastTxResponse;
     }
 
-    public long getLatestHeight() {
+    public long getLatestHeight() throws Exception {
         Query.GetLatestBlockResponse latestBlock = getLatestBlock();
         return latestBlock.getBlock().getHeader().getHeight();
     }

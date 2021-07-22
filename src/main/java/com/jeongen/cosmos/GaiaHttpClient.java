@@ -4,75 +4,81 @@ import com.google.protobuf.GeneratedMessageV3;
 import com.google.protobuf.Message;
 import com.google.protobuf.util.JsonFormat;
 import com.jeongen.cosmos.util.JsonToProtoObjectUtil;
+import okhttp3.*;
+import org.apache.commons.collections4.MultiValuedMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
-import org.springframework.util.MultiValueMap;
-import org.springframework.web.client.HttpClientErrorException;
-import org.springframework.web.client.HttpServerErrorException;
-import org.springframework.web.client.RestTemplate;
-import org.springframework.web.util.UriComponentsBuilder;
 
 import java.lang.reflect.Method;
-import java.net.URI;
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 
 public class GaiaHttpClient {
 
-    private static final Logger logger = LoggerFactory.getLogger(GaiaHttpClient.class);
-    private static final JsonFormat.Parser parser = JsonToProtoObjectUtil.getParser();
     private String baseUrl;
+    private static final JsonFormat.Parser parser = JsonToProtoObjectUtil.getParser();
+    private static final Logger logger = LoggerFactory.getLogger(GaiaHttpClient.class);
 
     public GaiaHttpClient(String baseUrl) {
         this.baseUrl = baseUrl.trim();
     }
 
-    public <T extends GeneratedMessageV3> T get(String path, Class<T> resClass) {
-        return invoke(path, HttpMethod.GET, null, null, resClass);
+
+    public <T extends GeneratedMessageV3> T get(String path, Class<T> resClass) throws Exception {
+        return invoke(path, "GET", null, null, resClass);
     }
 
-    public <T extends GeneratedMessageV3> T post(String path, String body, Class<T> resClass) {
-        return invoke(path, HttpMethod.POST, body, null, resClass);
+    public <T extends GeneratedMessageV3> T post(String path, String body, Class<T> resClass) throws Exception {
+        return invoke(path, "POST", body, null, resClass);
     }
 
-    public <T extends GeneratedMessageV3> T get(String path, MultiValueMap<String, String> queryMap, Class<T> resClass) {
-        return invoke(path, HttpMethod.GET, null, queryMap, resClass);
+    public <T extends GeneratedMessageV3> T get(String path, MultiValuedMap<String, String> queryMap, Class<T> resClass) throws Exception {
+        return invoke(path, "GET", null, queryMap, resClass);
     }
 
-    public <T extends GeneratedMessageV3> T invoke(String path, HttpMethod method, String body, MultiValueMap<String, String> queryMap, Class<T> resClass) {
-        RestTemplate httpClient = new RestTemplateBuilder()
-                .setReadTimeout(Duration.of(10, ChronoUnit.SECONDS))
+
+    public <T extends GeneratedMessageV3> T invoke(String path, String method, String body, MultiValuedMap<String, String> queryMap, Class<T> resClass) throws Exception {
+        OkHttpClient httpClient = new OkHttpClient().newBuilder()
+                .readTimeout(Duration.of(10, ChronoUnit.SECONDS))
                 .build();
-
-        HttpEntity<String> req = new HttpEntity<>(body, getHeaders());
-        URI uri = UriComponentsBuilder.fromHttpUrl(this.baseUrl).path(path).queryParams(queryMap).build().toUri();
+        HttpUrl.Builder httpUrlBuilder = HttpUrl.parse(this.baseUrl).newBuilder();
+        httpUrlBuilder.encodedPath(path);
+        if (queryMap != null) {
+            queryMap.keySet().forEach((key) -> {
+                queryMap.get(key).forEach(val -> httpUrlBuilder.addQueryParameter(key, val));
+            });
+        }
+        HttpUrl url = httpUrlBuilder.build();
+        Request.Builder requestBuilder = new Request.Builder()
+                .url(url);
+        switch (method) {
+            case "GET":
+                requestBuilder.get();
+                break;
+            case "POST":
+                requestBuilder.post(RequestBody.create(body, MediaType.parse("application/json; charset=utf-8")));
+                break;
+            default:
+                throw new RuntimeException("unknown method");
+        }
         try {
             Method getDefaultInstance = resClass.getDeclaredMethod("getDefaultInstance");
             T temp1 = (T) getDefaultInstance.invoke(resClass);
             Message.Builder builder = temp1.toBuilder();
-            ResponseEntity<String> responseEntity = httpClient.exchange(uri, method, req, String.class);
-            parser.merge(responseEntity.getBody(), builder);
+            Request request = requestBuilder.build();
+            Response response = httpClient.newCall(request).execute();
+            assert response.body() != null;
+            if (response.code() >= 400) {
+                String msg = String.format("ATOM-HTTP code %s, res:%s", response.code(), response.body().string());
+                throw new Exception(msg);
+            }
+            parser.merge(response.body().string(), builder);
             return (T) builder.build();
-        } catch (HttpClientErrorException | HttpServerErrorException e) {
-            // 400-500 状态码异常
-            String bodyAsString = e.getResponseBodyAsString();
-            logger.error("ATOM-API error {} {} {}", e, method.name(), uri, bodyAsString);
-            throw new RuntimeException(e);
         } catch (Exception e) {
             // 未知异常
-            logger.error("ATOM-API Exception  {} {}", e, method.name(), uri);
-            throw new RuntimeException(e);
+            logger.error("ATOM-API Exception  {} {}", e, method, url);
+            throw new Exception(e);
         }
-    }
 
-    private HttpHeaders getHeaders() {
-        HttpHeaders requestHeaders = new HttpHeaders();
-        requestHeaders.add("Content-Type", "application/json");
-        return requestHeaders;
     }
 }
