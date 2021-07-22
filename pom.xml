@@ -69,7 +69,7 @@
         <snapshotRepository>
             <id>nexus-snapshots</id>
             <name>nexus repository</name>
-            <url>https://repo.wecash.net/repository/snapshots</url>
+            <url>https://repo.xxx.com/repository/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
