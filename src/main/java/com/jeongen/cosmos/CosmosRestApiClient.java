@@ -19,7 +19,6 @@ import cosmos.crypto.secp256k1.Keys;
 import cosmos.tx.signing.v1beta1.Signing;
 import cosmos.tx.v1beta1.ServiceOuterClass;
 import cosmos.tx.v1beta1.TxOuterClass;
-import org.apache.commons.lang.ArrayUtils;
 import org.bitcoinj.core.Sha256Hash;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -273,17 +272,28 @@ public class CosmosRestApiClient {
     }
 
     public ByteString getSignBytes(CosmosCredentials credentials, TxOuterClass.TxBody txBody, TxOuterClass.AuthInfo authInfo, Map<String, Auth.BaseAccount> baseAccountCache) throws Exception {
-        ECKeyPair keyPair = ECKeyPair.create(credentials.getEcKey().getPrivKeyBytes());
         Auth.BaseAccount baseAccount = queryBaseAccount(credentials.getAddress(), baseAccountCache);
+        byte[] sigBytes = signDoc(credentials.getEcKey().getPrivKeyBytes(), baseAccount, txBody, authInfo, this.chainId);
+        return ByteString.copyFrom(sigBytes);
+    }
+
+    public static byte[] signDoc(byte[] privateKey, Auth.BaseAccount baseAccount, TxOuterClass.TxBody txBody, TxOuterClass.AuthInfo authInfo, String chainId) {
+        ECKeyPair keyPair = ECKeyPair.create(privateKey);
         TxOuterClass.SignDoc signDoc = TxOuterClass.SignDoc.newBuilder()
                 .setBodyBytes(txBody.toByteString())
                 .setAuthInfoBytes(authInfo.toByteString())
                 .setAccountNumber(baseAccount.getAccountNumber())
-                .setChainId(this.chainId)
+                .setChainId(chainId)
                 .build();
         byte[] hash = Sha256Hash.hash(signDoc.toByteArray());
         Sign.SignatureData signature = Sign.signMessage(hash, keyPair, false);
-        byte[] sigBytes = ArrayUtils.addAll(signature.getR(), signature.getS());
-        return ByteString.copyFrom(sigBytes);
+        return mergeBytes(signature.getR(), signature.getS());
+    }
+
+    private static byte[] mergeBytes(byte[] array1, byte[] array2) {
+        byte[] joinedArray = new byte[array1.length + array2.length];
+        System.arraycopy(array1, 0, joinedArray, 0, array1.length);
+        System.arraycopy(array2, 0, joinedArray, array1.length, array2.length);
+        return joinedArray;
     }
 }
