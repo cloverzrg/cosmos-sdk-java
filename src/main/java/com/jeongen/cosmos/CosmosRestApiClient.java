@@ -19,12 +19,12 @@ import cosmos.crypto.secp256k1.Keys;
 import cosmos.tx.signing.v1beta1.Signing;
 import cosmos.tx.v1beta1.ServiceOuterClass;
 import cosmos.tx.v1beta1.TxOuterClass;
+import io.netty.util.internal.StringUtil;
 import org.bitcoinj.core.Sha256Hash;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
-import org.springframework.util.StringUtils;
 import org.web3j.crypto.ECKeyPair;
 import org.web3j.crypto.Sign;
 
@@ -244,7 +244,7 @@ public class CosmosRestApiClient {
             throw new Exception("broadcastTxResponse no body\n" + printer.print(tx));
         }
         Abci.TxResponse txResponse = broadcastTxResponse.getTxResponse();
-        if (txResponse.getCode() != 0 || !StringUtils.isEmpty(txResponse.getCodespace())) {
+        if (txResponse.getCode() != 0 || !StringUtil.isNullOrEmpty(txResponse.getCodespace())) {
             throw new Exception("BroadcastTx error:" + txResponse.getCodespace() + "," + txResponse.getCode() + "," + txResponse.getRawLog() + "\n" + printer.print(tx));
         }
         if (txResponse.getTxhash().length() != 64) {
