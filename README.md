@@ -1,7 +1,8 @@
 # Cosmos SDK for Java
 
-### 使用 (暂未发布，NOT Publish Yet)
+### 使用
 ```xml
+<!-- (暂未发布, NOT Publish Yet)-->
 <dependency>
     <groupId>com.jeongen.cosmos</groupId>
     <artifactId>sdk</artifactId>
@@ -30,28 +31,28 @@ public class CosmosRestApiClientTest extends TestCase {
 
         byte[] privateKey = Hex.decode("c2ad7a31c06ea8bb560a0467898ef844523f2f804dec96fedf65906dbb951f24");
         CosmosCredentials credentials = CosmosCredentials.create(privateKey);
-        // 获取该私钥地址
+        // generate address
         System.out.println("address:" + credentials.getAddress());
         List<SendInfo> sendList = new ArrayList<>();
-        // 添加一个转账
+        // add a send message
         SendInfo sendMsg1 = SendInfo.builder()
                 .credentials(credentials)
                 .toAddress("cosmos12kd7gu4lamw29pv4u6ug8aryr0p7wm207uwt30")
                 .amountInAtom(new BigDecimal("0.0001"))
                 .build();
         sendList.add(sendMsg1);
-        // 添加一个转账
+        // add a send message
         SendInfo sendMsg2 = SendInfo.builder()
                 .credentials(credentials)
                 .toAddress("cosmos1u3zluamfx5pvgha0dn73ah4pyu9ckv6scvdw72")
                 .amountInAtom(new BigDecimal("0.0001"))
                 .build();
         sendList.add(sendMsg2);
-        // 生成、签名、广播交易
+        // build、sign、broadcast transactions
         Abci.TxResponse txResponse = gaiaApiService.sendMultiTx(credentials, sendList, new BigDecimal("0.000001"), 200000);
         System.out.println(txResponse);
 
-        // 获取指定高度的交易
+        // query send tx by height
         ServiceOuterClass.GetTxsEventResponse txsEventByHeight = cosmosRestApiClient.getTxsEventByHeight(6900000L, "");
     }
 }
@@ -60,7 +61,6 @@ public class CosmosRestApiClientTest extends TestCase {
 
 ### 使用 gRPC 示例
 ```java
-import com.jeongen.cosmos.GaiaApiService;
 import cosmos.bank.v1beta1.QueryGrpc;
 import cosmos.bank.v1beta1.QueryOuterClass;
 import cosmos.tx.v1beta1.ServiceGrpc;
