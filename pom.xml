@@ -6,7 +6,29 @@
 
     <groupId>com.jeongen.cosmos</groupId>
     <artifactId>sdk</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
+
+    <licenses>
+        <license>
+            <name>Apache License</name>
+            <url>https://github.com/cloverzrg/cosmos-sdk-java/blob/main/LICENSE</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/cloverzrg/cosmos-sdk-java.git</url>
+    </scm>
+
+    <name>cosmos-sdk-java</name>
+    <url>https://github.com/cloverzrg/cosmos-sdk-java</url>
+    <description>The SDK integrates and implement all the functions required by the exchange to access Cosmos (ATOM). If you need additional support for other API, please submit an issue</description>
+    <developers>
+        <developer>
+            <name>Rungen Zhu</name>
+            <timezone>Asia/HongKong</timezone>
+            <email>cloverzrg@gmail.com</email>
+        </developer>
+    </developers>
 
     <dependencies>
         <dependency>
@@ -107,6 +129,19 @@
                         <id>attach-sources</id>
                         <goals>
                             <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
                         </goals>
                     </execution>
                 </executions>
