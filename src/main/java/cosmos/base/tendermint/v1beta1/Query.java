@@ -20,6 +20,7 @@ public final class Query {
 
     /**
      * <code>int64 height = 1;</code>
+     * @return The height.
      */
     long getHeight();
 
@@ -29,6 +30,7 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     * @return Whether the pagination field is set.
      */
     boolean hasPagination();
     /**
@@ -37,6 +39,7 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     * @return The pagination.
      */
     cosmos.base.query.v1beta1.Pagination.PageRequest getPagination();
     /**
@@ -55,7 +58,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.GetValidatorSetByHeightRequest}
    */
-  public  static final class GetValidatorSetByHeightRequest extends
+  public static final class GetValidatorSetByHeightRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.GetValidatorSetByHeightRequest)
       GetValidatorSetByHeightRequestOrBuilder {
@@ -151,7 +154,9 @@ public final class Query {
     private long height_;
     /**
      * <code>int64 height = 1;</code>
+     * @return The height.
      */
+    @java.lang.Override
     public long getHeight() {
       return height_;
     }
@@ -164,7 +169,9 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     * @return Whether the pagination field is set.
      */
+    @java.lang.Override
     public boolean hasPagination() {
       return pagination_ != null;
     }
@@ -174,7 +181,9 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     * @return The pagination.
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageRequest getPagination() {
       return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageRequest.getDefaultInstance() : pagination_;
     }
@@ -185,6 +194,7 @@ public final class Query {
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder getPaginationOrBuilder() {
       return getPagination();
     }
@@ -529,12 +539,16 @@ public final class Query {
       private long height_ ;
       /**
        * <code>int64 height = 1;</code>
+       * @return The height.
        */
+      @java.lang.Override
       public long getHeight() {
         return height_;
       }
       /**
        * <code>int64 height = 1;</code>
+       * @param value The height to set.
+       * @return This builder for chaining.
        */
       public Builder setHeight(long value) {
         
@@ -544,6 +558,7 @@ public final class Query {
       }
       /**
        * <code>int64 height = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearHeight() {
         
@@ -561,6 +576,7 @@ public final class Query {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+       * @return Whether the pagination field is set.
        */
       public boolean hasPagination() {
         return paginationBuilder_ != null || pagination_ != null;
@@ -571,6 +587,7 @@ public final class Query {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+       * @return The pagination.
        */
       public cosmos.base.query.v1beta1.Pagination.PageRequest getPagination() {
         if (paginationBuilder_ == null) {
@@ -763,6 +780,7 @@ public final class Query {
 
     /**
      * <code>int64 block_height = 1;</code>
+     * @return The blockHeight.
      */
     long getBlockHeight();
 
@@ -796,6 +814,7 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
+     * @return Whether the pagination field is set.
      */
     boolean hasPagination();
     /**
@@ -804,6 +823,7 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
+     * @return The pagination.
      */
     cosmos.base.query.v1beta1.Pagination.PageResponse getPagination();
     /**
@@ -822,7 +842,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.GetValidatorSetByHeightResponse}
    */
-  public  static final class GetValidatorSetByHeightResponse extends
+  public static final class GetValidatorSetByHeightResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.GetValidatorSetByHeightResponse)
       GetValidatorSetByHeightResponseOrBuilder {
@@ -932,7 +952,9 @@ public final class Query {
     private long blockHeight_;
     /**
      * <code>int64 block_height = 1;</code>
+     * @return The blockHeight.
      */
+    @java.lang.Override
     public long getBlockHeight() {
       return blockHeight_;
     }
@@ -942,12 +964,14 @@ public final class Query {
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<cosmos.base.tendermint.v1beta1.Query.Validator> getValidatorsList() {
       return validators_;
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends cosmos.base.tendermint.v1beta1.Query.ValidatorOrBuilder> 
         getValidatorsOrBuilderList() {
       return validators_;
@@ -955,18 +979,21 @@ public final class Query {
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2;</code>
      */
+    @java.lang.Override
     public int getValidatorsCount() {
       return validators_.size();
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2;</code>
      */
+    @java.lang.Override
     public cosmos.base.tendermint.v1beta1.Query.Validator getValidators(int index) {
       return validators_.get(index);
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2;</code>
      */
+    @java.lang.Override
     public cosmos.base.tendermint.v1beta1.Query.ValidatorOrBuilder getValidatorsOrBuilder(
         int index) {
       return validators_.get(index);
@@ -980,7 +1007,9 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
+     * @return Whether the pagination field is set.
      */
+    @java.lang.Override
     public boolean hasPagination() {
       return pagination_ != null;
     }
@@ -990,7 +1019,9 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
+     * @return The pagination.
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageResponse getPagination() {
       return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageResponse.getDefaultInstance() : pagination_;
     }
@@ -1001,6 +1032,7 @@ public final class Query {
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder getPaginationOrBuilder() {
       return getPagination();
     }
@@ -1402,12 +1434,16 @@ public final class Query {
       private long blockHeight_ ;
       /**
        * <code>int64 block_height = 1;</code>
+       * @return The blockHeight.
        */
+      @java.lang.Override
       public long getBlockHeight() {
         return blockHeight_;
       }
       /**
        * <code>int64 block_height = 1;</code>
+       * @param value The blockHeight to set.
+       * @return This builder for chaining.
        */
       public Builder setBlockHeight(long value) {
         
@@ -1417,6 +1453,7 @@ public final class Query {
       }
       /**
        * <code>int64 block_height = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearBlockHeight() {
         
@@ -1674,6 +1711,7 @@ public final class Query {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
+       * @return Whether the pagination field is set.
        */
       public boolean hasPagination() {
         return paginationBuilder_ != null || pagination_ != null;
@@ -1684,6 +1722,7 @@ public final class Query {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
+       * @return The pagination.
        */
       public cosmos.base.query.v1beta1.Pagination.PageResponse getPagination() {
         if (paginationBuilder_ == null) {
@@ -1880,6 +1919,7 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     * @return Whether the pagination field is set.
      */
     boolean hasPagination();
     /**
@@ -1888,6 +1928,7 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     * @return The pagination.
      */
     cosmos.base.query.v1beta1.Pagination.PageRequest getPagination();
     /**
@@ -1906,7 +1947,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.GetLatestValidatorSetRequest}
    */
-  public  static final class GetLatestValidatorSetRequest extends
+  public static final class GetLatestValidatorSetRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.GetLatestValidatorSetRequest)
       GetLatestValidatorSetRequestOrBuilder {
@@ -2001,7 +2042,9 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     * @return Whether the pagination field is set.
      */
+    @java.lang.Override
     public boolean hasPagination() {
       return pagination_ != null;
     }
@@ -2011,7 +2054,9 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     * @return The pagination.
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageRequest getPagination() {
       return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageRequest.getDefaultInstance() : pagination_;
     }
@@ -2022,6 +2067,7 @@ public final class Query {
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder getPaginationOrBuilder() {
       return getPagination();
     }
@@ -2354,6 +2400,7 @@ public final class Query {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+       * @return Whether the pagination field is set.
        */
       public boolean hasPagination() {
         return paginationBuilder_ != null || pagination_ != null;
@@ -2364,6 +2411,7 @@ public final class Query {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+       * @return The pagination.
        */
       public cosmos.base.query.v1beta1.Pagination.PageRequest getPagination() {
         if (paginationBuilder_ == null) {
@@ -2556,6 +2604,7 @@ public final class Query {
 
     /**
      * <code>int64 block_height = 1;</code>
+     * @return The blockHeight.
      */
     long getBlockHeight();
 
@@ -2589,6 +2638,7 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
+     * @return Whether the pagination field is set.
      */
     boolean hasPagination();
     /**
@@ -2597,6 +2647,7 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
+     * @return The pagination.
      */
     cosmos.base.query.v1beta1.Pagination.PageResponse getPagination();
     /**
@@ -2615,7 +2666,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse}
    */
-  public  static final class GetLatestValidatorSetResponse extends
+  public static final class GetLatestValidatorSetResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.GetLatestValidatorSetResponse)
       GetLatestValidatorSetResponseOrBuilder {
@@ -2725,7 +2776,9 @@ public final class Query {
     private long blockHeight_;
     /**
      * <code>int64 block_height = 1;</code>
+     * @return The blockHeight.
      */
+    @java.lang.Override
     public long getBlockHeight() {
       return blockHeight_;
     }
@@ -2735,12 +2788,14 @@ public final class Query {
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<cosmos.base.tendermint.v1beta1.Query.Validator> getValidatorsList() {
       return validators_;
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends cosmos.base.tendermint.v1beta1.Query.ValidatorOrBuilder> 
         getValidatorsOrBuilderList() {
       return validators_;
@@ -2748,18 +2803,21 @@ public final class Query {
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2;</code>
      */
+    @java.lang.Override
     public int getValidatorsCount() {
       return validators_.size();
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2;</code>
      */
+    @java.lang.Override
     public cosmos.base.tendermint.v1beta1.Query.Validator getValidators(int index) {
       return validators_.get(index);
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Validator validators = 2;</code>
      */
+    @java.lang.Override
     public cosmos.base.tendermint.v1beta1.Query.ValidatorOrBuilder getValidatorsOrBuilder(
         int index) {
       return validators_.get(index);
@@ -2773,7 +2831,9 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
+     * @return Whether the pagination field is set.
      */
+    @java.lang.Override
     public boolean hasPagination() {
       return pagination_ != null;
     }
@@ -2783,7 +2843,9 @@ public final class Query {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
+     * @return The pagination.
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageResponse getPagination() {
       return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageResponse.getDefaultInstance() : pagination_;
     }
@@ -2794,6 +2856,7 @@ public final class Query {
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder getPaginationOrBuilder() {
       return getPagination();
     }
@@ -3195,12 +3258,16 @@ public final class Query {
       private long blockHeight_ ;
       /**
        * <code>int64 block_height = 1;</code>
+       * @return The blockHeight.
        */
+      @java.lang.Override
       public long getBlockHeight() {
         return blockHeight_;
       }
       /**
        * <code>int64 block_height = 1;</code>
+       * @param value The blockHeight to set.
+       * @return This builder for chaining.
        */
       public Builder setBlockHeight(long value) {
         
@@ -3210,6 +3277,7 @@ public final class Query {
       }
       /**
        * <code>int64 block_height = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearBlockHeight() {
         
@@ -3467,6 +3535,7 @@ public final class Query {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
+       * @return Whether the pagination field is set.
        */
       public boolean hasPagination() {
         return paginationBuilder_ != null || pagination_ != null;
@@ -3477,6 +3546,7 @@ public final class Query {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 3;</code>
+       * @return The pagination.
        */
       public cosmos.base.query.v1beta1.Pagination.PageResponse getPagination() {
         if (paginationBuilder_ == null) {
@@ -3669,20 +3739,24 @@ public final class Query {
 
     /**
      * <code>string address = 1;</code>
+     * @return The address.
      */
     java.lang.String getAddress();
     /**
      * <code>string address = 1;</code>
+     * @return The bytes for address.
      */
     com.google.protobuf.ByteString
         getAddressBytes();
 
     /**
      * <code>.google.protobuf.Any pub_key = 2;</code>
+     * @return Whether the pubKey field is set.
      */
     boolean hasPubKey();
     /**
      * <code>.google.protobuf.Any pub_key = 2;</code>
+     * @return The pubKey.
      */
     com.google.protobuf.Any getPubKey();
     /**
@@ -3692,11 +3766,13 @@ public final class Query {
 
     /**
      * <code>int64 voting_power = 3;</code>
+     * @return The votingPower.
      */
     long getVotingPower();
 
     /**
      * <code>int64 proposer_priority = 4;</code>
+     * @return The proposerPriority.
      */
     long getProposerPriority();
   }
@@ -3707,7 +3783,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.Validator}
    */
-  public  static final class Validator extends
+  public static final class Validator extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.Validator)
       ValidatorOrBuilder {
@@ -3815,7 +3891,9 @@ public final class Query {
     private volatile java.lang.Object address_;
     /**
      * <code>string address = 1;</code>
+     * @return The address.
      */
+    @java.lang.Override
     public java.lang.String getAddress() {
       java.lang.Object ref = address_;
       if (ref instanceof java.lang.String) {
@@ -3830,7 +3908,9 @@ public final class Query {
     }
     /**
      * <code>string address = 1;</code>
+     * @return The bytes for address.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAddressBytes() {
       java.lang.Object ref = address_;
@@ -3849,19 +3929,24 @@ public final class Query {
     private com.google.protobuf.Any pubKey_;
     /**
      * <code>.google.protobuf.Any pub_key = 2;</code>
+     * @return Whether the pubKey field is set.
      */
+    @java.lang.Override
     public boolean hasPubKey() {
       return pubKey_ != null;
     }
     /**
      * <code>.google.protobuf.Any pub_key = 2;</code>
+     * @return The pubKey.
      */
+    @java.lang.Override
     public com.google.protobuf.Any getPubKey() {
       return pubKey_ == null ? com.google.protobuf.Any.getDefaultInstance() : pubKey_;
     }
     /**
      * <code>.google.protobuf.Any pub_key = 2;</code>
      */
+    @java.lang.Override
     public com.google.protobuf.AnyOrBuilder getPubKeyOrBuilder() {
       return getPubKey();
     }
@@ -3870,7 +3955,9 @@ public final class Query {
     private long votingPower_;
     /**
      * <code>int64 voting_power = 3;</code>
+     * @return The votingPower.
      */
+    @java.lang.Override
     public long getVotingPower() {
       return votingPower_;
     }
@@ -3879,7 +3966,9 @@ public final class Query {
     private long proposerPriority_;
     /**
      * <code>int64 proposer_priority = 4;</code>
+     * @return The proposerPriority.
      */
+    @java.lang.Override
     public long getProposerPriority() {
       return proposerPriority_;
     }
@@ -4259,6 +4348,7 @@ public final class Query {
       private java.lang.Object address_ = "";
       /**
        * <code>string address = 1;</code>
+       * @return The address.
        */
       public java.lang.String getAddress() {
         java.lang.Object ref = address_;
@@ -4274,6 +4364,7 @@ public final class Query {
       }
       /**
        * <code>string address = 1;</code>
+       * @return The bytes for address.
        */
       public com.google.protobuf.ByteString
           getAddressBytes() {
@@ -4290,6 +4381,8 @@ public final class Query {
       }
       /**
        * <code>string address = 1;</code>
+       * @param value The address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddress(
           java.lang.String value) {
@@ -4303,6 +4396,7 @@ public final class Query {
       }
       /**
        * <code>string address = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearAddress() {
         
@@ -4312,6 +4406,8 @@ public final class Query {
       }
       /**
        * <code>string address = 1;</code>
+       * @param value The bytes for address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddressBytes(
           com.google.protobuf.ByteString value) {
@@ -4330,12 +4426,14 @@ public final class Query {
           com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder> pubKeyBuilder_;
       /**
        * <code>.google.protobuf.Any pub_key = 2;</code>
+       * @return Whether the pubKey field is set.
        */
       public boolean hasPubKey() {
         return pubKeyBuilder_ != null || pubKey_ != null;
       }
       /**
        * <code>.google.protobuf.Any pub_key = 2;</code>
+       * @return The pubKey.
        */
       public com.google.protobuf.Any getPubKey() {
         if (pubKeyBuilder_ == null) {
@@ -4445,12 +4543,16 @@ public final class Query {
       private long votingPower_ ;
       /**
        * <code>int64 voting_power = 3;</code>
+       * @return The votingPower.
        */
+      @java.lang.Override
       public long getVotingPower() {
         return votingPower_;
       }
       /**
        * <code>int64 voting_power = 3;</code>
+       * @param value The votingPower to set.
+       * @return This builder for chaining.
        */
       public Builder setVotingPower(long value) {
         
@@ -4460,6 +4562,7 @@ public final class Query {
       }
       /**
        * <code>int64 voting_power = 3;</code>
+       * @return This builder for chaining.
        */
       public Builder clearVotingPower() {
         
@@ -4471,12 +4574,16 @@ public final class Query {
       private long proposerPriority_ ;
       /**
        * <code>int64 proposer_priority = 4;</code>
+       * @return The proposerPriority.
        */
+      @java.lang.Override
       public long getProposerPriority() {
         return proposerPriority_;
       }
       /**
        * <code>int64 proposer_priority = 4;</code>
+       * @param value The proposerPriority to set.
+       * @return This builder for chaining.
        */
       public Builder setProposerPriority(long value) {
         
@@ -4486,6 +4593,7 @@ public final class Query {
       }
       /**
        * <code>int64 proposer_priority = 4;</code>
+       * @return This builder for chaining.
        */
       public Builder clearProposerPriority() {
         
@@ -4552,6 +4660,7 @@ public final class Query {
 
     /**
      * <code>int64 height = 1;</code>
+     * @return The height.
      */
     long getHeight();
   }
@@ -4562,7 +4671,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.GetBlockByHeightRequest}
    */
-  public  static final class GetBlockByHeightRequest extends
+  public static final class GetBlockByHeightRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.GetBlockByHeightRequest)
       GetBlockByHeightRequestOrBuilder {
@@ -4645,7 +4754,9 @@ public final class Query {
     private long height_;
     /**
      * <code>int64 height = 1;</code>
+     * @return The height.
      */
+    @java.lang.Override
     public long getHeight() {
       return height_;
     }
@@ -4960,12 +5071,16 @@ public final class Query {
       private long height_ ;
       /**
        * <code>int64 height = 1;</code>
+       * @return The height.
        */
+      @java.lang.Override
       public long getHeight() {
         return height_;
       }
       /**
        * <code>int64 height = 1;</code>
+       * @param value The height to set.
+       * @return This builder for chaining.
        */
       public Builder setHeight(long value) {
         
@@ -4975,6 +5090,7 @@ public final class Query {
       }
       /**
        * <code>int64 height = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearHeight() {
         
@@ -5041,10 +5157,12 @@ public final class Query {
 
     /**
      * <code>.tendermint.types.BlockID block_id = 1;</code>
+     * @return Whether the blockId field is set.
      */
     boolean hasBlockId();
     /**
      * <code>.tendermint.types.BlockID block_id = 1;</code>
+     * @return The blockId.
      */
     tendermint.types.Types.BlockID getBlockId();
     /**
@@ -5054,10 +5172,12 @@ public final class Query {
 
     /**
      * <code>.tendermint.types.Block block = 2;</code>
+     * @return Whether the block field is set.
      */
     boolean hasBlock();
     /**
      * <code>.tendermint.types.Block block = 2;</code>
+     * @return The block.
      */
     tendermint.types.BlockOuterClass.Block getBlock();
     /**
@@ -5072,7 +5192,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.GetBlockByHeightResponse}
    */
-  public  static final class GetBlockByHeightResponse extends
+  public static final class GetBlockByHeightResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.GetBlockByHeightResponse)
       GetBlockByHeightResponseOrBuilder {
@@ -5176,19 +5296,24 @@ public final class Query {
     private tendermint.types.Types.BlockID blockId_;
     /**
      * <code>.tendermint.types.BlockID block_id = 1;</code>
+     * @return Whether the blockId field is set.
      */
+    @java.lang.Override
     public boolean hasBlockId() {
       return blockId_ != null;
     }
     /**
      * <code>.tendermint.types.BlockID block_id = 1;</code>
+     * @return The blockId.
      */
+    @java.lang.Override
     public tendermint.types.Types.BlockID getBlockId() {
       return blockId_ == null ? tendermint.types.Types.BlockID.getDefaultInstance() : blockId_;
     }
     /**
      * <code>.tendermint.types.BlockID block_id = 1;</code>
      */
+    @java.lang.Override
     public tendermint.types.Types.BlockIDOrBuilder getBlockIdOrBuilder() {
       return getBlockId();
     }
@@ -5197,19 +5322,24 @@ public final class Query {
     private tendermint.types.BlockOuterClass.Block block_;
     /**
      * <code>.tendermint.types.Block block = 2;</code>
+     * @return Whether the block field is set.
      */
+    @java.lang.Override
     public boolean hasBlock() {
       return block_ != null;
     }
     /**
      * <code>.tendermint.types.Block block = 2;</code>
+     * @return The block.
      */
+    @java.lang.Override
     public tendermint.types.BlockOuterClass.Block getBlock() {
       return block_ == null ? tendermint.types.BlockOuterClass.Block.getDefaultInstance() : block_;
     }
     /**
      * <code>.tendermint.types.Block block = 2;</code>
      */
+    @java.lang.Override
     public tendermint.types.BlockOuterClass.BlockOrBuilder getBlockOrBuilder() {
       return getBlock();
     }
@@ -5568,12 +5698,14 @@ public final class Query {
           tendermint.types.Types.BlockID, tendermint.types.Types.BlockID.Builder, tendermint.types.Types.BlockIDOrBuilder> blockIdBuilder_;
       /**
        * <code>.tendermint.types.BlockID block_id = 1;</code>
+       * @return Whether the blockId field is set.
        */
       public boolean hasBlockId() {
         return blockIdBuilder_ != null || blockId_ != null;
       }
       /**
        * <code>.tendermint.types.BlockID block_id = 1;</code>
+       * @return The blockId.
        */
       public tendermint.types.Types.BlockID getBlockId() {
         if (blockIdBuilder_ == null) {
@@ -5685,12 +5817,14 @@ public final class Query {
           tendermint.types.BlockOuterClass.Block, tendermint.types.BlockOuterClass.Block.Builder, tendermint.types.BlockOuterClass.BlockOrBuilder> blockBuilder_;
       /**
        * <code>.tendermint.types.Block block = 2;</code>
+       * @return Whether the block field is set.
        */
       public boolean hasBlock() {
         return blockBuilder_ != null || block_ != null;
       }
       /**
        * <code>.tendermint.types.Block block = 2;</code>
+       * @return The block.
        */
       public tendermint.types.BlockOuterClass.Block getBlock() {
         if (blockBuilder_ == null) {
@@ -5860,7 +5994,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.GetLatestBlockRequest}
    */
-  public  static final class GetLatestBlockRequest extends
+  public static final class GetLatestBlockRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.GetLatestBlockRequest)
       GetLatestBlockRequestOrBuilder {
@@ -6281,10 +6415,12 @@ public final class Query {
 
     /**
      * <code>.tendermint.types.BlockID block_id = 1;</code>
+     * @return Whether the blockId field is set.
      */
     boolean hasBlockId();
     /**
      * <code>.tendermint.types.BlockID block_id = 1;</code>
+     * @return The blockId.
      */
     tendermint.types.Types.BlockID getBlockId();
     /**
@@ -6294,10 +6430,12 @@ public final class Query {
 
     /**
      * <code>.tendermint.types.Block block = 2;</code>
+     * @return Whether the block field is set.
      */
     boolean hasBlock();
     /**
      * <code>.tendermint.types.Block block = 2;</code>
+     * @return The block.
      */
     tendermint.types.BlockOuterClass.Block getBlock();
     /**
@@ -6312,7 +6450,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.GetLatestBlockResponse}
    */
-  public  static final class GetLatestBlockResponse extends
+  public static final class GetLatestBlockResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.GetLatestBlockResponse)
       GetLatestBlockResponseOrBuilder {
@@ -6416,19 +6554,24 @@ public final class Query {
     private tendermint.types.Types.BlockID blockId_;
     /**
      * <code>.tendermint.types.BlockID block_id = 1;</code>
+     * @return Whether the blockId field is set.
      */
+    @java.lang.Override
     public boolean hasBlockId() {
       return blockId_ != null;
     }
     /**
      * <code>.tendermint.types.BlockID block_id = 1;</code>
+     * @return The blockId.
      */
+    @java.lang.Override
     public tendermint.types.Types.BlockID getBlockId() {
       return blockId_ == null ? tendermint.types.Types.BlockID.getDefaultInstance() : blockId_;
     }
     /**
      * <code>.tendermint.types.BlockID block_id = 1;</code>
      */
+    @java.lang.Override
     public tendermint.types.Types.BlockIDOrBuilder getBlockIdOrBuilder() {
       return getBlockId();
     }
@@ -6437,19 +6580,24 @@ public final class Query {
     private tendermint.types.BlockOuterClass.Block block_;
     /**
      * <code>.tendermint.types.Block block = 2;</code>
+     * @return Whether the block field is set.
      */
+    @java.lang.Override
     public boolean hasBlock() {
       return block_ != null;
     }
     /**
      * <code>.tendermint.types.Block block = 2;</code>
+     * @return The block.
      */
+    @java.lang.Override
     public tendermint.types.BlockOuterClass.Block getBlock() {
       return block_ == null ? tendermint.types.BlockOuterClass.Block.getDefaultInstance() : block_;
     }
     /**
      * <code>.tendermint.types.Block block = 2;</code>
      */
+    @java.lang.Override
     public tendermint.types.BlockOuterClass.BlockOrBuilder getBlockOrBuilder() {
       return getBlock();
     }
@@ -6808,12 +6956,14 @@ public final class Query {
           tendermint.types.Types.BlockID, tendermint.types.Types.BlockID.Builder, tendermint.types.Types.BlockIDOrBuilder> blockIdBuilder_;
       /**
        * <code>.tendermint.types.BlockID block_id = 1;</code>
+       * @return Whether the blockId field is set.
        */
       public boolean hasBlockId() {
         return blockIdBuilder_ != null || blockId_ != null;
       }
       /**
        * <code>.tendermint.types.BlockID block_id = 1;</code>
+       * @return The blockId.
        */
       public tendermint.types.Types.BlockID getBlockId() {
         if (blockIdBuilder_ == null) {
@@ -6925,12 +7075,14 @@ public final class Query {
           tendermint.types.BlockOuterClass.Block, tendermint.types.BlockOuterClass.Block.Builder, tendermint.types.BlockOuterClass.BlockOrBuilder> blockBuilder_;
       /**
        * <code>.tendermint.types.Block block = 2;</code>
+       * @return Whether the block field is set.
        */
       public boolean hasBlock() {
         return blockBuilder_ != null || block_ != null;
       }
       /**
        * <code>.tendermint.types.Block block = 2;</code>
+       * @return The block.
        */
       public tendermint.types.BlockOuterClass.Block getBlock() {
         if (blockBuilder_ == null) {
@@ -7100,7 +7252,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.GetSyncingRequest}
    */
-  public  static final class GetSyncingRequest extends
+  public static final class GetSyncingRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.GetSyncingRequest)
       GetSyncingRequestOrBuilder {
@@ -7521,6 +7673,7 @@ public final class Query {
 
     /**
      * <code>bool syncing = 1;</code>
+     * @return The syncing.
      */
     boolean getSyncing();
   }
@@ -7531,7 +7684,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.GetSyncingResponse}
    */
-  public  static final class GetSyncingResponse extends
+  public static final class GetSyncingResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.GetSyncingResponse)
       GetSyncingResponseOrBuilder {
@@ -7614,7 +7767,9 @@ public final class Query {
     private boolean syncing_;
     /**
      * <code>bool syncing = 1;</code>
+     * @return The syncing.
      */
+    @java.lang.Override
     public boolean getSyncing() {
       return syncing_;
     }
@@ -7929,12 +8084,16 @@ public final class Query {
       private boolean syncing_ ;
       /**
        * <code>bool syncing = 1;</code>
+       * @return The syncing.
        */
+      @java.lang.Override
       public boolean getSyncing() {
         return syncing_;
       }
       /**
        * <code>bool syncing = 1;</code>
+       * @param value The syncing to set.
+       * @return This builder for chaining.
        */
       public Builder setSyncing(boolean value) {
         
@@ -7944,6 +8103,7 @@ public final class Query {
       }
       /**
        * <code>bool syncing = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearSyncing() {
         
@@ -8015,7 +8175,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.GetNodeInfoRequest}
    */
-  public  static final class GetNodeInfoRequest extends
+  public static final class GetNodeInfoRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.GetNodeInfoRequest)
       GetNodeInfoRequestOrBuilder {
@@ -8436,10 +8596,12 @@ public final class Query {
 
     /**
      * <code>.tendermint.p2p.DefaultNodeInfo default_node_info = 1;</code>
+     * @return Whether the defaultNodeInfo field is set.
      */
     boolean hasDefaultNodeInfo();
     /**
      * <code>.tendermint.p2p.DefaultNodeInfo default_node_info = 1;</code>
+     * @return The defaultNodeInfo.
      */
     tendermint.p2p.Types.DefaultNodeInfo getDefaultNodeInfo();
     /**
@@ -8449,10 +8611,12 @@ public final class Query {
 
     /**
      * <code>.cosmos.base.tendermint.v1beta1.VersionInfo application_version = 2;</code>
+     * @return Whether the applicationVersion field is set.
      */
     boolean hasApplicationVersion();
     /**
      * <code>.cosmos.base.tendermint.v1beta1.VersionInfo application_version = 2;</code>
+     * @return The applicationVersion.
      */
     cosmos.base.tendermint.v1beta1.Query.VersionInfo getApplicationVersion();
     /**
@@ -8467,7 +8631,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.GetNodeInfoResponse}
    */
-  public  static final class GetNodeInfoResponse extends
+  public static final class GetNodeInfoResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.GetNodeInfoResponse)
       GetNodeInfoResponseOrBuilder {
@@ -8571,19 +8735,24 @@ public final class Query {
     private tendermint.p2p.Types.DefaultNodeInfo defaultNodeInfo_;
     /**
      * <code>.tendermint.p2p.DefaultNodeInfo default_node_info = 1;</code>
+     * @return Whether the defaultNodeInfo field is set.
      */
+    @java.lang.Override
     public boolean hasDefaultNodeInfo() {
       return defaultNodeInfo_ != null;
     }
     /**
      * <code>.tendermint.p2p.DefaultNodeInfo default_node_info = 1;</code>
+     * @return The defaultNodeInfo.
      */
+    @java.lang.Override
     public tendermint.p2p.Types.DefaultNodeInfo getDefaultNodeInfo() {
       return defaultNodeInfo_ == null ? tendermint.p2p.Types.DefaultNodeInfo.getDefaultInstance() : defaultNodeInfo_;
     }
     /**
      * <code>.tendermint.p2p.DefaultNodeInfo default_node_info = 1;</code>
      */
+    @java.lang.Override
     public tendermint.p2p.Types.DefaultNodeInfoOrBuilder getDefaultNodeInfoOrBuilder() {
       return getDefaultNodeInfo();
     }
@@ -8592,19 +8761,24 @@ public final class Query {
     private cosmos.base.tendermint.v1beta1.Query.VersionInfo applicationVersion_;
     /**
      * <code>.cosmos.base.tendermint.v1beta1.VersionInfo application_version = 2;</code>
+     * @return Whether the applicationVersion field is set.
      */
+    @java.lang.Override
     public boolean hasApplicationVersion() {
       return applicationVersion_ != null;
     }
     /**
      * <code>.cosmos.base.tendermint.v1beta1.VersionInfo application_version = 2;</code>
+     * @return The applicationVersion.
      */
+    @java.lang.Override
     public cosmos.base.tendermint.v1beta1.Query.VersionInfo getApplicationVersion() {
       return applicationVersion_ == null ? cosmos.base.tendermint.v1beta1.Query.VersionInfo.getDefaultInstance() : applicationVersion_;
     }
     /**
      * <code>.cosmos.base.tendermint.v1beta1.VersionInfo application_version = 2;</code>
      */
+    @java.lang.Override
     public cosmos.base.tendermint.v1beta1.Query.VersionInfoOrBuilder getApplicationVersionOrBuilder() {
       return getApplicationVersion();
     }
@@ -8963,12 +9137,14 @@ public final class Query {
           tendermint.p2p.Types.DefaultNodeInfo, tendermint.p2p.Types.DefaultNodeInfo.Builder, tendermint.p2p.Types.DefaultNodeInfoOrBuilder> defaultNodeInfoBuilder_;
       /**
        * <code>.tendermint.p2p.DefaultNodeInfo default_node_info = 1;</code>
+       * @return Whether the defaultNodeInfo field is set.
        */
       public boolean hasDefaultNodeInfo() {
         return defaultNodeInfoBuilder_ != null || defaultNodeInfo_ != null;
       }
       /**
        * <code>.tendermint.p2p.DefaultNodeInfo default_node_info = 1;</code>
+       * @return The defaultNodeInfo.
        */
       public tendermint.p2p.Types.DefaultNodeInfo getDefaultNodeInfo() {
         if (defaultNodeInfoBuilder_ == null) {
@@ -9080,12 +9256,14 @@ public final class Query {
           cosmos.base.tendermint.v1beta1.Query.VersionInfo, cosmos.base.tendermint.v1beta1.Query.VersionInfo.Builder, cosmos.base.tendermint.v1beta1.Query.VersionInfoOrBuilder> applicationVersionBuilder_;
       /**
        * <code>.cosmos.base.tendermint.v1beta1.VersionInfo application_version = 2;</code>
+       * @return Whether the applicationVersion field is set.
        */
       public boolean hasApplicationVersion() {
         return applicationVersionBuilder_ != null || applicationVersion_ != null;
       }
       /**
        * <code>.cosmos.base.tendermint.v1beta1.VersionInfo application_version = 2;</code>
+       * @return The applicationVersion.
        */
       public cosmos.base.tendermint.v1beta1.Query.VersionInfo getApplicationVersion() {
         if (applicationVersionBuilder_ == null) {
@@ -9250,60 +9428,72 @@ public final class Query {
 
     /**
      * <code>string name = 1;</code>
+     * @return The name.
      */
     java.lang.String getName();
     /**
      * <code>string name = 1;</code>
+     * @return The bytes for name.
      */
     com.google.protobuf.ByteString
         getNameBytes();
 
     /**
      * <code>string app_name = 2;</code>
+     * @return The appName.
      */
     java.lang.String getAppName();
     /**
      * <code>string app_name = 2;</code>
+     * @return The bytes for appName.
      */
     com.google.protobuf.ByteString
         getAppNameBytes();
 
     /**
      * <code>string version = 3;</code>
+     * @return The version.
      */
     java.lang.String getVersion();
     /**
      * <code>string version = 3;</code>
+     * @return The bytes for version.
      */
     com.google.protobuf.ByteString
         getVersionBytes();
 
     /**
      * <code>string git_commit = 4;</code>
+     * @return The gitCommit.
      */
     java.lang.String getGitCommit();
     /**
      * <code>string git_commit = 4;</code>
+     * @return The bytes for gitCommit.
      */
     com.google.protobuf.ByteString
         getGitCommitBytes();
 
     /**
      * <code>string build_tags = 5;</code>
+     * @return The buildTags.
      */
     java.lang.String getBuildTags();
     /**
      * <code>string build_tags = 5;</code>
+     * @return The bytes for buildTags.
      */
     com.google.protobuf.ByteString
         getBuildTagsBytes();
 
     /**
      * <code>string go_version = 6;</code>
+     * @return The goVersion.
      */
     java.lang.String getGoVersion();
     /**
      * <code>string go_version = 6;</code>
+     * @return The bytes for goVersion.
      */
     com.google.protobuf.ByteString
         getGoVersionBytes();
@@ -9334,10 +9524,12 @@ public final class Query {
 
     /**
      * <code>string cosmos_sdk_version = 8;</code>
+     * @return The cosmosSdkVersion.
      */
     java.lang.String getCosmosSdkVersion();
     /**
      * <code>string cosmos_sdk_version = 8;</code>
+     * @return The bytes for cosmosSdkVersion.
      */
     com.google.protobuf.ByteString
         getCosmosSdkVersionBytes();
@@ -9349,7 +9541,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.VersionInfo}
    */
-  public  static final class VersionInfo extends
+  public static final class VersionInfo extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.VersionInfo)
       VersionInfoOrBuilder {
@@ -9490,7 +9682,9 @@ public final class Query {
     private volatile java.lang.Object name_;
     /**
      * <code>string name = 1;</code>
+     * @return The name.
      */
+    @java.lang.Override
     public java.lang.String getName() {
       java.lang.Object ref = name_;
       if (ref instanceof java.lang.String) {
@@ -9505,7 +9699,9 @@ public final class Query {
     }
     /**
      * <code>string name = 1;</code>
+     * @return The bytes for name.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getNameBytes() {
       java.lang.Object ref = name_;
@@ -9524,7 +9720,9 @@ public final class Query {
     private volatile java.lang.Object appName_;
     /**
      * <code>string app_name = 2;</code>
+     * @return The appName.
      */
+    @java.lang.Override
     public java.lang.String getAppName() {
       java.lang.Object ref = appName_;
       if (ref instanceof java.lang.String) {
@@ -9539,7 +9737,9 @@ public final class Query {
     }
     /**
      * <code>string app_name = 2;</code>
+     * @return The bytes for appName.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAppNameBytes() {
       java.lang.Object ref = appName_;
@@ -9558,7 +9758,9 @@ public final class Query {
     private volatile java.lang.Object version_;
     /**
      * <code>string version = 3;</code>
+     * @return The version.
      */
+    @java.lang.Override
     public java.lang.String getVersion() {
       java.lang.Object ref = version_;
       if (ref instanceof java.lang.String) {
@@ -9573,7 +9775,9 @@ public final class Query {
     }
     /**
      * <code>string version = 3;</code>
+     * @return The bytes for version.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getVersionBytes() {
       java.lang.Object ref = version_;
@@ -9592,7 +9796,9 @@ public final class Query {
     private volatile java.lang.Object gitCommit_;
     /**
      * <code>string git_commit = 4;</code>
+     * @return The gitCommit.
      */
+    @java.lang.Override
     public java.lang.String getGitCommit() {
       java.lang.Object ref = gitCommit_;
       if (ref instanceof java.lang.String) {
@@ -9607,7 +9813,9 @@ public final class Query {
     }
     /**
      * <code>string git_commit = 4;</code>
+     * @return The bytes for gitCommit.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getGitCommitBytes() {
       java.lang.Object ref = gitCommit_;
@@ -9626,7 +9834,9 @@ public final class Query {
     private volatile java.lang.Object buildTags_;
     /**
      * <code>string build_tags = 5;</code>
+     * @return The buildTags.
      */
+    @java.lang.Override
     public java.lang.String getBuildTags() {
       java.lang.Object ref = buildTags_;
       if (ref instanceof java.lang.String) {
@@ -9641,7 +9851,9 @@ public final class Query {
     }
     /**
      * <code>string build_tags = 5;</code>
+     * @return The bytes for buildTags.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getBuildTagsBytes() {
       java.lang.Object ref = buildTags_;
@@ -9660,7 +9872,9 @@ public final class Query {
     private volatile java.lang.Object goVersion_;
     /**
      * <code>string go_version = 6;</code>
+     * @return The goVersion.
      */
+    @java.lang.Override
     public java.lang.String getGoVersion() {
       java.lang.Object ref = goVersion_;
       if (ref instanceof java.lang.String) {
@@ -9675,7 +9889,9 @@ public final class Query {
     }
     /**
      * <code>string go_version = 6;</code>
+     * @return The bytes for goVersion.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getGoVersionBytes() {
       java.lang.Object ref = goVersion_;
@@ -9695,12 +9911,14 @@ public final class Query {
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7;</code>
      */
+    @java.lang.Override
     public java.util.List<cosmos.base.tendermint.v1beta1.Query.Module> getBuildDepsList() {
       return buildDeps_;
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends cosmos.base.tendermint.v1beta1.Query.ModuleOrBuilder> 
         getBuildDepsOrBuilderList() {
       return buildDeps_;
@@ -9708,18 +9926,21 @@ public final class Query {
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7;</code>
      */
+    @java.lang.Override
     public int getBuildDepsCount() {
       return buildDeps_.size();
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7;</code>
      */
+    @java.lang.Override
     public cosmos.base.tendermint.v1beta1.Query.Module getBuildDeps(int index) {
       return buildDeps_.get(index);
     }
     /**
      * <code>repeated .cosmos.base.tendermint.v1beta1.Module build_deps = 7;</code>
      */
+    @java.lang.Override
     public cosmos.base.tendermint.v1beta1.Query.ModuleOrBuilder getBuildDepsOrBuilder(
         int index) {
       return buildDeps_.get(index);
@@ -9729,7 +9950,9 @@ public final class Query {
     private volatile java.lang.Object cosmosSdkVersion_;
     /**
      * <code>string cosmos_sdk_version = 8;</code>
+     * @return The cosmosSdkVersion.
      */
+    @java.lang.Override
     public java.lang.String getCosmosSdkVersion() {
       java.lang.Object ref = cosmosSdkVersion_;
       if (ref instanceof java.lang.String) {
@@ -9744,7 +9967,9 @@ public final class Query {
     }
     /**
      * <code>string cosmos_sdk_version = 8;</code>
+     * @return The bytes for cosmosSdkVersion.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getCosmosSdkVersionBytes() {
       java.lang.Object ref = cosmosSdkVersion_;
@@ -10227,6 +10452,7 @@ public final class Query {
       private java.lang.Object name_ = "";
       /**
        * <code>string name = 1;</code>
+       * @return The name.
        */
       public java.lang.String getName() {
         java.lang.Object ref = name_;
@@ -10242,6 +10468,7 @@ public final class Query {
       }
       /**
        * <code>string name = 1;</code>
+       * @return The bytes for name.
        */
       public com.google.protobuf.ByteString
           getNameBytes() {
@@ -10258,6 +10485,8 @@ public final class Query {
       }
       /**
        * <code>string name = 1;</code>
+       * @param value The name to set.
+       * @return This builder for chaining.
        */
       public Builder setName(
           java.lang.String value) {
@@ -10271,6 +10500,7 @@ public final class Query {
       }
       /**
        * <code>string name = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearName() {
         
@@ -10280,6 +10510,8 @@ public final class Query {
       }
       /**
        * <code>string name = 1;</code>
+       * @param value The bytes for name to set.
+       * @return This builder for chaining.
        */
       public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
@@ -10296,6 +10528,7 @@ public final class Query {
       private java.lang.Object appName_ = "";
       /**
        * <code>string app_name = 2;</code>
+       * @return The appName.
        */
       public java.lang.String getAppName() {
         java.lang.Object ref = appName_;
@@ -10311,6 +10544,7 @@ public final class Query {
       }
       /**
        * <code>string app_name = 2;</code>
+       * @return The bytes for appName.
        */
       public com.google.protobuf.ByteString
           getAppNameBytes() {
@@ -10327,6 +10561,8 @@ public final class Query {
       }
       /**
        * <code>string app_name = 2;</code>
+       * @param value The appName to set.
+       * @return This builder for chaining.
        */
       public Builder setAppName(
           java.lang.String value) {
@@ -10340,6 +10576,7 @@ public final class Query {
       }
       /**
        * <code>string app_name = 2;</code>
+       * @return This builder for chaining.
        */
       public Builder clearAppName() {
         
@@ -10349,6 +10586,8 @@ public final class Query {
       }
       /**
        * <code>string app_name = 2;</code>
+       * @param value The bytes for appName to set.
+       * @return This builder for chaining.
        */
       public Builder setAppNameBytes(
           com.google.protobuf.ByteString value) {
@@ -10365,6 +10604,7 @@ public final class Query {
       private java.lang.Object version_ = "";
       /**
        * <code>string version = 3;</code>
+       * @return The version.
        */
       public java.lang.String getVersion() {
         java.lang.Object ref = version_;
@@ -10380,6 +10620,7 @@ public final class Query {
       }
       /**
        * <code>string version = 3;</code>
+       * @return The bytes for version.
        */
       public com.google.protobuf.ByteString
           getVersionBytes() {
@@ -10396,6 +10637,8 @@ public final class Query {
       }
       /**
        * <code>string version = 3;</code>
+       * @param value The version to set.
+       * @return This builder for chaining.
        */
       public Builder setVersion(
           java.lang.String value) {
@@ -10409,6 +10652,7 @@ public final class Query {
       }
       /**
        * <code>string version = 3;</code>
+       * @return This builder for chaining.
        */
       public Builder clearVersion() {
         
@@ -10418,6 +10662,8 @@ public final class Query {
       }
       /**
        * <code>string version = 3;</code>
+       * @param value The bytes for version to set.
+       * @return This builder for chaining.
        */
       public Builder setVersionBytes(
           com.google.protobuf.ByteString value) {
@@ -10434,6 +10680,7 @@ public final class Query {
       private java.lang.Object gitCommit_ = "";
       /**
        * <code>string git_commit = 4;</code>
+       * @return The gitCommit.
        */
       public java.lang.String getGitCommit() {
         java.lang.Object ref = gitCommit_;
@@ -10449,6 +10696,7 @@ public final class Query {
       }
       /**
        * <code>string git_commit = 4;</code>
+       * @return The bytes for gitCommit.
        */
       public com.google.protobuf.ByteString
           getGitCommitBytes() {
@@ -10465,6 +10713,8 @@ public final class Query {
       }
       /**
        * <code>string git_commit = 4;</code>
+       * @param value The gitCommit to set.
+       * @return This builder for chaining.
        */
       public Builder setGitCommit(
           java.lang.String value) {
@@ -10478,6 +10728,7 @@ public final class Query {
       }
       /**
        * <code>string git_commit = 4;</code>
+       * @return This builder for chaining.
        */
       public Builder clearGitCommit() {
         
@@ -10487,6 +10738,8 @@ public final class Query {
       }
       /**
        * <code>string git_commit = 4;</code>
+       * @param value The bytes for gitCommit to set.
+       * @return This builder for chaining.
        */
       public Builder setGitCommitBytes(
           com.google.protobuf.ByteString value) {
@@ -10503,6 +10756,7 @@ public final class Query {
       private java.lang.Object buildTags_ = "";
       /**
        * <code>string build_tags = 5;</code>
+       * @return The buildTags.
        */
       public java.lang.String getBuildTags() {
         java.lang.Object ref = buildTags_;
@@ -10518,6 +10772,7 @@ public final class Query {
       }
       /**
        * <code>string build_tags = 5;</code>
+       * @return The bytes for buildTags.
        */
       public com.google.protobuf.ByteString
           getBuildTagsBytes() {
@@ -10534,6 +10789,8 @@ public final class Query {
       }
       /**
        * <code>string build_tags = 5;</code>
+       * @param value The buildTags to set.
+       * @return This builder for chaining.
        */
       public Builder setBuildTags(
           java.lang.String value) {
@@ -10547,6 +10804,7 @@ public final class Query {
       }
       /**
        * <code>string build_tags = 5;</code>
+       * @return This builder for chaining.
        */
       public Builder clearBuildTags() {
         
@@ -10556,6 +10814,8 @@ public final class Query {
       }
       /**
        * <code>string build_tags = 5;</code>
+       * @param value The bytes for buildTags to set.
+       * @return This builder for chaining.
        */
       public Builder setBuildTagsBytes(
           com.google.protobuf.ByteString value) {
@@ -10572,6 +10832,7 @@ public final class Query {
       private java.lang.Object goVersion_ = "";
       /**
        * <code>string go_version = 6;</code>
+       * @return The goVersion.
        */
       public java.lang.String getGoVersion() {
         java.lang.Object ref = goVersion_;
@@ -10587,6 +10848,7 @@ public final class Query {
       }
       /**
        * <code>string go_version = 6;</code>
+       * @return The bytes for goVersion.
        */
       public com.google.protobuf.ByteString
           getGoVersionBytes() {
@@ -10603,6 +10865,8 @@ public final class Query {
       }
       /**
        * <code>string go_version = 6;</code>
+       * @param value The goVersion to set.
+       * @return This builder for chaining.
        */
       public Builder setGoVersion(
           java.lang.String value) {
@@ -10616,6 +10880,7 @@ public final class Query {
       }
       /**
        * <code>string go_version = 6;</code>
+       * @return This builder for chaining.
        */
       public Builder clearGoVersion() {
         
@@ -10625,6 +10890,8 @@ public final class Query {
       }
       /**
        * <code>string go_version = 6;</code>
+       * @param value The bytes for goVersion to set.
+       * @return This builder for chaining.
        */
       public Builder setGoVersionBytes(
           com.google.protobuf.ByteString value) {
@@ -10881,6 +11148,7 @@ public final class Query {
       private java.lang.Object cosmosSdkVersion_ = "";
       /**
        * <code>string cosmos_sdk_version = 8;</code>
+       * @return The cosmosSdkVersion.
        */
       public java.lang.String getCosmosSdkVersion() {
         java.lang.Object ref = cosmosSdkVersion_;
@@ -10896,6 +11164,7 @@ public final class Query {
       }
       /**
        * <code>string cosmos_sdk_version = 8;</code>
+       * @return The bytes for cosmosSdkVersion.
        */
       public com.google.protobuf.ByteString
           getCosmosSdkVersionBytes() {
@@ -10912,6 +11181,8 @@ public final class Query {
       }
       /**
        * <code>string cosmos_sdk_version = 8;</code>
+       * @param value The cosmosSdkVersion to set.
+       * @return This builder for chaining.
        */
       public Builder setCosmosSdkVersion(
           java.lang.String value) {
@@ -10925,6 +11196,7 @@ public final class Query {
       }
       /**
        * <code>string cosmos_sdk_version = 8;</code>
+       * @return This builder for chaining.
        */
       public Builder clearCosmosSdkVersion() {
         
@@ -10934,6 +11206,8 @@ public final class Query {
       }
       /**
        * <code>string cosmos_sdk_version = 8;</code>
+       * @param value The bytes for cosmosSdkVersion to set.
+       * @return This builder for chaining.
        */
       public Builder setCosmosSdkVersionBytes(
           com.google.protobuf.ByteString value) {
@@ -11009,6 +11283,7 @@ public final class Query {
      * </pre>
      *
      * <code>string path = 1;</code>
+     * @return The path.
      */
     java.lang.String getPath();
     /**
@@ -11017,6 +11292,7 @@ public final class Query {
      * </pre>
      *
      * <code>string path = 1;</code>
+     * @return The bytes for path.
      */
     com.google.protobuf.ByteString
         getPathBytes();
@@ -11027,6 +11303,7 @@ public final class Query {
      * </pre>
      *
      * <code>string version = 2;</code>
+     * @return The version.
      */
     java.lang.String getVersion();
     /**
@@ -11035,6 +11312,7 @@ public final class Query {
      * </pre>
      *
      * <code>string version = 2;</code>
+     * @return The bytes for version.
      */
     com.google.protobuf.ByteString
         getVersionBytes();
@@ -11045,6 +11323,7 @@ public final class Query {
      * </pre>
      *
      * <code>string sum = 3;</code>
+     * @return The sum.
      */
     java.lang.String getSum();
     /**
@@ -11053,6 +11332,7 @@ public final class Query {
      * </pre>
      *
      * <code>string sum = 3;</code>
+     * @return The bytes for sum.
      */
     com.google.protobuf.ByteString
         getSumBytes();
@@ -11064,7 +11344,7 @@ public final class Query {
    *
    * Protobuf type {@code cosmos.base.tendermint.v1beta1.Module}
    */
-  public  static final class Module extends
+  public static final class Module extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.base.tendermint.v1beta1.Module)
       ModuleOrBuilder {
@@ -11167,7 +11447,9 @@ public final class Query {
      * </pre>
      *
      * <code>string path = 1;</code>
+     * @return The path.
      */
+    @java.lang.Override
     public java.lang.String getPath() {
       java.lang.Object ref = path_;
       if (ref instanceof java.lang.String) {
@@ -11186,7 +11468,9 @@ public final class Query {
      * </pre>
      *
      * <code>string path = 1;</code>
+     * @return The bytes for path.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getPathBytes() {
       java.lang.Object ref = path_;
@@ -11209,7 +11493,9 @@ public final class Query {
      * </pre>
      *
      * <code>string version = 2;</code>
+     * @return The version.
      */
+    @java.lang.Override
     public java.lang.String getVersion() {
       java.lang.Object ref = version_;
       if (ref instanceof java.lang.String) {
@@ -11228,7 +11514,9 @@ public final class Query {
      * </pre>
      *
      * <code>string version = 2;</code>
+     * @return The bytes for version.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getVersionBytes() {
       java.lang.Object ref = version_;
@@ -11251,7 +11539,9 @@ public final class Query {
      * </pre>
      *
      * <code>string sum = 3;</code>
+     * @return The sum.
      */
+    @java.lang.Override
     public java.lang.String getSum() {
       java.lang.Object ref = sum_;
       if (ref instanceof java.lang.String) {
@@ -11270,7 +11560,9 @@ public final class Query {
      * </pre>
      *
      * <code>string sum = 3;</code>
+     * @return The bytes for sum.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getSumBytes() {
       java.lang.Object ref = sum_;
@@ -11632,6 +11924,7 @@ public final class Query {
        * </pre>
        *
        * <code>string path = 1;</code>
+       * @return The path.
        */
       public java.lang.String getPath() {
         java.lang.Object ref = path_;
@@ -11651,6 +11944,7 @@ public final class Query {
        * </pre>
        *
        * <code>string path = 1;</code>
+       * @return The bytes for path.
        */
       public com.google.protobuf.ByteString
           getPathBytes() {
@@ -11671,6 +11965,8 @@ public final class Query {
        * </pre>
        *
        * <code>string path = 1;</code>
+       * @param value The path to set.
+       * @return This builder for chaining.
        */
       public Builder setPath(
           java.lang.String value) {
@@ -11688,6 +11984,7 @@ public final class Query {
        * </pre>
        *
        * <code>string path = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearPath() {
         
@@ -11701,6 +11998,8 @@ public final class Query {
        * </pre>
        *
        * <code>string path = 1;</code>
+       * @param value The bytes for path to set.
+       * @return This builder for chaining.
        */
       public Builder setPathBytes(
           com.google.protobuf.ByteString value) {
@@ -11721,6 +12020,7 @@ public final class Query {
        * </pre>
        *
        * <code>string version = 2;</code>
+       * @return The version.
        */
       public java.lang.String getVersion() {
         java.lang.Object ref = version_;
@@ -11740,6 +12040,7 @@ public final class Query {
        * </pre>
        *
        * <code>string version = 2;</code>
+       * @return The bytes for version.
        */
       public com.google.protobuf.ByteString
           getVersionBytes() {
@@ -11760,6 +12061,8 @@ public final class Query {
        * </pre>
        *
        * <code>string version = 2;</code>
+       * @param value The version to set.
+       * @return This builder for chaining.
        */
       public Builder setVersion(
           java.lang.String value) {
@@ -11777,6 +12080,7 @@ public final class Query {
        * </pre>
        *
        * <code>string version = 2;</code>
+       * @return This builder for chaining.
        */
       public Builder clearVersion() {
         
@@ -11790,6 +12094,8 @@ public final class Query {
        * </pre>
        *
        * <code>string version = 2;</code>
+       * @param value The bytes for version to set.
+       * @return This builder for chaining.
        */
       public Builder setVersionBytes(
           com.google.protobuf.ByteString value) {
@@ -11810,6 +12116,7 @@ public final class Query {
        * </pre>
        *
        * <code>string sum = 3;</code>
+       * @return The sum.
        */
       public java.lang.String getSum() {
         java.lang.Object ref = sum_;
@@ -11829,6 +12136,7 @@ public final class Query {
        * </pre>
        *
        * <code>string sum = 3;</code>
+       * @return The bytes for sum.
        */
       public com.google.protobuf.ByteString
           getSumBytes() {
@@ -11849,6 +12157,8 @@ public final class Query {
        * </pre>
        *
        * <code>string sum = 3;</code>
+       * @param value The sum to set.
+       * @return This builder for chaining.
        */
       public Builder setSum(
           java.lang.String value) {
@@ -11866,6 +12176,7 @@ public final class Query {
        * </pre>
        *
        * <code>string sum = 3;</code>
+       * @return This builder for chaining.
        */
       public Builder clearSum() {
         
@@ -11879,6 +12190,8 @@ public final class Query {
        * </pre>
        *
        * <code>string sum = 3;</code>
+       * @param value The bytes for sum to set.
+       * @return This builder for chaining.
        */
       public Builder setSumBytes(
           com.google.protobuf.ByteString value) {

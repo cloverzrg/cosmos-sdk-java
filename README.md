@@ -1,5 +1,14 @@
 # Cosmos SDK for Java
 
+本SDK集成、实现了交易所接入 Cosmos(ATOM) 所需要的所有功能
+- 扫链
+- 地址生成、校验
+- 交易生成、签名、广播
+- 交易查询
+- 账户查询 
+- 余额查询
+- 估算gas
+
 ### 使用
 ```xml
 <!-- (暂未发布, NOT Publish Yet)-->

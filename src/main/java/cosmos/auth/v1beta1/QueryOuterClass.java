@@ -24,6 +24,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string address = 1;</code>
+     * @return The address.
      */
     java.lang.String getAddress();
     /**
@@ -32,6 +33,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string address = 1;</code>
+     * @return The bytes for address.
      */
     com.google.protobuf.ByteString
         getAddressBytes();
@@ -43,7 +45,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.auth.v1beta1.QueryAccountRequest}
    */
-  public  static final class QueryAccountRequest extends
+  public static final class QueryAccountRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.auth.v1beta1.QueryAccountRequest)
       QueryAccountRequestOrBuilder {
@@ -132,7 +134,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string address = 1;</code>
+     * @return The address.
      */
+    @java.lang.Override
     public java.lang.String getAddress() {
       java.lang.Object ref = address_;
       if (ref instanceof java.lang.String) {
@@ -151,7 +155,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string address = 1;</code>
+     * @return The bytes for address.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAddressBytes() {
       java.lang.Object ref = address_;
@@ -479,6 +485,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @return The address.
        */
       public java.lang.String getAddress() {
         java.lang.Object ref = address_;
@@ -498,6 +505,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @return The bytes for address.
        */
       public com.google.protobuf.ByteString
           getAddressBytes() {
@@ -518,6 +526,8 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @param value The address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddress(
           java.lang.String value) {
@@ -535,6 +545,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearAddress() {
         
@@ -548,6 +559,8 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @param value The bytes for address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddressBytes(
           com.google.protobuf.ByteString value) {
@@ -623,6 +636,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.google.protobuf.Any account = 1 [(.cosmos_proto.accepts_interface) = "AccountI"];</code>
+     * @return Whether the account field is set.
      */
     boolean hasAccount();
     /**
@@ -631,6 +645,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.google.protobuf.Any account = 1 [(.cosmos_proto.accepts_interface) = "AccountI"];</code>
+     * @return The account.
      */
     com.google.protobuf.Any getAccount();
     /**
@@ -649,7 +664,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.auth.v1beta1.QueryAccountResponse}
    */
-  public  static final class QueryAccountResponse extends
+  public static final class QueryAccountResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.auth.v1beta1.QueryAccountResponse)
       QueryAccountResponseOrBuilder {
@@ -744,7 +759,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.google.protobuf.Any account = 1 [(.cosmos_proto.accepts_interface) = "AccountI"];</code>
+     * @return Whether the account field is set.
      */
+    @java.lang.Override
     public boolean hasAccount() {
       return account_ != null;
     }
@@ -754,7 +771,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.google.protobuf.Any account = 1 [(.cosmos_proto.accepts_interface) = "AccountI"];</code>
+     * @return The account.
      */
+    @java.lang.Override
     public com.google.protobuf.Any getAccount() {
       return account_ == null ? com.google.protobuf.Any.getDefaultInstance() : account_;
     }
@@ -765,6 +784,7 @@ public final class QueryOuterClass {
      *
      * <code>.google.protobuf.Any account = 1 [(.cosmos_proto.accepts_interface) = "AccountI"];</code>
      */
+    @java.lang.Override
     public com.google.protobuf.AnyOrBuilder getAccountOrBuilder() {
       return getAccount();
     }
@@ -1097,6 +1117,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.google.protobuf.Any account = 1 [(.cosmos_proto.accepts_interface) = "AccountI"];</code>
+       * @return Whether the account field is set.
        */
       public boolean hasAccount() {
         return accountBuilder_ != null || account_ != null;
@@ -1107,6 +1128,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.google.protobuf.Any account = 1 [(.cosmos_proto.accepts_interface) = "AccountI"];</code>
+       * @return The account.
        */
       public com.google.protobuf.Any getAccount() {
         if (accountBuilder_ == null) {
@@ -1304,7 +1326,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.auth.v1beta1.QueryParamsRequest}
    */
-  public  static final class QueryParamsRequest extends
+  public static final class QueryParamsRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.auth.v1beta1.QueryParamsRequest)
       QueryParamsRequestOrBuilder {
@@ -1729,6 +1751,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+     * @return Whether the params field is set.
      */
     boolean hasParams();
     /**
@@ -1737,6 +1760,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+     * @return The params.
      */
     cosmos.auth.v1beta1.Auth.Params getParams();
     /**
@@ -1755,7 +1779,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.auth.v1beta1.QueryParamsResponse}
    */
-  public  static final class QueryParamsResponse extends
+  public static final class QueryParamsResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.auth.v1beta1.QueryParamsResponse)
       QueryParamsResponseOrBuilder {
@@ -1850,7 +1874,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+     * @return Whether the params field is set.
      */
+    @java.lang.Override
     public boolean hasParams() {
       return params_ != null;
     }
@@ -1860,7 +1886,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+     * @return The params.
      */
+    @java.lang.Override
     public cosmos.auth.v1beta1.Auth.Params getParams() {
       return params_ == null ? cosmos.auth.v1beta1.Auth.Params.getDefaultInstance() : params_;
     }
@@ -1871,6 +1899,7 @@ public final class QueryOuterClass {
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
      */
+    @java.lang.Override
     public cosmos.auth.v1beta1.Auth.ParamsOrBuilder getParamsOrBuilder() {
       return getParams();
     }
@@ -2203,6 +2232,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+       * @return Whether the params field is set.
        */
       public boolean hasParams() {
         return paramsBuilder_ != null || params_ != null;
@@ -2213,6 +2243,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+       * @return The params.
        */
       public cosmos.auth.v1beta1.Auth.Params getParams() {
         if (paramsBuilder_ == null) {

@@ -24,6 +24,7 @@ public final class Genesis {
      * </pre>
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+     * @return Whether the params field is set.
      */
     boolean hasParams();
     /**
@@ -32,6 +33,7 @@ public final class Genesis {
      * </pre>
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+     * @return The params.
      */
     cosmos.auth.v1beta1.Auth.Params getParams();
     /**
@@ -94,7 +96,7 @@ public final class Genesis {
    *
    * Protobuf type {@code cosmos.auth.v1beta1.GenesisState}
    */
-  public  static final class GenesisState extends
+  public static final class GenesisState extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.auth.v1beta1.GenesisState)
       GenesisStateOrBuilder {
@@ -203,7 +205,9 @@ public final class Genesis {
      * </pre>
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+     * @return Whether the params field is set.
      */
+    @java.lang.Override
     public boolean hasParams() {
       return params_ != null;
     }
@@ -213,7 +217,9 @@ public final class Genesis {
      * </pre>
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+     * @return The params.
      */
+    @java.lang.Override
     public cosmos.auth.v1beta1.Auth.Params getParams() {
       return params_ == null ? cosmos.auth.v1beta1.Auth.Params.getDefaultInstance() : params_;
     }
@@ -224,6 +230,7 @@ public final class Genesis {
      *
      * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
      */
+    @java.lang.Override
     public cosmos.auth.v1beta1.Auth.ParamsOrBuilder getParamsOrBuilder() {
       return getParams();
     }
@@ -237,6 +244,7 @@ public final class Genesis {
      *
      * <code>repeated .google.protobuf.Any accounts = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<com.google.protobuf.Any> getAccountsList() {
       return accounts_;
     }
@@ -247,6 +255,7 @@ public final class Genesis {
      *
      * <code>repeated .google.protobuf.Any accounts = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends com.google.protobuf.AnyOrBuilder> 
         getAccountsOrBuilderList() {
       return accounts_;
@@ -258,6 +267,7 @@ public final class Genesis {
      *
      * <code>repeated .google.protobuf.Any accounts = 2;</code>
      */
+    @java.lang.Override
     public int getAccountsCount() {
       return accounts_.size();
     }
@@ -268,6 +278,7 @@ public final class Genesis {
      *
      * <code>repeated .google.protobuf.Any accounts = 2;</code>
      */
+    @java.lang.Override
     public com.google.protobuf.Any getAccounts(int index) {
       return accounts_.get(index);
     }
@@ -278,6 +289,7 @@ public final class Genesis {
      *
      * <code>repeated .google.protobuf.Any accounts = 2;</code>
      */
+    @java.lang.Override
     public com.google.protobuf.AnyOrBuilder getAccountsOrBuilder(
         int index) {
       return accounts_.get(index);
@@ -668,6 +680,7 @@ public final class Genesis {
        * </pre>
        *
        * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+       * @return Whether the params field is set.
        */
       public boolean hasParams() {
         return paramsBuilder_ != null || params_ != null;
@@ -678,6 +691,7 @@ public final class Genesis {
        * </pre>
        *
        * <code>.cosmos.auth.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+       * @return The params.
        */
       public cosmos.auth.v1beta1.Auth.Params getParams() {
         if (paramsBuilder_ == null) {

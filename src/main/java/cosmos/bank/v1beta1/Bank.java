@@ -44,6 +44,7 @@ public final class Bank {
 
     /**
      * <code>bool default_send_enabled = 2 [(.gogoproto.moretags) = "yaml:&#92;"default_send_enabled,omitempty&#92;""];</code>
+     * @return The defaultSendEnabled.
      */
     boolean getDefaultSendEnabled();
   }
@@ -54,7 +55,7 @@ public final class Bank {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.Params}
    */
-  public  static final class Params extends
+  public static final class Params extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.Params)
       ParamsOrBuilder {
@@ -152,12 +153,14 @@ public final class Bank {
     /**
      * <code>repeated .cosmos.bank.v1beta1.SendEnabled send_enabled = 1 [(.gogoproto.moretags) = "yaml:&#92;"send_enabled,omitempty&#92;""];</code>
      */
+    @java.lang.Override
     public java.util.List<cosmos.bank.v1beta1.Bank.SendEnabled> getSendEnabledList() {
       return sendEnabled_;
     }
     /**
      * <code>repeated .cosmos.bank.v1beta1.SendEnabled send_enabled = 1 [(.gogoproto.moretags) = "yaml:&#92;"send_enabled,omitempty&#92;""];</code>
      */
+    @java.lang.Override
     public java.util.List<? extends cosmos.bank.v1beta1.Bank.SendEnabledOrBuilder> 
         getSendEnabledOrBuilderList() {
       return sendEnabled_;
@@ -165,18 +168,21 @@ public final class Bank {
     /**
      * <code>repeated .cosmos.bank.v1beta1.SendEnabled send_enabled = 1 [(.gogoproto.moretags) = "yaml:&#92;"send_enabled,omitempty&#92;""];</code>
      */
+    @java.lang.Override
     public int getSendEnabledCount() {
       return sendEnabled_.size();
     }
     /**
      * <code>repeated .cosmos.bank.v1beta1.SendEnabled send_enabled = 1 [(.gogoproto.moretags) = "yaml:&#92;"send_enabled,omitempty&#92;""];</code>
      */
+    @java.lang.Override
     public cosmos.bank.v1beta1.Bank.SendEnabled getSendEnabled(int index) {
       return sendEnabled_.get(index);
     }
     /**
      * <code>repeated .cosmos.bank.v1beta1.SendEnabled send_enabled = 1 [(.gogoproto.moretags) = "yaml:&#92;"send_enabled,omitempty&#92;""];</code>
      */
+    @java.lang.Override
     public cosmos.bank.v1beta1.Bank.SendEnabledOrBuilder getSendEnabledOrBuilder(
         int index) {
       return sendEnabled_.get(index);
@@ -186,7 +192,9 @@ public final class Bank {
     private boolean defaultSendEnabled_;
     /**
      * <code>bool default_send_enabled = 2 [(.gogoproto.moretags) = "yaml:&#92;"default_send_enabled,omitempty&#92;""];</code>
+     * @return The defaultSendEnabled.
      */
+    @java.lang.Override
     public boolean getDefaultSendEnabled() {
       return defaultSendEnabled_;
     }
@@ -798,12 +806,16 @@ public final class Bank {
       private boolean defaultSendEnabled_ ;
       /**
        * <code>bool default_send_enabled = 2 [(.gogoproto.moretags) = "yaml:&#92;"default_send_enabled,omitempty&#92;""];</code>
+       * @return The defaultSendEnabled.
        */
+      @java.lang.Override
       public boolean getDefaultSendEnabled() {
         return defaultSendEnabled_;
       }
       /**
        * <code>bool default_send_enabled = 2 [(.gogoproto.moretags) = "yaml:&#92;"default_send_enabled,omitempty&#92;""];</code>
+       * @param value The defaultSendEnabled to set.
+       * @return This builder for chaining.
        */
       public Builder setDefaultSendEnabled(boolean value) {
         
@@ -813,6 +825,7 @@ public final class Bank {
       }
       /**
        * <code>bool default_send_enabled = 2 [(.gogoproto.moretags) = "yaml:&#92;"default_send_enabled,omitempty&#92;""];</code>
+       * @return This builder for chaining.
        */
       public Builder clearDefaultSendEnabled() {
         
@@ -879,16 +892,19 @@ public final class Bank {
 
     /**
      * <code>string denom = 1;</code>
+     * @return The denom.
      */
     java.lang.String getDenom();
     /**
      * <code>string denom = 1;</code>
+     * @return The bytes for denom.
      */
     com.google.protobuf.ByteString
         getDenomBytes();
 
     /**
      * <code>bool enabled = 2;</code>
+     * @return The enabled.
      */
     boolean getEnabled();
   }
@@ -900,7 +916,7 @@ public final class Bank {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.SendEnabled}
    */
-  public  static final class SendEnabled extends
+  public static final class SendEnabled extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.SendEnabled)
       SendEnabledOrBuilder {
@@ -990,7 +1006,9 @@ public final class Bank {
     private volatile java.lang.Object denom_;
     /**
      * <code>string denom = 1;</code>
+     * @return The denom.
      */
+    @java.lang.Override
     public java.lang.String getDenom() {
       java.lang.Object ref = denom_;
       if (ref instanceof java.lang.String) {
@@ -1005,7 +1023,9 @@ public final class Bank {
     }
     /**
      * <code>string denom = 1;</code>
+     * @return The bytes for denom.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getDenomBytes() {
       java.lang.Object ref = denom_;
@@ -1024,7 +1044,9 @@ public final class Bank {
     private boolean enabled_;
     /**
      * <code>bool enabled = 2;</code>
+     * @return The enabled.
      */
+    @java.lang.Override
     public boolean getEnabled() {
       return enabled_;
     }
@@ -1357,6 +1379,7 @@ public final class Bank {
       private java.lang.Object denom_ = "";
       /**
        * <code>string denom = 1;</code>
+       * @return The denom.
        */
       public java.lang.String getDenom() {
         java.lang.Object ref = denom_;
@@ -1372,6 +1395,7 @@ public final class Bank {
       }
       /**
        * <code>string denom = 1;</code>
+       * @return The bytes for denom.
        */
       public com.google.protobuf.ByteString
           getDenomBytes() {
@@ -1388,6 +1412,8 @@ public final class Bank {
       }
       /**
        * <code>string denom = 1;</code>
+       * @param value The denom to set.
+       * @return This builder for chaining.
        */
       public Builder setDenom(
           java.lang.String value) {
@@ -1401,6 +1427,7 @@ public final class Bank {
       }
       /**
        * <code>string denom = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearDenom() {
         
@@ -1410,6 +1437,8 @@ public final class Bank {
       }
       /**
        * <code>string denom = 1;</code>
+       * @param value The bytes for denom to set.
+       * @return This builder for chaining.
        */
       public Builder setDenomBytes(
           com.google.protobuf.ByteString value) {
@@ -1426,12 +1455,16 @@ public final class Bank {
       private boolean enabled_ ;
       /**
        * <code>bool enabled = 2;</code>
+       * @return The enabled.
        */
+      @java.lang.Override
       public boolean getEnabled() {
         return enabled_;
       }
       /**
        * <code>bool enabled = 2;</code>
+       * @param value The enabled to set.
+       * @return This builder for chaining.
        */
       public Builder setEnabled(boolean value) {
         
@@ -1441,6 +1474,7 @@ public final class Bank {
       }
       /**
        * <code>bool enabled = 2;</code>
+       * @return This builder for chaining.
        */
       public Builder clearEnabled() {
         
@@ -1507,10 +1541,12 @@ public final class Bank {
 
     /**
      * <code>string address = 1;</code>
+     * @return The address.
      */
     java.lang.String getAddress();
     /**
      * <code>string address = 1;</code>
+     * @return The bytes for address.
      */
     com.google.protobuf.ByteString
         getAddressBytes();
@@ -1546,7 +1582,7 @@ public final class Bank {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.Input}
    */
-  public  static final class Input extends
+  public static final class Input extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.Input)
       InputOrBuilder {
@@ -1645,7 +1681,9 @@ public final class Bank {
     private volatile java.lang.Object address_;
     /**
      * <code>string address = 1;</code>
+     * @return The address.
      */
+    @java.lang.Override
     public java.lang.String getAddress() {
       java.lang.Object ref = address_;
       if (ref instanceof java.lang.String) {
@@ -1660,7 +1698,9 @@ public final class Bank {
     }
     /**
      * <code>string address = 1;</code>
+     * @return The bytes for address.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAddressBytes() {
       java.lang.Object ref = address_;
@@ -1680,12 +1720,14 @@ public final class Bank {
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin coins = 2 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> getCoinsList() {
       return coins_;
     }
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin coins = 2 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public java.util.List<? extends cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
         getCoinsOrBuilderList() {
       return coins_;
@@ -1693,18 +1735,21 @@ public final class Bank {
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin coins = 2 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public int getCoinsCount() {
       return coins_.size();
     }
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin coins = 2 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.Coin getCoins(int index) {
       return coins_.get(index);
     }
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin coins = 2 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder getCoinsOrBuilder(
         int index) {
       return coins_.get(index);
@@ -2076,6 +2121,7 @@ public final class Bank {
       private java.lang.Object address_ = "";
       /**
        * <code>string address = 1;</code>
+       * @return The address.
        */
       public java.lang.String getAddress() {
         java.lang.Object ref = address_;
@@ -2091,6 +2137,7 @@ public final class Bank {
       }
       /**
        * <code>string address = 1;</code>
+       * @return The bytes for address.
        */
       public com.google.protobuf.ByteString
           getAddressBytes() {
@@ -2107,6 +2154,8 @@ public final class Bank {
       }
       /**
        * <code>string address = 1;</code>
+       * @param value The address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddress(
           java.lang.String value) {
@@ -2120,6 +2169,7 @@ public final class Bank {
       }
       /**
        * <code>string address = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearAddress() {
         
@@ -2129,6 +2179,8 @@ public final class Bank {
       }
       /**
        * <code>string address = 1;</code>
+       * @param value The bytes for address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddressBytes(
           com.google.protobuf.ByteString value) {
@@ -2440,10 +2492,12 @@ public final class Bank {
 
     /**
      * <code>string address = 1;</code>
+     * @return The address.
      */
     java.lang.String getAddress();
     /**
      * <code>string address = 1;</code>
+     * @return The bytes for address.
      */
     com.google.protobuf.ByteString
         getAddressBytes();
@@ -2479,7 +2533,7 @@ public final class Bank {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.Output}
    */
-  public  static final class Output extends
+  public static final class Output extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.Output)
       OutputOrBuilder {
@@ -2578,7 +2632,9 @@ public final class Bank {
     private volatile java.lang.Object address_;
     /**
      * <code>string address = 1;</code>
+     * @return The address.
      */
+    @java.lang.Override
     public java.lang.String getAddress() {
       java.lang.Object ref = address_;
       if (ref instanceof java.lang.String) {
@@ -2593,7 +2649,9 @@ public final class Bank {
     }
     /**
      * <code>string address = 1;</code>
+     * @return The bytes for address.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAddressBytes() {
       java.lang.Object ref = address_;
@@ -2613,12 +2671,14 @@ public final class Bank {
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin coins = 2 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> getCoinsList() {
       return coins_;
     }
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin coins = 2 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public java.util.List<? extends cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
         getCoinsOrBuilderList() {
       return coins_;
@@ -2626,18 +2686,21 @@ public final class Bank {
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin coins = 2 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public int getCoinsCount() {
       return coins_.size();
     }
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin coins = 2 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.Coin getCoins(int index) {
       return coins_.get(index);
     }
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin coins = 2 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder getCoinsOrBuilder(
         int index) {
       return coins_.get(index);
@@ -3009,6 +3072,7 @@ public final class Bank {
       private java.lang.Object address_ = "";
       /**
        * <code>string address = 1;</code>
+       * @return The address.
        */
       public java.lang.String getAddress() {
         java.lang.Object ref = address_;
@@ -3024,6 +3088,7 @@ public final class Bank {
       }
       /**
        * <code>string address = 1;</code>
+       * @return The bytes for address.
        */
       public com.google.protobuf.ByteString
           getAddressBytes() {
@@ -3040,6 +3105,8 @@ public final class Bank {
       }
       /**
        * <code>string address = 1;</code>
+       * @param value The address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddress(
           java.lang.String value) {
@@ -3053,6 +3120,7 @@ public final class Bank {
       }
       /**
        * <code>string address = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearAddress() {
         
@@ -3062,6 +3130,8 @@ public final class Bank {
       }
       /**
        * <code>string address = 1;</code>
+       * @param value The bytes for address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddressBytes(
           com.google.protobuf.ByteString value) {
@@ -3403,7 +3473,7 @@ public final class Bank {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.Supply}
    */
-  public  static final class Supply extends
+  public static final class Supply extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.Supply)
       SupplyOrBuilder {
@@ -3496,12 +3566,14 @@ public final class Bank {
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin total = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> getTotalList() {
       return total_;
     }
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin total = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public java.util.List<? extends cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
         getTotalOrBuilderList() {
       return total_;
@@ -3509,18 +3581,21 @@ public final class Bank {
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin total = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public int getTotalCount() {
       return total_.size();
     }
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin total = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.Coin getTotal(int index) {
       return total_.get(index);
     }
     /**
      * <code>repeated .cosmos.base.v1beta1.Coin total = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder getTotalOrBuilder(
         int index) {
       return total_.get(index);
@@ -4175,6 +4250,7 @@ public final class Bank {
      * </pre>
      *
      * <code>string denom = 1;</code>
+     * @return The denom.
      */
     java.lang.String getDenom();
     /**
@@ -4183,6 +4259,7 @@ public final class Bank {
      * </pre>
      *
      * <code>string denom = 1;</code>
+     * @return The bytes for denom.
      */
     com.google.protobuf.ByteString
         getDenomBytes();
@@ -4197,6 +4274,7 @@ public final class Bank {
      * </pre>
      *
      * <code>uint32 exponent = 2;</code>
+     * @return The exponent.
      */
     int getExponent();
 
@@ -4206,6 +4284,7 @@ public final class Bank {
      * </pre>
      *
      * <code>repeated string aliases = 3;</code>
+     * @return A list containing the aliases.
      */
     java.util.List<java.lang.String>
         getAliasesList();
@@ -4215,6 +4294,7 @@ public final class Bank {
      * </pre>
      *
      * <code>repeated string aliases = 3;</code>
+     * @return The count of aliases.
      */
     int getAliasesCount();
     /**
@@ -4223,6 +4303,8 @@ public final class Bank {
      * </pre>
      *
      * <code>repeated string aliases = 3;</code>
+     * @param index The index of the element to return.
+     * @return The aliases at the given index.
      */
     java.lang.String getAliases(int index);
     /**
@@ -4231,6 +4313,8 @@ public final class Bank {
      * </pre>
      *
      * <code>repeated string aliases = 3;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the aliases at the given index.
      */
     com.google.protobuf.ByteString
         getAliasesBytes(int index);
@@ -4243,7 +4327,7 @@ public final class Bank {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.DenomUnit}
    */
-  public  static final class DenomUnit extends
+  public static final class DenomUnit extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.DenomUnit)
       DenomUnitOrBuilder {
@@ -4351,7 +4435,9 @@ public final class Bank {
      * </pre>
      *
      * <code>string denom = 1;</code>
+     * @return The denom.
      */
+    @java.lang.Override
     public java.lang.String getDenom() {
       java.lang.Object ref = denom_;
       if (ref instanceof java.lang.String) {
@@ -4370,7 +4456,9 @@ public final class Bank {
      * </pre>
      *
      * <code>string denom = 1;</code>
+     * @return The bytes for denom.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getDenomBytes() {
       java.lang.Object ref = denom_;
@@ -4397,7 +4485,9 @@ public final class Bank {
      * </pre>
      *
      * <code>uint32 exponent = 2;</code>
+     * @return The exponent.
      */
+    @java.lang.Override
     public int getExponent() {
       return exponent_;
     }
@@ -4410,6 +4500,7 @@ public final class Bank {
      * </pre>
      *
      * <code>repeated string aliases = 3;</code>
+     * @return A list containing the aliases.
      */
     public com.google.protobuf.ProtocolStringList
         getAliasesList() {
@@ -4421,6 +4512,7 @@ public final class Bank {
      * </pre>
      *
      * <code>repeated string aliases = 3;</code>
+     * @return The count of aliases.
      */
     public int getAliasesCount() {
       return aliases_.size();
@@ -4431,6 +4523,8 @@ public final class Bank {
      * </pre>
      *
      * <code>repeated string aliases = 3;</code>
+     * @param index The index of the element to return.
+     * @return The aliases at the given index.
      */
     public java.lang.String getAliases(int index) {
       return aliases_.get(index);
@@ -4441,6 +4535,8 @@ public final class Bank {
      * </pre>
      *
      * <code>repeated string aliases = 3;</code>
+     * @param index The index of the value to return.
+     * @return The bytes of the aliases at the given index.
      */
     public com.google.protobuf.ByteString
         getAliasesBytes(int index) {
@@ -4814,6 +4910,7 @@ public final class Bank {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @return The denom.
        */
       public java.lang.String getDenom() {
         java.lang.Object ref = denom_;
@@ -4833,6 +4930,7 @@ public final class Bank {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @return The bytes for denom.
        */
       public com.google.protobuf.ByteString
           getDenomBytes() {
@@ -4853,6 +4951,8 @@ public final class Bank {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @param value The denom to set.
+       * @return This builder for chaining.
        */
       public Builder setDenom(
           java.lang.String value) {
@@ -4870,6 +4970,7 @@ public final class Bank {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearDenom() {
         
@@ -4883,6 +4984,8 @@ public final class Bank {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @param value The bytes for denom to set.
+       * @return This builder for chaining.
        */
       public Builder setDenomBytes(
           com.google.protobuf.ByteString value) {
@@ -4907,7 +5010,9 @@ public final class Bank {
        * </pre>
        *
        * <code>uint32 exponent = 2;</code>
+       * @return The exponent.
        */
+      @java.lang.Override
       public int getExponent() {
         return exponent_;
       }
@@ -4921,6 +5026,8 @@ public final class Bank {
        * </pre>
        *
        * <code>uint32 exponent = 2;</code>
+       * @param value The exponent to set.
+       * @return This builder for chaining.
        */
       public Builder setExponent(int value) {
         
@@ -4938,6 +5045,7 @@ public final class Bank {
        * </pre>
        *
        * <code>uint32 exponent = 2;</code>
+       * @return This builder for chaining.
        */
       public Builder clearExponent() {
         
@@ -4959,6 +5067,7 @@ public final class Bank {
        * </pre>
        *
        * <code>repeated string aliases = 3;</code>
+       * @return A list containing the aliases.
        */
       public com.google.protobuf.ProtocolStringList
           getAliasesList() {
@@ -4970,6 +5079,7 @@ public final class Bank {
        * </pre>
        *
        * <code>repeated string aliases = 3;</code>
+       * @return The count of aliases.
        */
       public int getAliasesCount() {
         return aliases_.size();
@@ -4980,6 +5090,8 @@ public final class Bank {
        * </pre>
        *
        * <code>repeated string aliases = 3;</code>
+       * @param index The index of the element to return.
+       * @return The aliases at the given index.
        */
       public java.lang.String getAliases(int index) {
         return aliases_.get(index);
@@ -4990,6 +5102,8 @@ public final class Bank {
        * </pre>
        *
        * <code>repeated string aliases = 3;</code>
+       * @param index The index of the value to return.
+       * @return The bytes of the aliases at the given index.
        */
       public com.google.protobuf.ByteString
           getAliasesBytes(int index) {
@@ -5001,6 +5115,9 @@ public final class Bank {
        * </pre>
        *
        * <code>repeated string aliases = 3;</code>
+       * @param index The index to set the value at.
+       * @param value The aliases to set.
+       * @return This builder for chaining.
        */
       public Builder setAliases(
           int index, java.lang.String value) {
@@ -5018,6 +5135,8 @@ public final class Bank {
        * </pre>
        *
        * <code>repeated string aliases = 3;</code>
+       * @param value The aliases to add.
+       * @return This builder for chaining.
        */
       public Builder addAliases(
           java.lang.String value) {
@@ -5035,6 +5154,8 @@ public final class Bank {
        * </pre>
        *
        * <code>repeated string aliases = 3;</code>
+       * @param values The aliases to add.
+       * @return This builder for chaining.
        */
       public Builder addAllAliases(
           java.lang.Iterable<java.lang.String> values) {
@@ -5050,6 +5171,7 @@ public final class Bank {
        * </pre>
        *
        * <code>repeated string aliases = 3;</code>
+       * @return This builder for chaining.
        */
       public Builder clearAliases() {
         aliases_ = com.google.protobuf.LazyStringArrayList.EMPTY;
@@ -5063,6 +5185,8 @@ public final class Bank {
        * </pre>
        *
        * <code>repeated string aliases = 3;</code>
+       * @param value The bytes of the aliases to add.
+       * @return This builder for chaining.
        */
       public Builder addAliasesBytes(
           com.google.protobuf.ByteString value) {
@@ -5134,10 +5258,12 @@ public final class Bank {
 
     /**
      * <code>string description = 1;</code>
+     * @return The description.
      */
     java.lang.String getDescription();
     /**
      * <code>string description = 1;</code>
+     * @return The bytes for description.
      */
     com.google.protobuf.ByteString
         getDescriptionBytes();
@@ -5192,6 +5318,7 @@ public final class Bank {
      * </pre>
      *
      * <code>string base = 3;</code>
+     * @return The base.
      */
     java.lang.String getBase();
     /**
@@ -5200,6 +5327,7 @@ public final class Bank {
      * </pre>
      *
      * <code>string base = 3;</code>
+     * @return The bytes for base.
      */
     com.google.protobuf.ByteString
         getBaseBytes();
@@ -5211,6 +5339,7 @@ public final class Bank {
      * </pre>
      *
      * <code>string display = 4;</code>
+     * @return The display.
      */
     java.lang.String getDisplay();
     /**
@@ -5220,6 +5349,7 @@ public final class Bank {
      * </pre>
      *
      * <code>string display = 4;</code>
+     * @return The bytes for display.
      */
     com.google.protobuf.ByteString
         getDisplayBytes();
@@ -5232,7 +5362,7 @@ public final class Bank {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.Metadata}
    */
-  public  static final class Metadata extends
+  public static final class Metadata extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.Metadata)
       MetadataOrBuilder {
@@ -5345,7 +5475,9 @@ public final class Bank {
     private volatile java.lang.Object description_;
     /**
      * <code>string description = 1;</code>
+     * @return The description.
      */
+    @java.lang.Override
     public java.lang.String getDescription() {
       java.lang.Object ref = description_;
       if (ref instanceof java.lang.String) {
@@ -5360,7 +5492,9 @@ public final class Bank {
     }
     /**
      * <code>string description = 1;</code>
+     * @return The bytes for description.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getDescriptionBytes() {
       java.lang.Object ref = description_;
@@ -5384,6 +5518,7 @@ public final class Bank {
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<cosmos.bank.v1beta1.Bank.DenomUnit> getDenomUnitsList() {
       return denomUnits_;
     }
@@ -5394,6 +5529,7 @@ public final class Bank {
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2;</code>
      */
+    @java.lang.Override
     public java.util.List<? extends cosmos.bank.v1beta1.Bank.DenomUnitOrBuilder> 
         getDenomUnitsOrBuilderList() {
       return denomUnits_;
@@ -5405,6 +5541,7 @@ public final class Bank {
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2;</code>
      */
+    @java.lang.Override
     public int getDenomUnitsCount() {
       return denomUnits_.size();
     }
@@ -5415,6 +5552,7 @@ public final class Bank {
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2;</code>
      */
+    @java.lang.Override
     public cosmos.bank.v1beta1.Bank.DenomUnit getDenomUnits(int index) {
       return denomUnits_.get(index);
     }
@@ -5425,6 +5563,7 @@ public final class Bank {
      *
      * <code>repeated .cosmos.bank.v1beta1.DenomUnit denom_units = 2;</code>
      */
+    @java.lang.Override
     public cosmos.bank.v1beta1.Bank.DenomUnitOrBuilder getDenomUnitsOrBuilder(
         int index) {
       return denomUnits_.get(index);
@@ -5438,7 +5577,9 @@ public final class Bank {
      * </pre>
      *
      * <code>string base = 3;</code>
+     * @return The base.
      */
+    @java.lang.Override
     public java.lang.String getBase() {
       java.lang.Object ref = base_;
       if (ref instanceof java.lang.String) {
@@ -5457,7 +5598,9 @@ public final class Bank {
      * </pre>
      *
      * <code>string base = 3;</code>
+     * @return The bytes for base.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getBaseBytes() {
       java.lang.Object ref = base_;
@@ -5481,7 +5624,9 @@ public final class Bank {
      * </pre>
      *
      * <code>string display = 4;</code>
+     * @return The display.
      */
+    @java.lang.Override
     public java.lang.String getDisplay() {
       java.lang.Object ref = display_;
       if (ref instanceof java.lang.String) {
@@ -5501,7 +5646,9 @@ public final class Bank {
      * </pre>
      *
      * <code>string display = 4;</code>
+     * @return The bytes for display.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getDisplayBytes() {
       java.lang.Object ref = display_;
@@ -5917,6 +6064,7 @@ public final class Bank {
       private java.lang.Object description_ = "";
       /**
        * <code>string description = 1;</code>
+       * @return The description.
        */
       public java.lang.String getDescription() {
         java.lang.Object ref = description_;
@@ -5932,6 +6080,7 @@ public final class Bank {
       }
       /**
        * <code>string description = 1;</code>
+       * @return The bytes for description.
        */
       public com.google.protobuf.ByteString
           getDescriptionBytes() {
@@ -5948,6 +6097,8 @@ public final class Bank {
       }
       /**
        * <code>string description = 1;</code>
+       * @param value The description to set.
+       * @return This builder for chaining.
        */
       public Builder setDescription(
           java.lang.String value) {
@@ -5961,6 +6112,7 @@ public final class Bank {
       }
       /**
        * <code>string description = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearDescription() {
         
@@ -5970,6 +6122,8 @@ public final class Bank {
       }
       /**
        * <code>string description = 1;</code>
+       * @param value The bytes for description to set.
+       * @return This builder for chaining.
        */
       public Builder setDescriptionBytes(
           com.google.protobuf.ByteString value) {
@@ -6302,6 +6456,7 @@ public final class Bank {
        * </pre>
        *
        * <code>string base = 3;</code>
+       * @return The base.
        */
       public java.lang.String getBase() {
         java.lang.Object ref = base_;
@@ -6321,6 +6476,7 @@ public final class Bank {
        * </pre>
        *
        * <code>string base = 3;</code>
+       * @return The bytes for base.
        */
       public com.google.protobuf.ByteString
           getBaseBytes() {
@@ -6341,6 +6497,8 @@ public final class Bank {
        * </pre>
        *
        * <code>string base = 3;</code>
+       * @param value The base to set.
+       * @return This builder for chaining.
        */
       public Builder setBase(
           java.lang.String value) {
@@ -6358,6 +6516,7 @@ public final class Bank {
        * </pre>
        *
        * <code>string base = 3;</code>
+       * @return This builder for chaining.
        */
       public Builder clearBase() {
         
@@ -6371,6 +6530,8 @@ public final class Bank {
        * </pre>
        *
        * <code>string base = 3;</code>
+       * @param value The bytes for base to set.
+       * @return This builder for chaining.
        */
       public Builder setBaseBytes(
           com.google.protobuf.ByteString value) {
@@ -6392,6 +6553,7 @@ public final class Bank {
        * </pre>
        *
        * <code>string display = 4;</code>
+       * @return The display.
        */
       public java.lang.String getDisplay() {
         java.lang.Object ref = display_;
@@ -6412,6 +6574,7 @@ public final class Bank {
        * </pre>
        *
        * <code>string display = 4;</code>
+       * @return The bytes for display.
        */
       public com.google.protobuf.ByteString
           getDisplayBytes() {
@@ -6433,6 +6596,8 @@ public final class Bank {
        * </pre>
        *
        * <code>string display = 4;</code>
+       * @param value The display to set.
+       * @return This builder for chaining.
        */
       public Builder setDisplay(
           java.lang.String value) {
@@ -6451,6 +6616,7 @@ public final class Bank {
        * </pre>
        *
        * <code>string display = 4;</code>
+       * @return This builder for chaining.
        */
       public Builder clearDisplay() {
         
@@ -6465,6 +6631,8 @@ public final class Bank {
        * </pre>
        *
        * <code>string display = 4;</code>
+       * @param value The bytes for display to set.
+       * @return This builder for chaining.
        */
       public Builder setDisplayBytes(
           com.google.protobuf.ByteString value) {

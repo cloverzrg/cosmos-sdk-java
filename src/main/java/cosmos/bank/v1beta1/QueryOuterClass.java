@@ -24,6 +24,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string address = 1;</code>
+     * @return The address.
      */
     java.lang.String getAddress();
     /**
@@ -32,6 +33,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string address = 1;</code>
+     * @return The bytes for address.
      */
     com.google.protobuf.ByteString
         getAddressBytes();
@@ -42,6 +44,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string denom = 2;</code>
+     * @return The denom.
      */
     java.lang.String getDenom();
     /**
@@ -50,6 +53,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string denom = 2;</code>
+     * @return The bytes for denom.
      */
     com.google.protobuf.ByteString
         getDenomBytes();
@@ -61,7 +65,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QueryBalanceRequest}
    */
-  public  static final class QueryBalanceRequest extends
+  public static final class QueryBalanceRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QueryBalanceRequest)
       QueryBalanceRequestOrBuilder {
@@ -157,7 +161,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string address = 1;</code>
+     * @return The address.
      */
+    @java.lang.Override
     public java.lang.String getAddress() {
       java.lang.Object ref = address_;
       if (ref instanceof java.lang.String) {
@@ -176,7 +182,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string address = 1;</code>
+     * @return The bytes for address.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAddressBytes() {
       java.lang.Object ref = address_;
@@ -199,7 +207,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string denom = 2;</code>
+     * @return The denom.
      */
+    @java.lang.Override
     public java.lang.String getDenom() {
       java.lang.Object ref = denom_;
       if (ref instanceof java.lang.String) {
@@ -218,7 +228,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string denom = 2;</code>
+     * @return The bytes for denom.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getDenomBytes() {
       java.lang.Object ref = denom_;
@@ -563,6 +575,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @return The address.
        */
       public java.lang.String getAddress() {
         java.lang.Object ref = address_;
@@ -582,6 +595,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @return The bytes for address.
        */
       public com.google.protobuf.ByteString
           getAddressBytes() {
@@ -602,6 +616,8 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @param value The address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddress(
           java.lang.String value) {
@@ -619,6 +635,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearAddress() {
         
@@ -632,6 +649,8 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @param value The bytes for address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddressBytes(
           com.google.protobuf.ByteString value) {
@@ -652,6 +671,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 2;</code>
+       * @return The denom.
        */
       public java.lang.String getDenom() {
         java.lang.Object ref = denom_;
@@ -671,6 +691,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 2;</code>
+       * @return The bytes for denom.
        */
       public com.google.protobuf.ByteString
           getDenomBytes() {
@@ -691,6 +712,8 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 2;</code>
+       * @param value The denom to set.
+       * @return This builder for chaining.
        */
       public Builder setDenom(
           java.lang.String value) {
@@ -708,6 +731,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 2;</code>
+       * @return This builder for chaining.
        */
       public Builder clearDenom() {
         
@@ -721,6 +745,8 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 2;</code>
+       * @param value The bytes for denom to set.
+       * @return This builder for chaining.
        */
       public Builder setDenomBytes(
           com.google.protobuf.ByteString value) {
@@ -796,6 +822,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.v1beta1.Coin balance = 1;</code>
+     * @return Whether the balance field is set.
      */
     boolean hasBalance();
     /**
@@ -804,6 +831,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.v1beta1.Coin balance = 1;</code>
+     * @return The balance.
      */
     cosmos.base.v1beta1.CoinOuterClass.Coin getBalance();
     /**
@@ -822,7 +850,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QueryBalanceResponse}
    */
-  public  static final class QueryBalanceResponse extends
+  public static final class QueryBalanceResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QueryBalanceResponse)
       QueryBalanceResponseOrBuilder {
@@ -917,7 +945,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.v1beta1.Coin balance = 1;</code>
+     * @return Whether the balance field is set.
      */
+    @java.lang.Override
     public boolean hasBalance() {
       return balance_ != null;
     }
@@ -927,7 +957,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.v1beta1.Coin balance = 1;</code>
+     * @return The balance.
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.Coin getBalance() {
       return balance_ == null ? cosmos.base.v1beta1.CoinOuterClass.Coin.getDefaultInstance() : balance_;
     }
@@ -938,6 +970,7 @@ public final class QueryOuterClass {
      *
      * <code>.cosmos.base.v1beta1.Coin balance = 1;</code>
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder getBalanceOrBuilder() {
       return getBalance();
     }
@@ -1270,6 +1303,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.base.v1beta1.Coin balance = 1;</code>
+       * @return Whether the balance field is set.
        */
       public boolean hasBalance() {
         return balanceBuilder_ != null || balance_ != null;
@@ -1280,6 +1314,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.base.v1beta1.Coin balance = 1;</code>
+       * @return The balance.
        */
       public cosmos.base.v1beta1.CoinOuterClass.Coin getBalance() {
         if (balanceBuilder_ == null) {
@@ -1476,6 +1511,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string address = 1;</code>
+     * @return The address.
      */
     java.lang.String getAddress();
     /**
@@ -1484,6 +1520,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string address = 1;</code>
+     * @return The bytes for address.
      */
     com.google.protobuf.ByteString
         getAddressBytes();
@@ -1494,6 +1531,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     * @return Whether the pagination field is set.
      */
     boolean hasPagination();
     /**
@@ -1502,6 +1540,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     * @return The pagination.
      */
     cosmos.base.query.v1beta1.Pagination.PageRequest getPagination();
     /**
@@ -1520,7 +1559,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QueryAllBalancesRequest}
    */
-  public  static final class QueryAllBalancesRequest extends
+  public static final class QueryAllBalancesRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QueryAllBalancesRequest)
       QueryAllBalancesRequestOrBuilder {
@@ -1622,7 +1661,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string address = 1;</code>
+     * @return The address.
      */
+    @java.lang.Override
     public java.lang.String getAddress() {
       java.lang.Object ref = address_;
       if (ref instanceof java.lang.String) {
@@ -1641,7 +1682,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string address = 1;</code>
+     * @return The bytes for address.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getAddressBytes() {
       java.lang.Object ref = address_;
@@ -1664,7 +1707,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     * @return Whether the pagination field is set.
      */
+    @java.lang.Override
     public boolean hasPagination() {
       return pagination_ != null;
     }
@@ -1674,7 +1719,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     * @return The pagination.
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageRequest getPagination() {
       return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageRequest.getDefaultInstance() : pagination_;
     }
@@ -1685,6 +1732,7 @@ public final class QueryOuterClass {
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder getPaginationOrBuilder() {
       return getPagination();
     }
@@ -2032,6 +2080,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @return The address.
        */
       public java.lang.String getAddress() {
         java.lang.Object ref = address_;
@@ -2051,6 +2100,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @return The bytes for address.
        */
       public com.google.protobuf.ByteString
           getAddressBytes() {
@@ -2071,6 +2121,8 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @param value The address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddress(
           java.lang.String value) {
@@ -2088,6 +2140,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearAddress() {
         
@@ -2101,6 +2154,8 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string address = 1;</code>
+       * @param value The bytes for address to set.
+       * @return This builder for chaining.
        */
       public Builder setAddressBytes(
           com.google.protobuf.ByteString value) {
@@ -2123,6 +2178,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+       * @return Whether the pagination field is set.
        */
       public boolean hasPagination() {
         return paginationBuilder_ != null || pagination_ != null;
@@ -2133,6 +2189,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+       * @return The pagination.
        */
       public cosmos.base.query.v1beta1.Pagination.PageRequest getPagination() {
         if (paginationBuilder_ == null) {
@@ -2373,6 +2430,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return Whether the pagination field is set.
      */
     boolean hasPagination();
     /**
@@ -2381,6 +2439,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return The pagination.
      */
     cosmos.base.query.v1beta1.Pagination.PageResponse getPagination();
     /**
@@ -2400,7 +2459,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QueryAllBalancesResponse}
    */
-  public  static final class QueryAllBalancesResponse extends
+  public static final class QueryAllBalancesResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QueryAllBalancesResponse)
       QueryAllBalancesResponseOrBuilder {
@@ -2510,6 +2569,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.base.v1beta1.Coin balances = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> getBalancesList() {
       return balances_;
     }
@@ -2520,6 +2580,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.base.v1beta1.Coin balances = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public java.util.List<? extends cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
         getBalancesOrBuilderList() {
       return balances_;
@@ -2531,6 +2592,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.base.v1beta1.Coin balances = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public int getBalancesCount() {
       return balances_.size();
     }
@@ -2541,6 +2603,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.base.v1beta1.Coin balances = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.Coin getBalances(int index) {
       return balances_.get(index);
     }
@@ -2551,6 +2614,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.base.v1beta1.Coin balances = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder getBalancesOrBuilder(
         int index) {
       return balances_.get(index);
@@ -2564,7 +2628,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return Whether the pagination field is set.
      */
+    @java.lang.Override
     public boolean hasPagination() {
       return pagination_ != null;
     }
@@ -2574,7 +2640,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return The pagination.
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageResponse getPagination() {
       return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageResponse.getDefaultInstance() : pagination_;
     }
@@ -2585,6 +2653,7 @@ public final class QueryOuterClass {
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder getPaginationOrBuilder() {
       return getPagination();
     }
@@ -3287,6 +3356,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       * @return Whether the pagination field is set.
        */
       public boolean hasPagination() {
         return paginationBuilder_ != null || pagination_ != null;
@@ -3297,6 +3367,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       * @return The pagination.
        */
       public cosmos.base.query.v1beta1.Pagination.PageResponse getPagination() {
         if (paginationBuilder_ == null) {
@@ -3495,7 +3566,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QueryTotalSupplyRequest}
    */
-  public  static final class QueryTotalSupplyRequest extends
+  public static final class QueryTotalSupplyRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QueryTotalSupplyRequest)
       QueryTotalSupplyRequestOrBuilder {
@@ -3967,7 +4038,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QueryTotalSupplyResponse}
    */
-  public  static final class QueryTotalSupplyResponse extends
+  public static final class QueryTotalSupplyResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QueryTotalSupplyResponse)
       QueryTotalSupplyResponseOrBuilder {
@@ -4064,6 +4135,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> getSupplyList() {
       return supply_;
     }
@@ -4074,6 +4146,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public java.util.List<? extends cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder> 
         getSupplyOrBuilderList() {
       return supply_;
@@ -4085,6 +4158,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public int getSupplyCount() {
       return supply_.size();
     }
@@ -4095,6 +4169,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.Coin getSupply(int index) {
       return supply_.get(index);
     }
@@ -4105,6 +4180,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 1 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder getSupplyOrBuilder(
         int index) {
       return supply_.get(index);
@@ -4831,6 +4907,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string denom = 1;</code>
+     * @return The denom.
      */
     java.lang.String getDenom();
     /**
@@ -4839,6 +4916,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string denom = 1;</code>
+     * @return The bytes for denom.
      */
     com.google.protobuf.ByteString
         getDenomBytes();
@@ -4850,7 +4928,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QuerySupplyOfRequest}
    */
-  public  static final class QuerySupplyOfRequest extends
+  public static final class QuerySupplyOfRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QuerySupplyOfRequest)
       QuerySupplyOfRequestOrBuilder {
@@ -4939,7 +5017,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string denom = 1;</code>
+     * @return The denom.
      */
+    @java.lang.Override
     public java.lang.String getDenom() {
       java.lang.Object ref = denom_;
       if (ref instanceof java.lang.String) {
@@ -4958,7 +5038,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string denom = 1;</code>
+     * @return The bytes for denom.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getDenomBytes() {
       java.lang.Object ref = denom_;
@@ -5286,6 +5368,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @return The denom.
        */
       public java.lang.String getDenom() {
         java.lang.Object ref = denom_;
@@ -5305,6 +5388,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @return The bytes for denom.
        */
       public com.google.protobuf.ByteString
           getDenomBytes() {
@@ -5325,6 +5409,8 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @param value The denom to set.
+       * @return This builder for chaining.
        */
       public Builder setDenom(
           java.lang.String value) {
@@ -5342,6 +5428,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearDenom() {
         
@@ -5355,6 +5442,8 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @param value The bytes for denom to set.
+       * @return This builder for chaining.
        */
       public Builder setDenomBytes(
           com.google.protobuf.ByteString value) {
@@ -5430,6 +5519,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.v1beta1.Coin amount = 1 [(.gogoproto.nullable) = false];</code>
+     * @return Whether the amount field is set.
      */
     boolean hasAmount();
     /**
@@ -5438,6 +5528,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.v1beta1.Coin amount = 1 [(.gogoproto.nullable) = false];</code>
+     * @return The amount.
      */
     cosmos.base.v1beta1.CoinOuterClass.Coin getAmount();
     /**
@@ -5456,7 +5547,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QuerySupplyOfResponse}
    */
-  public  static final class QuerySupplyOfResponse extends
+  public static final class QuerySupplyOfResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QuerySupplyOfResponse)
       QuerySupplyOfResponseOrBuilder {
@@ -5551,7 +5642,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.v1beta1.Coin amount = 1 [(.gogoproto.nullable) = false];</code>
+     * @return Whether the amount field is set.
      */
+    @java.lang.Override
     public boolean hasAmount() {
       return amount_ != null;
     }
@@ -5561,7 +5654,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.v1beta1.Coin amount = 1 [(.gogoproto.nullable) = false];</code>
+     * @return The amount.
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.Coin getAmount() {
       return amount_ == null ? cosmos.base.v1beta1.CoinOuterClass.Coin.getDefaultInstance() : amount_;
     }
@@ -5572,6 +5667,7 @@ public final class QueryOuterClass {
      *
      * <code>.cosmos.base.v1beta1.Coin amount = 1 [(.gogoproto.nullable) = false];</code>
      */
+    @java.lang.Override
     public cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder getAmountOrBuilder() {
       return getAmount();
     }
@@ -5904,6 +6000,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.base.v1beta1.Coin amount = 1 [(.gogoproto.nullable) = false];</code>
+       * @return Whether the amount field is set.
        */
       public boolean hasAmount() {
         return amountBuilder_ != null || amount_ != null;
@@ -5914,6 +6011,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.base.v1beta1.Coin amount = 1 [(.gogoproto.nullable) = false];</code>
+       * @return The amount.
        */
       public cosmos.base.v1beta1.CoinOuterClass.Coin getAmount() {
         if (amountBuilder_ == null) {
@@ -6111,7 +6209,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QueryParamsRequest}
    */
-  public  static final class QueryParamsRequest extends
+  public static final class QueryParamsRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QueryParamsRequest)
       QueryParamsRequestOrBuilder {
@@ -6532,10 +6630,12 @@ public final class QueryOuterClass {
 
     /**
      * <code>.cosmos.bank.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+     * @return Whether the params field is set.
      */
     boolean hasParams();
     /**
      * <code>.cosmos.bank.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+     * @return The params.
      */
     cosmos.bank.v1beta1.Bank.Params getParams();
     /**
@@ -6550,7 +6650,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QueryParamsResponse}
    */
-  public  static final class QueryParamsResponse extends
+  public static final class QueryParamsResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QueryParamsResponse)
       QueryParamsResponseOrBuilder {
@@ -6641,19 +6741,24 @@ public final class QueryOuterClass {
     private cosmos.bank.v1beta1.Bank.Params params_;
     /**
      * <code>.cosmos.bank.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+     * @return Whether the params field is set.
      */
+    @java.lang.Override
     public boolean hasParams() {
       return params_ != null;
     }
     /**
      * <code>.cosmos.bank.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+     * @return The params.
      */
+    @java.lang.Override
     public cosmos.bank.v1beta1.Bank.Params getParams() {
       return params_ == null ? cosmos.bank.v1beta1.Bank.Params.getDefaultInstance() : params_;
     }
     /**
      * <code>.cosmos.bank.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
      */
+    @java.lang.Override
     public cosmos.bank.v1beta1.Bank.ParamsOrBuilder getParamsOrBuilder() {
       return getParams();
     }
@@ -6982,12 +7087,14 @@ public final class QueryOuterClass {
           cosmos.bank.v1beta1.Bank.Params, cosmos.bank.v1beta1.Bank.Params.Builder, cosmos.bank.v1beta1.Bank.ParamsOrBuilder> paramsBuilder_;
       /**
        * <code>.cosmos.bank.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+       * @return Whether the params field is set.
        */
       public boolean hasParams() {
         return paramsBuilder_ != null || params_ != null;
       }
       /**
        * <code>.cosmos.bank.v1beta1.Params params = 1 [(.gogoproto.nullable) = false];</code>
+       * @return The params.
        */
       public cosmos.bank.v1beta1.Bank.Params getParams() {
         if (paramsBuilder_ == null) {
@@ -7156,6 +7263,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     * @return Whether the pagination field is set.
      */
     boolean hasPagination();
     /**
@@ -7164,6 +7272,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     * @return The pagination.
      */
     cosmos.base.query.v1beta1.Pagination.PageRequest getPagination();
     /**
@@ -7182,7 +7291,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QueryDenomsMetadataRequest}
    */
-  public  static final class QueryDenomsMetadataRequest extends
+  public static final class QueryDenomsMetadataRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QueryDenomsMetadataRequest)
       QueryDenomsMetadataRequestOrBuilder {
@@ -7277,7 +7386,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     * @return Whether the pagination field is set.
      */
+    @java.lang.Override
     public boolean hasPagination() {
       return pagination_ != null;
     }
@@ -7287,7 +7398,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     * @return The pagination.
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageRequest getPagination() {
       return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageRequest.getDefaultInstance() : pagination_;
     }
@@ -7298,6 +7411,7 @@ public final class QueryOuterClass {
      *
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder getPaginationOrBuilder() {
       return getPagination();
     }
@@ -7630,6 +7744,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+       * @return Whether the pagination field is set.
        */
       public boolean hasPagination() {
         return paginationBuilder_ != null || pagination_ != null;
@@ -7640,6 +7755,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+       * @return The pagination.
        */
       public cosmos.base.query.v1beta1.Pagination.PageRequest getPagination() {
         if (paginationBuilder_ == null) {
@@ -7880,6 +7996,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return Whether the pagination field is set.
      */
     boolean hasPagination();
     /**
@@ -7888,6 +8005,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return The pagination.
      */
     cosmos.base.query.v1beta1.Pagination.PageResponse getPagination();
     /**
@@ -7907,7 +8025,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QueryDenomsMetadataResponse}
    */
-  public  static final class QueryDenomsMetadataResponse extends
+  public static final class QueryDenomsMetadataResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QueryDenomsMetadataResponse)
       QueryDenomsMetadataResponseOrBuilder {
@@ -8017,6 +8135,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.bank.v1beta1.Metadata metadatas = 1 [(.gogoproto.nullable) = false];</code>
      */
+    @java.lang.Override
     public java.util.List<cosmos.bank.v1beta1.Bank.Metadata> getMetadatasList() {
       return metadatas_;
     }
@@ -8027,6 +8146,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.bank.v1beta1.Metadata metadatas = 1 [(.gogoproto.nullable) = false];</code>
      */
+    @java.lang.Override
     public java.util.List<? extends cosmos.bank.v1beta1.Bank.MetadataOrBuilder> 
         getMetadatasOrBuilderList() {
       return metadatas_;
@@ -8038,6 +8158,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.bank.v1beta1.Metadata metadatas = 1 [(.gogoproto.nullable) = false];</code>
      */
+    @java.lang.Override
     public int getMetadatasCount() {
       return metadatas_.size();
     }
@@ -8048,6 +8169,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.bank.v1beta1.Metadata metadatas = 1 [(.gogoproto.nullable) = false];</code>
      */
+    @java.lang.Override
     public cosmos.bank.v1beta1.Bank.Metadata getMetadatas(int index) {
       return metadatas_.get(index);
     }
@@ -8058,6 +8180,7 @@ public final class QueryOuterClass {
      *
      * <code>repeated .cosmos.bank.v1beta1.Metadata metadatas = 1 [(.gogoproto.nullable) = false];</code>
      */
+    @java.lang.Override
     public cosmos.bank.v1beta1.Bank.MetadataOrBuilder getMetadatasOrBuilder(
         int index) {
       return metadatas_.get(index);
@@ -8071,7 +8194,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return Whether the pagination field is set.
      */
+    @java.lang.Override
     public boolean hasPagination() {
       return pagination_ != null;
     }
@@ -8081,7 +8206,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return The pagination.
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageResponse getPagination() {
       return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageResponse.getDefaultInstance() : pagination_;
     }
@@ -8092,6 +8219,7 @@ public final class QueryOuterClass {
      *
      * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
      */
+    @java.lang.Override
     public cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder getPaginationOrBuilder() {
       return getPagination();
     }
@@ -8794,6 +8922,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       * @return Whether the pagination field is set.
        */
       public boolean hasPagination() {
         return paginationBuilder_ != null || pagination_ != null;
@@ -8804,6 +8933,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       * @return The pagination.
        */
       public cosmos.base.query.v1beta1.Pagination.PageResponse getPagination() {
         if (paginationBuilder_ == null) {
@@ -9000,6 +9130,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string denom = 1;</code>
+     * @return The denom.
      */
     java.lang.String getDenom();
     /**
@@ -9008,6 +9139,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string denom = 1;</code>
+     * @return The bytes for denom.
      */
     com.google.protobuf.ByteString
         getDenomBytes();
@@ -9019,7 +9151,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QueryDenomMetadataRequest}
    */
-  public  static final class QueryDenomMetadataRequest extends
+  public static final class QueryDenomMetadataRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QueryDenomMetadataRequest)
       QueryDenomMetadataRequestOrBuilder {
@@ -9108,7 +9240,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string denom = 1;</code>
+     * @return The denom.
      */
+    @java.lang.Override
     public java.lang.String getDenom() {
       java.lang.Object ref = denom_;
       if (ref instanceof java.lang.String) {
@@ -9127,7 +9261,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>string denom = 1;</code>
+     * @return The bytes for denom.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getDenomBytes() {
       java.lang.Object ref = denom_;
@@ -9455,6 +9591,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @return The denom.
        */
       public java.lang.String getDenom() {
         java.lang.Object ref = denom_;
@@ -9474,6 +9611,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @return The bytes for denom.
        */
       public com.google.protobuf.ByteString
           getDenomBytes() {
@@ -9494,6 +9632,8 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @param value The denom to set.
+       * @return This builder for chaining.
        */
       public Builder setDenom(
           java.lang.String value) {
@@ -9511,6 +9651,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearDenom() {
         
@@ -9524,6 +9665,8 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>string denom = 1;</code>
+       * @param value The bytes for denom to set.
+       * @return This builder for chaining.
        */
       public Builder setDenomBytes(
           com.google.protobuf.ByteString value) {
@@ -9599,6 +9742,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [(.gogoproto.nullable) = false];</code>
+     * @return Whether the metadata field is set.
      */
     boolean hasMetadata();
     /**
@@ -9607,6 +9751,7 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [(.gogoproto.nullable) = false];</code>
+     * @return The metadata.
      */
     cosmos.bank.v1beta1.Bank.Metadata getMetadata();
     /**
@@ -9626,7 +9771,7 @@ public final class QueryOuterClass {
    *
    * Protobuf type {@code cosmos.bank.v1beta1.QueryDenomMetadataResponse}
    */
-  public  static final class QueryDenomMetadataResponse extends
+  public static final class QueryDenomMetadataResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.QueryDenomMetadataResponse)
       QueryDenomMetadataResponseOrBuilder {
@@ -9721,7 +9866,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [(.gogoproto.nullable) = false];</code>
+     * @return Whether the metadata field is set.
      */
+    @java.lang.Override
     public boolean hasMetadata() {
       return metadata_ != null;
     }
@@ -9731,7 +9878,9 @@ public final class QueryOuterClass {
      * </pre>
      *
      * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [(.gogoproto.nullable) = false];</code>
+     * @return The metadata.
      */
+    @java.lang.Override
     public cosmos.bank.v1beta1.Bank.Metadata getMetadata() {
       return metadata_ == null ? cosmos.bank.v1beta1.Bank.Metadata.getDefaultInstance() : metadata_;
     }
@@ -9742,6 +9891,7 @@ public final class QueryOuterClass {
      *
      * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [(.gogoproto.nullable) = false];</code>
      */
+    @java.lang.Override
     public cosmos.bank.v1beta1.Bank.MetadataOrBuilder getMetadataOrBuilder() {
       return getMetadata();
     }
@@ -10075,6 +10225,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [(.gogoproto.nullable) = false];</code>
+       * @return Whether the metadata field is set.
        */
       public boolean hasMetadata() {
         return metadataBuilder_ != null || metadata_ != null;
@@ -10085,6 +10236,7 @@ public final class QueryOuterClass {
        * </pre>
        *
        * <code>.cosmos.bank.v1beta1.Metadata metadata = 1 [(.gogoproto.nullable) = false];</code>
+       * @return The metadata.
        */
       public cosmos.bank.v1beta1.Bank.Metadata getMetadata() {
         if (metadataBuilder_ == null) {
