@@ -12,7 +12,6 @@
 
 ### 使用
 ```xml
-<!-- (暂未发布, NOT Publish Yet)-->
 <dependency>
     <groupId>com.jeongen.cosmos</groupId>
     <artifactId>sdk</artifactId>

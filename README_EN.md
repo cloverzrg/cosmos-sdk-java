@@ -11,7 +11,6 @@ The SDK integrates and implement all the functions required by the exchange to a
 
 ### Usage
 ```xml
-<!-- NOT Publish Yet)-->
 <dependency>
     <groupId>com.jeongen.cosmos</groupId>
     <artifactId>sdk</artifactId>
