@@ -1,13 +1,13 @@
 # Cosmos SDK for Java
 
-本SDK集成、实现了交易所接入 Cosmos(ATOM) 所需要的所有功能
-- 扫链
-- 地址生成、校验
-- 交易生成、签名、广播
-- 交易查询
-- 账户查询 
-- 余额查询
-- 估算gas
+本SDK集成、实现了交易所接入 Cosmos(ATOM) 所需要的所有功能，如有其他接口需要新增支持，请提交issue
+- 扫链  
+- 地址生成、校验  
+- 交易生成、签名、广播  
+- 交易查询  
+- 账户查询  
+- 余额查询  
+- 估算gas  
 
 ### 使用
 ```xml
@@ -19,7 +19,7 @@
 </dependency>
 ```
 
-### 使用 Rest API
+### 对接 Rest API
 
 ```java
 
@@ -68,7 +68,7 @@ public class CosmosRestApiClientTest extends TestCase {
 ```
 
 
-### 使用 gRPC 示例
+### 对接 gRPC 
 ```java
 import cosmos.bank.v1beta1.QueryGrpc;
 import cosmos.bank.v1beta1.QueryOuterClass;
