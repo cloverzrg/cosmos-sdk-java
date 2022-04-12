@@ -6,7 +6,7 @@
 
     <groupId>com.jeongen.cosmos</groupId>
     <artifactId>sdk</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3</version>
 
     <name>cosmos-sdk-java</name>
     <url>https://github.com/cloverzrg/cosmos-sdk-java</url>

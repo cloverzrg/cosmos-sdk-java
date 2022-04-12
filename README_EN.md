@@ -14,7 +14,7 @@ The SDK integrates and implement all the functions required by the exchange to a
 <dependency>
     <groupId>com.jeongen.cosmos</groupId>
     <artifactId>sdk</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.3</version>
 </dependency>
 ```
 

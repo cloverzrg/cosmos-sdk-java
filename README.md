@@ -2,6 +2,7 @@
 
 [ENGLISH](./README_EN.md)  
 本SDK集成、实现了交易所接入 Cosmos(ATOM) 所需要的所有功能，如有其他接口需要新增支持，请提交issue
+0.0.3 已支持v7.0 ,但未经测试
 - 扫链  
 - 地址生成、校验  
 - 交易生成、签名、广播  
@@ -15,7 +16,7 @@
 <dependency>
     <groupId>com.jeongen.cosmos</groupId>
     <artifactId>sdk</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.3</version>
 </dependency>
 ```
 
