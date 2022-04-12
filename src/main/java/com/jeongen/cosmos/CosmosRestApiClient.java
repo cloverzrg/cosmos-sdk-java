@@ -90,7 +90,7 @@ public class CosmosRestApiClient {
     public ServiceOuterClass.GetTxsEventResponse getTxsEventByHeight(Long height, String nextKey) throws Exception {
         MultiValuedMap<String, String> queryMap = new ArrayListValuedHashMap<>();
         queryMap.put("events", "tx.height=" + height);
-        queryMap.put("events", "message.action='send'");
+        queryMap.put("events", "message.module='bank'");
         queryMap.put("pagination.key", nextKey);
         ServiceOuterClass.GetTxsEventResponse eventResponse = client.get("/cosmos/tx/v1beta1/txs", queryMap, ServiceOuterClass.GetTxsEventResponse.class);
         return eventResponse;
