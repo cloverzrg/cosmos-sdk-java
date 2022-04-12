@@ -2518,14 +2518,14 @@ public final class Commitment {
     java.lang.String[] descriptorData = {
       "\n\'ibc/core/commitment/v1/commitment.prot" +
       "o\022\026ibc.core.commitment.v1\032\024gogoproto/gog" +
-      "o.proto\032\023confio/proofs.proto\" \n\nMerkleRo" +
-      "ot\022\014\n\004hash\030\001 \001(\014:\004\210\240\037\000\"9\n\014MerklePrefix\022)" +
-      "\n\nkey_prefix\030\001 \001(\014B\025\362\336\037\021yaml:\"key_prefix" +
-      "\"\"9\n\nMerklePath\022%\n\010key_path\030\001 \003(\tB\023\362\336\037\017y" +
-      "aml:\"key_path\":\004\230\240\037\000\"5\n\013MerkleProof\022&\n\006p" +
-      "roofs\030\001 \003(\0132\026.ics23.CommitmentProofB=Z;g" +
-      "ithub.com/cosmos/cosmos-sdk/x/ibc/core/2" +
-      "3-commitment/typesb\006proto3"
+      "o.proto\032\014proofs.proto\" \n\nMerkleRoot\022\014\n\004h" +
+      "ash\030\001 \001(\014:\004\210\240\037\000\"9\n\014MerklePrefix\022)\n\nkey_p" +
+      "refix\030\001 \001(\014B\025\362\336\037\021yaml:\"key_prefix\"\"9\n\nMe" +
+      "rklePath\022%\n\010key_path\030\001 \003(\tB\023\362\336\037\017yaml:\"ke" +
+      "y_path\":\004\230\240\037\000\"5\n\013MerkleProof\022&\n\006proofs\030\001" +
+      " \003(\0132\026.ics23.CommitmentProofB>Z<github.c" +
+      "om/cosmos/ibc-go/v3/modules/core/23-comm" +
+      "itment/typesb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -1227,7 +1227,8 @@ public final class Tx {
   }
   /**
    * <pre>
-   * MsgConnectionOpenInitResponse defines the Msg/ConnectionOpenInit response type.
+   * MsgConnectionOpenInitResponse defines the Msg/ConnectionOpenInit response
+   * type.
    * </pre>
    *
    * Protobuf type {@code ibc.core.connection.v1.MsgConnectionOpenInitResponse}
@@ -1454,7 +1455,8 @@ public final class Tx {
     }
     /**
      * <pre>
-     * MsgConnectionOpenInitResponse defines the Msg/ConnectionOpenInit response type.
+     * MsgConnectionOpenInitResponse defines the Msg/ConnectionOpenInit response
+     * type.
      * </pre>
      *
      * Protobuf type {@code ibc.core.connection.v1.MsgConnectionOpenInitResponse}
@@ -1667,8 +1669,8 @@ public final class Tx {
 
     /**
      * <pre>
-     * in the case of crossing hello's, when both chains call OpenInit, we need the connection identifier
-     * of the previous connection in state INIT
+     * in the case of crossing hello's, when both chains call OpenInit, we need
+     * the connection identifier of the previous connection in state INIT
      * </pre>
      *
      * <code>string previous_connection_id = 2 [(.gogoproto.moretags) = "yaml:&#92;"previous_connection_id&#92;""];</code>
@@ -1677,8 +1679,8 @@ public final class Tx {
     java.lang.String getPreviousConnectionId();
     /**
      * <pre>
-     * in the case of crossing hello's, when both chains call OpenInit, we need the connection identifier
-     * of the previous connection in state INIT
+     * in the case of crossing hello's, when both chains call OpenInit, we need
+     * the connection identifier of the previous connection in state INIT
      * </pre>
      *
      * <code>string previous_connection_id = 2 [(.gogoproto.moretags) = "yaml:&#92;"previous_connection_id&#92;""];</code>
@@ -2056,8 +2058,8 @@ public final class Tx {
     private volatile java.lang.Object previousConnectionId_;
     /**
      * <pre>
-     * in the case of crossing hello's, when both chains call OpenInit, we need the connection identifier
-     * of the previous connection in state INIT
+     * in the case of crossing hello's, when both chains call OpenInit, we need
+     * the connection identifier of the previous connection in state INIT
      * </pre>
      *
      * <code>string previous_connection_id = 2 [(.gogoproto.moretags) = "yaml:&#92;"previous_connection_id&#92;""];</code>
@@ -2078,8 +2080,8 @@ public final class Tx {
     }
     /**
      * <pre>
-     * in the case of crossing hello's, when both chains call OpenInit, we need the connection identifier
-     * of the previous connection in state INIT
+     * in the case of crossing hello's, when both chains call OpenInit, we need
+     * the connection identifier of the previous connection in state INIT
      * </pre>
      *
      * <code>string previous_connection_id = 2 [(.gogoproto.moretags) = "yaml:&#92;"previous_connection_id&#92;""];</code>
@@ -3005,8 +3007,8 @@ public final class Tx {
       private java.lang.Object previousConnectionId_ = "";
       /**
        * <pre>
-       * in the case of crossing hello's, when both chains call OpenInit, we need the connection identifier
-       * of the previous connection in state INIT
+       * in the case of crossing hello's, when both chains call OpenInit, we need
+       * the connection identifier of the previous connection in state INIT
        * </pre>
        *
        * <code>string previous_connection_id = 2 [(.gogoproto.moretags) = "yaml:&#92;"previous_connection_id&#92;""];</code>
@@ -3026,8 +3028,8 @@ public final class Tx {
       }
       /**
        * <pre>
-       * in the case of crossing hello's, when both chains call OpenInit, we need the connection identifier
-       * of the previous connection in state INIT
+       * in the case of crossing hello's, when both chains call OpenInit, we need
+       * the connection identifier of the previous connection in state INIT
        * </pre>
        *
        * <code>string previous_connection_id = 2 [(.gogoproto.moretags) = "yaml:&#92;"previous_connection_id&#92;""];</code>
@@ -3048,8 +3050,8 @@ public final class Tx {
       }
       /**
        * <pre>
-       * in the case of crossing hello's, when both chains call OpenInit, we need the connection identifier
-       * of the previous connection in state INIT
+       * in the case of crossing hello's, when both chains call OpenInit, we need
+       * the connection identifier of the previous connection in state INIT
        * </pre>
        *
        * <code>string previous_connection_id = 2 [(.gogoproto.moretags) = "yaml:&#92;"previous_connection_id&#92;""];</code>
@@ -3068,8 +3070,8 @@ public final class Tx {
       }
       /**
        * <pre>
-       * in the case of crossing hello's, when both chains call OpenInit, we need the connection identifier
-       * of the previous connection in state INIT
+       * in the case of crossing hello's, when both chains call OpenInit, we need
+       * the connection identifier of the previous connection in state INIT
        * </pre>
        *
        * <code>string previous_connection_id = 2 [(.gogoproto.moretags) = "yaml:&#92;"previous_connection_id&#92;""];</code>
@@ -3083,8 +3085,8 @@ public final class Tx {
       }
       /**
        * <pre>
-       * in the case of crossing hello's, when both chains call OpenInit, we need the connection identifier
-       * of the previous connection in state INIT
+       * in the case of crossing hello's, when both chains call OpenInit, we need
+       * the connection identifier of the previous connection in state INIT
        * </pre>
        *
        * <code>string previous_connection_id = 2 [(.gogoproto.moretags) = "yaml:&#92;"previous_connection_id&#92;""];</code>
@@ -7987,7 +7989,8 @@ public final class Tx {
   }
   /**
    * <pre>
-   * MsgConnectionOpenConfirmResponse defines the Msg/ConnectionOpenConfirm response type.
+   * MsgConnectionOpenConfirmResponse defines the Msg/ConnectionOpenConfirm
+   * response type.
    * </pre>
    *
    * Protobuf type {@code ibc.core.connection.v1.MsgConnectionOpenConfirmResponse}
@@ -8214,7 +8217,8 @@ public final class Tx {
     }
     /**
      * <pre>
-     * MsgConnectionOpenConfirmResponse defines the Msg/ConnectionOpenConfirm response type.
+     * MsgConnectionOpenConfirmResponse defines the Msg/ConnectionOpenConfirm
+     * response type.
      * </pre>
      *
      * Protobuf type {@code ibc.core.connection.v1.MsgConnectionOpenConfirmResponse}
@@ -8524,9 +8528,9 @@ public final class Tx {
       "\025ConnectionOpenConfirm\0220.ibc.core.connec" +
       "tion.v1.MsgConnectionOpenConfirm\0328.ibc.c" +
       "ore.connection.v1.MsgConnectionOpenConfi" +
-      "rmResponseB=Z;github.com/cosmos/cosmos-s" +
-      "dk/x/ibc/core/03-connection/typesb\006proto" +
-      "3"
+      "rmResponseB>Z<github.com/cosmos/ibc-go/v" +
+      "3/modules/core/03-connection/typesb\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

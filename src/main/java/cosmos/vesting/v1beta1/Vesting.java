@@ -5129,6 +5129,643 @@ public final class Vesting {
 
   }
 
+  public interface PermanentLockedAccountOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cosmos.vesting.v1beta1.PermanentLockedAccount)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+     * @return Whether the baseVestingAccount field is set.
+     */
+    boolean hasBaseVestingAccount();
+    /**
+     * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+     * @return The baseVestingAccount.
+     */
+    cosmos.vesting.v1beta1.Vesting.BaseVestingAccount getBaseVestingAccount();
+    /**
+     * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+     */
+    cosmos.vesting.v1beta1.Vesting.BaseVestingAccountOrBuilder getBaseVestingAccountOrBuilder();
+  }
+  /**
+   * <pre>
+   * PermanentLockedAccount implements the VestingAccount interface. It does
+   * not ever release coins, locking them indefinitely. Coins in this account can
+   * still be used for delegating and for governance votes even while locked.
+   * Since: cosmos-sdk 0.43
+   * </pre>
+   *
+   * Protobuf type {@code cosmos.vesting.v1beta1.PermanentLockedAccount}
+   */
+  public static final class PermanentLockedAccount extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cosmos.vesting.v1beta1.PermanentLockedAccount)
+      PermanentLockedAccountOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use PermanentLockedAccount.newBuilder() to construct.
+    private PermanentLockedAccount(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private PermanentLockedAccount() {
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new PermanentLockedAccount();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private PermanentLockedAccount(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              cosmos.vesting.v1beta1.Vesting.BaseVestingAccount.Builder subBuilder = null;
+              if (baseVestingAccount_ != null) {
+                subBuilder = baseVestingAccount_.toBuilder();
+              }
+              baseVestingAccount_ = input.readMessage(cosmos.vesting.v1beta1.Vesting.BaseVestingAccount.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(baseVestingAccount_);
+                baseVestingAccount_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cosmos.vesting.v1beta1.Vesting.internal_static_cosmos_vesting_v1beta1_PermanentLockedAccount_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cosmos.vesting.v1beta1.Vesting.internal_static_cosmos_vesting_v1beta1_PermanentLockedAccount_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount.class, cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount.Builder.class);
+    }
+
+    public static final int BASE_VESTING_ACCOUNT_FIELD_NUMBER = 1;
+    private cosmos.vesting.v1beta1.Vesting.BaseVestingAccount baseVestingAccount_;
+    /**
+     * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+     * @return Whether the baseVestingAccount field is set.
+     */
+    @java.lang.Override
+    public boolean hasBaseVestingAccount() {
+      return baseVestingAccount_ != null;
+    }
+    /**
+     * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+     * @return The baseVestingAccount.
+     */
+    @java.lang.Override
+    public cosmos.vesting.v1beta1.Vesting.BaseVestingAccount getBaseVestingAccount() {
+      return baseVestingAccount_ == null ? cosmos.vesting.v1beta1.Vesting.BaseVestingAccount.getDefaultInstance() : baseVestingAccount_;
+    }
+    /**
+     * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+     */
+    @java.lang.Override
+    public cosmos.vesting.v1beta1.Vesting.BaseVestingAccountOrBuilder getBaseVestingAccountOrBuilder() {
+      return getBaseVestingAccount();
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (baseVestingAccount_ != null) {
+        output.writeMessage(1, getBaseVestingAccount());
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (baseVestingAccount_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getBaseVestingAccount());
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount)) {
+        return super.equals(obj);
+      }
+      cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount other = (cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount) obj;
+
+      if (hasBaseVestingAccount() != other.hasBaseVestingAccount()) return false;
+      if (hasBaseVestingAccount()) {
+        if (!getBaseVestingAccount()
+            .equals(other.getBaseVestingAccount())) return false;
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasBaseVestingAccount()) {
+        hash = (37 * hash) + BASE_VESTING_ACCOUNT_FIELD_NUMBER;
+        hash = (53 * hash) + getBaseVestingAccount().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     * PermanentLockedAccount implements the VestingAccount interface. It does
+     * not ever release coins, locking them indefinitely. Coins in this account can
+     * still be used for delegating and for governance votes even while locked.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * Protobuf type {@code cosmos.vesting.v1beta1.PermanentLockedAccount}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cosmos.vesting.v1beta1.PermanentLockedAccount)
+        cosmos.vesting.v1beta1.Vesting.PermanentLockedAccountOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cosmos.vesting.v1beta1.Vesting.internal_static_cosmos_vesting_v1beta1_PermanentLockedAccount_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cosmos.vesting.v1beta1.Vesting.internal_static_cosmos_vesting_v1beta1_PermanentLockedAccount_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount.class, cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount.Builder.class);
+      }
+
+      // Construct using cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        if (baseVestingAccountBuilder_ == null) {
+          baseVestingAccount_ = null;
+        } else {
+          baseVestingAccount_ = null;
+          baseVestingAccountBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cosmos.vesting.v1beta1.Vesting.internal_static_cosmos_vesting_v1beta1_PermanentLockedAccount_descriptor;
+      }
+
+      @java.lang.Override
+      public cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount getDefaultInstanceForType() {
+        return cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount build() {
+        cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount buildPartial() {
+        cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount result = new cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount(this);
+        if (baseVestingAccountBuilder_ == null) {
+          result.baseVestingAccount_ = baseVestingAccount_;
+        } else {
+          result.baseVestingAccount_ = baseVestingAccountBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount) {
+          return mergeFrom((cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount other) {
+        if (other == cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount.getDefaultInstance()) return this;
+        if (other.hasBaseVestingAccount()) {
+          mergeBaseVestingAccount(other.getBaseVestingAccount());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private cosmos.vesting.v1beta1.Vesting.BaseVestingAccount baseVestingAccount_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cosmos.vesting.v1beta1.Vesting.BaseVestingAccount, cosmos.vesting.v1beta1.Vesting.BaseVestingAccount.Builder, cosmos.vesting.v1beta1.Vesting.BaseVestingAccountOrBuilder> baseVestingAccountBuilder_;
+      /**
+       * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+       * @return Whether the baseVestingAccount field is set.
+       */
+      public boolean hasBaseVestingAccount() {
+        return baseVestingAccountBuilder_ != null || baseVestingAccount_ != null;
+      }
+      /**
+       * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+       * @return The baseVestingAccount.
+       */
+      public cosmos.vesting.v1beta1.Vesting.BaseVestingAccount getBaseVestingAccount() {
+        if (baseVestingAccountBuilder_ == null) {
+          return baseVestingAccount_ == null ? cosmos.vesting.v1beta1.Vesting.BaseVestingAccount.getDefaultInstance() : baseVestingAccount_;
+        } else {
+          return baseVestingAccountBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+       */
+      public Builder setBaseVestingAccount(cosmos.vesting.v1beta1.Vesting.BaseVestingAccount value) {
+        if (baseVestingAccountBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          baseVestingAccount_ = value;
+          onChanged();
+        } else {
+          baseVestingAccountBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+       */
+      public Builder setBaseVestingAccount(
+          cosmos.vesting.v1beta1.Vesting.BaseVestingAccount.Builder builderForValue) {
+        if (baseVestingAccountBuilder_ == null) {
+          baseVestingAccount_ = builderForValue.build();
+          onChanged();
+        } else {
+          baseVestingAccountBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+       */
+      public Builder mergeBaseVestingAccount(cosmos.vesting.v1beta1.Vesting.BaseVestingAccount value) {
+        if (baseVestingAccountBuilder_ == null) {
+          if (baseVestingAccount_ != null) {
+            baseVestingAccount_ =
+              cosmos.vesting.v1beta1.Vesting.BaseVestingAccount.newBuilder(baseVestingAccount_).mergeFrom(value).buildPartial();
+          } else {
+            baseVestingAccount_ = value;
+          }
+          onChanged();
+        } else {
+          baseVestingAccountBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+       */
+      public Builder clearBaseVestingAccount() {
+        if (baseVestingAccountBuilder_ == null) {
+          baseVestingAccount_ = null;
+          onChanged();
+        } else {
+          baseVestingAccount_ = null;
+          baseVestingAccountBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+       */
+      public cosmos.vesting.v1beta1.Vesting.BaseVestingAccount.Builder getBaseVestingAccountBuilder() {
+        
+        onChanged();
+        return getBaseVestingAccountFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+       */
+      public cosmos.vesting.v1beta1.Vesting.BaseVestingAccountOrBuilder getBaseVestingAccountOrBuilder() {
+        if (baseVestingAccountBuilder_ != null) {
+          return baseVestingAccountBuilder_.getMessageOrBuilder();
+        } else {
+          return baseVestingAccount_ == null ?
+              cosmos.vesting.v1beta1.Vesting.BaseVestingAccount.getDefaultInstance() : baseVestingAccount_;
+        }
+      }
+      /**
+       * <code>.cosmos.vesting.v1beta1.BaseVestingAccount base_vesting_account = 1 [(.gogoproto.embed) = true];</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cosmos.vesting.v1beta1.Vesting.BaseVestingAccount, cosmos.vesting.v1beta1.Vesting.BaseVestingAccount.Builder, cosmos.vesting.v1beta1.Vesting.BaseVestingAccountOrBuilder> 
+          getBaseVestingAccountFieldBuilder() {
+        if (baseVestingAccountBuilder_ == null) {
+          baseVestingAccountBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cosmos.vesting.v1beta1.Vesting.BaseVestingAccount, cosmos.vesting.v1beta1.Vesting.BaseVestingAccount.Builder, cosmos.vesting.v1beta1.Vesting.BaseVestingAccountOrBuilder>(
+                  getBaseVestingAccount(),
+                  getParentForChildren(),
+                  isClean());
+          baseVestingAccount_ = null;
+        }
+        return baseVestingAccountBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cosmos.vesting.v1beta1.PermanentLockedAccount)
+    }
+
+    // @@protoc_insertion_point(class_scope:cosmos.vesting.v1beta1.PermanentLockedAccount)
+    private static final cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount();
+    }
+
+    public static cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<PermanentLockedAccount>
+        PARSER = new com.google.protobuf.AbstractParser<PermanentLockedAccount>() {
+      @java.lang.Override
+      public PermanentLockedAccount parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new PermanentLockedAccount(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<PermanentLockedAccount> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<PermanentLockedAccount> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public cosmos.vesting.v1beta1.Vesting.PermanentLockedAccount getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_cosmos_vesting_v1beta1_BaseVestingAccount_descriptor;
   private static final 
@@ -5154,6 +5791,11 @@ public final class Vesting {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cosmos_vesting_v1beta1_PermanentLockedAccount_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cosmos_vesting_v1beta1_PermanentLockedAccount_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -5196,8 +5838,11 @@ public final class Vesting {
       "\003B\025\362\336\037\021yaml:\"start_time\"\022W\n\017vesting_peri" +
       "ods\030\003 \003(\0132\036.cosmos.vesting.v1beta1.Perio" +
       "dB\036\362\336\037\026yaml:\"vesting_periods\"\310\336\037\000:\010\210\240\037\000\230" +
-      "\240\037\000B3Z1github.com/cosmos/cosmos-sdk/x/au" +
-      "th/vesting/typesb\006proto3"
+      "\240\037\000\"r\n\026PermanentLockedAccount\022N\n\024base_ve" +
+      "sting_account\030\001 \001(\0132*.cosmos.vesting.v1b" +
+      "eta1.BaseVestingAccountB\004\320\336\037\001:\010\210\240\037\000\230\240\037\000B" +
+      "3Z1github.com/cosmos/cosmos-sdk/x/auth/v" +
+      "esting/typesb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -5236,6 +5881,12 @@ public final class Vesting {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_vesting_v1beta1_PeriodicVestingAccount_descriptor,
         new java.lang.String[] { "BaseVestingAccount", "StartTime", "VestingPeriods", });
+    internal_static_cosmos_vesting_v1beta1_PermanentLockedAccount_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_cosmos_vesting_v1beta1_PermanentLockedAccount_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cosmos_vesting_v1beta1_PermanentLockedAccount_descriptor,
+        new java.lang.String[] { "BaseVestingAccount", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.google.protobuf.GoGoProtos.castrepeated);

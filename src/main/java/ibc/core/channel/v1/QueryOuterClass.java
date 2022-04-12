@@ -15510,8 +15510,8 @@ public final class QueryOuterClass {
   }
   /**
    * <pre>
-   * QueryPacketReceiptResponse defines the client query response for a packet receipt
-   * which also includes a proof, and the height from which the proof was
+   * QueryPacketReceiptResponse defines the client query response for a packet
+   * receipt which also includes a proof, and the height from which the proof was
    * retrieved
    * </pre>
    *
@@ -15870,8 +15870,8 @@ public final class QueryOuterClass {
     }
     /**
      * <pre>
-     * QueryPacketReceiptResponse defines the client query response for a packet receipt
-     * which also includes a proof, and the height from which the proof was
+     * QueryPacketReceiptResponse defines the client query response for a packet
+     * receipt which also includes a proof, and the height from which the proof was
      * retrieved
      * </pre>
      *
@@ -18183,6 +18183,35 @@ public final class QueryOuterClass {
      * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 3;</code>
      */
     cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder getPaginationOrBuilder();
+
+    /**
+     * <pre>
+     * list of packet sequences
+     * </pre>
+     *
+     * <code>repeated uint64 packet_commitment_sequences = 4;</code>
+     * @return A list containing the packetCommitmentSequences.
+     */
+    java.util.List<java.lang.Long> getPacketCommitmentSequencesList();
+    /**
+     * <pre>
+     * list of packet sequences
+     * </pre>
+     *
+     * <code>repeated uint64 packet_commitment_sequences = 4;</code>
+     * @return The count of packetCommitmentSequences.
+     */
+    int getPacketCommitmentSequencesCount();
+    /**
+     * <pre>
+     * list of packet sequences
+     * </pre>
+     *
+     * <code>repeated uint64 packet_commitment_sequences = 4;</code>
+     * @param index The index of the element to return.
+     * @return The packetCommitmentSequences at the given index.
+     */
+    long getPacketCommitmentSequences(int index);
   }
   /**
    * <pre>
@@ -18204,6 +18233,7 @@ public final class QueryOuterClass {
     private QueryPacketAcknowledgementsRequest() {
       portId_ = "";
       channelId_ = "";
+      packetCommitmentSequences_ = emptyLongList();
     }
 
     @java.lang.Override
@@ -18226,6 +18256,7 @@ public final class QueryOuterClass {
       if (extensionRegistry == null) {
         throw new java.lang.NullPointerException();
       }
+      int mutable_bitField0_ = 0;
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
       try {
@@ -18261,6 +18292,27 @@ public final class QueryOuterClass {
 
               break;
             }
+            case 32: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                packetCommitmentSequences_ = newLongList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              packetCommitmentSequences_.addLong(input.readUInt64());
+              break;
+            }
+            case 34: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
+                packetCommitmentSequences_ = newLongList();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                packetCommitmentSequences_.addLong(input.readUInt64());
+              }
+              input.popLimit(limit);
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -18278,6 +18330,9 @@ public final class QueryOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          packetCommitmentSequences_.makeImmutable(); // C
+        }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
       }
@@ -18425,6 +18480,46 @@ public final class QueryOuterClass {
       return getPagination();
     }
 
+    public static final int PACKET_COMMITMENT_SEQUENCES_FIELD_NUMBER = 4;
+    private com.google.protobuf.Internal.LongList packetCommitmentSequences_;
+    /**
+     * <pre>
+     * list of packet sequences
+     * </pre>
+     *
+     * <code>repeated uint64 packet_commitment_sequences = 4;</code>
+     * @return A list containing the packetCommitmentSequences.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Long>
+        getPacketCommitmentSequencesList() {
+      return packetCommitmentSequences_;
+    }
+    /**
+     * <pre>
+     * list of packet sequences
+     * </pre>
+     *
+     * <code>repeated uint64 packet_commitment_sequences = 4;</code>
+     * @return The count of packetCommitmentSequences.
+     */
+    public int getPacketCommitmentSequencesCount() {
+      return packetCommitmentSequences_.size();
+    }
+    /**
+     * <pre>
+     * list of packet sequences
+     * </pre>
+     *
+     * <code>repeated uint64 packet_commitment_sequences = 4;</code>
+     * @param index The index of the element to return.
+     * @return The packetCommitmentSequences at the given index.
+     */
+    public long getPacketCommitmentSequences(int index) {
+      return packetCommitmentSequences_.getLong(index);
+    }
+    private int packetCommitmentSequencesMemoizedSerializedSize = -1;
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -18439,6 +18534,7 @@ public final class QueryOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      getSerializedSize();
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(portId_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, portId_);
       }
@@ -18447,6 +18543,13 @@ public final class QueryOuterClass {
       }
       if (pagination_ != null) {
         output.writeMessage(3, getPagination());
+      }
+      if (getPacketCommitmentSequencesList().size() > 0) {
+        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(packetCommitmentSequencesMemoizedSerializedSize);
+      }
+      for (int i = 0; i < packetCommitmentSequences_.size(); i++) {
+        output.writeUInt64NoTag(packetCommitmentSequences_.getLong(i));
       }
       unknownFields.writeTo(output);
     }
@@ -18466,6 +18569,20 @@ public final class QueryOuterClass {
       if (pagination_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, getPagination());
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < packetCommitmentSequences_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt64SizeNoTag(packetCommitmentSequences_.getLong(i));
+        }
+        size += dataSize;
+        if (!getPacketCommitmentSequencesList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        packetCommitmentSequencesMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -18491,6 +18608,8 @@ public final class QueryOuterClass {
         if (!getPagination()
             .equals(other.getPagination())) return false;
       }
+      if (!getPacketCommitmentSequencesList()
+          .equals(other.getPacketCommitmentSequencesList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -18509,6 +18628,10 @@ public final class QueryOuterClass {
       if (hasPagination()) {
         hash = (37 * hash) + PAGINATION_FIELD_NUMBER;
         hash = (53 * hash) + getPagination().hashCode();
+      }
+      if (getPacketCommitmentSequencesCount() > 0) {
+        hash = (37 * hash) + PACKET_COMMITMENT_SEQUENCES_FIELD_NUMBER;
+        hash = (53 * hash) + getPacketCommitmentSequencesList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -18658,6 +18781,8 @@ public final class QueryOuterClass {
           pagination_ = null;
           paginationBuilder_ = null;
         }
+        packetCommitmentSequences_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -18684,6 +18809,7 @@ public final class QueryOuterClass {
       @java.lang.Override
       public ibc.core.channel.v1.QueryOuterClass.QueryPacketAcknowledgementsRequest buildPartial() {
         ibc.core.channel.v1.QueryOuterClass.QueryPacketAcknowledgementsRequest result = new ibc.core.channel.v1.QueryOuterClass.QueryPacketAcknowledgementsRequest(this);
+        int from_bitField0_ = bitField0_;
         result.portId_ = portId_;
         result.channelId_ = channelId_;
         if (paginationBuilder_ == null) {
@@ -18691,6 +18817,11 @@ public final class QueryOuterClass {
         } else {
           result.pagination_ = paginationBuilder_.build();
         }
+        if (((bitField0_ & 0x00000001) != 0)) {
+          packetCommitmentSequences_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.packetCommitmentSequences_ = packetCommitmentSequences_;
         onBuilt();
         return result;
       }
@@ -18750,6 +18881,16 @@ public final class QueryOuterClass {
         if (other.hasPagination()) {
           mergePagination(other.getPagination());
         }
+        if (!other.packetCommitmentSequences_.isEmpty()) {
+          if (packetCommitmentSequences_.isEmpty()) {
+            packetCommitmentSequences_ = other.packetCommitmentSequences_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensurePacketCommitmentSequencesIsMutable();
+            packetCommitmentSequences_.addAll(other.packetCommitmentSequences_);
+          }
+          onChanged();
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -18778,6 +18919,7 @@ public final class QueryOuterClass {
         }
         return this;
       }
+      private int bitField0_;
 
       private java.lang.Object portId_ = "";
       /**
@@ -19124,6 +19266,113 @@ public final class QueryOuterClass {
           pagination_ = null;
         }
         return paginationBuilder_;
+      }
+
+      private com.google.protobuf.Internal.LongList packetCommitmentSequences_ = emptyLongList();
+      private void ensurePacketCommitmentSequencesIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          packetCommitmentSequences_ = mutableCopy(packetCommitmentSequences_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <pre>
+       * list of packet sequences
+       * </pre>
+       *
+       * <code>repeated uint64 packet_commitment_sequences = 4;</code>
+       * @return A list containing the packetCommitmentSequences.
+       */
+      public java.util.List<java.lang.Long>
+          getPacketCommitmentSequencesList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(packetCommitmentSequences_) : packetCommitmentSequences_;
+      }
+      /**
+       * <pre>
+       * list of packet sequences
+       * </pre>
+       *
+       * <code>repeated uint64 packet_commitment_sequences = 4;</code>
+       * @return The count of packetCommitmentSequences.
+       */
+      public int getPacketCommitmentSequencesCount() {
+        return packetCommitmentSequences_.size();
+      }
+      /**
+       * <pre>
+       * list of packet sequences
+       * </pre>
+       *
+       * <code>repeated uint64 packet_commitment_sequences = 4;</code>
+       * @param index The index of the element to return.
+       * @return The packetCommitmentSequences at the given index.
+       */
+      public long getPacketCommitmentSequences(int index) {
+        return packetCommitmentSequences_.getLong(index);
+      }
+      /**
+       * <pre>
+       * list of packet sequences
+       * </pre>
+       *
+       * <code>repeated uint64 packet_commitment_sequences = 4;</code>
+       * @param index The index to set the value at.
+       * @param value The packetCommitmentSequences to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPacketCommitmentSequences(
+          int index, long value) {
+        ensurePacketCommitmentSequencesIsMutable();
+        packetCommitmentSequences_.setLong(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * list of packet sequences
+       * </pre>
+       *
+       * <code>repeated uint64 packet_commitment_sequences = 4;</code>
+       * @param value The packetCommitmentSequences to add.
+       * @return This builder for chaining.
+       */
+      public Builder addPacketCommitmentSequences(long value) {
+        ensurePacketCommitmentSequencesIsMutable();
+        packetCommitmentSequences_.addLong(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * list of packet sequences
+       * </pre>
+       *
+       * <code>repeated uint64 packet_commitment_sequences = 4;</code>
+       * @param values The packetCommitmentSequences to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllPacketCommitmentSequences(
+          java.lang.Iterable<? extends java.lang.Long> values) {
+        ensurePacketCommitmentSequencesIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, packetCommitmentSequences_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * list of packet sequences
+       * </pre>
+       *
+       * <code>repeated uint64 packet_commitment_sequences = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPacketCommitmentSequences() {
+        packetCommitmentSequences_ = emptyLongList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -26378,105 +26627,104 @@ public final class QueryOuterClass {
       "\001\n\"QueryPacketAcknowledgementResponse\022\027\n" +
       "\017acknowledgement\030\001 \001(\014\022\r\n\005proof\030\002 \001(\014\0226\n" +
       "\014proof_height\030\003 \001(\0132\032.ibc.core.client.v1" +
-      ".HeightB\004\310\336\037\000\"\205\001\n\"QueryPacketAcknowledge" +
+      ".HeightB\004\310\336\037\000\"\252\001\n\"QueryPacketAcknowledge" +
       "mentsRequest\022\017\n\007port_id\030\001 \001(\t\022\022\n\nchannel" +
       "_id\030\002 \001(\t\022:\n\npagination\030\003 \001(\0132&.cosmos.b" +
-      "ase.query.v1beta1.PageRequest\"\320\001\n#QueryP" +
-      "acketAcknowledgementsResponse\022:\n\020acknowl" +
-      "edgements\030\001 \003(\0132 .ibc.core.channel.v1.Pa" +
-      "cketState\022;\n\npagination\030\002 \001(\0132\'.cosmos.b" +
-      "ase.query.v1beta1.PageResponse\0220\n\006height" +
-      "\030\003 \001(\0132\032.ibc.core.client.v1.HeightB\004\310\336\037\000" +
-      "\"i\n\035QueryUnreceivedPacketsRequest\022\017\n\007por" +
-      "t_id\030\001 \001(\t\022\022\n\nchannel_id\030\002 \001(\t\022#\n\033packet" +
-      "_commitment_sequences\030\003 \003(\004\"e\n\036QueryUnre" +
-      "ceivedPacketsResponse\022\021\n\tsequences\030\001 \003(\004" +
-      "\0220\n\006height\030\002 \001(\0132\032.ibc.core.client.v1.He" +
-      "ightB\004\310\336\037\000\"_\n\032QueryUnreceivedAcksRequest" +
-      "\022\017\n\007port_id\030\001 \001(\t\022\022\n\nchannel_id\030\002 \001(\t\022\034\n" +
-      "\024packet_ack_sequences\030\003 \003(\004\"b\n\033QueryUnre" +
-      "ceivedAcksResponse\022\021\n\tsequences\030\001 \003(\004\0220\n" +
+      "ase.query.v1beta1.PageRequest\022#\n\033packet_" +
+      "commitment_sequences\030\004 \003(\004\"\320\001\n#QueryPack" +
+      "etAcknowledgementsResponse\022:\n\020acknowledg" +
+      "ements\030\001 \003(\0132 .ibc.core.channel.v1.Packe" +
+      "tState\022;\n\npagination\030\002 \001(\0132\'.cosmos.base" +
+      ".query.v1beta1.PageResponse\0220\n\006height\030\003 " +
+      "\001(\0132\032.ibc.core.client.v1.HeightB\004\310\336\037\000\"i\n" +
+      "\035QueryUnreceivedPacketsRequest\022\017\n\007port_i" +
+      "d\030\001 \001(\t\022\022\n\nchannel_id\030\002 \001(\t\022#\n\033packet_co" +
+      "mmitment_sequences\030\003 \003(\004\"e\n\036QueryUnrecei" +
+      "vedPacketsResponse\022\021\n\tsequences\030\001 \003(\004\0220\n" +
       "\006height\030\002 \001(\0132\032.ibc.core.client.v1.Heigh" +
-      "tB\004\310\336\037\000\"F\n\037QueryNextSequenceReceiveReque" +
-      "st\022\017\n\007port_id\030\001 \001(\t\022\022\n\nchannel_id\030\002 \001(\t\"" +
-      "\210\001\n QueryNextSequenceReceiveResponse\022\035\n\025" +
-      "next_sequence_receive\030\001 \001(\004\022\r\n\005proof\030\002 \001" +
-      "(\014\0226\n\014proof_height\030\003 \001(\0132\032.ibc.core.clie" +
-      "nt.v1.HeightB\004\310\336\037\0002\317\026\n\005Query\022\247\001\n\007Channel" +
-      "\022(.ibc.core.channel.v1.QueryChannelReque" +
-      "st\032).ibc.core.channel.v1.QueryChannelRes" +
-      "ponse\"G\202\323\344\223\002A\022?/ibc/core/channel/v1beta1" +
-      "/channels/{channel_id}/ports/{port_id}\022\215" +
-      "\001\n\010Channels\022).ibc.core.channel.v1.QueryC" +
-      "hannelsRequest\032*.ibc.core.channel.v1.Que" +
-      "ryChannelsResponse\"*\202\323\344\223\002$\022\"/ibc/core/ch" +
-      "annel/v1beta1/channels\022\304\001\n\022ConnectionCha" +
-      "nnels\0223.ibc.core.channel.v1.QueryConnect" +
-      "ionChannelsRequest\0324.ibc.core.channel.v1" +
-      ".QueryConnectionChannelsResponse\"C\202\323\344\223\002=" +
-      "\022;/ibc/core/channel/v1beta1/connections/" +
-      "{connection}/channels\022\325\001\n\022ChannelClientS" +
-      "tate\0223.ibc.core.channel.v1.QueryChannelC" +
-      "lientStateRequest\0324.ibc.core.channel.v1." +
-      "QueryChannelClientStateResponse\"T\202\323\344\223\002N\022" +
-      "L/ibc/core/channel/v1beta1/channels/{cha" +
-      "nnel_id}/ports/{port_id}/client_state\022\230\002" +
-      "\n\025ChannelConsensusState\0226.ibc.core.chann" +
-      "el.v1.QueryChannelConsensusStateRequest\032" +
-      "7.ibc.core.channel.v1.QueryChannelConsen" +
-      "susStateResponse\"\215\001\202\323\344\223\002\206\001\022\203\001/ibc/core/c" +
-      "hannel/v1beta1/channels/{channel_id}/por" +
-      "ts/{port_id}/consensus_state/revision/{r" +
-      "evision_number}/height/{revision_height}" +
-      "\022\340\001\n\020PacketCommitment\0221.ibc.core.channel" +
-      ".v1.QueryPacketCommitmentRequest\0322.ibc.c" +
-      "ore.channel.v1.QueryPacketCommitmentResp" +
-      "onse\"e\202\323\344\223\002_\022]/ibc/core/channel/v1beta1/" +
-      "channels/{channel_id}/ports/{port_id}/pa" +
-      "cket_commitments/{sequence}\022\330\001\n\021PacketCo" +
-      "mmitments\0222.ibc.core.channel.v1.QueryPac" +
-      "ketCommitmentsRequest\0323.ibc.core.channel" +
-      ".v1.QueryPacketCommitmentsResponse\"Z\202\323\344\223" +
-      "\002T\022R/ibc/core/channel/v1beta1/channels/{" +
-      "channel_id}/ports/{port_id}/packet_commi" +
-      "tments\022\324\001\n\rPacketReceipt\022..ibc.core.chan" +
-      "nel.v1.QueryPacketReceiptRequest\032/.ibc.c" +
-      "ore.channel.v1.QueryPacketReceiptRespons" +
-      "e\"b\202\323\344\223\002\\\022Z/ibc/core/channel/v1beta1/cha" +
-      "nnels/{channel_id}/ports/{port_id}/packe" +
-      "t_receipts/{sequence}\022\350\001\n\025PacketAcknowle" +
-      "dgement\0226.ibc.core.channel.v1.QueryPacke" +
-      "tAcknowledgementRequest\0327.ibc.core.chann" +
-      "el.v1.QueryPacketAcknowledgementResponse" +
-      "\"^\202\323\344\223\002X\022V/ibc/core/channel/v1beta1/chan" +
-      "nels/{channel_id}/ports/{port_id}/packet" +
-      "_acks/{sequence}\022\354\001\n\026PacketAcknowledgeme" +
-      "nts\0227.ibc.core.channel.v1.QueryPacketAck" +
-      "nowledgementsRequest\0328.ibc.core.channel." +
-      "v1.QueryPacketAcknowledgementsResponse\"_" +
-      "\202\323\344\223\002Y\022W/ibc/core/channel/v1beta1/channe" +
-      "ls/{channel_id}/ports/{port_id}/packet_a" +
-      "cknowledgements\022\214\002\n\021UnreceivedPackets\0222." +
-      "ibc.core.channel.v1.QueryUnreceivedPacke" +
-      "tsRequest\0323.ibc.core.channel.v1.QueryUnr" +
-      "eceivedPacketsResponse\"\215\001\202\323\344\223\002\206\001\022\203\001/ibc/" +
-      "core/channel/v1beta1/channels/{channel_i" +
-      "d}/ports/{port_id}/packet_commitments/{p" +
-      "acket_commitment_sequences}/unreceived_p" +
-      "ackets\022\367\001\n\016UnreceivedAcks\022/.ibc.core.cha" +
-      "nnel.v1.QueryUnreceivedAcksRequest\0320.ibc" +
-      ".core.channel.v1.QueryUnreceivedAcksResp" +
-      "onse\"\201\001\202\323\344\223\002{\022y/ibc/core/channel/v1beta1" +
+      "tB\004\310\336\037\000\"_\n\032QueryUnreceivedAcksRequest\022\017\n" +
+      "\007port_id\030\001 \001(\t\022\022\n\nchannel_id\030\002 \001(\t\022\034\n\024pa" +
+      "cket_ack_sequences\030\003 \003(\004\"b\n\033QueryUnrecei" +
+      "vedAcksResponse\022\021\n\tsequences\030\001 \003(\004\0220\n\006he" +
+      "ight\030\002 \001(\0132\032.ibc.core.client.v1.HeightB\004" +
+      "\310\336\037\000\"F\n\037QueryNextSequenceReceiveRequest\022" +
+      "\017\n\007port_id\030\001 \001(\t\022\022\n\nchannel_id\030\002 \001(\t\"\210\001\n" +
+      " QueryNextSequenceReceiveResponse\022\035\n\025nex" +
+      "t_sequence_receive\030\001 \001(\004\022\r\n\005proof\030\002 \001(\014\022" +
+      "6\n\014proof_height\030\003 \001(\0132\032.ibc.core.client." +
+      "v1.HeightB\004\310\336\037\0002\213\026\n\005Query\022\242\001\n\007Channel\022(." +
+      "ibc.core.channel.v1.QueryChannelRequest\032" +
+      ").ibc.core.channel.v1.QueryChannelRespon" +
+      "se\"B\202\323\344\223\002<\022:/ibc/core/channel/v1/channel" +
+      "s/{channel_id}/ports/{port_id}\022\210\001\n\010Chann" +
+      "els\022).ibc.core.channel.v1.QueryChannelsR" +
+      "equest\032*.ibc.core.channel.v1.QueryChanne" +
+      "lsResponse\"%\202\323\344\223\002\037\022\035/ibc/core/channel/v1" +
+      "/channels\022\277\001\n\022ConnectionChannels\0223.ibc.c" +
+      "ore.channel.v1.QueryConnectionChannelsRe" +
+      "quest\0324.ibc.core.channel.v1.QueryConnect" +
+      "ionChannelsResponse\">\202\323\344\223\0028\0226/ibc/core/c" +
+      "hannel/v1/connections/{connection}/chann" +
+      "els\022\320\001\n\022ChannelClientState\0223.ibc.core.ch" +
+      "annel.v1.QueryChannelClientStateRequest\032" +
+      "4.ibc.core.channel.v1.QueryChannelClient" +
+      "StateResponse\"O\202\323\344\223\002I\022G/ibc/core/channel" +
+      "/v1/channels/{channel_id}/ports/{port_id" +
+      "}/client_state\022\222\002\n\025ChannelConsensusState" +
+      "\0226.ibc.core.channel.v1.QueryChannelConse" +
+      "nsusStateRequest\0327.ibc.core.channel.v1.Q" +
+      "ueryChannelConsensusStateResponse\"\207\001\202\323\344\223" +
+      "\002\200\001\022~/ibc/core/channel/v1/channels/{chan" +
+      "nel_id}/ports/{port_id}/consensus_state/" +
+      "revision/{revision_number}/height/{revis" +
+      "ion_height}\022\333\001\n\020PacketCommitment\0221.ibc.c" +
+      "ore.channel.v1.QueryPacketCommitmentRequ" +
+      "est\0322.ibc.core.channel.v1.QueryPacketCom" +
+      "mitmentResponse\"`\202\323\344\223\002Z\022X/ibc/core/chann" +
+      "el/v1/channels/{channel_id}/ports/{port_" +
+      "id}/packet_commitments/{sequence}\022\323\001\n\021Pa" +
+      "cketCommitments\0222.ibc.core.channel.v1.Qu" +
+      "eryPacketCommitmentsRequest\0323.ibc.core.c" +
+      "hannel.v1.QueryPacketCommitmentsResponse" +
+      "\"U\202\323\344\223\002O\022M/ibc/core/channel/v1/channels/" +
+      "{channel_id}/ports/{port_id}/packet_comm" +
+      "itments\022\317\001\n\rPacketReceipt\022..ibc.core.cha" +
+      "nnel.v1.QueryPacketReceiptRequest\032/.ibc." +
+      "core.channel.v1.QueryPacketReceiptRespon" +
+      "se\"]\202\323\344\223\002W\022U/ibc/core/channel/v1/channel" +
+      "s/{channel_id}/ports/{port_id}/packet_re" +
+      "ceipts/{sequence}\022\343\001\n\025PacketAcknowledgem" +
+      "ent\0226.ibc.core.channel.v1.QueryPacketAck" +
+      "nowledgementRequest\0327.ibc.core.channel.v" +
+      "1.QueryPacketAcknowledgementResponse\"Y\202\323" +
+      "\344\223\002S\022Q/ibc/core/channel/v1/channels/{cha" +
+      "nnel_id}/ports/{port_id}/packet_acks/{se" +
+      "quence}\022\347\001\n\026PacketAcknowledgements\0227.ibc" +
+      ".core.channel.v1.QueryPacketAcknowledgem" +
+      "entsRequest\0328.ibc.core.channel.v1.QueryP" +
+      "acketAcknowledgementsResponse\"Z\202\323\344\223\002T\022R/" +
+      "ibc/core/channel/v1/channels/{channel_id" +
+      "}/ports/{port_id}/packet_acknowledgement" +
+      "s\022\206\002\n\021UnreceivedPackets\0222.ibc.core.chann" +
+      "el.v1.QueryUnreceivedPacketsRequest\0323.ib" +
+      "c.core.channel.v1.QueryUnreceivedPackets" +
+      "Response\"\207\001\202\323\344\223\002\200\001\022~/ibc/core/channel/v1" +
       "/channels/{channel_id}/ports/{port_id}/p" +
-      "acket_commitments/{packet_ack_sequences}" +
-      "/unreceived_acks\022\331\001\n\023NextSequenceReceive" +
-      "\0224.ibc.core.channel.v1.QueryNextSequence" +
-      "ReceiveRequest\0325.ibc.core.channel.v1.Que" +
-      "ryNextSequenceReceiveResponse\"U\202\323\344\223\002O\022M/" +
-      "ibc/core/channel/v1beta1/channels/{chann" +
-      "el_id}/ports/{port_id}/next_sequenceB:Z8" +
-      "github.com/cosmos/cosmos-sdk/x/ibc/core/" +
-      "04-channel/typesb\006proto3"
+      "acket_commitments/{packet_commitment_seq" +
+      "uences}/unreceived_packets\022\361\001\n\016Unreceive" +
+      "dAcks\022/.ibc.core.channel.v1.QueryUnrecei" +
+      "vedAcksRequest\0320.ibc.core.channel.v1.Que" +
+      "ryUnreceivedAcksResponse\"|\202\323\344\223\002v\022t/ibc/c" +
+      "ore/channel/v1/channels/{channel_id}/por" +
+      "ts/{port_id}/packet_commitments/{packet_" +
+      "ack_sequences}/unreceived_acks\022\324\001\n\023NextS" +
+      "equenceReceive\0224.ibc.core.channel.v1.Que" +
+      "ryNextSequenceReceiveRequest\0325.ibc.core." +
+      "channel.v1.QueryNextSequenceReceiveRespo" +
+      "nse\"P\202\323\344\223\002J\022H/ibc/core/channel/v1/channe" +
+      "ls/{channel_id}/ports/{port_id}/next_seq" +
+      "uenceB;Z9github.com/cosmos/ibc-go/v3/mod" +
+      "ules/core/04-channel/typesb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -26601,7 +26849,7 @@ public final class QueryOuterClass {
     internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementsRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementsRequest_descriptor,
-        new java.lang.String[] { "PortId", "ChannelId", "Pagination", });
+        new java.lang.String[] { "PortId", "ChannelId", "Pagination", "PacketCommitmentSequences", });
     internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementsResponse_descriptor =
       getDescriptor().getMessageTypes().get(19);
     internal_static_ibc_core_channel_v1_QueryPacketAcknowledgementsResponse_fieldAccessorTable = new

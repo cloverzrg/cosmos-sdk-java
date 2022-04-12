@@ -18,6 +18,37 @@ public final class QueryGrpc {
   public static final String SERVICE_NAME = "cosmos.auth.v1beta1.Query";
 
   // Static method descriptors that strictly reflect the proto.
+  private static volatile io.grpc.MethodDescriptor<cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsRequest,
+      cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsResponse> getAccountsMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "Accounts",
+      requestType = cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsRequest.class,
+      responseType = cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsRequest,
+      cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsResponse> getAccountsMethod() {
+    io.grpc.MethodDescriptor<cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsRequest, cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsResponse> getAccountsMethod;
+    if ((getAccountsMethod = QueryGrpc.getAccountsMethod) == null) {
+      synchronized (QueryGrpc.class) {
+        if ((getAccountsMethod = QueryGrpc.getAccountsMethod) == null) {
+          QueryGrpc.getAccountsMethod = getAccountsMethod =
+              io.grpc.MethodDescriptor.<cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsRequest, cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Accounts"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new QueryMethodDescriptorSupplier("Accounts"))
+              .build();
+        }
+      }
+    }
+    return getAccountsMethod;
+  }
+
   private static volatile io.grpc.MethodDescriptor<cosmos.auth.v1beta1.QueryOuterClass.QueryAccountRequest,
       cosmos.auth.v1beta1.QueryOuterClass.QueryAccountResponse> getAccountMethod;
 
@@ -133,6 +164,17 @@ public final class QueryGrpc {
 
     /**
      * <pre>
+     * Accounts returns all the existing accounts
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     */
+    public void accounts(cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsRequest request,
+        io.grpc.stub.StreamObserver<cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsResponse> responseObserver) {
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAccountsMethod(), responseObserver);
+    }
+
+    /**
+     * <pre>
      * Account returns account details based on address.
      * </pre>
      */
@@ -153,6 +195,13 @@ public final class QueryGrpc {
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
+          .addMethod(
+            getAccountsMethod(),
+            io.grpc.stub.ServerCalls.asyncUnaryCall(
+              new MethodHandlers<
+                cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsRequest,
+                cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsResponse>(
+                  this, METHODID_ACCOUNTS)))
           .addMethod(
             getAccountMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
@@ -186,6 +235,18 @@ public final class QueryGrpc {
     protected QueryStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new QueryStub(channel, callOptions);
+    }
+
+    /**
+     * <pre>
+     * Accounts returns all the existing accounts
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     */
+    public void accounts(cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsRequest request,
+        io.grpc.stub.StreamObserver<cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsResponse> responseObserver) {
+      io.grpc.stub.ClientCalls.asyncUnaryCall(
+          getChannel().newCall(getAccountsMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
@@ -230,6 +291,17 @@ public final class QueryGrpc {
 
     /**
      * <pre>
+     * Accounts returns all the existing accounts
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     */
+    public cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsResponse accounts(cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsRequest request) {
+      return io.grpc.stub.ClientCalls.blockingUnaryCall(
+          getChannel(), getAccountsMethod(), getCallOptions(), request);
+    }
+
+    /**
+     * <pre>
      * Account returns account details based on address.
      * </pre>
      */
@@ -268,6 +340,18 @@ public final class QueryGrpc {
 
     /**
      * <pre>
+     * Accounts returns all the existing accounts
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     */
+    public com.google.common.util.concurrent.ListenableFuture<cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsResponse> accounts(
+        cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsRequest request) {
+      return io.grpc.stub.ClientCalls.futureUnaryCall(
+          getChannel().newCall(getAccountsMethod(), getCallOptions()), request);
+    }
+
+    /**
+     * <pre>
      * Account returns account details based on address.
      * </pre>
      */
@@ -289,8 +373,9 @@ public final class QueryGrpc {
     }
   }
 
-  private static final int METHODID_ACCOUNT = 0;
-  private static final int METHODID_PARAMS = 1;
+  private static final int METHODID_ACCOUNTS = 0;
+  private static final int METHODID_ACCOUNT = 1;
+  private static final int METHODID_PARAMS = 2;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -309,6 +394,10 @@ public final class QueryGrpc {
     @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
+        case METHODID_ACCOUNTS:
+          serviceImpl.accounts((cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsRequest) request,
+              (io.grpc.stub.StreamObserver<cosmos.auth.v1beta1.QueryOuterClass.QueryAccountsResponse>) responseObserver);
+          break;
         case METHODID_ACCOUNT:
           serviceImpl.account((cosmos.auth.v1beta1.QueryOuterClass.QueryAccountRequest) request,
               (io.grpc.stub.StreamObserver<cosmos.auth.v1beta1.QueryOuterClass.QueryAccountResponse>) responseObserver);
@@ -378,6 +467,7 @@ public final class QueryGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new QueryFileDescriptorSupplier())
+              .addMethod(getAccountsMethod())
               .addMethod(getAccountMethod())
               .addMethod(getParamsMethod())
               .build();

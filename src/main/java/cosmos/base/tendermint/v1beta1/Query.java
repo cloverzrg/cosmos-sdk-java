@@ -9549,11 +9549,19 @@ public final class Query {
         int index);
 
     /**
+     * <pre>
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
      * <code>string cosmos_sdk_version = 8;</code>
      * @return The cosmosSdkVersion.
      */
     java.lang.String getCosmosSdkVersion();
     /**
+     * <pre>
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
      * <code>string cosmos_sdk_version = 8;</code>
      * @return The bytes for cosmosSdkVersion.
      */
@@ -9977,6 +9985,10 @@ public final class Query {
     public static final int COSMOS_SDK_VERSION_FIELD_NUMBER = 8;
     private volatile java.lang.Object cosmosSdkVersion_;
     /**
+     * <pre>
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
      * <code>string cosmos_sdk_version = 8;</code>
      * @return The cosmosSdkVersion.
      */
@@ -9994,6 +10006,10 @@ public final class Query {
       }
     }
     /**
+     * <pre>
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
      * <code>string cosmos_sdk_version = 8;</code>
      * @return The bytes for cosmosSdkVersion.
      */
@@ -11175,6 +11191,10 @@ public final class Query {
 
       private java.lang.Object cosmosSdkVersion_ = "";
       /**
+       * <pre>
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
        * <code>string cosmos_sdk_version = 8;</code>
        * @return The cosmosSdkVersion.
        */
@@ -11191,6 +11211,10 @@ public final class Query {
         }
       }
       /**
+       * <pre>
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
        * <code>string cosmos_sdk_version = 8;</code>
        * @return The bytes for cosmosSdkVersion.
        */
@@ -11208,6 +11232,10 @@ public final class Query {
         }
       }
       /**
+       * <pre>
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
        * <code>string cosmos_sdk_version = 8;</code>
        * @param value The cosmosSdkVersion to set.
        * @return This builder for chaining.
@@ -11223,6 +11251,10 @@ public final class Query {
         return this;
       }
       /**
+       * <pre>
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
        * <code>string cosmos_sdk_version = 8;</code>
        * @return This builder for chaining.
        */
@@ -11233,6 +11265,10 @@ public final class Query {
         return this;
       }
       /**
+       * <pre>
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
        * <code>string cosmos_sdk_version = 8;</code>
        * @param value The bytes for cosmosSdkVersion to set.
        * @return This builder for chaining.

@@ -3143,7 +3143,8 @@ public final class Tx {
 
     /**
      * <pre>
-     * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+     * upgraded consensus state, only contains enough information to serve as a
+     * basis of trust in update logic
      * </pre>
      *
      * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -3152,7 +3153,8 @@ public final class Tx {
     boolean hasConsensusState();
     /**
      * <pre>
-     * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+     * upgraded consensus state, only contains enough information to serve as a
+     * basis of trust in update logic
      * </pre>
      *
      * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -3161,7 +3163,8 @@ public final class Tx {
     com.google.protobuf.Any getConsensusState();
     /**
      * <pre>
-     * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+     * upgraded consensus state, only contains enough information to serve as a
+     * basis of trust in update logic
      * </pre>
      *
      * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -3210,7 +3213,8 @@ public final class Tx {
   }
   /**
    * <pre>
-   * MsgUpgradeClient defines an sdk.Msg to upgrade an IBC client to a new client state
+   * MsgUpgradeClient defines an sdk.Msg to upgrade an IBC client to a new client
+   * state
    * </pre>
    *
    * Protobuf type {@code ibc.core.client.v1.MsgUpgradeClient}
@@ -3431,7 +3435,8 @@ public final class Tx {
     private com.google.protobuf.Any consensusState_;
     /**
      * <pre>
-     * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+     * upgraded consensus state, only contains enough information to serve as a
+     * basis of trust in update logic
      * </pre>
      *
      * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -3443,7 +3448,8 @@ public final class Tx {
     }
     /**
      * <pre>
-     * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+     * upgraded consensus state, only contains enough information to serve as a
+     * basis of trust in update logic
      * </pre>
      *
      * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -3455,7 +3461,8 @@ public final class Tx {
     }
     /**
      * <pre>
-     * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+     * upgraded consensus state, only contains enough information to serve as a
+     * basis of trust in update logic
      * </pre>
      *
      * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -3761,7 +3768,8 @@ public final class Tx {
     }
     /**
      * <pre>
-     * MsgUpgradeClient defines an sdk.Msg to upgrade an IBC client to a new client state
+     * MsgUpgradeClient defines an sdk.Msg to upgrade an IBC client to a new client
+     * state
      * </pre>
      *
      * Protobuf type {@code ibc.core.client.v1.MsgUpgradeClient}
@@ -4214,7 +4222,8 @@ public final class Tx {
           com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder> consensusStateBuilder_;
       /**
        * <pre>
-       * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+       * upgraded consensus state, only contains enough information to serve as a
+       * basis of trust in update logic
        * </pre>
        *
        * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -4225,7 +4234,8 @@ public final class Tx {
       }
       /**
        * <pre>
-       * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+       * upgraded consensus state, only contains enough information to serve as a
+       * basis of trust in update logic
        * </pre>
        *
        * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -4240,7 +4250,8 @@ public final class Tx {
       }
       /**
        * <pre>
-       * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+       * upgraded consensus state, only contains enough information to serve as a
+       * basis of trust in update logic
        * </pre>
        *
        * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -4260,7 +4271,8 @@ public final class Tx {
       }
       /**
        * <pre>
-       * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+       * upgraded consensus state, only contains enough information to serve as a
+       * basis of trust in update logic
        * </pre>
        *
        * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -4278,7 +4290,8 @@ public final class Tx {
       }
       /**
        * <pre>
-       * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+       * upgraded consensus state, only contains enough information to serve as a
+       * basis of trust in update logic
        * </pre>
        *
        * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -4300,7 +4313,8 @@ public final class Tx {
       }
       /**
        * <pre>
-       * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+       * upgraded consensus state, only contains enough information to serve as a
+       * basis of trust in update logic
        * </pre>
        *
        * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -4318,7 +4332,8 @@ public final class Tx {
       }
       /**
        * <pre>
-       * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+       * upgraded consensus state, only contains enough information to serve as a
+       * basis of trust in update logic
        * </pre>
        *
        * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -4330,7 +4345,8 @@ public final class Tx {
       }
       /**
        * <pre>
-       * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+       * upgraded consensus state, only contains enough information to serve as a
+       * basis of trust in update logic
        * </pre>
        *
        * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -4345,7 +4361,8 @@ public final class Tx {
       }
       /**
        * <pre>
-       * upgraded consensus state, only contains enough information to serve as a basis of trust in update logic
+       * upgraded consensus state, only contains enough information to serve as a
+       * basis of trust in update logic
        * </pre>
        *
        * <code>.google.protobuf.Any consensus_state = 3 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
@@ -6103,7 +6120,8 @@ public final class Tx {
   }
   /**
    * <pre>
-   * MsgSubmitMisbehaviourResponse defines the Msg/SubmitMisbehaviour response type.
+   * MsgSubmitMisbehaviourResponse defines the Msg/SubmitMisbehaviour response
+   * type.
    * </pre>
    *
    * Protobuf type {@code ibc.core.client.v1.MsgSubmitMisbehaviourResponse}
@@ -6330,7 +6348,8 @@ public final class Tx {
     }
     /**
      * <pre>
-     * MsgSubmitMisbehaviourResponse defines the Msg/SubmitMisbehaviour response type.
+     * MsgSubmitMisbehaviourResponse defines the Msg/SubmitMisbehaviour response
+     * type.
      * </pre>
      *
      * Protobuf type {@code ibc.core.client.v1.MsgSubmitMisbehaviourResponse}
@@ -6576,51 +6595,49 @@ public final class Tx {
     java.lang.String[] descriptorData = {
       "\n\033ibc/core/client/v1/tx.proto\022\022ibc.core." +
       "client.v1\032\024gogoproto/gogo.proto\032\031google/" +
-      "protobuf/any.proto\032\037ibc/core/client/v1/c" +
-      "lient.proto\"\273\001\n\017MsgCreateClient\022C\n\014clien" +
-      "t_state\030\001 \001(\0132\024.google.protobuf.AnyB\027\362\336\037" +
-      "\023yaml:\"client_state\"\022I\n\017consensus_state\030" +
-      "\002 \001(\0132\024.google.protobuf.AnyB\032\362\336\037\026yaml:\"c" +
-      "onsensus_state\"\022\016\n\006signer\030\003 \001(\t:\010\350\240\037\000\210\240\037" +
-      "\000\"\031\n\027MsgCreateClientResponse\"z\n\017MsgUpdat" +
+      "protobuf/any.proto\"\273\001\n\017MsgCreateClient\022C" +
+      "\n\014client_state\030\001 \001(\0132\024.google.protobuf.A" +
+      "nyB\027\362\336\037\023yaml:\"client_state\"\022I\n\017consensus" +
+      "_state\030\002 \001(\0132\024.google.protobuf.AnyB\032\362\336\037\026" +
+      "yaml:\"consensus_state\"\022\016\n\006signer\030\003 \001(\t:\010" +
+      "\350\240\037\000\210\240\037\000\"\031\n\027MsgCreateClientResponse\"z\n\017M" +
+      "sgUpdateClient\022\'\n\tclient_id\030\001 \001(\tB\024\362\336\037\020y" +
+      "aml:\"client_id\"\022$\n\006header\030\002 \001(\0132\024.google" +
+      ".protobuf.Any\022\016\n\006signer\030\003 \001(\t:\010\350\240\037\000\210\240\037\000\"" +
+      "\031\n\027MsgUpdateClientResponse\"\365\002\n\020MsgUpgrad" +
       "eClient\022\'\n\tclient_id\030\001 \001(\tB\024\362\336\037\020yaml:\"cl" +
-      "ient_id\"\022$\n\006header\030\002 \001(\0132\024.google.protob" +
-      "uf.Any\022\016\n\006signer\030\003 \001(\t:\010\350\240\037\000\210\240\037\000\"\031\n\027MsgU" +
-      "pdateClientResponse\"\365\002\n\020MsgUpgradeClient" +
-      "\022\'\n\tclient_id\030\001 \001(\tB\024\362\336\037\020yaml:\"client_id" +
-      "\"\022C\n\014client_state\030\002 \001(\0132\024.google.protobu" +
-      "f.AnyB\027\362\336\037\023yaml:\"client_state\"\022I\n\017consen" +
-      "sus_state\030\003 \001(\0132\024.google.protobuf.AnyB\032\362" +
-      "\336\037\026yaml:\"consensus_state\"\022=\n\024proof_upgra" +
-      "de_client\030\004 \001(\014B\037\362\336\037\033yaml:\"proof_upgrade" +
-      "_client\"\022O\n\035proof_upgrade_consensus_stat" +
-      "e\030\005 \001(\014B(\362\336\037$yaml:\"proof_upgrade_consens" +
-      "us_state\"\022\016\n\006signer\030\006 \001(\t:\010\350\240\037\000\210\240\037\000\"\032\n\030M" +
-      "sgUpgradeClientResponse\"\206\001\n\025MsgSubmitMis" +
-      "behaviour\022\'\n\tclient_id\030\001 \001(\tB\024\362\336\037\020yaml:\"" +
-      "client_id\"\022*\n\014misbehaviour\030\002 \001(\0132\024.googl" +
-      "e.protobuf.Any\022\016\n\006signer\030\003 \001(\t:\010\350\240\037\000\210\240\037\000" +
-      "\"\037\n\035MsgSubmitMisbehaviourResponse2\242\003\n\003Ms" +
-      "g\022`\n\014CreateClient\022#.ibc.core.client.v1.M" +
-      "sgCreateClient\032+.ibc.core.client.v1.MsgC" +
-      "reateClientResponse\022`\n\014UpdateClient\022#.ib" +
-      "c.core.client.v1.MsgUpdateClient\032+.ibc.c" +
-      "ore.client.v1.MsgUpdateClientResponse\022c\n" +
-      "\rUpgradeClient\022$.ibc.core.client.v1.MsgU" +
-      "pgradeClient\032,.ibc.core.client.v1.MsgUpg" +
-      "radeClientResponse\022r\n\022SubmitMisbehaviour" +
-      "\022).ibc.core.client.v1.MsgSubmitMisbehavi" +
-      "our\0321.ibc.core.client.v1.MsgSubmitMisbeh" +
-      "aviourResponseB9Z7github.com/cosmos/cosm" +
-      "os-sdk/x/ibc/core/02-client/typesb\006proto" +
-      "3"
+      "ient_id\"\022C\n\014client_state\030\002 \001(\0132\024.google." +
+      "protobuf.AnyB\027\362\336\037\023yaml:\"client_state\"\022I\n" +
+      "\017consensus_state\030\003 \001(\0132\024.google.protobuf" +
+      ".AnyB\032\362\336\037\026yaml:\"consensus_state\"\022=\n\024proo" +
+      "f_upgrade_client\030\004 \001(\014B\037\362\336\037\033yaml:\"proof_" +
+      "upgrade_client\"\022O\n\035proof_upgrade_consens" +
+      "us_state\030\005 \001(\014B(\362\336\037$yaml:\"proof_upgrade_" +
+      "consensus_state\"\022\016\n\006signer\030\006 \001(\t:\010\350\240\037\000\210\240" +
+      "\037\000\"\032\n\030MsgUpgradeClientResponse\"\206\001\n\025MsgSu" +
+      "bmitMisbehaviour\022\'\n\tclient_id\030\001 \001(\tB\024\362\336\037" +
+      "\020yaml:\"client_id\"\022*\n\014misbehaviour\030\002 \001(\0132" +
+      "\024.google.protobuf.Any\022\016\n\006signer\030\003 \001(\t:\010\350" +
+      "\240\037\000\210\240\037\000\"\037\n\035MsgSubmitMisbehaviourResponse" +
+      "2\242\003\n\003Msg\022`\n\014CreateClient\022#.ibc.core.clie" +
+      "nt.v1.MsgCreateClient\032+.ibc.core.client." +
+      "v1.MsgCreateClientResponse\022`\n\014UpdateClie" +
+      "nt\022#.ibc.core.client.v1.MsgUpdateClient\032" +
+      "+.ibc.core.client.v1.MsgUpdateClientResp" +
+      "onse\022c\n\rUpgradeClient\022$.ibc.core.client." +
+      "v1.MsgUpgradeClient\032,.ibc.core.client.v1" +
+      ".MsgUpgradeClientResponse\022r\n\022SubmitMisbe" +
+      "haviour\022).ibc.core.client.v1.MsgSubmitMi" +
+      "sbehaviour\0321.ibc.core.client.v1.MsgSubmi" +
+      "tMisbehaviourResponseB:Z8github.com/cosm" +
+      "os/ibc-go/v3/modules/core/02-client/type" +
+      "sb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.protobuf.GoGoProtos.getDescriptor(),
           com.google.protobuf.AnyProto.getDescriptor(),
-          ibc.core.client.v1.Client.getDescriptor(),
         });
     internal_static_ibc_core_client_v1_MsgCreateClient_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -6679,7 +6696,6 @@ public final class Tx {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.protobuf.GoGoProtos.getDescriptor();
     com.google.protobuf.AnyProto.getDescriptor();
-    ibc.core.client.v1.Client.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

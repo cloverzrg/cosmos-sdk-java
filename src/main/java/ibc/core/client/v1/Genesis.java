@@ -2942,7 +2942,8 @@ public final class Genesis {
   }
   /**
    * <pre>
-   * IdentifiedGenesisMetadata has the client metadata with the corresponding client id.
+   * IdentifiedGenesisMetadata has the client metadata with the corresponding
+   * client id.
    * </pre>
    *
    * Protobuf type {@code ibc.core.client.v1.IdentifiedGenesisMetadata}
@@ -3291,7 +3292,8 @@ public final class Genesis {
     }
     /**
      * <pre>
-     * IdentifiedGenesisMetadata has the client metadata with the corresponding client id.
+     * IdentifiedGenesisMetadata has the client metadata with the corresponding
+     * client id.
      * </pre>
      *
      * Protobuf type {@code ibc.core.client.v1.IdentifiedGenesisMetadata}
@@ -3898,8 +3900,8 @@ public final class Genesis {
       "\001 \001(\tB\024\362\336\037\020yaml:\"client_id\"\022\\\n\017client_me" +
       "tadata\030\002 \003(\0132#.ibc.core.client.v1.Genesi" +
       "sMetadataB\036\310\336\037\000\362\336\037\026yaml:\"client_metadata" +
-      "\"B9Z7github.com/cosmos/cosmos-sdk/x/ibc/" +
-      "core/02-client/typesb\006proto3"
+      "\"B:Z8github.com/cosmos/ibc-go/v3/modules" +
+      "/core/02-client/typesb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

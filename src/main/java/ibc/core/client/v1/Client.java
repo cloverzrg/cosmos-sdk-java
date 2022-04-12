@@ -929,7 +929,7 @@ public final class Client {
      * consensus state
      * </pre>
      *
-     * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+     * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      * @return Whether the consensusState field is set.
      */
     boolean hasConsensusState();
@@ -938,7 +938,7 @@ public final class Client {
      * consensus state
      * </pre>
      *
-     * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+     * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      * @return The consensusState.
      */
     com.google.protobuf.Any getConsensusState();
@@ -947,13 +947,14 @@ public final class Client {
      * consensus state
      * </pre>
      *
-     * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+     * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      */
     com.google.protobuf.AnyOrBuilder getConsensusStateOrBuilder();
   }
   /**
    * <pre>
-   * ConsensusStateWithHeight defines a consensus state with an additional height field.
+   * ConsensusStateWithHeight defines a consensus state with an additional height
+   * field.
    * </pre>
    *
    * Protobuf type {@code ibc.core.client.v1.ConsensusStateWithHeight}
@@ -1105,7 +1106,7 @@ public final class Client {
      * consensus state
      * </pre>
      *
-     * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+     * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      * @return Whether the consensusState field is set.
      */
     @java.lang.Override
@@ -1117,7 +1118,7 @@ public final class Client {
      * consensus state
      * </pre>
      *
-     * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+     * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      * @return The consensusState.
      */
     @java.lang.Override
@@ -1129,7 +1130,7 @@ public final class Client {
      * consensus state
      * </pre>
      *
-     * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+     * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
      */
     @java.lang.Override
     public com.google.protobuf.AnyOrBuilder getConsensusStateOrBuilder() {
@@ -1314,7 +1315,8 @@ public final class Client {
     }
     /**
      * <pre>
-     * ConsensusStateWithHeight defines a consensus state with an additional height field.
+     * ConsensusStateWithHeight defines a consensus state with an additional height
+     * field.
      * </pre>
      *
      * Protobuf type {@code ibc.core.client.v1.ConsensusStateWithHeight}
@@ -1648,7 +1650,7 @@ public final class Client {
        * consensus state
        * </pre>
        *
-       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
        * @return Whether the consensusState field is set.
        */
       public boolean hasConsensusState() {
@@ -1659,7 +1661,7 @@ public final class Client {
        * consensus state
        * </pre>
        *
-       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
        * @return The consensusState.
        */
       public com.google.protobuf.Any getConsensusState() {
@@ -1674,7 +1676,7 @@ public final class Client {
        * consensus state
        * </pre>
        *
-       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
        */
       public Builder setConsensusState(com.google.protobuf.Any value) {
         if (consensusStateBuilder_ == null) {
@@ -1694,7 +1696,7 @@ public final class Client {
        * consensus state
        * </pre>
        *
-       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
        */
       public Builder setConsensusState(
           com.google.protobuf.Any.Builder builderForValue) {
@@ -1712,7 +1714,7 @@ public final class Client {
        * consensus state
        * </pre>
        *
-       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
        */
       public Builder mergeConsensusState(com.google.protobuf.Any value) {
         if (consensusStateBuilder_ == null) {
@@ -1734,7 +1736,7 @@ public final class Client {
        * consensus state
        * </pre>
        *
-       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
        */
       public Builder clearConsensusState() {
         if (consensusStateBuilder_ == null) {
@@ -1752,7 +1754,7 @@ public final class Client {
        * consensus state
        * </pre>
        *
-       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
        */
       public com.google.protobuf.Any.Builder getConsensusStateBuilder() {
         
@@ -1764,7 +1766,7 @@ public final class Client {
        * consensus state
        * </pre>
        *
-       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
        */
       public com.google.protobuf.AnyOrBuilder getConsensusStateOrBuilder() {
         if (consensusStateBuilder_ != null) {
@@ -1779,7 +1781,7 @@ public final class Client {
        * consensus state
        * </pre>
        *
-       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml&#92;"consensus_state&#92;""];</code>
+       * <code>.google.protobuf.Any consensus_state = 2 [(.gogoproto.moretags) = "yaml:&#92;"consensus_state&#92;""];</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder> 
@@ -2999,53 +3001,49 @@ public final class Client {
      * the client identifier for the client to be updated if the proposal passes
      * </pre>
      *
-     * <code>string client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
-     * @return The clientId.
+     * <code>string subject_client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"subject_client_id&#92;""];</code>
+     * @return The subjectClientId.
      */
-    java.lang.String getClientId();
+    java.lang.String getSubjectClientId();
     /**
      * <pre>
      * the client identifier for the client to be updated if the proposal passes
      * </pre>
      *
-     * <code>string client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
-     * @return The bytes for clientId.
+     * <code>string subject_client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"subject_client_id&#92;""];</code>
+     * @return The bytes for subjectClientId.
      */
     com.google.protobuf.ByteString
-        getClientIdBytes();
+        getSubjectClientIdBytes();
 
     /**
      * <pre>
-     * the header used to update the client if the proposal passes
+     * the substitute client identifier for the client standing in for the subject
+     * client
      * </pre>
      *
-     * <code>.google.protobuf.Any header = 4;</code>
-     * @return Whether the header field is set.
+     * <code>string substitute_client_id = 4 [(.gogoproto.moretags) = "yaml:&#92;"substitute_client_id&#92;""];</code>
+     * @return The substituteClientId.
      */
-    boolean hasHeader();
+    java.lang.String getSubstituteClientId();
     /**
      * <pre>
-     * the header used to update the client if the proposal passes
+     * the substitute client identifier for the client standing in for the subject
+     * client
      * </pre>
      *
-     * <code>.google.protobuf.Any header = 4;</code>
-     * @return The header.
+     * <code>string substitute_client_id = 4 [(.gogoproto.moretags) = "yaml:&#92;"substitute_client_id&#92;""];</code>
+     * @return The bytes for substituteClientId.
      */
-    com.google.protobuf.Any getHeader();
-    /**
-     * <pre>
-     * the header used to update the client if the proposal passes
-     * </pre>
-     *
-     * <code>.google.protobuf.Any header = 4;</code>
-     */
-    com.google.protobuf.AnyOrBuilder getHeaderOrBuilder();
+    com.google.protobuf.ByteString
+        getSubstituteClientIdBytes();
   }
   /**
    * <pre>
-   * ClientUpdateProposal is a governance proposal. If it passes, the client is
-   * updated with the provided header. The update may fail if the header is not
-   * valid given certain conditions specified by the client implementation.
+   * ClientUpdateProposal is a governance proposal. If it passes, the substitute
+   * client's latest consensus state is copied over to the subject client. The proposal
+   * handler may fail if the subject and the substitute do not match in client and
+   * chain parameters (with exception to latest height, frozen height, and chain-id).
    * </pre>
    *
    * Protobuf type {@code ibc.core.client.v1.ClientUpdateProposal}
@@ -3062,7 +3060,8 @@ public final class Client {
     private ClientUpdateProposal() {
       title_ = "";
       description_ = "";
-      clientId_ = "";
+      subjectClientId_ = "";
+      substituteClientId_ = "";
     }
 
     @java.lang.Override
@@ -3110,20 +3109,13 @@ public final class Client {
             case 26: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              clientId_ = s;
+              subjectClientId_ = s;
               break;
             }
             case 34: {
-              com.google.protobuf.Any.Builder subBuilder = null;
-              if (header_ != null) {
-                subBuilder = header_.toBuilder();
-              }
-              header_ = input.readMessage(com.google.protobuf.Any.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(header_);
-                header_ = subBuilder.buildPartial();
-              }
+              java.lang.String s = input.readStringRequireUtf8();
 
+              substituteClientId_ = s;
               break;
             }
             default: {
@@ -3252,26 +3244,26 @@ public final class Client {
       }
     }
 
-    public static final int CLIENT_ID_FIELD_NUMBER = 3;
-    private volatile java.lang.Object clientId_;
+    public static final int SUBJECT_CLIENT_ID_FIELD_NUMBER = 3;
+    private volatile java.lang.Object subjectClientId_;
     /**
      * <pre>
      * the client identifier for the client to be updated if the proposal passes
      * </pre>
      *
-     * <code>string client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
-     * @return The clientId.
+     * <code>string subject_client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"subject_client_id&#92;""];</code>
+     * @return The subjectClientId.
      */
     @java.lang.Override
-    public java.lang.String getClientId() {
-      java.lang.Object ref = clientId_;
+    public java.lang.String getSubjectClientId() {
+      java.lang.Object ref = subjectClientId_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        clientId_ = s;
+        subjectClientId_ = s;
         return s;
       }
     }
@@ -3280,60 +3272,70 @@ public final class Client {
      * the client identifier for the client to be updated if the proposal passes
      * </pre>
      *
-     * <code>string client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
-     * @return The bytes for clientId.
+     * <code>string subject_client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"subject_client_id&#92;""];</code>
+     * @return The bytes for subjectClientId.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getClientIdBytes() {
-      java.lang.Object ref = clientId_;
+        getSubjectClientIdBytes() {
+      java.lang.Object ref = subjectClientId_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        clientId_ = b;
+        subjectClientId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int HEADER_FIELD_NUMBER = 4;
-    private com.google.protobuf.Any header_;
+    public static final int SUBSTITUTE_CLIENT_ID_FIELD_NUMBER = 4;
+    private volatile java.lang.Object substituteClientId_;
     /**
      * <pre>
-     * the header used to update the client if the proposal passes
+     * the substitute client identifier for the client standing in for the subject
+     * client
      * </pre>
      *
-     * <code>.google.protobuf.Any header = 4;</code>
-     * @return Whether the header field is set.
+     * <code>string substitute_client_id = 4 [(.gogoproto.moretags) = "yaml:&#92;"substitute_client_id&#92;""];</code>
+     * @return The substituteClientId.
      */
     @java.lang.Override
-    public boolean hasHeader() {
-      return header_ != null;
+    public java.lang.String getSubstituteClientId() {
+      java.lang.Object ref = substituteClientId_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        substituteClientId_ = s;
+        return s;
+      }
     }
     /**
      * <pre>
-     * the header used to update the client if the proposal passes
+     * the substitute client identifier for the client standing in for the subject
+     * client
      * </pre>
      *
-     * <code>.google.protobuf.Any header = 4;</code>
-     * @return The header.
+     * <code>string substitute_client_id = 4 [(.gogoproto.moretags) = "yaml:&#92;"substitute_client_id&#92;""];</code>
+     * @return The bytes for substituteClientId.
      */
     @java.lang.Override
-    public com.google.protobuf.Any getHeader() {
-      return header_ == null ? com.google.protobuf.Any.getDefaultInstance() : header_;
-    }
-    /**
-     * <pre>
-     * the header used to update the client if the proposal passes
-     * </pre>
-     *
-     * <code>.google.protobuf.Any header = 4;</code>
-     */
-    @java.lang.Override
-    public com.google.protobuf.AnyOrBuilder getHeaderOrBuilder() {
-      return getHeader();
+    public com.google.protobuf.ByteString
+        getSubstituteClientIdBytes() {
+      java.lang.Object ref = substituteClientId_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        substituteClientId_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     private byte memoizedIsInitialized = -1;
@@ -3356,11 +3358,11 @@ public final class Client {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(description_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, description_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, clientId_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(subjectClientId_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, subjectClientId_);
       }
-      if (header_ != null) {
-        output.writeMessage(4, getHeader());
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(substituteClientId_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, substituteClientId_);
       }
       unknownFields.writeTo(output);
     }
@@ -3377,12 +3379,11 @@ public final class Client {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(description_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, description_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, clientId_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(subjectClientId_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, subjectClientId_);
       }
-      if (header_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(4, getHeader());
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(substituteClientId_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, substituteClientId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -3403,13 +3404,10 @@ public final class Client {
           .equals(other.getTitle())) return false;
       if (!getDescription()
           .equals(other.getDescription())) return false;
-      if (!getClientId()
-          .equals(other.getClientId())) return false;
-      if (hasHeader() != other.hasHeader()) return false;
-      if (hasHeader()) {
-        if (!getHeader()
-            .equals(other.getHeader())) return false;
-      }
+      if (!getSubjectClientId()
+          .equals(other.getSubjectClientId())) return false;
+      if (!getSubstituteClientId()
+          .equals(other.getSubstituteClientId())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -3425,12 +3423,10 @@ public final class Client {
       hash = (53 * hash) + getTitle().hashCode();
       hash = (37 * hash) + DESCRIPTION_FIELD_NUMBER;
       hash = (53 * hash) + getDescription().hashCode();
-      hash = (37 * hash) + CLIENT_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getClientId().hashCode();
-      if (hasHeader()) {
-        hash = (37 * hash) + HEADER_FIELD_NUMBER;
-        hash = (53 * hash) + getHeader().hashCode();
-      }
+      hash = (37 * hash) + SUBJECT_CLIENT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSubjectClientId().hashCode();
+      hash = (37 * hash) + SUBSTITUTE_CLIENT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSubstituteClientId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -3528,9 +3524,10 @@ public final class Client {
     }
     /**
      * <pre>
-     * ClientUpdateProposal is a governance proposal. If it passes, the client is
-     * updated with the provided header. The update may fail if the header is not
-     * valid given certain conditions specified by the client implementation.
+     * ClientUpdateProposal is a governance proposal. If it passes, the substitute
+     * client's latest consensus state is copied over to the subject client. The proposal
+     * handler may fail if the subject and the substitute do not match in client and
+     * chain parameters (with exception to latest height, frozen height, and chain-id).
      * </pre>
      *
      * Protobuf type {@code ibc.core.client.v1.ClientUpdateProposal}
@@ -3574,14 +3571,10 @@ public final class Client {
 
         description_ = "";
 
-        clientId_ = "";
+        subjectClientId_ = "";
 
-        if (headerBuilder_ == null) {
-          header_ = null;
-        } else {
-          header_ = null;
-          headerBuilder_ = null;
-        }
+        substituteClientId_ = "";
+
         return this;
       }
 
@@ -3610,12 +3603,8 @@ public final class Client {
         ibc.core.client.v1.Client.ClientUpdateProposal result = new ibc.core.client.v1.Client.ClientUpdateProposal(this);
         result.title_ = title_;
         result.description_ = description_;
-        result.clientId_ = clientId_;
-        if (headerBuilder_ == null) {
-          result.header_ = header_;
-        } else {
-          result.header_ = headerBuilder_.build();
-        }
+        result.subjectClientId_ = subjectClientId_;
+        result.substituteClientId_ = substituteClientId_;
         onBuilt();
         return result;
       }
@@ -3672,12 +3661,13 @@ public final class Client {
           description_ = other.description_;
           onChanged();
         }
-        if (!other.getClientId().isEmpty()) {
-          clientId_ = other.clientId_;
+        if (!other.getSubjectClientId().isEmpty()) {
+          subjectClientId_ = other.subjectClientId_;
           onChanged();
         }
-        if (other.hasHeader()) {
-          mergeHeader(other.getHeader());
+        if (!other.getSubstituteClientId().isEmpty()) {
+          substituteClientId_ = other.substituteClientId_;
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -3900,22 +3890,22 @@ public final class Client {
         return this;
       }
 
-      private java.lang.Object clientId_ = "";
+      private java.lang.Object subjectClientId_ = "";
       /**
        * <pre>
        * the client identifier for the client to be updated if the proposal passes
        * </pre>
        *
-       * <code>string client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
-       * @return The clientId.
+       * <code>string subject_client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"subject_client_id&#92;""];</code>
+       * @return The subjectClientId.
        */
-      public java.lang.String getClientId() {
-        java.lang.Object ref = clientId_;
+      public java.lang.String getSubjectClientId() {
+        java.lang.Object ref = subjectClientId_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          clientId_ = s;
+          subjectClientId_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
@@ -3926,17 +3916,17 @@ public final class Client {
        * the client identifier for the client to be updated if the proposal passes
        * </pre>
        *
-       * <code>string client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
-       * @return The bytes for clientId.
+       * <code>string subject_client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"subject_client_id&#92;""];</code>
+       * @return The bytes for subjectClientId.
        */
       public com.google.protobuf.ByteString
-          getClientIdBytes() {
-        java.lang.Object ref = clientId_;
+          getSubjectClientIdBytes() {
+        java.lang.Object ref = subjectClientId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          clientId_ = b;
+          subjectClientId_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
@@ -3947,17 +3937,17 @@ public final class Client {
        * the client identifier for the client to be updated if the proposal passes
        * </pre>
        *
-       * <code>string client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
-       * @param value The clientId to set.
+       * <code>string subject_client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"subject_client_id&#92;""];</code>
+       * @param value The subjectClientId to set.
        * @return This builder for chaining.
        */
-      public Builder setClientId(
+      public Builder setSubjectClientId(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        clientId_ = value;
+        subjectClientId_ = value;
         onChanged();
         return this;
       }
@@ -3966,12 +3956,12 @@ public final class Client {
        * the client identifier for the client to be updated if the proposal passes
        * </pre>
        *
-       * <code>string client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
+       * <code>string subject_client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"subject_client_id&#92;""];</code>
        * @return This builder for chaining.
        */
-      public Builder clearClientId() {
+      public Builder clearSubjectClientId() {
         
-        clientId_ = getDefaultInstance().getClientId();
+        subjectClientId_ = getDefaultInstance().getSubjectClientId();
         onChanged();
         return this;
       }
@@ -3980,175 +3970,121 @@ public final class Client {
        * the client identifier for the client to be updated if the proposal passes
        * </pre>
        *
-       * <code>string client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"client_id&#92;""];</code>
-       * @param value The bytes for clientId to set.
+       * <code>string subject_client_id = 3 [(.gogoproto.moretags) = "yaml:&#92;"subject_client_id&#92;""];</code>
+       * @param value The bytes for subjectClientId to set.
        * @return This builder for chaining.
        */
-      public Builder setClientIdBytes(
+      public Builder setSubjectClientIdBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        clientId_ = value;
+        subjectClientId_ = value;
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Any header_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder> headerBuilder_;
+      private java.lang.Object substituteClientId_ = "";
       /**
        * <pre>
-       * the header used to update the client if the proposal passes
+       * the substitute client identifier for the client standing in for the subject
+       * client
        * </pre>
        *
-       * <code>.google.protobuf.Any header = 4;</code>
-       * @return Whether the header field is set.
+       * <code>string substitute_client_id = 4 [(.gogoproto.moretags) = "yaml:&#92;"substitute_client_id&#92;""];</code>
+       * @return The substituteClientId.
        */
-      public boolean hasHeader() {
-        return headerBuilder_ != null || header_ != null;
-      }
-      /**
-       * <pre>
-       * the header used to update the client if the proposal passes
-       * </pre>
-       *
-       * <code>.google.protobuf.Any header = 4;</code>
-       * @return The header.
-       */
-      public com.google.protobuf.Any getHeader() {
-        if (headerBuilder_ == null) {
-          return header_ == null ? com.google.protobuf.Any.getDefaultInstance() : header_;
+      public java.lang.String getSubstituteClientId() {
+        java.lang.Object ref = substituteClientId_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          substituteClientId_ = s;
+          return s;
         } else {
-          return headerBuilder_.getMessage();
+          return (java.lang.String) ref;
         }
       }
       /**
        * <pre>
-       * the header used to update the client if the proposal passes
+       * the substitute client identifier for the client standing in for the subject
+       * client
        * </pre>
        *
-       * <code>.google.protobuf.Any header = 4;</code>
+       * <code>string substitute_client_id = 4 [(.gogoproto.moretags) = "yaml:&#92;"substitute_client_id&#92;""];</code>
+       * @return The bytes for substituteClientId.
        */
-      public Builder setHeader(com.google.protobuf.Any value) {
-        if (headerBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          header_ = value;
-          onChanged();
+      public com.google.protobuf.ByteString
+          getSubstituteClientIdBytes() {
+        java.lang.Object ref = substituteClientId_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          substituteClientId_ = b;
+          return b;
         } else {
-          headerBuilder_.setMessage(value);
+          return (com.google.protobuf.ByteString) ref;
         }
-
+      }
+      /**
+       * <pre>
+       * the substitute client identifier for the client standing in for the subject
+       * client
+       * </pre>
+       *
+       * <code>string substitute_client_id = 4 [(.gogoproto.moretags) = "yaml:&#92;"substitute_client_id&#92;""];</code>
+       * @param value The substituteClientId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSubstituteClientId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        substituteClientId_ = value;
+        onChanged();
         return this;
       }
       /**
        * <pre>
-       * the header used to update the client if the proposal passes
+       * the substitute client identifier for the client standing in for the subject
+       * client
        * </pre>
        *
-       * <code>.google.protobuf.Any header = 4;</code>
+       * <code>string substitute_client_id = 4 [(.gogoproto.moretags) = "yaml:&#92;"substitute_client_id&#92;""];</code>
+       * @return This builder for chaining.
        */
-      public Builder setHeader(
-          com.google.protobuf.Any.Builder builderForValue) {
-        if (headerBuilder_ == null) {
-          header_ = builderForValue.build();
-          onChanged();
-        } else {
-          headerBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * the header used to update the client if the proposal passes
-       * </pre>
-       *
-       * <code>.google.protobuf.Any header = 4;</code>
-       */
-      public Builder mergeHeader(com.google.protobuf.Any value) {
-        if (headerBuilder_ == null) {
-          if (header_ != null) {
-            header_ =
-              com.google.protobuf.Any.newBuilder(header_).mergeFrom(value).buildPartial();
-          } else {
-            header_ = value;
-          }
-          onChanged();
-        } else {
-          headerBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * the header used to update the client if the proposal passes
-       * </pre>
-       *
-       * <code>.google.protobuf.Any header = 4;</code>
-       */
-      public Builder clearHeader() {
-        if (headerBuilder_ == null) {
-          header_ = null;
-          onChanged();
-        } else {
-          header_ = null;
-          headerBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <pre>
-       * the header used to update the client if the proposal passes
-       * </pre>
-       *
-       * <code>.google.protobuf.Any header = 4;</code>
-       */
-      public com.google.protobuf.Any.Builder getHeaderBuilder() {
+      public Builder clearSubstituteClientId() {
         
+        substituteClientId_ = getDefaultInstance().getSubstituteClientId();
         onChanged();
-        return getHeaderFieldBuilder().getBuilder();
+        return this;
       }
       /**
        * <pre>
-       * the header used to update the client if the proposal passes
+       * the substitute client identifier for the client standing in for the subject
+       * client
        * </pre>
        *
-       * <code>.google.protobuf.Any header = 4;</code>
+       * <code>string substitute_client_id = 4 [(.gogoproto.moretags) = "yaml:&#92;"substitute_client_id&#92;""];</code>
+       * @param value The bytes for substituteClientId to set.
+       * @return This builder for chaining.
        */
-      public com.google.protobuf.AnyOrBuilder getHeaderOrBuilder() {
-        if (headerBuilder_ != null) {
-          return headerBuilder_.getMessageOrBuilder();
-        } else {
-          return header_ == null ?
-              com.google.protobuf.Any.getDefaultInstance() : header_;
-        }
-      }
-      /**
-       * <pre>
-       * the header used to update the client if the proposal passes
-       * </pre>
-       *
-       * <code>.google.protobuf.Any header = 4;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder> 
-          getHeaderFieldBuilder() {
-        if (headerBuilder_ == null) {
-          headerBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder>(
-                  getHeader(),
-                  getParentForChildren(),
-                  isClean());
-          header_ = null;
-        }
-        return headerBuilder_;
+      public Builder setSubstituteClientIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        substituteClientId_ = value;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -4203,6 +4139,1277 @@ public final class Client {
 
   }
 
+  public interface UpgradeProposalOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:ibc.core.client.v1.UpgradeProposal)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string title = 1;</code>
+     * @return The title.
+     */
+    java.lang.String getTitle();
+    /**
+     * <code>string title = 1;</code>
+     * @return The bytes for title.
+     */
+    com.google.protobuf.ByteString
+        getTitleBytes();
+
+    /**
+     * <code>string description = 2;</code>
+     * @return The description.
+     */
+    java.lang.String getDescription();
+    /**
+     * <code>string description = 2;</code>
+     * @return The bytes for description.
+     */
+    com.google.protobuf.ByteString
+        getDescriptionBytes();
+
+    /**
+     * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+     * @return Whether the plan field is set.
+     */
+    boolean hasPlan();
+    /**
+     * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+     * @return The plan.
+     */
+    cosmos.upgrade.v1beta1.Upgrade.Plan getPlan();
+    /**
+     * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+     */
+    cosmos.upgrade.v1beta1.Upgrade.PlanOrBuilder getPlanOrBuilder();
+
+    /**
+     * <pre>
+     * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+     * This will make the chain commit to the correct upgraded (self) client state
+     * before the upgrade occurs, so that connecting chains can verify that the
+     * new upgraded client is valid by verifying a proof on the previous version
+     * of the chain. This will allow IBC connections to persist smoothly across
+     * planned chain upgrades
+     * </pre>
+     *
+     * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+     * @return Whether the upgradedClientState field is set.
+     */
+    boolean hasUpgradedClientState();
+    /**
+     * <pre>
+     * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+     * This will make the chain commit to the correct upgraded (self) client state
+     * before the upgrade occurs, so that connecting chains can verify that the
+     * new upgraded client is valid by verifying a proof on the previous version
+     * of the chain. This will allow IBC connections to persist smoothly across
+     * planned chain upgrades
+     * </pre>
+     *
+     * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+     * @return The upgradedClientState.
+     */
+    com.google.protobuf.Any getUpgradedClientState();
+    /**
+     * <pre>
+     * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+     * This will make the chain commit to the correct upgraded (self) client state
+     * before the upgrade occurs, so that connecting chains can verify that the
+     * new upgraded client is valid by verifying a proof on the previous version
+     * of the chain. This will allow IBC connections to persist smoothly across
+     * planned chain upgrades
+     * </pre>
+     *
+     * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+     */
+    com.google.protobuf.AnyOrBuilder getUpgradedClientStateOrBuilder();
+  }
+  /**
+   * <pre>
+   * UpgradeProposal is a gov Content type for initiating an IBC breaking
+   * upgrade.
+   * </pre>
+   *
+   * Protobuf type {@code ibc.core.client.v1.UpgradeProposal}
+   */
+  public static final class UpgradeProposal extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:ibc.core.client.v1.UpgradeProposal)
+      UpgradeProposalOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use UpgradeProposal.newBuilder() to construct.
+    private UpgradeProposal(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private UpgradeProposal() {
+      title_ = "";
+      description_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new UpgradeProposal();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private UpgradeProposal(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              title_ = s;
+              break;
+            }
+            case 18: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              description_ = s;
+              break;
+            }
+            case 26: {
+              cosmos.upgrade.v1beta1.Upgrade.Plan.Builder subBuilder = null;
+              if (plan_ != null) {
+                subBuilder = plan_.toBuilder();
+              }
+              plan_ = input.readMessage(cosmos.upgrade.v1beta1.Upgrade.Plan.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(plan_);
+                plan_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 34: {
+              com.google.protobuf.Any.Builder subBuilder = null;
+              if (upgradedClientState_ != null) {
+                subBuilder = upgradedClientState_.toBuilder();
+              }
+              upgradedClientState_ = input.readMessage(com.google.protobuf.Any.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(upgradedClientState_);
+                upgradedClientState_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return ibc.core.client.v1.Client.internal_static_ibc_core_client_v1_UpgradeProposal_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return ibc.core.client.v1.Client.internal_static_ibc_core_client_v1_UpgradeProposal_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              ibc.core.client.v1.Client.UpgradeProposal.class, ibc.core.client.v1.Client.UpgradeProposal.Builder.class);
+    }
+
+    public static final int TITLE_FIELD_NUMBER = 1;
+    private volatile java.lang.Object title_;
+    /**
+     * <code>string title = 1;</code>
+     * @return The title.
+     */
+    @java.lang.Override
+    public java.lang.String getTitle() {
+      java.lang.Object ref = title_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        title_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string title = 1;</code>
+     * @return The bytes for title.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getTitleBytes() {
+      java.lang.Object ref = title_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        title_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int DESCRIPTION_FIELD_NUMBER = 2;
+    private volatile java.lang.Object description_;
+    /**
+     * <code>string description = 2;</code>
+     * @return The description.
+     */
+    @java.lang.Override
+    public java.lang.String getDescription() {
+      java.lang.Object ref = description_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        description_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string description = 2;</code>
+     * @return The bytes for description.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getDescriptionBytes() {
+      java.lang.Object ref = description_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        description_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PLAN_FIELD_NUMBER = 3;
+    private cosmos.upgrade.v1beta1.Upgrade.Plan plan_;
+    /**
+     * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+     * @return Whether the plan field is set.
+     */
+    @java.lang.Override
+    public boolean hasPlan() {
+      return plan_ != null;
+    }
+    /**
+     * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+     * @return The plan.
+     */
+    @java.lang.Override
+    public cosmos.upgrade.v1beta1.Upgrade.Plan getPlan() {
+      return plan_ == null ? cosmos.upgrade.v1beta1.Upgrade.Plan.getDefaultInstance() : plan_;
+    }
+    /**
+     * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+     */
+    @java.lang.Override
+    public cosmos.upgrade.v1beta1.Upgrade.PlanOrBuilder getPlanOrBuilder() {
+      return getPlan();
+    }
+
+    public static final int UPGRADED_CLIENT_STATE_FIELD_NUMBER = 4;
+    private com.google.protobuf.Any upgradedClientState_;
+    /**
+     * <pre>
+     * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+     * This will make the chain commit to the correct upgraded (self) client state
+     * before the upgrade occurs, so that connecting chains can verify that the
+     * new upgraded client is valid by verifying a proof on the previous version
+     * of the chain. This will allow IBC connections to persist smoothly across
+     * planned chain upgrades
+     * </pre>
+     *
+     * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+     * @return Whether the upgradedClientState field is set.
+     */
+    @java.lang.Override
+    public boolean hasUpgradedClientState() {
+      return upgradedClientState_ != null;
+    }
+    /**
+     * <pre>
+     * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+     * This will make the chain commit to the correct upgraded (self) client state
+     * before the upgrade occurs, so that connecting chains can verify that the
+     * new upgraded client is valid by verifying a proof on the previous version
+     * of the chain. This will allow IBC connections to persist smoothly across
+     * planned chain upgrades
+     * </pre>
+     *
+     * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+     * @return The upgradedClientState.
+     */
+    @java.lang.Override
+    public com.google.protobuf.Any getUpgradedClientState() {
+      return upgradedClientState_ == null ? com.google.protobuf.Any.getDefaultInstance() : upgradedClientState_;
+    }
+    /**
+     * <pre>
+     * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+     * This will make the chain commit to the correct upgraded (self) client state
+     * before the upgrade occurs, so that connecting chains can verify that the
+     * new upgraded client is valid by verifying a proof on the previous version
+     * of the chain. This will allow IBC connections to persist smoothly across
+     * planned chain upgrades
+     * </pre>
+     *
+     * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+     */
+    @java.lang.Override
+    public com.google.protobuf.AnyOrBuilder getUpgradedClientStateOrBuilder() {
+      return getUpgradedClientState();
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, title_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(description_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, description_);
+      }
+      if (plan_ != null) {
+        output.writeMessage(3, getPlan());
+      }
+      if (upgradedClientState_ != null) {
+        output.writeMessage(4, getUpgradedClientState());
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, title_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(description_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, description_);
+      }
+      if (plan_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(3, getPlan());
+      }
+      if (upgradedClientState_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, getUpgradedClientState());
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof ibc.core.client.v1.Client.UpgradeProposal)) {
+        return super.equals(obj);
+      }
+      ibc.core.client.v1.Client.UpgradeProposal other = (ibc.core.client.v1.Client.UpgradeProposal) obj;
+
+      if (!getTitle()
+          .equals(other.getTitle())) return false;
+      if (!getDescription()
+          .equals(other.getDescription())) return false;
+      if (hasPlan() != other.hasPlan()) return false;
+      if (hasPlan()) {
+        if (!getPlan()
+            .equals(other.getPlan())) return false;
+      }
+      if (hasUpgradedClientState() != other.hasUpgradedClientState()) return false;
+      if (hasUpgradedClientState()) {
+        if (!getUpgradedClientState()
+            .equals(other.getUpgradedClientState())) return false;
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + TITLE_FIELD_NUMBER;
+      hash = (53 * hash) + getTitle().hashCode();
+      hash = (37 * hash) + DESCRIPTION_FIELD_NUMBER;
+      hash = (53 * hash) + getDescription().hashCode();
+      if (hasPlan()) {
+        hash = (37 * hash) + PLAN_FIELD_NUMBER;
+        hash = (53 * hash) + getPlan().hashCode();
+      }
+      if (hasUpgradedClientState()) {
+        hash = (37 * hash) + UPGRADED_CLIENT_STATE_FIELD_NUMBER;
+        hash = (53 * hash) + getUpgradedClientState().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static ibc.core.client.v1.Client.UpgradeProposal parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static ibc.core.client.v1.Client.UpgradeProposal parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static ibc.core.client.v1.Client.UpgradeProposal parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static ibc.core.client.v1.Client.UpgradeProposal parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static ibc.core.client.v1.Client.UpgradeProposal parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static ibc.core.client.v1.Client.UpgradeProposal parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static ibc.core.client.v1.Client.UpgradeProposal parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static ibc.core.client.v1.Client.UpgradeProposal parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static ibc.core.client.v1.Client.UpgradeProposal parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static ibc.core.client.v1.Client.UpgradeProposal parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static ibc.core.client.v1.Client.UpgradeProposal parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static ibc.core.client.v1.Client.UpgradeProposal parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(ibc.core.client.v1.Client.UpgradeProposal prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     * UpgradeProposal is a gov Content type for initiating an IBC breaking
+     * upgrade.
+     * </pre>
+     *
+     * Protobuf type {@code ibc.core.client.v1.UpgradeProposal}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:ibc.core.client.v1.UpgradeProposal)
+        ibc.core.client.v1.Client.UpgradeProposalOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return ibc.core.client.v1.Client.internal_static_ibc_core_client_v1_UpgradeProposal_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return ibc.core.client.v1.Client.internal_static_ibc_core_client_v1_UpgradeProposal_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                ibc.core.client.v1.Client.UpgradeProposal.class, ibc.core.client.v1.Client.UpgradeProposal.Builder.class);
+      }
+
+      // Construct using ibc.core.client.v1.Client.UpgradeProposal.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        title_ = "";
+
+        description_ = "";
+
+        if (planBuilder_ == null) {
+          plan_ = null;
+        } else {
+          plan_ = null;
+          planBuilder_ = null;
+        }
+        if (upgradedClientStateBuilder_ == null) {
+          upgradedClientState_ = null;
+        } else {
+          upgradedClientState_ = null;
+          upgradedClientStateBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return ibc.core.client.v1.Client.internal_static_ibc_core_client_v1_UpgradeProposal_descriptor;
+      }
+
+      @java.lang.Override
+      public ibc.core.client.v1.Client.UpgradeProposal getDefaultInstanceForType() {
+        return ibc.core.client.v1.Client.UpgradeProposal.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public ibc.core.client.v1.Client.UpgradeProposal build() {
+        ibc.core.client.v1.Client.UpgradeProposal result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public ibc.core.client.v1.Client.UpgradeProposal buildPartial() {
+        ibc.core.client.v1.Client.UpgradeProposal result = new ibc.core.client.v1.Client.UpgradeProposal(this);
+        result.title_ = title_;
+        result.description_ = description_;
+        if (planBuilder_ == null) {
+          result.plan_ = plan_;
+        } else {
+          result.plan_ = planBuilder_.build();
+        }
+        if (upgradedClientStateBuilder_ == null) {
+          result.upgradedClientState_ = upgradedClientState_;
+        } else {
+          result.upgradedClientState_ = upgradedClientStateBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof ibc.core.client.v1.Client.UpgradeProposal) {
+          return mergeFrom((ibc.core.client.v1.Client.UpgradeProposal)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(ibc.core.client.v1.Client.UpgradeProposal other) {
+        if (other == ibc.core.client.v1.Client.UpgradeProposal.getDefaultInstance()) return this;
+        if (!other.getTitle().isEmpty()) {
+          title_ = other.title_;
+          onChanged();
+        }
+        if (!other.getDescription().isEmpty()) {
+          description_ = other.description_;
+          onChanged();
+        }
+        if (other.hasPlan()) {
+          mergePlan(other.getPlan());
+        }
+        if (other.hasUpgradedClientState()) {
+          mergeUpgradedClientState(other.getUpgradedClientState());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        ibc.core.client.v1.Client.UpgradeProposal parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (ibc.core.client.v1.Client.UpgradeProposal) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object title_ = "";
+      /**
+       * <code>string title = 1;</code>
+       * @return The title.
+       */
+      public java.lang.String getTitle() {
+        java.lang.Object ref = title_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          title_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string title = 1;</code>
+       * @return The bytes for title.
+       */
+      public com.google.protobuf.ByteString
+          getTitleBytes() {
+        java.lang.Object ref = title_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          title_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string title = 1;</code>
+       * @param value The title to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTitle(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        title_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string title = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTitle() {
+        
+        title_ = getDefaultInstance().getTitle();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string title = 1;</code>
+       * @param value The bytes for title to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTitleBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        title_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object description_ = "";
+      /**
+       * <code>string description = 2;</code>
+       * @return The description.
+       */
+      public java.lang.String getDescription() {
+        java.lang.Object ref = description_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          description_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string description = 2;</code>
+       * @return The bytes for description.
+       */
+      public com.google.protobuf.ByteString
+          getDescriptionBytes() {
+        java.lang.Object ref = description_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          description_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string description = 2;</code>
+       * @param value The description to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDescription(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        description_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string description = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearDescription() {
+        
+        description_ = getDefaultInstance().getDescription();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string description = 2;</code>
+       * @param value The bytes for description to set.
+       * @return This builder for chaining.
+       */
+      public Builder setDescriptionBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        description_ = value;
+        onChanged();
+        return this;
+      }
+
+      private cosmos.upgrade.v1beta1.Upgrade.Plan plan_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cosmos.upgrade.v1beta1.Upgrade.Plan, cosmos.upgrade.v1beta1.Upgrade.Plan.Builder, cosmos.upgrade.v1beta1.Upgrade.PlanOrBuilder> planBuilder_;
+      /**
+       * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+       * @return Whether the plan field is set.
+       */
+      public boolean hasPlan() {
+        return planBuilder_ != null || plan_ != null;
+      }
+      /**
+       * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+       * @return The plan.
+       */
+      public cosmos.upgrade.v1beta1.Upgrade.Plan getPlan() {
+        if (planBuilder_ == null) {
+          return plan_ == null ? cosmos.upgrade.v1beta1.Upgrade.Plan.getDefaultInstance() : plan_;
+        } else {
+          return planBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+       */
+      public Builder setPlan(cosmos.upgrade.v1beta1.Upgrade.Plan value) {
+        if (planBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          plan_ = value;
+          onChanged();
+        } else {
+          planBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+       */
+      public Builder setPlan(
+          cosmos.upgrade.v1beta1.Upgrade.Plan.Builder builderForValue) {
+        if (planBuilder_ == null) {
+          plan_ = builderForValue.build();
+          onChanged();
+        } else {
+          planBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+       */
+      public Builder mergePlan(cosmos.upgrade.v1beta1.Upgrade.Plan value) {
+        if (planBuilder_ == null) {
+          if (plan_ != null) {
+            plan_ =
+              cosmos.upgrade.v1beta1.Upgrade.Plan.newBuilder(plan_).mergeFrom(value).buildPartial();
+          } else {
+            plan_ = value;
+          }
+          onChanged();
+        } else {
+          planBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+       */
+      public Builder clearPlan() {
+        if (planBuilder_ == null) {
+          plan_ = null;
+          onChanged();
+        } else {
+          plan_ = null;
+          planBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+       */
+      public cosmos.upgrade.v1beta1.Upgrade.Plan.Builder getPlanBuilder() {
+        
+        onChanged();
+        return getPlanFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+       */
+      public cosmos.upgrade.v1beta1.Upgrade.PlanOrBuilder getPlanOrBuilder() {
+        if (planBuilder_ != null) {
+          return planBuilder_.getMessageOrBuilder();
+        } else {
+          return plan_ == null ?
+              cosmos.upgrade.v1beta1.Upgrade.Plan.getDefaultInstance() : plan_;
+        }
+      }
+      /**
+       * <code>.cosmos.upgrade.v1beta1.Plan plan = 3 [(.gogoproto.nullable) = false];</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cosmos.upgrade.v1beta1.Upgrade.Plan, cosmos.upgrade.v1beta1.Upgrade.Plan.Builder, cosmos.upgrade.v1beta1.Upgrade.PlanOrBuilder> 
+          getPlanFieldBuilder() {
+        if (planBuilder_ == null) {
+          planBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cosmos.upgrade.v1beta1.Upgrade.Plan, cosmos.upgrade.v1beta1.Upgrade.Plan.Builder, cosmos.upgrade.v1beta1.Upgrade.PlanOrBuilder>(
+                  getPlan(),
+                  getParentForChildren(),
+                  isClean());
+          plan_ = null;
+        }
+        return planBuilder_;
+      }
+
+      private com.google.protobuf.Any upgradedClientState_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder> upgradedClientStateBuilder_;
+      /**
+       * <pre>
+       * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+       * This will make the chain commit to the correct upgraded (self) client state
+       * before the upgrade occurs, so that connecting chains can verify that the
+       * new upgraded client is valid by verifying a proof on the previous version
+       * of the chain. This will allow IBC connections to persist smoothly across
+       * planned chain upgrades
+       * </pre>
+       *
+       * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+       * @return Whether the upgradedClientState field is set.
+       */
+      public boolean hasUpgradedClientState() {
+        return upgradedClientStateBuilder_ != null || upgradedClientState_ != null;
+      }
+      /**
+       * <pre>
+       * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+       * This will make the chain commit to the correct upgraded (self) client state
+       * before the upgrade occurs, so that connecting chains can verify that the
+       * new upgraded client is valid by verifying a proof on the previous version
+       * of the chain. This will allow IBC connections to persist smoothly across
+       * planned chain upgrades
+       * </pre>
+       *
+       * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+       * @return The upgradedClientState.
+       */
+      public com.google.protobuf.Any getUpgradedClientState() {
+        if (upgradedClientStateBuilder_ == null) {
+          return upgradedClientState_ == null ? com.google.protobuf.Any.getDefaultInstance() : upgradedClientState_;
+        } else {
+          return upgradedClientStateBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+       * This will make the chain commit to the correct upgraded (self) client state
+       * before the upgrade occurs, so that connecting chains can verify that the
+       * new upgraded client is valid by verifying a proof on the previous version
+       * of the chain. This will allow IBC connections to persist smoothly across
+       * planned chain upgrades
+       * </pre>
+       *
+       * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+       */
+      public Builder setUpgradedClientState(com.google.protobuf.Any value) {
+        if (upgradedClientStateBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          upgradedClientState_ = value;
+          onChanged();
+        } else {
+          upgradedClientStateBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+       * This will make the chain commit to the correct upgraded (self) client state
+       * before the upgrade occurs, so that connecting chains can verify that the
+       * new upgraded client is valid by verifying a proof on the previous version
+       * of the chain. This will allow IBC connections to persist smoothly across
+       * planned chain upgrades
+       * </pre>
+       *
+       * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+       */
+      public Builder setUpgradedClientState(
+          com.google.protobuf.Any.Builder builderForValue) {
+        if (upgradedClientStateBuilder_ == null) {
+          upgradedClientState_ = builderForValue.build();
+          onChanged();
+        } else {
+          upgradedClientStateBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+       * This will make the chain commit to the correct upgraded (self) client state
+       * before the upgrade occurs, so that connecting chains can verify that the
+       * new upgraded client is valid by verifying a proof on the previous version
+       * of the chain. This will allow IBC connections to persist smoothly across
+       * planned chain upgrades
+       * </pre>
+       *
+       * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+       */
+      public Builder mergeUpgradedClientState(com.google.protobuf.Any value) {
+        if (upgradedClientStateBuilder_ == null) {
+          if (upgradedClientState_ != null) {
+            upgradedClientState_ =
+              com.google.protobuf.Any.newBuilder(upgradedClientState_).mergeFrom(value).buildPartial();
+          } else {
+            upgradedClientState_ = value;
+          }
+          onChanged();
+        } else {
+          upgradedClientStateBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+       * This will make the chain commit to the correct upgraded (self) client state
+       * before the upgrade occurs, so that connecting chains can verify that the
+       * new upgraded client is valid by verifying a proof on the previous version
+       * of the chain. This will allow IBC connections to persist smoothly across
+       * planned chain upgrades
+       * </pre>
+       *
+       * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+       */
+      public Builder clearUpgradedClientState() {
+        if (upgradedClientStateBuilder_ == null) {
+          upgradedClientState_ = null;
+          onChanged();
+        } else {
+          upgradedClientState_ = null;
+          upgradedClientStateBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+       * This will make the chain commit to the correct upgraded (self) client state
+       * before the upgrade occurs, so that connecting chains can verify that the
+       * new upgraded client is valid by verifying a proof on the previous version
+       * of the chain. This will allow IBC connections to persist smoothly across
+       * planned chain upgrades
+       * </pre>
+       *
+       * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+       */
+      public com.google.protobuf.Any.Builder getUpgradedClientStateBuilder() {
+        
+        onChanged();
+        return getUpgradedClientStateFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+       * This will make the chain commit to the correct upgraded (self) client state
+       * before the upgrade occurs, so that connecting chains can verify that the
+       * new upgraded client is valid by verifying a proof on the previous version
+       * of the chain. This will allow IBC connections to persist smoothly across
+       * planned chain upgrades
+       * </pre>
+       *
+       * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+       */
+      public com.google.protobuf.AnyOrBuilder getUpgradedClientStateOrBuilder() {
+        if (upgradedClientStateBuilder_ != null) {
+          return upgradedClientStateBuilder_.getMessageOrBuilder();
+        } else {
+          return upgradedClientState_ == null ?
+              com.google.protobuf.Any.getDefaultInstance() : upgradedClientState_;
+        }
+      }
+      /**
+       * <pre>
+       * An UpgradedClientState must be provided to perform an IBC breaking upgrade.
+       * This will make the chain commit to the correct upgraded (self) client state
+       * before the upgrade occurs, so that connecting chains can verify that the
+       * new upgraded client is valid by verifying a proof on the previous version
+       * of the chain. This will allow IBC connections to persist smoothly across
+       * planned chain upgrades
+       * </pre>
+       *
+       * <code>.google.protobuf.Any upgraded_client_state = 4 [(.gogoproto.moretags) = "yaml:&#92;"upgraded_client_state&#92;""];</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder> 
+          getUpgradedClientStateFieldBuilder() {
+        if (upgradedClientStateBuilder_ == null) {
+          upgradedClientStateBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.google.protobuf.Any, com.google.protobuf.Any.Builder, com.google.protobuf.AnyOrBuilder>(
+                  getUpgradedClientState(),
+                  getParentForChildren(),
+                  isClean());
+          upgradedClientState_ = null;
+        }
+        return upgradedClientStateBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:ibc.core.client.v1.UpgradeProposal)
+    }
+
+    // @@protoc_insertion_point(class_scope:ibc.core.client.v1.UpgradeProposal)
+    private static final ibc.core.client.v1.Client.UpgradeProposal DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new ibc.core.client.v1.Client.UpgradeProposal();
+    }
+
+    public static ibc.core.client.v1.Client.UpgradeProposal getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<UpgradeProposal>
+        PARSER = new com.google.protobuf.AbstractParser<UpgradeProposal>() {
+      @java.lang.Override
+      public UpgradeProposal parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new UpgradeProposal(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<UpgradeProposal> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<UpgradeProposal> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public ibc.core.client.v1.Client.UpgradeProposal getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface HeightOrBuilder extends
       // @@protoc_insertion_point(interface_extends:ibc.core.client.v1.Height)
       com.google.protobuf.MessageOrBuilder {
@@ -4232,11 +5439,12 @@ public final class Client {
    * Height is a monotonically increasing data type
    * that can be compared against another Height for the purposes of updating and
    * freezing clients
-   * Normally the RevisionHeight is incremented at each height while keeping RevisionNumber
-   * the same. However some consensus algorithms may choose to reset the
-   * height in certain conditions e.g. hard forks, state-machine breaking changes
-   * In these cases, the RevisionNumber is incremented so that height continues to
-   * be monitonically increasing even as the RevisionHeight gets reset
+   * Normally the RevisionHeight is incremented at each height while keeping
+   * RevisionNumber the same. However some consensus algorithms may choose to
+   * reset the height in certain conditions e.g. hard forks, state-machine
+   * breaking changes In these cases, the RevisionNumber is incremented so that
+   * height continues to be monitonically increasing even as the RevisionHeight
+   * gets reset
    * </pre>
    *
    * Protobuf type {@code ibc.core.client.v1.Height}
@@ -4530,11 +5738,12 @@ public final class Client {
      * Height is a monotonically increasing data type
      * that can be compared against another Height for the purposes of updating and
      * freezing clients
-     * Normally the RevisionHeight is incremented at each height while keeping RevisionNumber
-     * the same. However some consensus algorithms may choose to reset the
-     * height in certain conditions e.g. hard forks, state-machine breaking changes
-     * In these cases, the RevisionNumber is incremented so that height continues to
-     * be monitonically increasing even as the RevisionHeight gets reset
+     * Normally the RevisionHeight is incremented at each height while keeping
+     * RevisionNumber the same. However some consensus algorithms may choose to
+     * reset the height in certain conditions e.g. hard forks, state-machine
+     * breaking changes In these cases, the RevisionNumber is incremented so that
+     * height continues to be monitonically increasing even as the RevisionHeight
+     * gets reset
      * </pre>
      *
      * Protobuf type {@code ibc.core.client.v1.Height}
@@ -5564,6 +6773,11 @@ public final class Client {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_ibc_core_client_v1_ClientUpdateProposal_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_ibc_core_client_v1_UpgradeProposal_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_ibc_core_client_v1_UpgradeProposal_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_ibc_core_client_v1_Height_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
@@ -5584,35 +6798,43 @@ public final class Client {
     java.lang.String[] descriptorData = {
       "\n\037ibc/core/client/v1/client.proto\022\022ibc.c" +
       "ore.client.v1\032\024gogoproto/gogo.proto\032\031goo" +
-      "gle/protobuf/any.proto\"\205\001\n\025IdentifiedCli" +
-      "entState\022\'\n\tclient_id\030\001 \001(\tB\024\362\336\037\020yaml:\"c" +
-      "lient_id\"\022C\n\014client_state\030\002 \001(\0132\024.google" +
-      ".protobuf.AnyB\027\362\336\037\023yaml:\"client_state\"\"\226" +
-      "\001\n\030ConsensusStateWithHeight\0220\n\006height\030\001 " +
-      "\001(\0132\032.ibc.core.client.v1.HeightB\004\310\336\037\000\022H\n" +
-      "\017consensus_state\030\002 \001(\0132\024.google.protobuf" +
-      ".AnyB\031\362\336\037\025yaml\"consensus_state\"\"\251\001\n\025Clie" +
-      "ntConsensusStates\022\'\n\tclient_id\030\001 \001(\tB\024\362\336" +
-      "\037\020yaml:\"client_id\"\022g\n\020consensus_states\030\002" +
-      " \003(\0132,.ibc.core.client.v1.ConsensusState" +
-      "WithHeightB\037\362\336\037\027yaml:\"consensus_states\"\310" +
-      "\336\037\000\"\217\001\n\024ClientUpdateProposal\022\r\n\005title\030\001 " +
-      "\001(\t\022\023\n\013description\030\002 \001(\t\022\'\n\tclient_id\030\003 " +
-      "\001(\tB\024\362\336\037\020yaml:\"client_id\"\022$\n\006header\030\004 \001(" +
-      "\0132\024.google.protobuf.Any:\004\210\240\037\000\"|\n\006Height\022" +
-      "3\n\017revision_number\030\001 \001(\004B\032\362\336\037\026yaml:\"revi" +
-      "sion_number\"\0223\n\017revision_height\030\002 \001(\004B\032\362" +
-      "\336\037\026yaml:\"revision_height\":\010\210\240\037\000\230\240\037\000\"=\n\006P" +
-      "arams\0223\n\017allowed_clients\030\001 \003(\tB\032\362\336\037\026yaml" +
-      ":\"allowed_clients\"B9Z7github.com/cosmos/" +
-      "cosmos-sdk/x/ibc/core/02-client/typesb\006p" +
-      "roto3"
+      "gle/protobuf/any.proto\032$cosmos/upgrade/v" +
+      "1beta1/upgrade.proto\"\205\001\n\025IdentifiedClien" +
+      "tState\022\'\n\tclient_id\030\001 \001(\tB\024\362\336\037\020yaml:\"cli" +
+      "ent_id\"\022C\n\014client_state\030\002 \001(\0132\024.google.p" +
+      "rotobuf.AnyB\027\362\336\037\023yaml:\"client_state\"\"\227\001\n" +
+      "\030ConsensusStateWithHeight\0220\n\006height\030\001 \001(" +
+      "\0132\032.ibc.core.client.v1.HeightB\004\310\336\037\000\022I\n\017c" +
+      "onsensus_state\030\002 \001(\0132\024.google.protobuf.A" +
+      "nyB\032\362\336\037\026yaml:\"consensus_state\"\"\251\001\n\025Clien" +
+      "tConsensusStates\022\'\n\tclient_id\030\001 \001(\tB\024\362\336\037" +
+      "\020yaml:\"client_id\"\022g\n\020consensus_states\030\002 " +
+      "\003(\0132,.ibc.core.client.v1.ConsensusStateW" +
+      "ithHeightB\037\362\336\037\027yaml:\"consensus_states\"\310\336" +
+      "\037\000\"\270\001\n\024ClientUpdateProposal\022\r\n\005title\030\001 \001" +
+      "(\t\022\023\n\013description\030\002 \001(\t\0227\n\021subject_clien" +
+      "t_id\030\003 \001(\tB\034\362\336\037\030yaml:\"subject_client_id\"" +
+      "\022=\n\024substitute_client_id\030\004 \001(\tB\037\362\336\037\033yaml" +
+      ":\"substitute_client_id\":\004\210\240\037\000\"\314\001\n\017Upgrad" +
+      "eProposal\022\r\n\005title\030\001 \001(\t\022\023\n\013description\030" +
+      "\002 \001(\t\0220\n\004plan\030\003 \001(\0132\034.cosmos.upgrade.v1b" +
+      "eta1.PlanB\004\310\336\037\000\022U\n\025upgraded_client_state" +
+      "\030\004 \001(\0132\024.google.protobuf.AnyB \362\336\037\034yaml:\"" +
+      "upgraded_client_state\":\014\210\240\037\000\230\240\037\000\350\240\037\001\"|\n\006" +
+      "Height\0223\n\017revision_number\030\001 \001(\004B\032\362\336\037\026yam" +
+      "l:\"revision_number\"\0223\n\017revision_height\030\002" +
+      " \001(\004B\032\362\336\037\026yaml:\"revision_height\":\010\210\240\037\000\230\240" +
+      "\037\000\"=\n\006Params\0223\n\017allowed_clients\030\001 \003(\tB\032\362" +
+      "\336\037\026yaml:\"allowed_clients\"B:Z8github.com/" +
+      "cosmos/ibc-go/v3/modules/core/02-client/" +
+      "typesb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           com.google.protobuf.GoGoProtos.getDescriptor(),
           com.google.protobuf.AnyProto.getDescriptor(),
+          cosmos.upgrade.v1beta1.Upgrade.getDescriptor(),
         });
     internal_static_ibc_core_client_v1_IdentifiedClientState_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -5637,21 +6859,28 @@ public final class Client {
     internal_static_ibc_core_client_v1_ClientUpdateProposal_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_ClientUpdateProposal_descriptor,
-        new java.lang.String[] { "Title", "Description", "ClientId", "Header", });
-    internal_static_ibc_core_client_v1_Height_descriptor =
+        new java.lang.String[] { "Title", "Description", "SubjectClientId", "SubstituteClientId", });
+    internal_static_ibc_core_client_v1_UpgradeProposal_descriptor =
       getDescriptor().getMessageTypes().get(4);
+    internal_static_ibc_core_client_v1_UpgradeProposal_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_ibc_core_client_v1_UpgradeProposal_descriptor,
+        new java.lang.String[] { "Title", "Description", "Plan", "UpgradedClientState", });
+    internal_static_ibc_core_client_v1_Height_descriptor =
+      getDescriptor().getMessageTypes().get(5);
     internal_static_ibc_core_client_v1_Height_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_Height_descriptor,
         new java.lang.String[] { "RevisionNumber", "RevisionHeight", });
     internal_static_ibc_core_client_v1_Params_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_ibc_core_client_v1_Params_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ibc_core_client_v1_Params_descriptor,
         new java.lang.String[] { "AllowedClients", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
+    registry.add(com.google.protobuf.GoGoProtos.equal);
     registry.add(com.google.protobuf.GoGoProtos.goprotoGetters);
     registry.add(com.google.protobuf.GoGoProtos.goprotoStringer);
     registry.add(com.google.protobuf.GoGoProtos.moretags);
@@ -5660,6 +6889,7 @@ public final class Client {
         .internalUpdateFileDescriptor(descriptor, registry);
     com.google.protobuf.GoGoProtos.getDescriptor();
     com.google.protobuf.AnyProto.getDescriptor();
+    cosmos.upgrade.v1beta1.Upgrade.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

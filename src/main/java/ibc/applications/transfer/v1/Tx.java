@@ -157,7 +157,7 @@ public final class Tx {
 
     /**
      * <pre>
-     * Timeout timestamp (in nanoseconds) relative to the current block timestamp.
+     * Timeout timestamp in absolute nanoseconds since unix epoch.
      * The timeout is disabled when set to 0.
      * </pre>
      *
@@ -170,7 +170,7 @@ public final class Tx {
    * <pre>
    * MsgTransfer defines a msg to transfer fungible tokens (i.e Coins) between
    * ICS20 enabled chains. See ICS Spec here:
-   * https://github.com/cosmos/ics/tree/master/spec/ics-020-fungible-token-transfer#data-structures
+   * https://github.com/cosmos/ibc/tree/master/spec/app/ics-020-fungible-token-transfer#data-structures
    * </pre>
    *
    * Protobuf type {@code ibc.applications.transfer.v1.MsgTransfer}
@@ -577,7 +577,7 @@ public final class Tx {
     private long timeoutTimestamp_;
     /**
      * <pre>
-     * Timeout timestamp (in nanoseconds) relative to the current block timestamp.
+     * Timeout timestamp in absolute nanoseconds since unix epoch.
      * The timeout is disabled when set to 0.
      * </pre>
      *
@@ -821,7 +821,7 @@ public final class Tx {
      * <pre>
      * MsgTransfer defines a msg to transfer fungible tokens (i.e Coins) between
      * ICS20 enabled chains. See ICS Spec here:
-     * https://github.com/cosmos/ics/tree/master/spec/ics-020-fungible-token-transfer#data-structures
+     * https://github.com/cosmos/ibc/tree/master/spec/app/ics-020-fungible-token-transfer#data-structures
      * </pre>
      *
      * Protobuf type {@code ibc.applications.transfer.v1.MsgTransfer}
@@ -1732,7 +1732,7 @@ public final class Tx {
       private long timeoutTimestamp_ ;
       /**
        * <pre>
-       * Timeout timestamp (in nanoseconds) relative to the current block timestamp.
+       * Timeout timestamp in absolute nanoseconds since unix epoch.
        * The timeout is disabled when set to 0.
        * </pre>
        *
@@ -1745,7 +1745,7 @@ public final class Tx {
       }
       /**
        * <pre>
-       * Timeout timestamp (in nanoseconds) relative to the current block timestamp.
+       * Timeout timestamp in absolute nanoseconds since unix epoch.
        * The timeout is disabled when set to 0.
        * </pre>
        *
@@ -1761,7 +1761,7 @@ public final class Tx {
       }
       /**
        * <pre>
-       * Timeout timestamp (in nanoseconds) relative to the current block timestamp.
+       * Timeout timestamp in absolute nanoseconds since unix epoch.
        * The timeout is disabled when set to 0.
        * </pre>
        *
@@ -2289,9 +2289,9 @@ public final class Tx {
       "timestamp\":\010\350\240\037\000\210\240\037\000\"\025\n\023MsgTransferRespo" +
       "nse2o\n\003Msg\022h\n\010Transfer\022).ibc.application" +
       "s.transfer.v1.MsgTransfer\0321.ibc.applicat" +
-      "ions.transfer.v1.MsgTransferResponseB@Z>" +
-      "github.com/cosmos/cosmos-sdk/x/ibc/appli" +
-      "cations/transfer/typesb\006proto3"
+      "ions.transfer.v1.MsgTransferResponseB9Z7" +
+      "github.com/cosmos/ibc-go/v3/modules/apps" +
+      "/transfer/typesb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -91,7 +91,8 @@ public final class Genesis {
 
     /**
      * <pre>
-     * supply represents the total supply.
+     * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+     * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
      * </pre>
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -100,7 +101,8 @@ public final class Genesis {
         getSupplyList();
     /**
      * <pre>
-     * supply represents the total supply.
+     * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+     * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
      * </pre>
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -108,7 +110,8 @@ public final class Genesis {
     cosmos.base.v1beta1.CoinOuterClass.Coin getSupply(int index);
     /**
      * <pre>
-     * supply represents the total supply.
+     * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+     * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
      * </pre>
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -116,7 +119,8 @@ public final class Genesis {
     int getSupplyCount();
     /**
      * <pre>
-     * supply represents the total supply.
+     * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+     * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
      * </pre>
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -125,7 +129,8 @@ public final class Genesis {
         getSupplyOrBuilderList();
     /**
      * <pre>
-     * supply represents the total supply.
+     * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+     * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
      * </pre>
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -415,7 +420,8 @@ public final class Genesis {
     private java.util.List<cosmos.base.v1beta1.CoinOuterClass.Coin> supply_;
     /**
      * <pre>
-     * supply represents the total supply.
+     * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+     * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
      * </pre>
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -426,7 +432,8 @@ public final class Genesis {
     }
     /**
      * <pre>
-     * supply represents the total supply.
+     * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+     * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
      * </pre>
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -438,7 +445,8 @@ public final class Genesis {
     }
     /**
      * <pre>
-     * supply represents the total supply.
+     * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+     * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
      * </pre>
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -449,7 +457,8 @@ public final class Genesis {
     }
     /**
      * <pre>
-     * supply represents the total supply.
+     * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+     * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
      * </pre>
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -460,7 +469,8 @@ public final class Genesis {
     }
     /**
      * <pre>
-     * supply represents the total supply.
+     * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+     * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
      * </pre>
      *
      * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1498,7 +1508,8 @@ public final class Genesis {
 
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1512,7 +1523,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1526,7 +1538,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1540,7 +1553,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1561,7 +1575,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1579,7 +1594,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1599,7 +1615,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1620,7 +1637,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1638,7 +1656,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1656,7 +1675,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1675,7 +1695,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1692,7 +1713,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1709,7 +1731,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1720,7 +1743,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1734,7 +1758,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1749,7 +1774,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1760,7 +1786,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>
@@ -1772,7 +1799,8 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * supply represents the total supply.
+       * supply represents the total supply. If it is left empty, then supply will be calculated based on the provided
+       * balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
        * </pre>
        *
        * <code>repeated .cosmos.base.v1beta1.Coin supply = 3 [(.gogoproto.nullable) = false, (.gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];</code>

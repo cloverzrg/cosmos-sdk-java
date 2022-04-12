@@ -96,7 +96,7 @@ public final class Genesis {
 
     /**
      * <pre>
-     * signing_infos represents a map between validator addresses and their
+     * missed_blocks represents a map between validator addresses and their
      * missed blocks.
      * </pre>
      *
@@ -106,7 +106,7 @@ public final class Genesis {
         getMissedBlocksList();
     /**
      * <pre>
-     * signing_infos represents a map between validator addresses and their
+     * missed_blocks represents a map between validator addresses and their
      * missed blocks.
      * </pre>
      *
@@ -115,7 +115,7 @@ public final class Genesis {
     cosmos.slashing.v1beta1.Genesis.ValidatorMissedBlocks getMissedBlocks(int index);
     /**
      * <pre>
-     * signing_infos represents a map between validator addresses and their
+     * missed_blocks represents a map between validator addresses and their
      * missed blocks.
      * </pre>
      *
@@ -124,7 +124,7 @@ public final class Genesis {
     int getMissedBlocksCount();
     /**
      * <pre>
-     * signing_infos represents a map between validator addresses and their
+     * missed_blocks represents a map between validator addresses and their
      * missed blocks.
      * </pre>
      *
@@ -134,7 +134,7 @@ public final class Genesis {
         getMissedBlocksOrBuilderList();
     /**
      * <pre>
-     * signing_infos represents a map between validator addresses and their
+     * missed_blocks represents a map between validator addresses and their
      * missed blocks.
      * </pre>
      *
@@ -373,7 +373,7 @@ public final class Genesis {
     private java.util.List<cosmos.slashing.v1beta1.Genesis.ValidatorMissedBlocks> missedBlocks_;
     /**
      * <pre>
-     * signing_infos represents a map between validator addresses and their
+     * missed_blocks represents a map between validator addresses and their
      * missed blocks.
      * </pre>
      *
@@ -385,7 +385,7 @@ public final class Genesis {
     }
     /**
      * <pre>
-     * signing_infos represents a map between validator addresses and their
+     * missed_blocks represents a map between validator addresses and their
      * missed blocks.
      * </pre>
      *
@@ -398,7 +398,7 @@ public final class Genesis {
     }
     /**
      * <pre>
-     * signing_infos represents a map between validator addresses and their
+     * missed_blocks represents a map between validator addresses and their
      * missed blocks.
      * </pre>
      *
@@ -410,7 +410,7 @@ public final class Genesis {
     }
     /**
      * <pre>
-     * signing_infos represents a map between validator addresses and their
+     * missed_blocks represents a map between validator addresses and their
      * missed blocks.
      * </pre>
      *
@@ -422,7 +422,7 @@ public final class Genesis {
     }
     /**
      * <pre>
-     * signing_infos represents a map between validator addresses and their
+     * missed_blocks represents a map between validator addresses and their
      * missed blocks.
      * </pre>
      *
@@ -1364,7 +1364,7 @@ public final class Genesis {
 
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1379,7 +1379,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1394,7 +1394,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1409,7 +1409,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1431,7 +1431,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1450,7 +1450,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1471,7 +1471,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1493,7 +1493,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1512,7 +1512,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1531,7 +1531,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1551,7 +1551,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1569,7 +1569,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1587,7 +1587,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1599,7 +1599,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1614,7 +1614,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1630,7 +1630,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1642,7 +1642,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *
@@ -1655,7 +1655,7 @@ public final class Genesis {
       }
       /**
        * <pre>
-       * signing_infos represents a map between validator addresses and their
+       * missed_blocks represents a map between validator addresses and their
        * missed blocks.
        * </pre>
        *

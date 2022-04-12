@@ -3445,7 +3445,7 @@ public final class Bank {
 
   }
 
-  public interface SupplyOrBuilder extends
+  @java.lang.Deprecated public interface SupplyOrBuilder extends
       // @@protoc_insertion_point(interface_extends:cosmos.bank.v1beta1.Supply)
       com.google.protobuf.MessageOrBuilder {
 
@@ -3477,11 +3477,12 @@ public final class Bank {
    * <pre>
    * Supply represents a struct that passively keeps track of the total supply
    * amounts in the network.
+   * This message is deprecated now that supply is indexed by denom.
    * </pre>
    *
    * Protobuf type {@code cosmos.bank.v1beta1.Supply}
    */
-  public static final class Supply extends
+  @java.lang.Deprecated public static final class Supply extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:cosmos.bank.v1beta1.Supply)
       SupplyOrBuilder {
@@ -3772,6 +3773,7 @@ public final class Bank {
      * <pre>
      * Supply represents a struct that passively keeps track of the total supply
      * amounts in the network.
+     * This message is deprecated now that supply is indexed by denom.
      * </pre>
      *
      * Protobuf type {@code cosmos.bank.v1beta1.Supply}
@@ -5365,6 +5367,52 @@ public final class Bank {
      */
     com.google.protobuf.ByteString
         getDisplayBytes();
+
+    /**
+     * <pre>
+     * name defines the name of the token (eg: Cosmos Atom)
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>string name = 5;</code>
+     * @return The name.
+     */
+    java.lang.String getName();
+    /**
+     * <pre>
+     * name defines the name of the token (eg: Cosmos Atom)
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>string name = 5;</code>
+     * @return The bytes for name.
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+
+    /**
+     * <pre>
+     * symbol is the token symbol usually shown on exchanges (eg: ATOM). This can
+     * be the same as the display.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>string symbol = 6;</code>
+     * @return The symbol.
+     */
+    java.lang.String getSymbol();
+    /**
+     * <pre>
+     * symbol is the token symbol usually shown on exchanges (eg: ATOM). This can
+     * be the same as the display.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>string symbol = 6;</code>
+     * @return The bytes for symbol.
+     */
+    com.google.protobuf.ByteString
+        getSymbolBytes();
   }
   /**
    * <pre>
@@ -5388,6 +5436,8 @@ public final class Bank {
       denomUnits_ = java.util.Collections.emptyList();
       base_ = "";
       display_ = "";
+      name_ = "";
+      symbol_ = "";
     }
 
     @java.lang.Override
@@ -5446,6 +5496,18 @@ public final class Bank {
               java.lang.String s = input.readStringRequireUtf8();
 
               display_ = s;
+              break;
+            }
+            case 42: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              name_ = s;
+              break;
+            }
+            case 50: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              symbol_ = s;
               break;
             }
             default: {
@@ -5677,6 +5739,104 @@ public final class Bank {
       }
     }
 
+    public static final int NAME_FIELD_NUMBER = 5;
+    private volatile java.lang.Object name_;
+    /**
+     * <pre>
+     * name defines the name of the token (eg: Cosmos Atom)
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>string name = 5;</code>
+     * @return The name.
+     */
+    @java.lang.Override
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        name_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * name defines the name of the token (eg: Cosmos Atom)
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>string name = 5;</code>
+     * @return The bytes for name.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int SYMBOL_FIELD_NUMBER = 6;
+    private volatile java.lang.Object symbol_;
+    /**
+     * <pre>
+     * symbol is the token symbol usually shown on exchanges (eg: ATOM). This can
+     * be the same as the display.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>string symbol = 6;</code>
+     * @return The symbol.
+     */
+    @java.lang.Override
+    public java.lang.String getSymbol() {
+      java.lang.Object ref = symbol_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        symbol_ = s;
+        return s;
+      }
+    }
+    /**
+     * <pre>
+     * symbol is the token symbol usually shown on exchanges (eg: ATOM). This can
+     * be the same as the display.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>string symbol = 6;</code>
+     * @return The bytes for symbol.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getSymbolBytes() {
+      java.lang.Object ref = symbol_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        symbol_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -5703,6 +5863,12 @@ public final class Bank {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(display_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, display_);
       }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, name_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(symbol_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, symbol_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -5724,6 +5890,12 @@ public final class Bank {
       }
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(display_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, display_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, name_);
+      }
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(symbol_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, symbol_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -5748,6 +5920,10 @@ public final class Bank {
           .equals(other.getBase())) return false;
       if (!getDisplay()
           .equals(other.getDisplay())) return false;
+      if (!getName()
+          .equals(other.getName())) return false;
+      if (!getSymbol()
+          .equals(other.getSymbol())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -5769,6 +5945,10 @@ public final class Bank {
       hash = (53 * hash) + getBase().hashCode();
       hash = (37 * hash) + DISPLAY_FIELD_NUMBER;
       hash = (53 * hash) + getDisplay().hashCode();
+      hash = (37 * hash) + NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getName().hashCode();
+      hash = (37 * hash) + SYMBOL_FIELD_NUMBER;
+      hash = (53 * hash) + getSymbol().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -5920,6 +6100,10 @@ public final class Bank {
 
         display_ = "";
 
+        name_ = "";
+
+        symbol_ = "";
+
         return this;
       }
 
@@ -5959,6 +6143,8 @@ public final class Bank {
         }
         result.base_ = base_;
         result.display_ = display_;
+        result.name_ = name_;
+        result.symbol_ = symbol_;
         onBuilt();
         return result;
       }
@@ -6043,6 +6229,14 @@ public final class Bank {
         }
         if (!other.getDisplay().isEmpty()) {
           display_ = other.display_;
+          onChanged();
+        }
+        if (!other.getName().isEmpty()) {
+          name_ = other.name_;
+          onChanged();
+        }
+        if (!other.getSymbol().isEmpty()) {
+          symbol_ = other.symbol_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -6659,6 +6853,213 @@ public final class Bank {
         onChanged();
         return this;
       }
+
+      private java.lang.Object name_ = "";
+      /**
+       * <pre>
+       * name defines the name of the token (eg: Cosmos Atom)
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>string name = 5;</code>
+       * @return The name.
+       */
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          name_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * name defines the name of the token (eg: Cosmos Atom)
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>string name = 5;</code>
+       * @return The bytes for name.
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * name defines the name of the token (eg: Cosmos Atom)
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>string name = 5;</code>
+       * @param value The name to set.
+       * @return This builder for chaining.
+       */
+      public Builder setName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * name defines the name of the token (eg: Cosmos Atom)
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>string name = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearName() {
+        
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * name defines the name of the token (eg: Cosmos Atom)
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>string name = 5;</code>
+       * @param value The bytes for name to set.
+       * @return This builder for chaining.
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        name_ = value;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object symbol_ = "";
+      /**
+       * <pre>
+       * symbol is the token symbol usually shown on exchanges (eg: ATOM). This can
+       * be the same as the display.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>string symbol = 6;</code>
+       * @return The symbol.
+       */
+      public java.lang.String getSymbol() {
+        java.lang.Object ref = symbol_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          symbol_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <pre>
+       * symbol is the token symbol usually shown on exchanges (eg: ATOM). This can
+       * be the same as the display.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>string symbol = 6;</code>
+       * @return The bytes for symbol.
+       */
+      public com.google.protobuf.ByteString
+          getSymbolBytes() {
+        java.lang.Object ref = symbol_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          symbol_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <pre>
+       * symbol is the token symbol usually shown on exchanges (eg: ATOM). This can
+       * be the same as the display.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>string symbol = 6;</code>
+       * @param value The symbol to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSymbol(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        symbol_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * symbol is the token symbol usually shown on exchanges (eg: ATOM). This can
+       * be the same as the display.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>string symbol = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSymbol() {
+        
+        symbol_ = getDefaultInstance().getSymbol();
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * symbol is the token symbol usually shown on exchanges (eg: ATOM). This can
+       * be the same as the display.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>string symbol = 6;</code>
+       * @param value The bytes for symbol to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSymbolBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        symbol_ = value;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -6771,17 +7172,18 @@ public final class Bank {
       "ypes.Coins:\010\350\240\037\000\210\240\037\000\"\177\n\006Output\022\017\n\007addres" +
       "s\030\001 \001(\t\022Z\n\005coins\030\002 \003(\0132\031.cosmos.base.v1b" +
       "eta1.CoinB0\310\336\037\000\252\337\037(github.com/cosmos/cos" +
-      "mos-sdk/types.Coins:\010\350\240\037\000\210\240\037\000\"\253\001\n\006Supply" +
+      "mos-sdk/types.Coins:\010\350\240\037\000\210\240\037\000\"\254\001\n\006Supply" +
       "\022Z\n\005total\030\001 \003(\0132\031.cosmos.base.v1beta1.Co" +
       "inB0\310\336\037\000\252\337\037(github.com/cosmos/cosmos-sdk" +
-      "/types.Coins:E\350\240\037\001\210\240\037\000\230\240\037\000\322\264-5*github.co" +
-      "m/cosmos/cosmos-sdk/x/bank/exported.Supp" +
-      "lyI\"=\n\tDenomUnit\022\r\n\005denom\030\001 \001(\t\022\020\n\010expon" +
-      "ent\030\002 \001(\r\022\017\n\007aliases\030\003 \003(\t\"s\n\010Metadata\022\023" +
-      "\n\013description\030\001 \001(\t\0223\n\013denom_units\030\002 \003(\013" +
-      "2\036.cosmos.bank.v1beta1.DenomUnit\022\014\n\004base" +
-      "\030\003 \001(\t\022\017\n\007display\030\004 \001(\tB+Z)github.com/co" +
-      "smos/cosmos-sdk/x/bank/typesb\006proto3"
+      "/types.Coins:F\030\001\350\240\037\001\210\240\037\000\322\264-8*github.com/" +
+      "cosmos/cosmos-sdk/x/bank/legacy/v040.Sup" +
+      "plyI\"=\n\tDenomUnit\022\r\n\005denom\030\001 \001(\t\022\020\n\010expo" +
+      "nent\030\002 \001(\r\022\017\n\007aliases\030\003 \003(\t\"\221\001\n\010Metadata" +
+      "\022\023\n\013description\030\001 \001(\t\0223\n\013denom_units\030\002 \003" +
+      "(\0132\036.cosmos.bank.v1beta1.DenomUnit\022\014\n\004ba" +
+      "se\030\003 \001(\t\022\017\n\007display\030\004 \001(\t\022\014\n\004name\030\005 \001(\t\022" +
+      "\016\n\006symbol\030\006 \001(\tB+Z)github.com/cosmos/cos" +
+      "mos-sdk/x/bank/typesb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -6831,7 +7233,7 @@ public final class Bank {
     internal_static_cosmos_bank_v1beta1_Metadata_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_Metadata_descriptor,
-        new java.lang.String[] { "Description", "DenomUnits", "Base", "Display", });
+        new java.lang.String[] { "Description", "DenomUnits", "Base", "Display", "Name", "Symbol", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(cosmos_proto.Cosmos.implementsInterface);

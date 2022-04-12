@@ -16,8 +16,8 @@ public final class Solomachine {
   }
   /**
    * <pre>
-   * DataType defines the type of solo machine proof being created. This is done to preserve uniqueness of different
-   * data sign byte encodings.
+   * DataType defines the type of solo machine proof being created. This is done
+   * to preserve uniqueness of different data sign byte encodings.
    * </pre>
    *
    * Protobuf enum {@code ibc.lightclients.solomachine.v1.DataType}
@@ -1223,8 +1223,9 @@ public final class Solomachine {
 
     /**
      * <pre>
-     * diversifier allows the same public key to be re-used across different solo machine clients
-     * (potentially on different chains) without being considered misbehaviour.
+     * diversifier allows the same public key to be re-used across different solo
+     * machine clients (potentially on different chains) without being considered
+     * misbehaviour.
      * </pre>
      *
      * <code>string diversifier = 2;</code>
@@ -1233,8 +1234,9 @@ public final class Solomachine {
     java.lang.String getDiversifier();
     /**
      * <pre>
-     * diversifier allows the same public key to be re-used across different solo machine clients
-     * (potentially on different chains) without being considered misbehaviour.
+     * diversifier allows the same public key to be re-used across different solo
+     * machine clients (potentially on different chains) without being considered
+     * misbehaviour.
      * </pre>
      *
      * <code>string diversifier = 2;</code>
@@ -1251,8 +1253,9 @@ public final class Solomachine {
   }
   /**
    * <pre>
-   * ConsensusState defines a solo machine consensus state. The sequence of a consensus state
-   * is contained in the "height" key used in storing the consensus state.
+   * ConsensusState defines a solo machine consensus state. The sequence of a
+   * consensus state is contained in the "height" key used in storing the
+   * consensus state.
    * </pre>
    *
    * Protobuf type {@code ibc.lightclients.solomachine.v1.ConsensusState}
@@ -1400,8 +1403,9 @@ public final class Solomachine {
     private volatile java.lang.Object diversifier_;
     /**
      * <pre>
-     * diversifier allows the same public key to be re-used across different solo machine clients
-     * (potentially on different chains) without being considered misbehaviour.
+     * diversifier allows the same public key to be re-used across different solo
+     * machine clients (potentially on different chains) without being considered
+     * misbehaviour.
      * </pre>
      *
      * <code>string diversifier = 2;</code>
@@ -1422,8 +1426,9 @@ public final class Solomachine {
     }
     /**
      * <pre>
-     * diversifier allows the same public key to be re-used across different solo machine clients
-     * (potentially on different chains) without being considered misbehaviour.
+     * diversifier allows the same public key to be re-used across different solo
+     * machine clients (potentially on different chains) without being considered
+     * misbehaviour.
      * </pre>
      *
      * <code>string diversifier = 2;</code>
@@ -1639,8 +1644,9 @@ public final class Solomachine {
     }
     /**
      * <pre>
-     * ConsensusState defines a solo machine consensus state. The sequence of a consensus state
-     * is contained in the "height" key used in storing the consensus state.
+     * ConsensusState defines a solo machine consensus state. The sequence of a
+     * consensus state is contained in the "height" key used in storing the
+     * consensus state.
      * </pre>
      *
      * Protobuf type {@code ibc.lightclients.solomachine.v1.ConsensusState}
@@ -1968,8 +1974,9 @@ public final class Solomachine {
       private java.lang.Object diversifier_ = "";
       /**
        * <pre>
-       * diversifier allows the same public key to be re-used across different solo machine clients
-       * (potentially on different chains) without being considered misbehaviour.
+       * diversifier allows the same public key to be re-used across different solo
+       * machine clients (potentially on different chains) without being considered
+       * misbehaviour.
        * </pre>
        *
        * <code>string diversifier = 2;</code>
@@ -1989,8 +1996,9 @@ public final class Solomachine {
       }
       /**
        * <pre>
-       * diversifier allows the same public key to be re-used across different solo machine clients
-       * (potentially on different chains) without being considered misbehaviour.
+       * diversifier allows the same public key to be re-used across different solo
+       * machine clients (potentially on different chains) without being considered
+       * misbehaviour.
        * </pre>
        *
        * <code>string diversifier = 2;</code>
@@ -2011,8 +2019,9 @@ public final class Solomachine {
       }
       /**
        * <pre>
-       * diversifier allows the same public key to be re-used across different solo machine clients
-       * (potentially on different chains) without being considered misbehaviour.
+       * diversifier allows the same public key to be re-used across different solo
+       * machine clients (potentially on different chains) without being considered
+       * misbehaviour.
        * </pre>
        *
        * <code>string diversifier = 2;</code>
@@ -2031,8 +2040,9 @@ public final class Solomachine {
       }
       /**
        * <pre>
-       * diversifier allows the same public key to be re-used across different solo machine clients
-       * (potentially on different chains) without being considered misbehaviour.
+       * diversifier allows the same public key to be re-used across different solo
+       * machine clients (potentially on different chains) without being considered
+       * misbehaviour.
        * </pre>
        *
        * <code>string diversifier = 2;</code>
@@ -2046,8 +2056,9 @@ public final class Solomachine {
       }
       /**
        * <pre>
-       * diversifier allows the same public key to be re-used across different solo machine clients
-       * (potentially on different chains) without being considered misbehaviour.
+       * diversifier allows the same public key to be re-used across different solo
+       * machine clients (potentially on different chains) without being considered
+       * misbehaviour.
        * </pre>
        *
        * <code>string diversifier = 2;</code>
@@ -12609,9 +12620,9 @@ public final class Solomachine {
       "TYPE_PACKET_RECEIPT_ABSENCE\020\007\032\030\212\235 \024PACKE" +
       "TRECEIPTABSENCE\0226\n\034DATA_TYPE_NEXT_SEQUEN" +
       "CE_RECV\020\010\032\024\212\235 \020NEXTSEQUENCERECV\022 \n\020DATA_" +
-      "TYPE_HEADER\020\t\032\n\212\235 \006HEADER\032\004\210\243\036\000BGZEgithu" +
-      "b.com/cosmos/cosmos-sdk/x/ibc/light-clie" +
-      "nts/06-solomachine/typesb\006proto3"
+      "TYPE_HEADER\020\t\032\n\212\235 \006HEADER\032\004\210\243\036\000B@Z>githu" +
+      "b.com/cosmos/ibc-go/v3/modules/core/02-c" +
+      "lient/legacy/v100b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

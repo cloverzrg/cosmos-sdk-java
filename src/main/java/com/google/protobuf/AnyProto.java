@@ -29,11 +29,11 @@ public final class AnyProto {
   static {
     java.lang.String[] descriptorData = {
       "\n\031google/protobuf/any.proto\022\017google.prot" +
-      "obuf\032\024gogoproto/gogo.proto\",\n\003Any\022\020\n\010typ" +
-      "e_url\030\001 \001(\t\022\r\n\005value\030\002 \001(\014:\004\360\241\037\000BS\n\023com." +
-      "google.protobufB\010AnyProtoP\001Z\005types\242\002\003GPB" +
-      "\252\002\036Google.Protobuf.WellKnownTypes\300\343\036\000b\006p" +
-      "roto3"
+      "obuf\032\024gogoproto/gogo.proto\"8\n\003Any\022\020\n\010typ" +
+      "e_url\030\001 \001(\t\022\r\n\005value\030\002 \001(\014:\020\360\241\037\000\230\240\037\000\260\240\037\000" +
+      "\200\334 \000BS\n\023com.google.protobufB\010AnyProtoP\001Z" +
+      "\005types\242\002\003GPB\252\002\036Google.Protobuf.WellKnown" +
+      "Types\300\343\036\000b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -49,6 +49,9 @@ public final class AnyProto {
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();
     registry.add(com.google.protobuf.GoGoProtos.goprotoRegistration);
+    registry.add(com.google.protobuf.GoGoProtos.goprotoStringer);
+    registry.add(com.google.protobuf.GoGoProtos.gostring);
+    registry.add(com.google.protobuf.GoGoProtos.stringer);
     registry.add(com.google.protobuf.GoGoProtos.typedecl);
     com.google.protobuf.Descriptors.FileDescriptor
         .internalUpdateFileDescriptor(descriptor, registry);

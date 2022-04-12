@@ -32,7 +32,7 @@ public final class Slashing {
 
     /**
      * <pre>
-     * height at which validator was first a candidate OR was unjailed
+     * Height at which validator was first a candidate OR was unjailed
      * </pre>
      *
      * <code>int64 start_height = 2 [(.gogoproto.moretags) = "yaml:&#92;"start_height&#92;""];</code>
@@ -42,7 +42,9 @@ public final class Slashing {
 
     /**
      * <pre>
-     * index offset into signed block bit array
+     * Index which is incremented each time the validator was a bonded
+     * in a block and may have signed a precommit or not. This in conjunction with the
+     * `SignedBlocksWindow` param determines the index in the `MissedBlocksBitArray`.
      * </pre>
      *
      * <code>int64 index_offset = 3 [(.gogoproto.moretags) = "yaml:&#92;"index_offset&#92;""];</code>
@@ -52,7 +54,7 @@ public final class Slashing {
 
     /**
      * <pre>
-     * timestamp validator cannot be unjailed until
+     * Timestamp until which the validator is jailed due to liveness downtime.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -61,7 +63,7 @@ public final class Slashing {
     boolean hasJailedUntil();
     /**
      * <pre>
-     * timestamp validator cannot be unjailed until
+     * Timestamp until which the validator is jailed due to liveness downtime.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -70,7 +72,7 @@ public final class Slashing {
     com.google.protobuf.Timestamp getJailedUntil();
     /**
      * <pre>
-     * timestamp validator cannot be unjailed until
+     * Timestamp until which the validator is jailed due to liveness downtime.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -79,8 +81,8 @@ public final class Slashing {
 
     /**
      * <pre>
-     * whether or not a validator has been tombstoned (killed out of validator
-     * set)
+     * Whether or not a validator has been tombstoned (killed out of validator set). It is set
+     * once the validator commits an equivocation or for any other configured misbehiavor.
      * </pre>
      *
      * <code>bool tombstoned = 5;</code>
@@ -90,7 +92,8 @@ public final class Slashing {
 
     /**
      * <pre>
-     * missed blocks counter (to avoid scanning the array every time)
+     * A counter kept to avoid unnecessary array reads.
+     * Note that `Sum(MissedBlocksBitArray)` always equals `MissedBlocksCounter`.
      * </pre>
      *
      * <code>int64 missed_blocks_counter = 6 [(.gogoproto.moretags) = "yaml:&#92;"missed_blocks_counter&#92;""];</code>
@@ -264,7 +267,7 @@ public final class Slashing {
     private long startHeight_;
     /**
      * <pre>
-     * height at which validator was first a candidate OR was unjailed
+     * Height at which validator was first a candidate OR was unjailed
      * </pre>
      *
      * <code>int64 start_height = 2 [(.gogoproto.moretags) = "yaml:&#92;"start_height&#92;""];</code>
@@ -279,7 +282,9 @@ public final class Slashing {
     private long indexOffset_;
     /**
      * <pre>
-     * index offset into signed block bit array
+     * Index which is incremented each time the validator was a bonded
+     * in a block and may have signed a precommit or not. This in conjunction with the
+     * `SignedBlocksWindow` param determines the index in the `MissedBlocksBitArray`.
      * </pre>
      *
      * <code>int64 index_offset = 3 [(.gogoproto.moretags) = "yaml:&#92;"index_offset&#92;""];</code>
@@ -294,7 +299,7 @@ public final class Slashing {
     private com.google.protobuf.Timestamp jailedUntil_;
     /**
      * <pre>
-     * timestamp validator cannot be unjailed until
+     * Timestamp until which the validator is jailed due to liveness downtime.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -306,7 +311,7 @@ public final class Slashing {
     }
     /**
      * <pre>
-     * timestamp validator cannot be unjailed until
+     * Timestamp until which the validator is jailed due to liveness downtime.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -318,7 +323,7 @@ public final class Slashing {
     }
     /**
      * <pre>
-     * timestamp validator cannot be unjailed until
+     * Timestamp until which the validator is jailed due to liveness downtime.
      * </pre>
      *
      * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -332,8 +337,8 @@ public final class Slashing {
     private boolean tombstoned_;
     /**
      * <pre>
-     * whether or not a validator has been tombstoned (killed out of validator
-     * set)
+     * Whether or not a validator has been tombstoned (killed out of validator set). It is set
+     * once the validator commits an equivocation or for any other configured misbehiavor.
      * </pre>
      *
      * <code>bool tombstoned = 5;</code>
@@ -348,7 +353,8 @@ public final class Slashing {
     private long missedBlocksCounter_;
     /**
      * <pre>
-     * missed blocks counter (to avoid scanning the array every time)
+     * A counter kept to avoid unnecessary array reads.
+     * Note that `Sum(MissedBlocksBitArray)` always equals `MissedBlocksCounter`.
      * </pre>
      *
      * <code>int64 missed_blocks_counter = 6 [(.gogoproto.moretags) = "yaml:&#92;"missed_blocks_counter&#92;""];</code>
@@ -847,7 +853,7 @@ public final class Slashing {
       private long startHeight_ ;
       /**
        * <pre>
-       * height at which validator was first a candidate OR was unjailed
+       * Height at which validator was first a candidate OR was unjailed
        * </pre>
        *
        * <code>int64 start_height = 2 [(.gogoproto.moretags) = "yaml:&#92;"start_height&#92;""];</code>
@@ -859,7 +865,7 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * height at which validator was first a candidate OR was unjailed
+       * Height at which validator was first a candidate OR was unjailed
        * </pre>
        *
        * <code>int64 start_height = 2 [(.gogoproto.moretags) = "yaml:&#92;"start_height&#92;""];</code>
@@ -874,7 +880,7 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * height at which validator was first a candidate OR was unjailed
+       * Height at which validator was first a candidate OR was unjailed
        * </pre>
        *
        * <code>int64 start_height = 2 [(.gogoproto.moretags) = "yaml:&#92;"start_height&#92;""];</code>
@@ -890,7 +896,9 @@ public final class Slashing {
       private long indexOffset_ ;
       /**
        * <pre>
-       * index offset into signed block bit array
+       * Index which is incremented each time the validator was a bonded
+       * in a block and may have signed a precommit or not. This in conjunction with the
+       * `SignedBlocksWindow` param determines the index in the `MissedBlocksBitArray`.
        * </pre>
        *
        * <code>int64 index_offset = 3 [(.gogoproto.moretags) = "yaml:&#92;"index_offset&#92;""];</code>
@@ -902,7 +910,9 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * index offset into signed block bit array
+       * Index which is incremented each time the validator was a bonded
+       * in a block and may have signed a precommit or not. This in conjunction with the
+       * `SignedBlocksWindow` param determines the index in the `MissedBlocksBitArray`.
        * </pre>
        *
        * <code>int64 index_offset = 3 [(.gogoproto.moretags) = "yaml:&#92;"index_offset&#92;""];</code>
@@ -917,7 +927,9 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * index offset into signed block bit array
+       * Index which is incremented each time the validator was a bonded
+       * in a block and may have signed a precommit or not. This in conjunction with the
+       * `SignedBlocksWindow` param determines the index in the `MissedBlocksBitArray`.
        * </pre>
        *
        * <code>int64 index_offset = 3 [(.gogoproto.moretags) = "yaml:&#92;"index_offset&#92;""];</code>
@@ -935,7 +947,7 @@ public final class Slashing {
           com.google.protobuf.Timestamp, com.google.protobuf.Timestamp.Builder, com.google.protobuf.TimestampOrBuilder> jailedUntilBuilder_;
       /**
        * <pre>
-       * timestamp validator cannot be unjailed until
+       * Timestamp until which the validator is jailed due to liveness downtime.
        * </pre>
        *
        * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -946,7 +958,7 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * timestamp validator cannot be unjailed until
+       * Timestamp until which the validator is jailed due to liveness downtime.
        * </pre>
        *
        * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -961,7 +973,7 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * timestamp validator cannot be unjailed until
+       * Timestamp until which the validator is jailed due to liveness downtime.
        * </pre>
        *
        * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -981,7 +993,7 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * timestamp validator cannot be unjailed until
+       * Timestamp until which the validator is jailed due to liveness downtime.
        * </pre>
        *
        * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -999,7 +1011,7 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * timestamp validator cannot be unjailed until
+       * Timestamp until which the validator is jailed due to liveness downtime.
        * </pre>
        *
        * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -1021,7 +1033,7 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * timestamp validator cannot be unjailed until
+       * Timestamp until which the validator is jailed due to liveness downtime.
        * </pre>
        *
        * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -1039,7 +1051,7 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * timestamp validator cannot be unjailed until
+       * Timestamp until which the validator is jailed due to liveness downtime.
        * </pre>
        *
        * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -1051,7 +1063,7 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * timestamp validator cannot be unjailed until
+       * Timestamp until which the validator is jailed due to liveness downtime.
        * </pre>
        *
        * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -1066,7 +1078,7 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * timestamp validator cannot be unjailed until
+       * Timestamp until which the validator is jailed due to liveness downtime.
        * </pre>
        *
        * <code>.google.protobuf.Timestamp jailed_until = 4 [(.gogoproto.nullable) = false, (.gogoproto.moretags) = "yaml:&#92;"jailed_until&#92;"", (.gogoproto.stdtime) = true];</code>
@@ -1088,8 +1100,8 @@ public final class Slashing {
       private boolean tombstoned_ ;
       /**
        * <pre>
-       * whether or not a validator has been tombstoned (killed out of validator
-       * set)
+       * Whether or not a validator has been tombstoned (killed out of validator set). It is set
+       * once the validator commits an equivocation or for any other configured misbehiavor.
        * </pre>
        *
        * <code>bool tombstoned = 5;</code>
@@ -1101,8 +1113,8 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * whether or not a validator has been tombstoned (killed out of validator
-       * set)
+       * Whether or not a validator has been tombstoned (killed out of validator set). It is set
+       * once the validator commits an equivocation or for any other configured misbehiavor.
        * </pre>
        *
        * <code>bool tombstoned = 5;</code>
@@ -1117,8 +1129,8 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * whether or not a validator has been tombstoned (killed out of validator
-       * set)
+       * Whether or not a validator has been tombstoned (killed out of validator set). It is set
+       * once the validator commits an equivocation or for any other configured misbehiavor.
        * </pre>
        *
        * <code>bool tombstoned = 5;</code>
@@ -1134,7 +1146,8 @@ public final class Slashing {
       private long missedBlocksCounter_ ;
       /**
        * <pre>
-       * missed blocks counter (to avoid scanning the array every time)
+       * A counter kept to avoid unnecessary array reads.
+       * Note that `Sum(MissedBlocksBitArray)` always equals `MissedBlocksCounter`.
        * </pre>
        *
        * <code>int64 missed_blocks_counter = 6 [(.gogoproto.moretags) = "yaml:&#92;"missed_blocks_counter&#92;""];</code>
@@ -1146,7 +1159,8 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * missed blocks counter (to avoid scanning the array every time)
+       * A counter kept to avoid unnecessary array reads.
+       * Note that `Sum(MissedBlocksBitArray)` always equals `MissedBlocksCounter`.
        * </pre>
        *
        * <code>int64 missed_blocks_counter = 6 [(.gogoproto.moretags) = "yaml:&#92;"missed_blocks_counter&#92;""];</code>
@@ -1161,7 +1175,8 @@ public final class Slashing {
       }
       /**
        * <pre>
-       * missed blocks counter (to avoid scanning the array every time)
+       * A counter kept to avoid unnecessary array reads.
+       * Note that `Sum(MissedBlocksBitArray)` always equals `MissedBlocksCounter`.
        * </pre>
        *
        * <code>int64 missed_blocks_counter = 6 [(.gogoproto.moretags) = "yaml:&#92;"missed_blocks_counter&#92;""];</code>

@@ -3565,6 +3565,36 @@ public final class QueryOuterClass {
   public interface QueryTotalSupplyRequestOrBuilder extends
       // @@protoc_insertion_point(interface_extends:cosmos.bank.v1beta1.QueryTotalSupplyRequest)
       com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     * pagination defines an optional pagination for the request.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     * @return Whether the pagination field is set.
+     */
+    boolean hasPagination();
+    /**
+     * <pre>
+     * pagination defines an optional pagination for the request.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     * @return The pagination.
+     */
+    cosmos.base.query.v1beta1.Pagination.PageRequest getPagination();
+    /**
+     * <pre>
+     * pagination defines an optional pagination for the request.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     */
+    cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder getPaginationOrBuilder();
   }
   /**
    * <pre>
@@ -3616,6 +3646,19 @@ public final class QueryOuterClass {
             case 0:
               done = true;
               break;
+            case 10: {
+              cosmos.base.query.v1beta1.Pagination.PageRequest.Builder subBuilder = null;
+              if (pagination_ != null) {
+                subBuilder = pagination_.toBuilder();
+              }
+              pagination_ = input.readMessage(cosmos.base.query.v1beta1.Pagination.PageRequest.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(pagination_);
+                pagination_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -3650,6 +3693,47 @@ public final class QueryOuterClass {
               cosmos.bank.v1beta1.QueryOuterClass.QueryTotalSupplyRequest.class, cosmos.bank.v1beta1.QueryOuterClass.QueryTotalSupplyRequest.Builder.class);
     }
 
+    public static final int PAGINATION_FIELD_NUMBER = 1;
+    private cosmos.base.query.v1beta1.Pagination.PageRequest pagination_;
+    /**
+     * <pre>
+     * pagination defines an optional pagination for the request.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     * @return Whether the pagination field is set.
+     */
+    @java.lang.Override
+    public boolean hasPagination() {
+      return pagination_ != null;
+    }
+    /**
+     * <pre>
+     * pagination defines an optional pagination for the request.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     * @return The pagination.
+     */
+    @java.lang.Override
+    public cosmos.base.query.v1beta1.Pagination.PageRequest getPagination() {
+      return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageRequest.getDefaultInstance() : pagination_;
+    }
+    /**
+     * <pre>
+     * pagination defines an optional pagination for the request.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+     */
+    @java.lang.Override
+    public cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder getPaginationOrBuilder() {
+      return getPagination();
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -3664,6 +3748,9 @@ public final class QueryOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (pagination_ != null) {
+        output.writeMessage(1, getPagination());
+      }
       unknownFields.writeTo(output);
     }
 
@@ -3673,6 +3760,10 @@ public final class QueryOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (pagination_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, getPagination());
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -3688,6 +3779,11 @@ public final class QueryOuterClass {
       }
       cosmos.bank.v1beta1.QueryOuterClass.QueryTotalSupplyRequest other = (cosmos.bank.v1beta1.QueryOuterClass.QueryTotalSupplyRequest) obj;
 
+      if (hasPagination() != other.hasPagination()) return false;
+      if (hasPagination()) {
+        if (!getPagination()
+            .equals(other.getPagination())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -3699,6 +3795,10 @@ public final class QueryOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      if (hasPagination()) {
+        hash = (37 * hash) + PAGINATION_FIELD_NUMBER;
+        hash = (53 * hash) + getPagination().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -3837,6 +3937,12 @@ public final class QueryOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        if (paginationBuilder_ == null) {
+          pagination_ = null;
+        } else {
+          pagination_ = null;
+          paginationBuilder_ = null;
+        }
         return this;
       }
 
@@ -3863,6 +3969,11 @@ public final class QueryOuterClass {
       @java.lang.Override
       public cosmos.bank.v1beta1.QueryOuterClass.QueryTotalSupplyRequest buildPartial() {
         cosmos.bank.v1beta1.QueryOuterClass.QueryTotalSupplyRequest result = new cosmos.bank.v1beta1.QueryOuterClass.QueryTotalSupplyRequest(this);
+        if (paginationBuilder_ == null) {
+          result.pagination_ = pagination_;
+        } else {
+          result.pagination_ = paginationBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -3911,6 +4022,9 @@ public final class QueryOuterClass {
 
       public Builder mergeFrom(cosmos.bank.v1beta1.QueryOuterClass.QueryTotalSupplyRequest other) {
         if (other == cosmos.bank.v1beta1.QueryOuterClass.QueryTotalSupplyRequest.getDefaultInstance()) return this;
+        if (other.hasPagination()) {
+          mergePagination(other.getPagination());
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -3938,6 +4052,170 @@ public final class QueryOuterClass {
           }
         }
         return this;
+      }
+
+      private cosmos.base.query.v1beta1.Pagination.PageRequest pagination_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cosmos.base.query.v1beta1.Pagination.PageRequest, cosmos.base.query.v1beta1.Pagination.PageRequest.Builder, cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder> paginationBuilder_;
+      /**
+       * <pre>
+       * pagination defines an optional pagination for the request.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+       * @return Whether the pagination field is set.
+       */
+      public boolean hasPagination() {
+        return paginationBuilder_ != null || pagination_ != null;
+      }
+      /**
+       * <pre>
+       * pagination defines an optional pagination for the request.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+       * @return The pagination.
+       */
+      public cosmos.base.query.v1beta1.Pagination.PageRequest getPagination() {
+        if (paginationBuilder_ == null) {
+          return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageRequest.getDefaultInstance() : pagination_;
+        } else {
+          return paginationBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * pagination defines an optional pagination for the request.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+       */
+      public Builder setPagination(cosmos.base.query.v1beta1.Pagination.PageRequest value) {
+        if (paginationBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pagination_ = value;
+          onChanged();
+        } else {
+          paginationBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines an optional pagination for the request.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+       */
+      public Builder setPagination(
+          cosmos.base.query.v1beta1.Pagination.PageRequest.Builder builderForValue) {
+        if (paginationBuilder_ == null) {
+          pagination_ = builderForValue.build();
+          onChanged();
+        } else {
+          paginationBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines an optional pagination for the request.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+       */
+      public Builder mergePagination(cosmos.base.query.v1beta1.Pagination.PageRequest value) {
+        if (paginationBuilder_ == null) {
+          if (pagination_ != null) {
+            pagination_ =
+              cosmos.base.query.v1beta1.Pagination.PageRequest.newBuilder(pagination_).mergeFrom(value).buildPartial();
+          } else {
+            pagination_ = value;
+          }
+          onChanged();
+        } else {
+          paginationBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines an optional pagination for the request.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+       */
+      public Builder clearPagination() {
+        if (paginationBuilder_ == null) {
+          pagination_ = null;
+          onChanged();
+        } else {
+          pagination_ = null;
+          paginationBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines an optional pagination for the request.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+       */
+      public cosmos.base.query.v1beta1.Pagination.PageRequest.Builder getPaginationBuilder() {
+        
+        onChanged();
+        return getPaginationFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * pagination defines an optional pagination for the request.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+       */
+      public cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder getPaginationOrBuilder() {
+        if (paginationBuilder_ != null) {
+          return paginationBuilder_.getMessageOrBuilder();
+        } else {
+          return pagination_ == null ?
+              cosmos.base.query.v1beta1.Pagination.PageRequest.getDefaultInstance() : pagination_;
+        }
+      }
+      /**
+       * <pre>
+       * pagination defines an optional pagination for the request.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 1;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cosmos.base.query.v1beta1.Pagination.PageRequest, cosmos.base.query.v1beta1.Pagination.PageRequest.Builder, cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder> 
+          getPaginationFieldBuilder() {
+        if (paginationBuilder_ == null) {
+          paginationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cosmos.base.query.v1beta1.Pagination.PageRequest, cosmos.base.query.v1beta1.Pagination.PageRequest.Builder, cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder>(
+                  getPagination(),
+                  getParentForChildren(),
+                  isClean());
+          pagination_ = null;
+        }
+        return paginationBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -4039,6 +4317,36 @@ public final class QueryOuterClass {
      */
     cosmos.base.v1beta1.CoinOuterClass.CoinOrBuilder getSupplyOrBuilder(
         int index);
+
+    /**
+     * <pre>
+     * pagination defines the pagination in the response.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return Whether the pagination field is set.
+     */
+    boolean hasPagination();
+    /**
+     * <pre>
+     * pagination defines the pagination in the response.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return The pagination.
+     */
+    cosmos.base.query.v1beta1.Pagination.PageResponse getPagination();
+    /**
+     * <pre>
+     * pagination defines the pagination in the response.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     */
+    cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder getPaginationOrBuilder();
   }
   /**
    * <pre>
@@ -4099,6 +4407,19 @@ public final class QueryOuterClass {
               }
               supply_.add(
                   input.readMessage(cosmos.base.v1beta1.CoinOuterClass.Coin.parser(), extensionRegistry));
+              break;
+            }
+            case 18: {
+              cosmos.base.query.v1beta1.Pagination.PageResponse.Builder subBuilder = null;
+              if (pagination_ != null) {
+                subBuilder = pagination_.toBuilder();
+              }
+              pagination_ = input.readMessage(cosmos.base.query.v1beta1.Pagination.PageResponse.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(pagination_);
+                pagination_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             default: {
@@ -4198,6 +4519,47 @@ public final class QueryOuterClass {
       return supply_.get(index);
     }
 
+    public static final int PAGINATION_FIELD_NUMBER = 2;
+    private cosmos.base.query.v1beta1.Pagination.PageResponse pagination_;
+    /**
+     * <pre>
+     * pagination defines the pagination in the response.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return Whether the pagination field is set.
+     */
+    @java.lang.Override
+    public boolean hasPagination() {
+      return pagination_ != null;
+    }
+    /**
+     * <pre>
+     * pagination defines the pagination in the response.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return The pagination.
+     */
+    @java.lang.Override
+    public cosmos.base.query.v1beta1.Pagination.PageResponse getPagination() {
+      return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageResponse.getDefaultInstance() : pagination_;
+    }
+    /**
+     * <pre>
+     * pagination defines the pagination in the response.
+     * Since: cosmos-sdk 0.43
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     */
+    @java.lang.Override
+    public cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder getPaginationOrBuilder() {
+      return getPagination();
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -4215,6 +4577,9 @@ public final class QueryOuterClass {
       for (int i = 0; i < supply_.size(); i++) {
         output.writeMessage(1, supply_.get(i));
       }
+      if (pagination_ != null) {
+        output.writeMessage(2, getPagination());
+      }
       unknownFields.writeTo(output);
     }
 
@@ -4227,6 +4592,10 @@ public final class QueryOuterClass {
       for (int i = 0; i < supply_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, supply_.get(i));
+      }
+      if (pagination_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getPagination());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -4245,6 +4614,11 @@ public final class QueryOuterClass {
 
       if (!getSupplyList()
           .equals(other.getSupplyList())) return false;
+      if (hasPagination() != other.hasPagination()) return false;
+      if (hasPagination()) {
+        if (!getPagination()
+            .equals(other.getPagination())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -4259,6 +4633,10 @@ public final class QueryOuterClass {
       if (getSupplyCount() > 0) {
         hash = (37 * hash) + SUPPLY_FIELD_NUMBER;
         hash = (53 * hash) + getSupplyList().hashCode();
+      }
+      if (hasPagination()) {
+        hash = (37 * hash) + PAGINATION_FIELD_NUMBER;
+        hash = (53 * hash) + getPagination().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -4405,6 +4783,12 @@ public final class QueryOuterClass {
         } else {
           supplyBuilder_.clear();
         }
+        if (paginationBuilder_ == null) {
+          pagination_ = null;
+        } else {
+          pagination_ = null;
+          paginationBuilder_ = null;
+        }
         return this;
       }
 
@@ -4440,6 +4824,11 @@ public final class QueryOuterClass {
           result.supply_ = supply_;
         } else {
           result.supply_ = supplyBuilder_.build();
+        }
+        if (paginationBuilder_ == null) {
+          result.pagination_ = pagination_;
+        } else {
+          result.pagination_ = paginationBuilder_.build();
         }
         onBuilt();
         return result;
@@ -4514,6 +4903,9 @@ public final class QueryOuterClass {
               supplyBuilder_.addAllMessages(other.supply_);
             }
           }
+        }
+        if (other.hasPagination()) {
+          mergePagination(other.getPagination());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -4855,6 +5247,170 @@ public final class QueryOuterClass {
           supply_ = null;
         }
         return supplyBuilder_;
+      }
+
+      private cosmos.base.query.v1beta1.Pagination.PageResponse pagination_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cosmos.base.query.v1beta1.Pagination.PageResponse, cosmos.base.query.v1beta1.Pagination.PageResponse.Builder, cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder> paginationBuilder_;
+      /**
+       * <pre>
+       * pagination defines the pagination in the response.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       * @return Whether the pagination field is set.
+       */
+      public boolean hasPagination() {
+        return paginationBuilder_ != null || pagination_ != null;
+      }
+      /**
+       * <pre>
+       * pagination defines the pagination in the response.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       * @return The pagination.
+       */
+      public cosmos.base.query.v1beta1.Pagination.PageResponse getPagination() {
+        if (paginationBuilder_ == null) {
+          return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageResponse.getDefaultInstance() : pagination_;
+        } else {
+          return paginationBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * pagination defines the pagination in the response.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      public Builder setPagination(cosmos.base.query.v1beta1.Pagination.PageResponse value) {
+        if (paginationBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pagination_ = value;
+          onChanged();
+        } else {
+          paginationBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines the pagination in the response.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      public Builder setPagination(
+          cosmos.base.query.v1beta1.Pagination.PageResponse.Builder builderForValue) {
+        if (paginationBuilder_ == null) {
+          pagination_ = builderForValue.build();
+          onChanged();
+        } else {
+          paginationBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines the pagination in the response.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      public Builder mergePagination(cosmos.base.query.v1beta1.Pagination.PageResponse value) {
+        if (paginationBuilder_ == null) {
+          if (pagination_ != null) {
+            pagination_ =
+              cosmos.base.query.v1beta1.Pagination.PageResponse.newBuilder(pagination_).mergeFrom(value).buildPartial();
+          } else {
+            pagination_ = value;
+          }
+          onChanged();
+        } else {
+          paginationBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines the pagination in the response.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      public Builder clearPagination() {
+        if (paginationBuilder_ == null) {
+          pagination_ = null;
+          onChanged();
+        } else {
+          pagination_ = null;
+          paginationBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines the pagination in the response.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      public cosmos.base.query.v1beta1.Pagination.PageResponse.Builder getPaginationBuilder() {
+        
+        onChanged();
+        return getPaginationFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * pagination defines the pagination in the response.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      public cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder getPaginationOrBuilder() {
+        if (paginationBuilder_ != null) {
+          return paginationBuilder_.getMessageOrBuilder();
+        } else {
+          return pagination_ == null ?
+              cosmos.base.query.v1beta1.Pagination.PageResponse.getDefaultInstance() : pagination_;
+        }
+      }
+      /**
+       * <pre>
+       * pagination defines the pagination in the response.
+       * Since: cosmos-sdk 0.43
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cosmos.base.query.v1beta1.Pagination.PageResponse, cosmos.base.query.v1beta1.Pagination.PageResponse.Builder, cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder> 
+          getPaginationFieldBuilder() {
+        if (paginationBuilder_ == null) {
+          paginationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cosmos.base.query.v1beta1.Pagination.PageResponse, cosmos.base.query.v1beta1.Pagination.PageResponse.Builder, cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder>(
+                  getPagination(),
+                  getParentForChildren(),
+                  isClean());
+          pagination_ = null;
+        }
+        return paginationBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -10546,53 +11102,56 @@ public final class QueryOuterClass {
       "se.v1beta1.CoinB0\310\336\037\000\252\337\037(github.com/cosm" +
       "os/cosmos-sdk/types.Coins\022;\n\npagination\030" +
       "\002 \001(\0132\'.cosmos.base.query.v1beta1.PageRe" +
-      "sponse\"\031\n\027QueryTotalSupplyRequest\"w\n\030Que" +
-      "ryTotalSupplyResponse\022[\n\006supply\030\001 \003(\0132\031." +
-      "cosmos.base.v1beta1.CoinB0\310\336\037\000\252\337\037(github" +
-      ".com/cosmos/cosmos-sdk/types.Coins\"%\n\024Qu" +
-      "erySupplyOfRequest\022\r\n\005denom\030\001 \001(\t\"H\n\025Que" +
-      "rySupplyOfResponse\022/\n\006amount\030\001 \001(\0132\031.cos" +
-      "mos.base.v1beta1.CoinB\004\310\336\037\000\"\024\n\022QueryPara" +
-      "msRequest\"H\n\023QueryParamsResponse\0221\n\006para" +
-      "ms\030\001 \001(\0132\033.cosmos.bank.v1beta1.ParamsB\004\310" +
-      "\336\037\000\"X\n\032QueryDenomsMetadataRequest\022:\n\npag" +
+      "sponse\"_\n\027QueryTotalSupplyRequest\022:\n\npag" +
       "ination\030\001 \001(\0132&.cosmos.base.query.v1beta" +
-      "1.PageRequest\"\222\001\n\033QueryDenomsMetadataRes" +
-      "ponse\0226\n\tmetadatas\030\001 \003(\0132\035.cosmos.bank.v" +
-      "1beta1.MetadataB\004\310\336\037\000\022;\n\npagination\030\002 \001(" +
-      "\0132\'.cosmos.base.query.v1beta1.PageRespon" +
-      "se\"*\n\031QueryDenomMetadataRequest\022\r\n\005denom" +
-      "\030\001 \001(\t\"S\n\032QueryDenomMetadataResponse\0225\n\010" +
-      "metadata\030\001 \001(\0132\035.cosmos.bank.v1beta1.Met" +
-      "adataB\004\310\336\037\0002\262\010\n\005Query\022\227\001\n\007Balance\022(.cosm" +
-      "os.bank.v1beta1.QueryBalanceRequest\032).co" +
-      "smos.bank.v1beta1.QueryBalanceResponse\"7" +
-      "\202\323\344\223\0021\022//cosmos/bank/v1beta1/balances/{a" +
-      "ddress}/{denom}\022\233\001\n\013AllBalances\022,.cosmos" +
-      ".bank.v1beta1.QueryAllBalancesRequest\032-." +
-      "cosmos.bank.v1beta1.QueryAllBalancesResp" +
-      "onse\"/\202\323\344\223\002)\022\'/cosmos/bank/v1beta1/balan" +
-      "ces/{address}\022\217\001\n\013TotalSupply\022,.cosmos.b" +
-      "ank.v1beta1.QueryTotalSupplyRequest\032-.co" +
-      "smos.bank.v1beta1.QueryTotalSupplyRespon" +
-      "se\"#\202\323\344\223\002\035\022\033/cosmos/bank/v1beta1/supply\022" +
-      "\216\001\n\010SupplyOf\022).cosmos.bank.v1beta1.Query" +
-      "SupplyOfRequest\032*.cosmos.bank.v1beta1.Qu" +
-      "erySupplyOfResponse\"+\202\323\344\223\002%\022#/cosmos/ban" +
-      "k/v1beta1/supply/{denom}\022\200\001\n\006Params\022\'.co" +
-      "smos.bank.v1beta1.QueryParamsRequest\032(.c" +
-      "osmos.bank.v1beta1.QueryParamsResponse\"#" +
-      "\202\323\344\223\002\035\022\033/cosmos/bank/v1beta1/params\022\246\001\n\r" +
-      "DenomMetadata\022..cosmos.bank.v1beta1.Quer" +
-      "yDenomMetadataRequest\032/.cosmos.bank.v1be" +
-      "ta1.QueryDenomMetadataResponse\"4\202\323\344\223\002.\022," +
-      "/cosmos/bank/v1beta1/denoms_metadata/{de" +
-      "nom}\022\241\001\n\016DenomsMetadata\022/.cosmos.bank.v1" +
-      "beta1.QueryDenomsMetadataRequest\0320.cosmo" +
-      "s.bank.v1beta1.QueryDenomsMetadataRespon" +
-      "se\",\202\323\344\223\002&\022$/cosmos/bank/v1beta1/denoms_" +
-      "metadataB+Z)github.com/cosmos/cosmos-sdk" +
-      "/x/bank/typesb\006proto3"
+      "1.PageRequest:\010\350\240\037\000\210\240\037\000\"\264\001\n\030QueryTotalSu" +
+      "pplyResponse\022[\n\006supply\030\001 \003(\0132\031.cosmos.ba" +
+      "se.v1beta1.CoinB0\310\336\037\000\252\337\037(github.com/cosm" +
+      "os/cosmos-sdk/types.Coins\022;\n\npagination\030" +
+      "\002 \001(\0132\'.cosmos.base.query.v1beta1.PageRe" +
+      "sponse\"%\n\024QuerySupplyOfRequest\022\r\n\005denom\030" +
+      "\001 \001(\t\"H\n\025QuerySupplyOfResponse\022/\n\006amount" +
+      "\030\001 \001(\0132\031.cosmos.base.v1beta1.CoinB\004\310\336\037\000\"" +
+      "\024\n\022QueryParamsRequest\"H\n\023QueryParamsResp" +
+      "onse\0221\n\006params\030\001 \001(\0132\033.cosmos.bank.v1bet" +
+      "a1.ParamsB\004\310\336\037\000\"X\n\032QueryDenomsMetadataRe" +
+      "quest\022:\n\npagination\030\001 \001(\0132&.cosmos.base." +
+      "query.v1beta1.PageRequest\"\222\001\n\033QueryDenom" +
+      "sMetadataResponse\0226\n\tmetadatas\030\001 \003(\0132\035.c" +
+      "osmos.bank.v1beta1.MetadataB\004\310\336\037\000\022;\n\npag" +
+      "ination\030\002 \001(\0132\'.cosmos.base.query.v1beta" +
+      "1.PageResponse\"*\n\031QueryDenomMetadataRequ" +
+      "est\022\r\n\005denom\030\001 \001(\t\"S\n\032QueryDenomMetadata" +
+      "Response\0225\n\010metadata\030\001 \001(\0132\035.cosmos.bank" +
+      ".v1beta1.MetadataB\004\310\336\037\0002\263\010\n\005Query\022\230\001\n\007Ba" +
+      "lance\022(.cosmos.bank.v1beta1.QueryBalance" +
+      "Request\032).cosmos.bank.v1beta1.QueryBalan" +
+      "ceResponse\"8\202\323\344\223\0022\0220/cosmos/bank/v1beta1" +
+      "/balances/{address}/by_denom\022\233\001\n\013AllBala" +
+      "nces\022,.cosmos.bank.v1beta1.QueryAllBalan" +
+      "cesRequest\032-.cosmos.bank.v1beta1.QueryAl" +
+      "lBalancesResponse\"/\202\323\344\223\002)\022\'/cosmos/bank/" +
+      "v1beta1/balances/{address}\022\217\001\n\013TotalSupp" +
+      "ly\022,.cosmos.bank.v1beta1.QueryTotalSuppl" +
+      "yRequest\032-.cosmos.bank.v1beta1.QueryTota" +
+      "lSupplyResponse\"#\202\323\344\223\002\035\022\033/cosmos/bank/v1" +
+      "beta1/supply\022\216\001\n\010SupplyOf\022).cosmos.bank." +
+      "v1beta1.QuerySupplyOfRequest\032*.cosmos.ba" +
+      "nk.v1beta1.QuerySupplyOfResponse\"+\202\323\344\223\002%" +
+      "\022#/cosmos/bank/v1beta1/supply/{denom}\022\200\001" +
+      "\n\006Params\022\'.cosmos.bank.v1beta1.QueryPara" +
+      "msRequest\032(.cosmos.bank.v1beta1.QueryPar" +
+      "amsResponse\"#\202\323\344\223\002\035\022\033/cosmos/bank/v1beta" +
+      "1/params\022\246\001\n\rDenomMetadata\022..cosmos.bank" +
+      ".v1beta1.QueryDenomMetadataRequest\032/.cos" +
+      "mos.bank.v1beta1.QueryDenomMetadataRespo" +
+      "nse\"4\202\323\344\223\002.\022,/cosmos/bank/v1beta1/denoms" +
+      "_metadata/{denom}\022\241\001\n\016DenomsMetadata\022/.c" +
+      "osmos.bank.v1beta1.QueryDenomsMetadataRe" +
+      "quest\0320.cosmos.bank.v1beta1.QueryDenomsM" +
+      "etadataResponse\",\202\323\344\223\002&\022$/cosmos/bank/v1" +
+      "beta1/denoms_metadataB+Z)github.com/cosm" +
+      "os/cosmos-sdk/x/bank/typesb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -10632,13 +11191,13 @@ public final class QueryOuterClass {
     internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryTotalSupplyRequest_descriptor,
-        new java.lang.String[] { });
+        new java.lang.String[] { "Pagination", });
     internal_static_cosmos_bank_v1beta1_QueryTotalSupplyResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_cosmos_bank_v1beta1_QueryTotalSupplyResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_bank_v1beta1_QueryTotalSupplyResponse_descriptor,
-        new java.lang.String[] { "Supply", });
+        new java.lang.String[] { "Supply", "Pagination", });
     internal_static_cosmos_bank_v1beta1_QuerySupplyOfRequest_descriptor =
       getDescriptor().getMessageTypes().get(6);
     internal_static_cosmos_bank_v1beta1_QuerySupplyOfRequest_fieldAccessorTable = new

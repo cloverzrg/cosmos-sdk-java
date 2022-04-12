@@ -7213,7 +7213,7 @@ public final class ChannelOuterClass {
    * conflicts with other protobuf message formats used for acknowledgements.
    * The first byte of any message with this format will be the non-ASCII values
    * `0xaa` (result) or `0xb2` (error). Implemented as defined by ICS:
-   * https://github.com/cosmos/ics/tree/master/spec/ics-004-channel-and-packet-semantics#acknowledgement-envelope
+   * https://github.com/cosmos/ibc/tree/master/spec/core/ics-004-channel-and-packet-semantics#acknowledgement-envelope
    * </pre>
    *
    * Protobuf type {@code ibc.core.channel.v1.Acknowledgement}
@@ -7611,7 +7611,7 @@ public final class ChannelOuterClass {
      * conflicts with other protobuf message formats used for acknowledgements.
      * The first byte of any message with this format will be the non-ASCII values
      * `0xaa` (result) or `0xb2` (error). Implemented as defined by ICS:
-     * https://github.com/cosmos/ics/tree/master/spec/ics-004-channel-and-packet-semantics#acknowledgement-envelope
+     * https://github.com/cosmos/ibc/tree/master/spec/core/ics-004-channel-and-packet-semantics#acknowledgement-envelope
      * </pre>
      *
      * Protobuf type {@code ibc.core.channel.v1.Acknowledgement}
@@ -8066,8 +8066,8 @@ public final class ChannelOuterClass {
       "D\032\004\210\243\036\000*w\n\005Order\022$\n\026ORDER_NONE_UNSPECIFI" +
       "ED\020\000\032\010\212\235 \004NONE\022\"\n\017ORDER_UNORDERED\020\001\032\r\212\235 " +
       "\tUNORDERED\022\036\n\rORDER_ORDERED\020\002\032\013\212\235 \007ORDER" +
-      "ED\032\004\210\243\036\000B:Z8github.com/cosmos/cosmos-sdk" +
-      "/x/ibc/core/04-channel/typesb\006proto3"
+      "ED\032\004\210\243\036\000B;Z9github.com/cosmos/ibc-go/v3/" +
+      "modules/core/04-channel/typesb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

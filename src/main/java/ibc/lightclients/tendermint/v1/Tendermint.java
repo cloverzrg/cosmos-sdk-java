@@ -230,10 +230,12 @@ public final class Tendermint {
     /**
      * <pre>
      * Path at which next upgraded client will be committed.
-     * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-     * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-     * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-     * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+     * Each element corresponds to the key for a single CommitmentProof in the
+     * chained proof. NOTE: ClientState must stored under
+     * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+     * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+     * the default upgrade module, upgrade_path should be []string{"upgrade",
+     * "upgradedIBCState"}`
      * </pre>
      *
      * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -244,10 +246,12 @@ public final class Tendermint {
     /**
      * <pre>
      * Path at which next upgraded client will be committed.
-     * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-     * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-     * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-     * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+     * Each element corresponds to the key for a single CommitmentProof in the
+     * chained proof. NOTE: ClientState must stored under
+     * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+     * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+     * the default upgrade module, upgrade_path should be []string{"upgrade",
+     * "upgradedIBCState"}`
      * </pre>
      *
      * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -257,10 +261,12 @@ public final class Tendermint {
     /**
      * <pre>
      * Path at which next upgraded client will be committed.
-     * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-     * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-     * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-     * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+     * Each element corresponds to the key for a single CommitmentProof in the
+     * chained proof. NOTE: ClientState must stored under
+     * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+     * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+     * the default upgrade module, upgrade_path should be []string{"upgrade",
+     * "upgradedIBCState"}`
      * </pre>
      *
      * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -271,10 +277,12 @@ public final class Tendermint {
     /**
      * <pre>
      * Path at which next upgraded client will be committed.
-     * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-     * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-     * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-     * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+     * Each element corresponds to the key for a single CommitmentProof in the
+     * chained proof. NOTE: ClientState must stored under
+     * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+     * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+     * the default upgrade module, upgrade_path should be []string{"upgrade",
+     * "upgradedIBCState"}`
      * </pre>
      *
      * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -834,10 +842,12 @@ public final class Tendermint {
     /**
      * <pre>
      * Path at which next upgraded client will be committed.
-     * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-     * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-     * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-     * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+     * Each element corresponds to the key for a single CommitmentProof in the
+     * chained proof. NOTE: ClientState must stored under
+     * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+     * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+     * the default upgrade module, upgrade_path should be []string{"upgrade",
+     * "upgradedIBCState"}`
      * </pre>
      *
      * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -850,10 +860,12 @@ public final class Tendermint {
     /**
      * <pre>
      * Path at which next upgraded client will be committed.
-     * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-     * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-     * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-     * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+     * Each element corresponds to the key for a single CommitmentProof in the
+     * chained proof. NOTE: ClientState must stored under
+     * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+     * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+     * the default upgrade module, upgrade_path should be []string{"upgrade",
+     * "upgradedIBCState"}`
      * </pre>
      *
      * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -865,10 +877,12 @@ public final class Tendermint {
     /**
      * <pre>
      * Path at which next upgraded client will be committed.
-     * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-     * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-     * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-     * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+     * Each element corresponds to the key for a single CommitmentProof in the
+     * chained proof. NOTE: ClientState must stored under
+     * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+     * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+     * the default upgrade module, upgrade_path should be []string{"upgrade",
+     * "upgradedIBCState"}`
      * </pre>
      *
      * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -881,10 +895,12 @@ public final class Tendermint {
     /**
      * <pre>
      * Path at which next upgraded client will be committed.
-     * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-     * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-     * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-     * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+     * Each element corresponds to the key for a single CommitmentProof in the
+     * chained proof. NOTE: ClientState must stored under
+     * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+     * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+     * the default upgrade module, upgrade_path should be []string{"upgrade",
+     * "upgradedIBCState"}`
      * </pre>
      *
      * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -2843,10 +2859,12 @@ public final class Tendermint {
       /**
        * <pre>
        * Path at which next upgraded client will be committed.
-       * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-       * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-       * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-       * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+       * Each element corresponds to the key for a single CommitmentProof in the
+       * chained proof. NOTE: ClientState must stored under
+       * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+       * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+       * the default upgrade module, upgrade_path should be []string{"upgrade",
+       * "upgradedIBCState"}`
        * </pre>
        *
        * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -2859,10 +2877,12 @@ public final class Tendermint {
       /**
        * <pre>
        * Path at which next upgraded client will be committed.
-       * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-       * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-       * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-       * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+       * Each element corresponds to the key for a single CommitmentProof in the
+       * chained proof. NOTE: ClientState must stored under
+       * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+       * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+       * the default upgrade module, upgrade_path should be []string{"upgrade",
+       * "upgradedIBCState"}`
        * </pre>
        *
        * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -2874,10 +2894,12 @@ public final class Tendermint {
       /**
        * <pre>
        * Path at which next upgraded client will be committed.
-       * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-       * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-       * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-       * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+       * Each element corresponds to the key for a single CommitmentProof in the
+       * chained proof. NOTE: ClientState must stored under
+       * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+       * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+       * the default upgrade module, upgrade_path should be []string{"upgrade",
+       * "upgradedIBCState"}`
        * </pre>
        *
        * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -2890,10 +2912,12 @@ public final class Tendermint {
       /**
        * <pre>
        * Path at which next upgraded client will be committed.
-       * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-       * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-       * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-       * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+       * Each element corresponds to the key for a single CommitmentProof in the
+       * chained proof. NOTE: ClientState must stored under
+       * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+       * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+       * the default upgrade module, upgrade_path should be []string{"upgrade",
+       * "upgradedIBCState"}`
        * </pre>
        *
        * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -2907,10 +2931,12 @@ public final class Tendermint {
       /**
        * <pre>
        * Path at which next upgraded client will be committed.
-       * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-       * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-       * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-       * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+       * Each element corresponds to the key for a single CommitmentProof in the
+       * chained proof. NOTE: ClientState must stored under
+       * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+       * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+       * the default upgrade module, upgrade_path should be []string{"upgrade",
+       * "upgradedIBCState"}`
        * </pre>
        *
        * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -2931,10 +2957,12 @@ public final class Tendermint {
       /**
        * <pre>
        * Path at which next upgraded client will be committed.
-       * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-       * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-       * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-       * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+       * Each element corresponds to the key for a single CommitmentProof in the
+       * chained proof. NOTE: ClientState must stored under
+       * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+       * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+       * the default upgrade module, upgrade_path should be []string{"upgrade",
+       * "upgradedIBCState"}`
        * </pre>
        *
        * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -2954,10 +2982,12 @@ public final class Tendermint {
       /**
        * <pre>
        * Path at which next upgraded client will be committed.
-       * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-       * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-       * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-       * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+       * Each element corresponds to the key for a single CommitmentProof in the
+       * chained proof. NOTE: ClientState must stored under
+       * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+       * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+       * the default upgrade module, upgrade_path should be []string{"upgrade",
+       * "upgradedIBCState"}`
        * </pre>
        *
        * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -2975,10 +3005,12 @@ public final class Tendermint {
       /**
        * <pre>
        * Path at which next upgraded client will be committed.
-       * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-       * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-       * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-       * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+       * Each element corresponds to the key for a single CommitmentProof in the
+       * chained proof. NOTE: ClientState must stored under
+       * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+       * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+       * the default upgrade module, upgrade_path should be []string{"upgrade",
+       * "upgradedIBCState"}`
        * </pre>
        *
        * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -2993,10 +3025,12 @@ public final class Tendermint {
       /**
        * <pre>
        * Path at which next upgraded client will be committed.
-       * Each element corresponds to the key for a single CommitmentProof in the chained proof.
-       * NOTE: ClientState must stored under `{upgradePath}/{upgradeHeight}/clientState`
-       * ConsensusState must be stored under `{upgradepath}/{upgradeHeight}/consensusState`
-       * For SDK chains using the default upgrade module, upgrade_path should be []string{"upgrade", "upgradedIBCState"}`
+       * Each element corresponds to the key for a single CommitmentProof in the
+       * chained proof. NOTE: ClientState must stored under
+       * `{upgradePath}/{upgradeHeight}/clientState` ConsensusState must be stored
+       * under `{upgradepath}/{upgradeHeight}/consensusState` For SDK chains using
+       * the default upgrade module, upgrade_path should be []string{"upgrade",
+       * "upgradedIBCState"}`
        * </pre>
        *
        * <code>repeated string upgrade_path = 9 [(.gogoproto.moretags) = "yaml:&#92;"upgrade_path&#92;""];</code>
@@ -6468,7 +6502,8 @@ public final class Tendermint {
   }
   /**
    * <pre>
-   * Fraction defines the protobuf message type for tmmath.Fraction that only supports positive values.
+   * Fraction defines the protobuf message type for tmmath.Fraction that only
+   * supports positive values.
    * </pre>
    *
    * Protobuf type {@code ibc.lightclients.tendermint.v1.Fraction}
@@ -6751,7 +6786,8 @@ public final class Tendermint {
     }
     /**
      * <pre>
-     * Fraction defines the protobuf message type for tmmath.Fraction that only supports positive values.
+     * Fraction defines the protobuf message type for tmmath.Fraction that only
+     * supports positive values.
      * </pre>
      *
      * Protobuf type {@code ibc.lightclients.tendermint.v1.Fraction}
@@ -7057,57 +7093,57 @@ public final class Tendermint {
       "\n/ibc/lightclients/tendermint/v1/tenderm" +
       "int.proto\022\036ibc.lightclients.tendermint.v" +
       "1\032 tendermint/types/validator.proto\032\034ten" +
-      "dermint/types/types.proto\032\023confio/proofs" +
-      ".proto\032\036google/protobuf/duration.proto\032\037" +
-      "google/protobuf/timestamp.proto\032\037ibc/cor" +
-      "e/client/v1/client.proto\032\'ibc/core/commi" +
-      "tment/v1/commitment.proto\032\024gogoproto/gog" +
-      "o.proto\"\270\006\n\013ClientState\022\020\n\010chain_id\030\001 \001(" +
-      "\t\022Y\n\013trust_level\030\002 \001(\0132(.ibc.lightclient" +
-      "s.tendermint.v1.FractionB\032\310\336\037\000\362\336\037\022yaml:\"" +
-      "trust_level\"\022V\n\017trusting_period\030\003 \001(\0132\031." +
-      "google.protobuf.DurationB\"\310\336\037\000\230\337\037\001\362\336\037\026ya" +
-      "ml:\"trusting_period\"\022X\n\020unbonding_period" +
-      "\030\004 \001(\0132\031.google.protobuf.DurationB#\310\336\037\000\230" +
-      "\337\037\001\362\336\037\027yaml:\"unbonding_period\"\022V\n\017max_cl" +
-      "ock_drift\030\005 \001(\0132\031.google.protobuf.Durati" +
-      "onB\"\310\336\037\000\230\337\037\001\362\336\037\026yaml:\"max_clock_drift\"\022O" +
-      "\n\rfrozen_height\030\006 \001(\0132\032.ibc.core.client." +
-      "v1.HeightB\034\310\336\037\000\362\336\037\024yaml:\"frozen_height\"\022" +
-      "O\n\rlatest_height\030\007 \001(\0132\032.ibc.core.client" +
-      ".v1.HeightB\034\310\336\037\000\362\336\037\024yaml:\"latest_height\"" +
-      "\022=\n\013proof_specs\030\010 \003(\0132\020.ics23.ProofSpecB" +
-      "\026\362\336\037\022yaml:\"proof_specs\"\022-\n\014upgrade_path\030" +
-      "\t \003(\tB\027\362\336\037\023yaml:\"upgrade_path\"\022G\n\031allow_" +
-      "update_after_expiry\030\n \001(\010B$\362\336\037 yaml:\"all" +
-      "ow_update_after_expiry\"\022S\n\037allow_update_" +
-      "after_misbehaviour\030\013 \001(\010B*\362\336\037&yaml:\"allo" +
-      "w_update_after_misbehaviour\":\004\210\240\037\000\"\376\001\n\016C" +
-      "onsensusState\0227\n\ttimestamp\030\001 \001(\0132\032.googl" +
-      "e.protobuf.TimestampB\010\310\336\037\000\220\337\037\001\0226\n\004root\030\002" +
-      " \001(\0132\".ibc.core.commitment.v1.MerkleRoot" +
-      "B\004\310\336\037\000\022u\n\024next_validators_hash\030\003 \001(\014BW\372\336" +
-      "\0374github.com/tendermint/tendermint/libs/" +
-      "bytes.HexBytes\362\336\037\033yaml:\"next_validators_" +
-      "hash\":\004\210\240\037\000\"\361\001\n\014Misbehaviour\022\'\n\tclient_i" +
-      "d\030\001 \001(\tB\024\362\336\037\020yaml:\"client_id\"\022X\n\010header_" +
-      "1\030\002 \001(\0132&.ibc.lightclients.tendermint.v1" +
-      ".HeaderB\036\342\336\037\007Header1\362\336\037\017yaml:\"header_1\"\022" +
-      "X\n\010header_2\030\003 \001(\0132&.ibc.lightclients.ten" +
-      "dermint.v1.HeaderB\036\342\336\037\007Header2\362\336\037\017yaml:\"" +
-      "header_2\":\004\210\240\037\000\"\334\002\n\006Header\022S\n\rsigned_hea" +
-      "der\030\001 \001(\0132\036.tendermint.types.SignedHeade" +
-      "rB\034\320\336\037\001\362\336\037\024yaml:\"signed_header\"\022O\n\rvalid" +
-      "ator_set\030\002 \001(\0132\036.tendermint.types.Valida" +
-      "torSetB\030\362\336\037\024yaml:\"validator_set\"\022Q\n\016trus" +
-      "ted_height\030\003 \001(\0132\032.ibc.core.client.v1.He" +
-      "ightB\035\310\336\037\000\362\336\037\025yaml:\"trusted_height\"\022Y\n\022t" +
-      "rusted_validators\030\004 \001(\0132\036.tendermint.typ" +
-      "es.ValidatorSetB\035\362\336\037\031yaml:\"trusted_valid" +
-      "ators\"\"2\n\010Fraction\022\021\n\tnumerator\030\001 \001(\004\022\023\n" +
-      "\013denominator\030\002 \001(\004BFZDgithub.com/cosmos/" +
-      "cosmos-sdk/x/ibc/light-clients/07-tender" +
-      "mint/typesb\006proto3"
+      "dermint/types/types.proto\032\014proofs.proto\032" +
+      "\036google/protobuf/duration.proto\032\037google/" +
+      "protobuf/timestamp.proto\032\037ibc/core/clien" +
+      "t/v1/client.proto\032\'ibc/core/commitment/v" +
+      "1/commitment.proto\032\024gogoproto/gogo.proto" +
+      "\"\270\006\n\013ClientState\022\020\n\010chain_id\030\001 \001(\t\022Y\n\013tr" +
+      "ust_level\030\002 \001(\0132(.ibc.lightclients.tende" +
+      "rmint.v1.FractionB\032\310\336\037\000\362\336\037\022yaml:\"trust_l" +
+      "evel\"\022V\n\017trusting_period\030\003 \001(\0132\031.google." +
+      "protobuf.DurationB\"\310\336\037\000\230\337\037\001\362\336\037\026yaml:\"tru" +
+      "sting_period\"\022X\n\020unbonding_period\030\004 \001(\0132" +
+      "\031.google.protobuf.DurationB#\310\336\037\000\230\337\037\001\362\336\037\027" +
+      "yaml:\"unbonding_period\"\022V\n\017max_clock_dri" +
+      "ft\030\005 \001(\0132\031.google.protobuf.DurationB\"\310\336\037" +
+      "\000\230\337\037\001\362\336\037\026yaml:\"max_clock_drift\"\022O\n\rfroze" +
+      "n_height\030\006 \001(\0132\032.ibc.core.client.v1.Heig" +
+      "htB\034\310\336\037\000\362\336\037\024yaml:\"frozen_height\"\022O\n\rlate" +
+      "st_height\030\007 \001(\0132\032.ibc.core.client.v1.Hei" +
+      "ghtB\034\310\336\037\000\362\336\037\024yaml:\"latest_height\"\022=\n\013pro" +
+      "of_specs\030\010 \003(\0132\020.ics23.ProofSpecB\026\362\336\037\022ya" +
+      "ml:\"proof_specs\"\022-\n\014upgrade_path\030\t \003(\tB\027" +
+      "\362\336\037\023yaml:\"upgrade_path\"\022G\n\031allow_update_" +
+      "after_expiry\030\n \001(\010B$\362\336\037 yaml:\"allow_upda" +
+      "te_after_expiry\"\022S\n\037allow_update_after_m" +
+      "isbehaviour\030\013 \001(\010B*\362\336\037&yaml:\"allow_updat" +
+      "e_after_misbehaviour\":\004\210\240\037\000\"\376\001\n\016Consensu" +
+      "sState\0227\n\ttimestamp\030\001 \001(\0132\032.google.proto" +
+      "buf.TimestampB\010\310\336\037\000\220\337\037\001\0226\n\004root\030\002 \001(\0132\"." +
+      "ibc.core.commitment.v1.MerkleRootB\004\310\336\037\000\022" +
+      "u\n\024next_validators_hash\030\003 \001(\014BW\372\336\0374githu" +
+      "b.com/tendermint/tendermint/libs/bytes.H" +
+      "exBytes\362\336\037\033yaml:\"next_validators_hash\":\004" +
+      "\210\240\037\000\"\361\001\n\014Misbehaviour\022\'\n\tclient_id\030\001 \001(\t" +
+      "B\024\362\336\037\020yaml:\"client_id\"\022X\n\010header_1\030\002 \001(\013" +
+      "2&.ibc.lightclients.tendermint.v1.Header" +
+      "B\036\342\336\037\007Header1\362\336\037\017yaml:\"header_1\"\022X\n\010head" +
+      "er_2\030\003 \001(\0132&.ibc.lightclients.tendermint" +
+      ".v1.HeaderB\036\342\336\037\007Header2\362\336\037\017yaml:\"header_" +
+      "2\":\004\210\240\037\000\"\334\002\n\006Header\022S\n\rsigned_header\030\001 \001" +
+      "(\0132\036.tendermint.types.SignedHeaderB\034\320\336\037\001" +
+      "\362\336\037\024yaml:\"signed_header\"\022O\n\rvalidator_se" +
+      "t\030\002 \001(\0132\036.tendermint.types.ValidatorSetB" +
+      "\030\362\336\037\024yaml:\"validator_set\"\022Q\n\016trusted_hei" +
+      "ght\030\003 \001(\0132\032.ibc.core.client.v1.HeightB\035\310" +
+      "\336\037\000\362\336\037\025yaml:\"trusted_height\"\022Y\n\022trusted_" +
+      "validators\030\004 \001(\0132\036.tendermint.types.Vali" +
+      "datorSetB\035\362\336\037\031yaml:\"trusted_validators\"\"" +
+      "2\n\010Fraction\022\021\n\tnumerator\030\001 \001(\004\022\023\n\013denomi" +
+      "nator\030\002 \001(\004BGZEgithub.com/cosmos/ibc-go/" +
+      "v3/modules/light-clients/07-tendermint/t" +
+      "ypesb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
