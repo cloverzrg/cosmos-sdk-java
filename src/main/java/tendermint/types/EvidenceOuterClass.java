@@ -134,6 +134,8 @@ public final class EvidenceOuterClass {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -701,8 +703,9 @@ public final class EvidenceOuterClass {
         } else {
           if (sumCase_ == 1) {
             duplicateVoteEvidenceBuilder_.mergeFrom(value);
+          } else {
+            duplicateVoteEvidenceBuilder_.setMessage(value);
           }
-          duplicateVoteEvidenceBuilder_.setMessage(value);
         }
         sumCase_ = 1;
         return this;
@@ -842,8 +845,9 @@ public final class EvidenceOuterClass {
         } else {
           if (sumCase_ == 2) {
             lightClientAttackEvidenceBuilder_.mergeFrom(value);
+          } else {
+            lightClientAttackEvidenceBuilder_.setMessage(value);
           }
-          lightClientAttackEvidenceBuilder_.setMessage(value);
         }
         sumCase_ = 2;
         return this;
@@ -1131,6 +1135,8 @@ public final class EvidenceOuterClass {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -2315,6 +2321,8 @@ public final class EvidenceOuterClass {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -3582,6 +3590,8 @@ public final class EvidenceOuterClass {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);

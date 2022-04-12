@@ -418,6 +418,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -1333,6 +1335,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -1468,7 +1472,7 @@ public final class Solomachine {
       if (publicKey_ != null) {
         output.writeMessage(1, getPublicKey());
       }
-      if (!getDiversifierBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(diversifier_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, diversifier_);
       }
       if (timestamp_ != 0L) {
@@ -1487,7 +1491,7 @@ public final class Solomachine {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getPublicKey());
       }
-      if (!getDiversifierBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(diversifier_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, diversifier_);
       }
       if (timestamp_ != 0L) {
@@ -2294,6 +2298,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -2442,7 +2448,7 @@ public final class Solomachine {
       if (newPublicKey_ != null) {
         output.writeMessage(4, getNewPublicKey());
       }
-      if (!getNewDiversifierBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(newDiversifier_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 5, newDiversifier_);
       }
       unknownFields.writeTo(output);
@@ -2470,7 +2476,7 @@ public final class Solomachine {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(4, getNewPublicKey());
       }
-      if (!getNewDiversifierBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(newDiversifier_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, newDiversifier_);
       }
       size += unknownFields.getSerializedSize();
@@ -3311,6 +3317,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -3447,7 +3455,7 @@ public final class Solomachine {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getClientIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientId_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, clientId_);
       }
       if (sequence_ != 0L) {
@@ -3468,7 +3476,7 @@ public final class Solomachine {
       if (size != -1) return size;
 
       size = 0;
-      if (!getClientIdBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(clientId_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, clientId_);
       }
       if (sequence_ != 0L) {
@@ -4333,6 +4341,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -5057,6 +5067,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -5689,6 +5701,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -5832,7 +5846,7 @@ public final class Solomachine {
       if (timestamp_ != 0L) {
         output.writeUInt64(2, timestamp_);
       }
-      if (!getDiversifierBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(diversifier_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, diversifier_);
       }
       if (dataType_ != ibc.lightclients.solomachine.v1.Solomachine.DataType.DATA_TYPE_UNINITIALIZED_UNSPECIFIED.getNumber()) {
@@ -5858,7 +5872,7 @@ public final class Solomachine {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(2, timestamp_);
       }
-      if (!getDiversifierBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(diversifier_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, diversifier_);
       }
       if (dataType_ != ibc.lightclients.solomachine.v1.Solomachine.DataType.DATA_TYPE_UNINITIALIZED_UNSPECIFIED.getNumber()) {
@@ -6628,6 +6642,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -6750,7 +6766,7 @@ public final class Solomachine {
       if (newPubKey_ != null) {
         output.writeMessage(1, getNewPubKey());
       }
-      if (!getNewDiversifierBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(newDiversifier_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, newDiversifier_);
       }
       unknownFields.writeTo(output);
@@ -6766,7 +6782,7 @@ public final class Solomachine {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getNewPubKey());
       }
-      if (!getNewDiversifierBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(newDiversifier_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, newDiversifier_);
       }
       size += unknownFields.getSerializedSize();
@@ -7476,6 +7492,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -8180,6 +8198,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -8885,6 +8905,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -9590,6 +9612,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -10279,6 +10303,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -10855,6 +10881,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -11419,6 +11447,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -11932,6 +11962,8 @@ public final class Solomachine {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);

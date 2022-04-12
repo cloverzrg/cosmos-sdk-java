@@ -135,6 +135,8 @@ public final class Tx {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -284,13 +286,13 @@ public final class Tx {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getSenderBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sender_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, sender_);
       }
-      if (!getInvariantModuleNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(invariantModuleName_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, invariantModuleName_);
       }
-      if (!getInvariantRouteBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(invariantRoute_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, invariantRoute_);
       }
       unknownFields.writeTo(output);
@@ -302,13 +304,13 @@ public final class Tx {
       if (size != -1) return size;
 
       size = 0;
-      if (!getSenderBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sender_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, sender_);
       }
-      if (!getInvariantModuleNameBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(invariantModuleName_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, invariantModuleName_);
       }
-      if (!getInvariantRouteBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(invariantRoute_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, invariantRoute_);
       }
       size += unknownFields.getSerializedSize();
@@ -954,6 +956,8 @@ public final class Tx {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);

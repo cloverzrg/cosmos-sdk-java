@@ -287,6 +287,8 @@ public final class Tx {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -601,19 +603,19 @@ public final class Tx {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getSourcePortBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sourcePort_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, sourcePort_);
       }
-      if (!getSourceChannelBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sourceChannel_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, sourceChannel_);
       }
       if (token_ != null) {
         output.writeMessage(3, getToken());
       }
-      if (!getSenderBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sender_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, sender_);
       }
-      if (!getReceiverBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(receiver_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 5, receiver_);
       }
       if (timeoutHeight_ != null) {
@@ -631,20 +633,20 @@ public final class Tx {
       if (size != -1) return size;
 
       size = 0;
-      if (!getSourcePortBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sourcePort_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, sourcePort_);
       }
-      if (!getSourceChannelBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sourceChannel_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, sourceChannel_);
       }
       if (token_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, getToken());
       }
-      if (!getSenderBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sender_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, sender_);
       }
-      if (!getReceiverBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(receiver_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, receiver_);
       }
       if (timeoutHeight_ != null) {
@@ -1889,6 +1891,8 @@ public final class Tx {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);

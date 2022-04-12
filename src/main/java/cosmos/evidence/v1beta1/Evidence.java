@@ -148,6 +148,8 @@ public final class Evidence {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
@@ -278,7 +280,7 @@ public final class Evidence {
       if (power_ != 0L) {
         output.writeInt64(3, power_);
       }
-      if (!getConsensusAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(consensusAddress_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, consensusAddress_);
       }
       unknownFields.writeTo(output);
@@ -302,7 +304,7 @@ public final class Evidence {
         size += com.google.protobuf.CodedOutputStream
           .computeInt64Size(3, power_);
       }
-      if (!getConsensusAddressBytes().isEmpty()) {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(consensusAddress_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, consensusAddress_);
       }
       size += unknownFields.getSerializedSize();

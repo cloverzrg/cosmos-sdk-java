@@ -92,13 +92,13 @@ public final class Keys {
               done = true;
               break;
             case 10: {
-              sumCase_ = 1;
               sum_ = input.readBytes();
+              sumCase_ = 1;
               break;
             }
             case 18: {
-              sumCase_ = 2;
               sum_ = input.readBytes();
+              sumCase_ = 2;
               break;
             }
             default: {
@@ -112,6 +112,8 @@ public final class Keys {
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
         throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
