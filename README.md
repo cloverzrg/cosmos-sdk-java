@@ -1,8 +1,8 @@
 # Cosmos SDK for Java
 
 [ENGLISH](./README_EN.md)  
-本SDK集成、实现了交易所接入 Cosmos(ATOM) 所需要的所有功能，如有其他接口需要新增支持，请提交issue
-0.0.3 已支持v7.0 ,但未经测试
+本SDK集成、实现了交易所接入 Cosmos(ATOM) 所需要的所有功能，如有其他接口需要新增支持，请提交issue. 
+0.0.3 已支持Gaia v7.0.0, 但未经测试
 - 扫链  
 - 地址生成、校验  
 - 交易生成、签名、广播  
@@ -37,7 +37,7 @@ import java.util.List;
 public class CosmosRestApiClientTest extends TestCase {
 
     public void testSendMultiTx() throws Exception {
-        CosmosRestApiClient gaiaApiService = new CosmosRestApiClient("http://10.106.11.188:1318/", "cosmoshub-testnet", "stake");
+        CosmosRestApiClient gaiaApiService = new CosmosRestApiClient("https://api.cosmos.network", "cosmoshub-4", "uatom");
 
         byte[] privateKey = Hex.decode("c2ad7a31c06ea8bb560a0467898ef844523f2f804dec96fedf65906dbb951f24");
         CosmosCredentials credentials = CosmosCredentials.create(privateKey);
