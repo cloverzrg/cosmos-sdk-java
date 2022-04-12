@@ -1,6 +1,7 @@
 # Cosmos SDK for Java
 
-The SDK integrates and implement all the functions required by the exchange to access Cosmos (ATOM). If you need additional support for other API, please submit an issue
+The SDK integrates and implement all the functions required by the exchange to access Cosmos (ATOM). If you need additional support for other API, please submit an issue. 
+0.0.3 support Gaia v7.0.0, but not test yet. 
 - Scan chain
 - Address generation and verification
 - Transaction generation, signature, broadcast
@@ -21,7 +22,6 @@ The SDK integrates and implement all the functions required by the exchange to a
 ### Rest API
 
 ```java
-
 import com.jeongen.cosmos.crypro.CosmosCredentials;
 import com.jeongen.cosmos.vo.SendInfo;
 import cosmos.base.abci.v1beta1.Abci;
@@ -35,7 +35,7 @@ import java.util.List;
 public class CosmosRestApiClientTest extends TestCase {
 
     public void testSendMultiTx() throws Exception {
-        CosmosRestApiClient gaiaApiService = new CosmosRestApiClient("http://10.106.11.188:1318/", "cosmoshub-testnet", "stake");
+        CosmosRestApiClient gaiaApiService = new CosmosRestApiClient("https://api.cosmos.network", "cosmoshub-4", "uatom");
 
         byte[] privateKey = Hex.decode("c2ad7a31c06ea8bb560a0467898ef844523f2f804dec96fedf65906dbb951f24");
         CosmosCredentials credentials = CosmosCredentials.create(privateKey);
