@@ -28,7 +28,7 @@ public class CosmosRestApiClientTest extends TestCase {
 //        System.out.println(txResponse);
 //
         // 获取指定高度的交易
-        ServiceOuterClass.GetTxsEventResponse txsEventByHeight = cosmosRestApiClient.getTxsEventByHeight(10091547L, "");
-        System.out.println(txsEventByHeight);
+//        ServiceOuterClass.GetTxsEventResponse txsEventByHeight = cosmosRestApiClient.getTxsEventByHeight(10099441L, "");
+//        System.out.println(txsEventByHeight);
     }
 }

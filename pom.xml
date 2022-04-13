@@ -6,7 +6,7 @@
 
     <groupId>com.jeongen.cosmos</groupId>
     <artifactId>sdk</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.5</version>
 
     <name>cosmos-sdk-java</name>
     <url>https://github.com/cloverzrg/cosmos-sdk-java</url>
@@ -39,6 +39,17 @@
             <groupId>org.bitcoinj</groupId>
             <artifactId>bitcoinj-core</artifactId>
             <version>0.16.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.bouncycastle</groupId>
+                    <artifactId>bcprov-jdk15on</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.70</version>
         </dependency>
 
         <dependency>
@@ -67,6 +78,17 @@
             <artifactId>crypto</artifactId>
             <version>5.0.0</version>
             <scope>compile</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-databind</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.13.2.2</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -82,7 +104,20 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-collections4</artifactId>
             <version>4.4</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <distributionManagement>
