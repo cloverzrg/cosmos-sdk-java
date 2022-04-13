@@ -11,7 +11,8 @@
 - 余额查询  
 - 估算gas  
 
-### 使用
+### 使用 
+https://search.maven.org/artifact/com.jeongen.cosmos/sdk 
 ```xml
 <dependency>
     <groupId>com.jeongen.cosmos</groupId>
