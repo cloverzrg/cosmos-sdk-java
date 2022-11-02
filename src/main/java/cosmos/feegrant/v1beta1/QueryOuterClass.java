@@ -3524,6 +3524,2025 @@ public final class QueryOuterClass {
 
   }
 
+  public interface QueryAllowancesByGranterRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cosmos.feegrant.v1beta1.QueryAllowancesByGranterRequest)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string granter = 1;</code>
+     * @return The granter.
+     */
+    java.lang.String getGranter();
+    /**
+     * <code>string granter = 1;</code>
+     * @return The bytes for granter.
+     */
+    com.google.protobuf.ByteString
+        getGranterBytes();
+
+    /**
+     * <pre>
+     * pagination defines an pagination for the request.
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     * @return Whether the pagination field is set.
+     */
+    boolean hasPagination();
+    /**
+     * <pre>
+     * pagination defines an pagination for the request.
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     * @return The pagination.
+     */
+    cosmos.base.query.v1beta1.Pagination.PageRequest getPagination();
+    /**
+     * <pre>
+     * pagination defines an pagination for the request.
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     */
+    cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder getPaginationOrBuilder();
+  }
+  /**
+   * <pre>
+   * QueryAllowancesByGranterRequest is the request type for the Query/AllowancesByGranter RPC method.
+   * </pre>
+   *
+   * Protobuf type {@code cosmos.feegrant.v1beta1.QueryAllowancesByGranterRequest}
+   */
+  public static final class QueryAllowancesByGranterRequest extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cosmos.feegrant.v1beta1.QueryAllowancesByGranterRequest)
+      QueryAllowancesByGranterRequestOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use QueryAllowancesByGranterRequest.newBuilder() to construct.
+    private QueryAllowancesByGranterRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private QueryAllowancesByGranterRequest() {
+      granter_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new QueryAllowancesByGranterRequest();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private QueryAllowancesByGranterRequest(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              granter_ = s;
+              break;
+            }
+            case 18: {
+              cosmos.base.query.v1beta1.Pagination.PageRequest.Builder subBuilder = null;
+              if (pagination_ != null) {
+                subBuilder = pagination_.toBuilder();
+              }
+              pagination_ = input.readMessage(cosmos.base.query.v1beta1.Pagination.PageRequest.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(pagination_);
+                pagination_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cosmos.feegrant.v1beta1.QueryOuterClass.internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterRequest_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cosmos.feegrant.v1beta1.QueryOuterClass.internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterRequest_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest.class, cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest.Builder.class);
+    }
+
+    public static final int GRANTER_FIELD_NUMBER = 1;
+    private volatile java.lang.Object granter_;
+    /**
+     * <code>string granter = 1;</code>
+     * @return The granter.
+     */
+    @java.lang.Override
+    public java.lang.String getGranter() {
+      java.lang.Object ref = granter_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        granter_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string granter = 1;</code>
+     * @return The bytes for granter.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getGranterBytes() {
+      java.lang.Object ref = granter_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        granter_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PAGINATION_FIELD_NUMBER = 2;
+    private cosmos.base.query.v1beta1.Pagination.PageRequest pagination_;
+    /**
+     * <pre>
+     * pagination defines an pagination for the request.
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     * @return Whether the pagination field is set.
+     */
+    @java.lang.Override
+    public boolean hasPagination() {
+      return pagination_ != null;
+    }
+    /**
+     * <pre>
+     * pagination defines an pagination for the request.
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     * @return The pagination.
+     */
+    @java.lang.Override
+    public cosmos.base.query.v1beta1.Pagination.PageRequest getPagination() {
+      return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageRequest.getDefaultInstance() : pagination_;
+    }
+    /**
+     * <pre>
+     * pagination defines an pagination for the request.
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+     */
+    @java.lang.Override
+    public cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder getPaginationOrBuilder() {
+      return getPagination();
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(granter_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, granter_);
+      }
+      if (pagination_ != null) {
+        output.writeMessage(2, getPagination());
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(granter_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, granter_);
+      }
+      if (pagination_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getPagination());
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest)) {
+        return super.equals(obj);
+      }
+      cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest other = (cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest) obj;
+
+      if (!getGranter()
+          .equals(other.getGranter())) return false;
+      if (hasPagination() != other.hasPagination()) return false;
+      if (hasPagination()) {
+        if (!getPagination()
+            .equals(other.getPagination())) return false;
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + GRANTER_FIELD_NUMBER;
+      hash = (53 * hash) + getGranter().hashCode();
+      if (hasPagination()) {
+        hash = (37 * hash) + PAGINATION_FIELD_NUMBER;
+        hash = (53 * hash) + getPagination().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     * QueryAllowancesByGranterRequest is the request type for the Query/AllowancesByGranter RPC method.
+     * </pre>
+     *
+     * Protobuf type {@code cosmos.feegrant.v1beta1.QueryAllowancesByGranterRequest}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cosmos.feegrant.v1beta1.QueryAllowancesByGranterRequest)
+        cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequestOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cosmos.feegrant.v1beta1.QueryOuterClass.internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterRequest_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cosmos.feegrant.v1beta1.QueryOuterClass.internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterRequest_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest.class, cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest.Builder.class);
+      }
+
+      // Construct using cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        granter_ = "";
+
+        if (paginationBuilder_ == null) {
+          pagination_ = null;
+        } else {
+          pagination_ = null;
+          paginationBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cosmos.feegrant.v1beta1.QueryOuterClass.internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterRequest_descriptor;
+      }
+
+      @java.lang.Override
+      public cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest getDefaultInstanceForType() {
+        return cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest build() {
+        cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest buildPartial() {
+        cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest result = new cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest(this);
+        result.granter_ = granter_;
+        if (paginationBuilder_ == null) {
+          result.pagination_ = pagination_;
+        } else {
+          result.pagination_ = paginationBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest) {
+          return mergeFrom((cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest other) {
+        if (other == cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest.getDefaultInstance()) return this;
+        if (!other.getGranter().isEmpty()) {
+          granter_ = other.granter_;
+          onChanged();
+        }
+        if (other.hasPagination()) {
+          mergePagination(other.getPagination());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object granter_ = "";
+      /**
+       * <code>string granter = 1;</code>
+       * @return The granter.
+       */
+      public java.lang.String getGranter() {
+        java.lang.Object ref = granter_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          granter_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string granter = 1;</code>
+       * @return The bytes for granter.
+       */
+      public com.google.protobuf.ByteString
+          getGranterBytes() {
+        java.lang.Object ref = granter_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          granter_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string granter = 1;</code>
+       * @param value The granter to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGranter(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        granter_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string granter = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGranter() {
+        
+        granter_ = getDefaultInstance().getGranter();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string granter = 1;</code>
+       * @param value The bytes for granter to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGranterBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        granter_ = value;
+        onChanged();
+        return this;
+      }
+
+      private cosmos.base.query.v1beta1.Pagination.PageRequest pagination_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cosmos.base.query.v1beta1.Pagination.PageRequest, cosmos.base.query.v1beta1.Pagination.PageRequest.Builder, cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder> paginationBuilder_;
+      /**
+       * <pre>
+       * pagination defines an pagination for the request.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+       * @return Whether the pagination field is set.
+       */
+      public boolean hasPagination() {
+        return paginationBuilder_ != null || pagination_ != null;
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the request.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+       * @return The pagination.
+       */
+      public cosmos.base.query.v1beta1.Pagination.PageRequest getPagination() {
+        if (paginationBuilder_ == null) {
+          return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageRequest.getDefaultInstance() : pagination_;
+        } else {
+          return paginationBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the request.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+       */
+      public Builder setPagination(cosmos.base.query.v1beta1.Pagination.PageRequest value) {
+        if (paginationBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pagination_ = value;
+          onChanged();
+        } else {
+          paginationBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the request.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+       */
+      public Builder setPagination(
+          cosmos.base.query.v1beta1.Pagination.PageRequest.Builder builderForValue) {
+        if (paginationBuilder_ == null) {
+          pagination_ = builderForValue.build();
+          onChanged();
+        } else {
+          paginationBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the request.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+       */
+      public Builder mergePagination(cosmos.base.query.v1beta1.Pagination.PageRequest value) {
+        if (paginationBuilder_ == null) {
+          if (pagination_ != null) {
+            pagination_ =
+              cosmos.base.query.v1beta1.Pagination.PageRequest.newBuilder(pagination_).mergeFrom(value).buildPartial();
+          } else {
+            pagination_ = value;
+          }
+          onChanged();
+        } else {
+          paginationBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the request.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+       */
+      public Builder clearPagination() {
+        if (paginationBuilder_ == null) {
+          pagination_ = null;
+          onChanged();
+        } else {
+          pagination_ = null;
+          paginationBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the request.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+       */
+      public cosmos.base.query.v1beta1.Pagination.PageRequest.Builder getPaginationBuilder() {
+        
+        onChanged();
+        return getPaginationFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the request.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+       */
+      public cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder getPaginationOrBuilder() {
+        if (paginationBuilder_ != null) {
+          return paginationBuilder_.getMessageOrBuilder();
+        } else {
+          return pagination_ == null ?
+              cosmos.base.query.v1beta1.Pagination.PageRequest.getDefaultInstance() : pagination_;
+        }
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the request.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageRequest pagination = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cosmos.base.query.v1beta1.Pagination.PageRequest, cosmos.base.query.v1beta1.Pagination.PageRequest.Builder, cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder> 
+          getPaginationFieldBuilder() {
+        if (paginationBuilder_ == null) {
+          paginationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cosmos.base.query.v1beta1.Pagination.PageRequest, cosmos.base.query.v1beta1.Pagination.PageRequest.Builder, cosmos.base.query.v1beta1.Pagination.PageRequestOrBuilder>(
+                  getPagination(),
+                  getParentForChildren(),
+                  isClean());
+          pagination_ = null;
+        }
+        return paginationBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cosmos.feegrant.v1beta1.QueryAllowancesByGranterRequest)
+    }
+
+    // @@protoc_insertion_point(class_scope:cosmos.feegrant.v1beta1.QueryAllowancesByGranterRequest)
+    private static final cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest();
+    }
+
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<QueryAllowancesByGranterRequest>
+        PARSER = new com.google.protobuf.AbstractParser<QueryAllowancesByGranterRequest>() {
+      @java.lang.Override
+      public QueryAllowancesByGranterRequest parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new QueryAllowancesByGranterRequest(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<QueryAllowancesByGranterRequest> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<QueryAllowancesByGranterRequest> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterRequest getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface QueryAllowancesByGranterResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:cosmos.feegrant.v1beta1.QueryAllowancesByGranterResponse)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <pre>
+     * allowances that have been issued by the granter.
+     * </pre>
+     *
+     * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+     */
+    java.util.List<cosmos.feegrant.v1beta1.Feegrant.Grant> 
+        getAllowancesList();
+    /**
+     * <pre>
+     * allowances that have been issued by the granter.
+     * </pre>
+     *
+     * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+     */
+    cosmos.feegrant.v1beta1.Feegrant.Grant getAllowances(int index);
+    /**
+     * <pre>
+     * allowances that have been issued by the granter.
+     * </pre>
+     *
+     * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+     */
+    int getAllowancesCount();
+    /**
+     * <pre>
+     * allowances that have been issued by the granter.
+     * </pre>
+     *
+     * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+     */
+    java.util.List<? extends cosmos.feegrant.v1beta1.Feegrant.GrantOrBuilder> 
+        getAllowancesOrBuilderList();
+    /**
+     * <pre>
+     * allowances that have been issued by the granter.
+     * </pre>
+     *
+     * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+     */
+    cosmos.feegrant.v1beta1.Feegrant.GrantOrBuilder getAllowancesOrBuilder(
+        int index);
+
+    /**
+     * <pre>
+     * pagination defines an pagination for the response.
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return Whether the pagination field is set.
+     */
+    boolean hasPagination();
+    /**
+     * <pre>
+     * pagination defines an pagination for the response.
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return The pagination.
+     */
+    cosmos.base.query.v1beta1.Pagination.PageResponse getPagination();
+    /**
+     * <pre>
+     * pagination defines an pagination for the response.
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     */
+    cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder getPaginationOrBuilder();
+  }
+  /**
+   * <pre>
+   * QueryAllowancesByGranterResponse is the response type for the Query/AllowancesByGranter RPC method.
+   * </pre>
+   *
+   * Protobuf type {@code cosmos.feegrant.v1beta1.QueryAllowancesByGranterResponse}
+   */
+  public static final class QueryAllowancesByGranterResponse extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:cosmos.feegrant.v1beta1.QueryAllowancesByGranterResponse)
+      QueryAllowancesByGranterResponseOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use QueryAllowancesByGranterResponse.newBuilder() to construct.
+    private QueryAllowancesByGranterResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private QueryAllowancesByGranterResponse() {
+      allowances_ = java.util.Collections.emptyList();
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new QueryAllowancesByGranterResponse();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private QueryAllowancesByGranterResponse(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                allowances_ = new java.util.ArrayList<cosmos.feegrant.v1beta1.Feegrant.Grant>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              allowances_.add(
+                  input.readMessage(cosmos.feegrant.v1beta1.Feegrant.Grant.parser(), extensionRegistry));
+              break;
+            }
+            case 18: {
+              cosmos.base.query.v1beta1.Pagination.PageResponse.Builder subBuilder = null;
+              if (pagination_ != null) {
+                subBuilder = pagination_.toBuilder();
+              }
+              pagination_ = input.readMessage(cosmos.base.query.v1beta1.Pagination.PageResponse.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(pagination_);
+                pagination_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (com.google.protobuf.UninitializedMessageException e) {
+        throw e.asInvalidProtocolBufferException().setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+          allowances_ = java.util.Collections.unmodifiableList(allowances_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return cosmos.feegrant.v1beta1.QueryOuterClass.internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterResponse_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return cosmos.feegrant.v1beta1.QueryOuterClass.internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterResponse_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse.class, cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse.Builder.class);
+    }
+
+    public static final int ALLOWANCES_FIELD_NUMBER = 1;
+    private java.util.List<cosmos.feegrant.v1beta1.Feegrant.Grant> allowances_;
+    /**
+     * <pre>
+     * allowances that have been issued by the granter.
+     * </pre>
+     *
+     * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<cosmos.feegrant.v1beta1.Feegrant.Grant> getAllowancesList() {
+      return allowances_;
+    }
+    /**
+     * <pre>
+     * allowances that have been issued by the granter.
+     * </pre>
+     *
+     * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends cosmos.feegrant.v1beta1.Feegrant.GrantOrBuilder> 
+        getAllowancesOrBuilderList() {
+      return allowances_;
+    }
+    /**
+     * <pre>
+     * allowances that have been issued by the granter.
+     * </pre>
+     *
+     * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+     */
+    @java.lang.Override
+    public int getAllowancesCount() {
+      return allowances_.size();
+    }
+    /**
+     * <pre>
+     * allowances that have been issued by the granter.
+     * </pre>
+     *
+     * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+     */
+    @java.lang.Override
+    public cosmos.feegrant.v1beta1.Feegrant.Grant getAllowances(int index) {
+      return allowances_.get(index);
+    }
+    /**
+     * <pre>
+     * allowances that have been issued by the granter.
+     * </pre>
+     *
+     * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+     */
+    @java.lang.Override
+    public cosmos.feegrant.v1beta1.Feegrant.GrantOrBuilder getAllowancesOrBuilder(
+        int index) {
+      return allowances_.get(index);
+    }
+
+    public static final int PAGINATION_FIELD_NUMBER = 2;
+    private cosmos.base.query.v1beta1.Pagination.PageResponse pagination_;
+    /**
+     * <pre>
+     * pagination defines an pagination for the response.
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return Whether the pagination field is set.
+     */
+    @java.lang.Override
+    public boolean hasPagination() {
+      return pagination_ != null;
+    }
+    /**
+     * <pre>
+     * pagination defines an pagination for the response.
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     * @return The pagination.
+     */
+    @java.lang.Override
+    public cosmos.base.query.v1beta1.Pagination.PageResponse getPagination() {
+      return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageResponse.getDefaultInstance() : pagination_;
+    }
+    /**
+     * <pre>
+     * pagination defines an pagination for the response.
+     * </pre>
+     *
+     * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+     */
+    @java.lang.Override
+    public cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder getPaginationOrBuilder() {
+      return getPagination();
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      for (int i = 0; i < allowances_.size(); i++) {
+        output.writeMessage(1, allowances_.get(i));
+      }
+      if (pagination_ != null) {
+        output.writeMessage(2, getPagination());
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < allowances_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(1, allowances_.get(i));
+      }
+      if (pagination_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, getPagination());
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse)) {
+        return super.equals(obj);
+      }
+      cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse other = (cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse) obj;
+
+      if (!getAllowancesList()
+          .equals(other.getAllowancesList())) return false;
+      if (hasPagination() != other.hasPagination()) return false;
+      if (hasPagination()) {
+        if (!getPagination()
+            .equals(other.getPagination())) return false;
+      }
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      if (getAllowancesCount() > 0) {
+        hash = (37 * hash) + ALLOWANCES_FIELD_NUMBER;
+        hash = (53 * hash) + getAllowancesList().hashCode();
+      }
+      if (hasPagination()) {
+        hash = (37 * hash) + PAGINATION_FIELD_NUMBER;
+        hash = (53 * hash) + getPagination().hashCode();
+      }
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * <pre>
+     * QueryAllowancesByGranterResponse is the response type for the Query/AllowancesByGranter RPC method.
+     * </pre>
+     *
+     * Protobuf type {@code cosmos.feegrant.v1beta1.QueryAllowancesByGranterResponse}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:cosmos.feegrant.v1beta1.QueryAllowancesByGranterResponse)
+        cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponseOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return cosmos.feegrant.v1beta1.QueryOuterClass.internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterResponse_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return cosmos.feegrant.v1beta1.QueryOuterClass.internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterResponse_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse.class, cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse.Builder.class);
+      }
+
+      // Construct using cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+          getAllowancesFieldBuilder();
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        if (allowancesBuilder_ == null) {
+          allowances_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          allowancesBuilder_.clear();
+        }
+        if (paginationBuilder_ == null) {
+          pagination_ = null;
+        } else {
+          pagination_ = null;
+          paginationBuilder_ = null;
+        }
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return cosmos.feegrant.v1beta1.QueryOuterClass.internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterResponse_descriptor;
+      }
+
+      @java.lang.Override
+      public cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse getDefaultInstanceForType() {
+        return cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse build() {
+        cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse buildPartial() {
+        cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse result = new cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse(this);
+        int from_bitField0_ = bitField0_;
+        if (allowancesBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) != 0)) {
+            allowances_ = java.util.Collections.unmodifiableList(allowances_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.allowances_ = allowances_;
+        } else {
+          result.allowances_ = allowancesBuilder_.build();
+        }
+        if (paginationBuilder_ == null) {
+          result.pagination_ = pagination_;
+        } else {
+          result.pagination_ = paginationBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse) {
+          return mergeFrom((cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse other) {
+        if (other == cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse.getDefaultInstance()) return this;
+        if (allowancesBuilder_ == null) {
+          if (!other.allowances_.isEmpty()) {
+            if (allowances_.isEmpty()) {
+              allowances_ = other.allowances_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureAllowancesIsMutable();
+              allowances_.addAll(other.allowances_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.allowances_.isEmpty()) {
+            if (allowancesBuilder_.isEmpty()) {
+              allowancesBuilder_.dispose();
+              allowancesBuilder_ = null;
+              allowances_ = other.allowances_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              allowancesBuilder_ = 
+                com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                   getAllowancesFieldBuilder() : null;
+            } else {
+              allowancesBuilder_.addAllMessages(other.allowances_);
+            }
+          }
+        }
+        if (other.hasPagination()) {
+          mergePagination(other.getPagination());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private java.util.List<cosmos.feegrant.v1beta1.Feegrant.Grant> allowances_ =
+        java.util.Collections.emptyList();
+      private void ensureAllowancesIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          allowances_ = new java.util.ArrayList<cosmos.feegrant.v1beta1.Feegrant.Grant>(allowances_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          cosmos.feegrant.v1beta1.Feegrant.Grant, cosmos.feegrant.v1beta1.Feegrant.Grant.Builder, cosmos.feegrant.v1beta1.Feegrant.GrantOrBuilder> allowancesBuilder_;
+
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public java.util.List<cosmos.feegrant.v1beta1.Feegrant.Grant> getAllowancesList() {
+        if (allowancesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(allowances_);
+        } else {
+          return allowancesBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public int getAllowancesCount() {
+        if (allowancesBuilder_ == null) {
+          return allowances_.size();
+        } else {
+          return allowancesBuilder_.getCount();
+        }
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public cosmos.feegrant.v1beta1.Feegrant.Grant getAllowances(int index) {
+        if (allowancesBuilder_ == null) {
+          return allowances_.get(index);
+        } else {
+          return allowancesBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public Builder setAllowances(
+          int index, cosmos.feegrant.v1beta1.Feegrant.Grant value) {
+        if (allowancesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAllowancesIsMutable();
+          allowances_.set(index, value);
+          onChanged();
+        } else {
+          allowancesBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public Builder setAllowances(
+          int index, cosmos.feegrant.v1beta1.Feegrant.Grant.Builder builderForValue) {
+        if (allowancesBuilder_ == null) {
+          ensureAllowancesIsMutable();
+          allowances_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          allowancesBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public Builder addAllowances(cosmos.feegrant.v1beta1.Feegrant.Grant value) {
+        if (allowancesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAllowancesIsMutable();
+          allowances_.add(value);
+          onChanged();
+        } else {
+          allowancesBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public Builder addAllowances(
+          int index, cosmos.feegrant.v1beta1.Feegrant.Grant value) {
+        if (allowancesBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureAllowancesIsMutable();
+          allowances_.add(index, value);
+          onChanged();
+        } else {
+          allowancesBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public Builder addAllowances(
+          cosmos.feegrant.v1beta1.Feegrant.Grant.Builder builderForValue) {
+        if (allowancesBuilder_ == null) {
+          ensureAllowancesIsMutable();
+          allowances_.add(builderForValue.build());
+          onChanged();
+        } else {
+          allowancesBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public Builder addAllowances(
+          int index, cosmos.feegrant.v1beta1.Feegrant.Grant.Builder builderForValue) {
+        if (allowancesBuilder_ == null) {
+          ensureAllowancesIsMutable();
+          allowances_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          allowancesBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public Builder addAllAllowances(
+          java.lang.Iterable<? extends cosmos.feegrant.v1beta1.Feegrant.Grant> values) {
+        if (allowancesBuilder_ == null) {
+          ensureAllowancesIsMutable();
+          com.google.protobuf.AbstractMessageLite.Builder.addAll(
+              values, allowances_);
+          onChanged();
+        } else {
+          allowancesBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public Builder clearAllowances() {
+        if (allowancesBuilder_ == null) {
+          allowances_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          allowancesBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public Builder removeAllowances(int index) {
+        if (allowancesBuilder_ == null) {
+          ensureAllowancesIsMutable();
+          allowances_.remove(index);
+          onChanged();
+        } else {
+          allowancesBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public cosmos.feegrant.v1beta1.Feegrant.Grant.Builder getAllowancesBuilder(
+          int index) {
+        return getAllowancesFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public cosmos.feegrant.v1beta1.Feegrant.GrantOrBuilder getAllowancesOrBuilder(
+          int index) {
+        if (allowancesBuilder_ == null) {
+          return allowances_.get(index);  } else {
+          return allowancesBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public java.util.List<? extends cosmos.feegrant.v1beta1.Feegrant.GrantOrBuilder> 
+           getAllowancesOrBuilderList() {
+        if (allowancesBuilder_ != null) {
+          return allowancesBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(allowances_);
+        }
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public cosmos.feegrant.v1beta1.Feegrant.Grant.Builder addAllowancesBuilder() {
+        return getAllowancesFieldBuilder().addBuilder(
+            cosmos.feegrant.v1beta1.Feegrant.Grant.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public cosmos.feegrant.v1beta1.Feegrant.Grant.Builder addAllowancesBuilder(
+          int index) {
+        return getAllowancesFieldBuilder().addBuilder(
+            index, cosmos.feegrant.v1beta1.Feegrant.Grant.getDefaultInstance());
+      }
+      /**
+       * <pre>
+       * allowances that have been issued by the granter.
+       * </pre>
+       *
+       * <code>repeated .cosmos.feegrant.v1beta1.Grant allowances = 1;</code>
+       */
+      public java.util.List<cosmos.feegrant.v1beta1.Feegrant.Grant.Builder> 
+           getAllowancesBuilderList() {
+        return getAllowancesFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilderV3<
+          cosmos.feegrant.v1beta1.Feegrant.Grant, cosmos.feegrant.v1beta1.Feegrant.Grant.Builder, cosmos.feegrant.v1beta1.Feegrant.GrantOrBuilder> 
+          getAllowancesFieldBuilder() {
+        if (allowancesBuilder_ == null) {
+          allowancesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              cosmos.feegrant.v1beta1.Feegrant.Grant, cosmos.feegrant.v1beta1.Feegrant.Grant.Builder, cosmos.feegrant.v1beta1.Feegrant.GrantOrBuilder>(
+                  allowances_,
+                  ((bitField0_ & 0x00000001) != 0),
+                  getParentForChildren(),
+                  isClean());
+          allowances_ = null;
+        }
+        return allowancesBuilder_;
+      }
+
+      private cosmos.base.query.v1beta1.Pagination.PageResponse pagination_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cosmos.base.query.v1beta1.Pagination.PageResponse, cosmos.base.query.v1beta1.Pagination.PageResponse.Builder, cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder> paginationBuilder_;
+      /**
+       * <pre>
+       * pagination defines an pagination for the response.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       * @return Whether the pagination field is set.
+       */
+      public boolean hasPagination() {
+        return paginationBuilder_ != null || pagination_ != null;
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the response.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       * @return The pagination.
+       */
+      public cosmos.base.query.v1beta1.Pagination.PageResponse getPagination() {
+        if (paginationBuilder_ == null) {
+          return pagination_ == null ? cosmos.base.query.v1beta1.Pagination.PageResponse.getDefaultInstance() : pagination_;
+        } else {
+          return paginationBuilder_.getMessage();
+        }
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the response.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      public Builder setPagination(cosmos.base.query.v1beta1.Pagination.PageResponse value) {
+        if (paginationBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          pagination_ = value;
+          onChanged();
+        } else {
+          paginationBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the response.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      public Builder setPagination(
+          cosmos.base.query.v1beta1.Pagination.PageResponse.Builder builderForValue) {
+        if (paginationBuilder_ == null) {
+          pagination_ = builderForValue.build();
+          onChanged();
+        } else {
+          paginationBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the response.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      public Builder mergePagination(cosmos.base.query.v1beta1.Pagination.PageResponse value) {
+        if (paginationBuilder_ == null) {
+          if (pagination_ != null) {
+            pagination_ =
+              cosmos.base.query.v1beta1.Pagination.PageResponse.newBuilder(pagination_).mergeFrom(value).buildPartial();
+          } else {
+            pagination_ = value;
+          }
+          onChanged();
+        } else {
+          paginationBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the response.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      public Builder clearPagination() {
+        if (paginationBuilder_ == null) {
+          pagination_ = null;
+          onChanged();
+        } else {
+          pagination_ = null;
+          paginationBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the response.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      public cosmos.base.query.v1beta1.Pagination.PageResponse.Builder getPaginationBuilder() {
+        
+        onChanged();
+        return getPaginationFieldBuilder().getBuilder();
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the response.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      public cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder getPaginationOrBuilder() {
+        if (paginationBuilder_ != null) {
+          return paginationBuilder_.getMessageOrBuilder();
+        } else {
+          return pagination_ == null ?
+              cosmos.base.query.v1beta1.Pagination.PageResponse.getDefaultInstance() : pagination_;
+        }
+      }
+      /**
+       * <pre>
+       * pagination defines an pagination for the response.
+       * </pre>
+       *
+       * <code>.cosmos.base.query.v1beta1.PageResponse pagination = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          cosmos.base.query.v1beta1.Pagination.PageResponse, cosmos.base.query.v1beta1.Pagination.PageResponse.Builder, cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder> 
+          getPaginationFieldBuilder() {
+        if (paginationBuilder_ == null) {
+          paginationBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              cosmos.base.query.v1beta1.Pagination.PageResponse, cosmos.base.query.v1beta1.Pagination.PageResponse.Builder, cosmos.base.query.v1beta1.Pagination.PageResponseOrBuilder>(
+                  getPagination(),
+                  getParentForChildren(),
+                  isClean());
+          pagination_ = null;
+        }
+        return paginationBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:cosmos.feegrant.v1beta1.QueryAllowancesByGranterResponse)
+    }
+
+    // @@protoc_insertion_point(class_scope:cosmos.feegrant.v1beta1.QueryAllowancesByGranterResponse)
+    private static final cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse();
+    }
+
+    public static cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<QueryAllowancesByGranterResponse>
+        PARSER = new com.google.protobuf.AbstractParser<QueryAllowancesByGranterResponse>() {
+      @java.lang.Override
+      public QueryAllowancesByGranterResponse parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new QueryAllowancesByGranterResponse(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<QueryAllowancesByGranterResponse> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<QueryAllowancesByGranterResponse> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public cosmos.feegrant.v1beta1.QueryOuterClass.QueryAllowancesByGranterResponse getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_cosmos_feegrant_v1beta1_QueryAllowanceRequest_descriptor;
   private static final 
@@ -3544,6 +5563,16 @@ public final class QueryOuterClass {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_cosmos_feegrant_v1beta1_QueryAllowancesResponse_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterRequest_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterRequest_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterResponse_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -3566,18 +5595,29 @@ public final class QueryOuterClass {
       "ta1.PageRequest\"\212\001\n\027QueryAllowancesRespo" +
       "nse\0222\n\nallowances\030\001 \003(\0132\036.cosmos.feegran" +
       "t.v1beta1.Grant\022;\n\npagination\030\002 \001(\0132\'.co" +
-      "smos.base.query.v1beta1.PageResponse2\337\002\n" +
-      "\005Query\022\254\001\n\tAllowance\022..cosmos.feegrant.v" +
-      "1beta1.QueryAllowanceRequest\032/.cosmos.fe" +
-      "egrant.v1beta1.QueryAllowanceResponse\">\202" +
-      "\323\344\223\0028\0226/cosmos/feegrant/v1beta1/allowanc" +
-      "e/{granter}/{grantee}\022\246\001\n\nAllowances\022/.c" +
-      "osmos.feegrant.v1beta1.QueryAllowancesRe" +
-      "quest\0320.cosmos.feegrant.v1beta1.QueryAll" +
-      "owancesResponse\"5\202\323\344\223\002/\022-/cosmos/feegran" +
-      "t/v1beta1/allowances/{grantee}B)Z\'github" +
-      ".com/cosmos/cosmos-sdk/x/feegrantb\006proto" +
-      "3"
+      "smos.base.query.v1beta1.PageResponse\"n\n\037" +
+      "QueryAllowancesByGranterRequest\022\017\n\007grant" +
+      "er\030\001 \001(\t\022:\n\npagination\030\002 \001(\0132&.cosmos.ba" +
+      "se.query.v1beta1.PageRequest\"\223\001\n QueryAl" +
+      "lowancesByGranterResponse\0222\n\nallowances\030" +
+      "\001 \003(\0132\036.cosmos.feegrant.v1beta1.Grant\022;\n" +
+      "\npagination\030\002 \001(\0132\'.cosmos.base.query.v1" +
+      "beta1.PageResponse2\237\004\n\005Query\022\254\001\n\tAllowan" +
+      "ce\022..cosmos.feegrant.v1beta1.QueryAllowa" +
+      "nceRequest\032/.cosmos.feegrant.v1beta1.Que" +
+      "ryAllowanceResponse\">\202\323\344\223\0028\0226/cosmos/fee" +
+      "grant/v1beta1/allowance/{granter}/{grant" +
+      "ee}\022\246\001\n\nAllowances\022/.cosmos.feegrant.v1b" +
+      "eta1.QueryAllowancesRequest\0320.cosmos.fee" +
+      "grant.v1beta1.QueryAllowancesResponse\"5\202" +
+      "\323\344\223\002/\022-/cosmos/feegrant/v1beta1/allowanc" +
+      "es/{grantee}\022\275\001\n\023AllowancesByGranter\0228.c" +
+      "osmos.feegrant.v1beta1.QueryAllowancesBy" +
+      "GranterRequest\0329.cosmos.feegrant.v1beta1" +
+      ".QueryAllowancesByGranterResponse\"1\202\323\344\223\002" +
+      "+\022)/cosmos/feegrant/v1beta1/issued/{gran" +
+      "ter}B)Z\'github.com/cosmos/cosmos-sdk/x/f" +
+      "eegrantb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3609,6 +5649,18 @@ public final class QueryOuterClass {
     internal_static_cosmos_feegrant_v1beta1_QueryAllowancesResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_cosmos_feegrant_v1beta1_QueryAllowancesResponse_descriptor,
+        new java.lang.String[] { "Allowances", "Pagination", });
+    internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterRequest_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterRequest_descriptor,
+        new java.lang.String[] { "Granter", "Pagination", });
+    internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterResponse_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_cosmos_feegrant_v1beta1_QueryAllowancesByGranterResponse_descriptor,
         new java.lang.String[] { "Allowances", "Pagination", });
     com.google.protobuf.ExtensionRegistry registry =
         com.google.protobuf.ExtensionRegistry.newInstance();

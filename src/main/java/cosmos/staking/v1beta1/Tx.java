@@ -8430,43 +8430,43 @@ public final class Tx {
       "lf_delegation\030\004 \001(\tBH\332\336\037&github.com/cosm" +
       "os/cosmos-sdk/types.Int\362\336\037\032yaml:\"min_sel" +
       "f_delegation\":\010\350\240\037\000\210\240\037\000\"\032\n\030MsgEditValida" +
-      "torResponse\"\272\001\n\013MsgDelegate\0227\n\021delegator" +
+      "torResponse\"\266\001\n\013MsgDelegate\0227\n\021delegator" +
       "_address\030\001 \001(\tB\034\362\336\037\030yaml:\"delegator_addr" +
       "ess\"\0227\n\021validator_address\030\002 \001(\tB\034\362\336\037\030yam" +
       "l:\"validator_address\"\022/\n\006amount\030\003 \001(\0132\031." +
-      "cosmos.base.v1beta1.CoinB\004\310\336\037\000:\010\350\240\037\000\210\240\037\000" +
-      "\"\025\n\023MsgDelegateResponse\"\212\002\n\022MsgBeginRede" +
-      "legate\0227\n\021delegator_address\030\001 \001(\tB\034\362\336\037\030y" +
-      "aml:\"delegator_address\"\022?\n\025validator_src" +
-      "_address\030\002 \001(\tB \362\336\037\034yaml:\"validator_src_" +
-      "address\"\022?\n\025validator_dst_address\030\003 \001(\tB" +
-      " \362\336\037\034yaml:\"validator_dst_address\"\022/\n\006amo" +
-      "unt\030\004 \001(\0132\031.cosmos.base.v1beta1.CoinB\004\310\336" +
-      "\037\000:\010\350\240\037\000\210\240\037\000\"[\n\032MsgBeginRedelegateRespon" +
-      "se\022=\n\017completion_time\030\001 \001(\0132\032.google.pro" +
-      "tobuf.TimestampB\010\310\336\037\000\220\337\037\001\"\274\001\n\rMsgUndeleg" +
-      "ate\0227\n\021delegator_address\030\001 \001(\tB\034\362\336\037\030yaml" +
-      ":\"delegator_address\"\0227\n\021validator_addres" +
-      "s\030\002 \001(\tB\034\362\336\037\030yaml:\"validator_address\"\022/\n" +
-      "\006amount\030\003 \001(\0132\031.cosmos.base.v1beta1.Coin" +
-      "B\004\310\336\037\000:\010\350\240\037\000\210\240\037\000\"V\n\025MsgUndelegateRespons" +
-      "e\022=\n\017completion_time\030\001 \001(\0132\032.google.prot" +
-      "obuf.TimestampB\010\310\336\037\000\220\337\037\0012\232\004\n\003Msg\022q\n\017Crea" +
-      "teValidator\022*.cosmos.staking.v1beta1.Msg" +
-      "CreateValidator\0322.cosmos.staking.v1beta1" +
-      ".MsgCreateValidatorResponse\022k\n\rEditValid" +
-      "ator\022(.cosmos.staking.v1beta1.MsgEditVal" +
-      "idator\0320.cosmos.staking.v1beta1.MsgEditV" +
-      "alidatorResponse\022\\\n\010Delegate\022#.cosmos.st" +
-      "aking.v1beta1.MsgDelegate\032+.cosmos.staki" +
-      "ng.v1beta1.MsgDelegateResponse\022q\n\017BeginR" +
-      "edelegate\022*.cosmos.staking.v1beta1.MsgBe" +
-      "ginRedelegate\0322.cosmos.staking.v1beta1.M" +
-      "sgBeginRedelegateResponse\022b\n\nUndelegate\022" +
-      "%.cosmos.staking.v1beta1.MsgUndelegate\032-" +
-      ".cosmos.staking.v1beta1.MsgUndelegateRes" +
-      "ponseB.Z,github.com/cosmos/cosmos-sdk/x/" +
-      "staking/typesb\006proto3"
+      "cosmos.base.v1beta1.CoinB\004\310\336\037\000:\004\350\240\037\000\"\025\n\023" +
+      "MsgDelegateResponse\"\206\002\n\022MsgBeginRedelega" +
+      "te\0227\n\021delegator_address\030\001 \001(\tB\034\362\336\037\030yaml:" +
+      "\"delegator_address\"\022?\n\025validator_src_add" +
+      "ress\030\002 \001(\tB \362\336\037\034yaml:\"validator_src_addr" +
+      "ess\"\022?\n\025validator_dst_address\030\003 \001(\tB \362\336\037" +
+      "\034yaml:\"validator_dst_address\"\022/\n\006amount\030" +
+      "\004 \001(\0132\031.cosmos.base.v1beta1.CoinB\004\310\336\037\000:\004" +
+      "\350\240\037\000\"[\n\032MsgBeginRedelegateResponse\022=\n\017co" +
+      "mpletion_time\030\001 \001(\0132\032.google.protobuf.Ti" +
+      "mestampB\010\310\336\037\000\220\337\037\001\"\270\001\n\rMsgUndelegate\0227\n\021d" +
+      "elegator_address\030\001 \001(\tB\034\362\336\037\030yaml:\"delega" +
+      "tor_address\"\0227\n\021validator_address\030\002 \001(\tB" +
+      "\034\362\336\037\030yaml:\"validator_address\"\022/\n\006amount\030" +
+      "\003 \001(\0132\031.cosmos.base.v1beta1.CoinB\004\310\336\037\000:\004" +
+      "\350\240\037\000\"V\n\025MsgUndelegateResponse\022=\n\017complet" +
+      "ion_time\030\001 \001(\0132\032.google.protobuf.Timesta" +
+      "mpB\010\310\336\037\000\220\337\037\0012\232\004\n\003Msg\022q\n\017CreateValidator\022" +
+      "*.cosmos.staking.v1beta1.MsgCreateValida" +
+      "tor\0322.cosmos.staking.v1beta1.MsgCreateVa" +
+      "lidatorResponse\022k\n\rEditValidator\022(.cosmo" +
+      "s.staking.v1beta1.MsgEditValidator\0320.cos" +
+      "mos.staking.v1beta1.MsgEditValidatorResp" +
+      "onse\022\\\n\010Delegate\022#.cosmos.staking.v1beta" +
+      "1.MsgDelegate\032+.cosmos.staking.v1beta1.M" +
+      "sgDelegateResponse\022q\n\017BeginRedelegate\022*." +
+      "cosmos.staking.v1beta1.MsgBeginRedelegat" +
+      "e\0322.cosmos.staking.v1beta1.MsgBeginRedel" +
+      "egateResponse\022b\n\nUndelegate\022%.cosmos.sta" +
+      "king.v1beta1.MsgUndelegate\032-.cosmos.stak" +
+      "ing.v1beta1.MsgUndelegateResponseB.Z,git" +
+      "hub.com/cosmos/cosmos-sdk/x/staking/type" +
+      "sb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
