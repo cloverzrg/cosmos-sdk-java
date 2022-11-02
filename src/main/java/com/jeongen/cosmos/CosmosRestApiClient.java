@@ -62,11 +62,17 @@ public class CosmosRestApiClient {
     }
 
     public BigDecimal getBalanceInAtom(String address) throws Exception {
-        String path = String.format("/cosmos/bank/v1beta1/balances/%s/%s", address, this.token);
-        QueryOuterClass.QueryBalanceResponse balanceResponse = client.get(path, QueryOuterClass.QueryBalanceResponse.class);
-        if (balanceResponse.hasBalance()) {
-            String amount = balanceResponse.getBalance().getAmount();
-            return ATOMUnitUtil.microAtomToAtom(amount);
+        String path = String.format("/cosmos/bank/v1beta1/balances/%s", address);
+        QueryOuterClass.QueryAllBalancesResponse balanceResponse = client.get(path, QueryOuterClass.QueryAllBalancesResponse.class);
+        if (balanceResponse.getBalancesCount() >= 1) {
+            List<CoinOuterClass.Coin> balancesList = balanceResponse.getBalancesList();
+            for (int i = 0; i < balancesList.size(); i++) {
+                if (balancesList.get(i).getDenom().equals(this.token)) {
+                    String amount = balancesList.get(i).getAmount();
+                    return ATOMUnitUtil.microAtomToAtom(amount);
+                }
+            }
+            return BigDecimal.ZERO;
         } else {
             return BigDecimal.ZERO;
         }

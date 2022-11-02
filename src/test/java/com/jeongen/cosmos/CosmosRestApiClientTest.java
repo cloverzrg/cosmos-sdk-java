@@ -15,6 +15,9 @@ public class CosmosRestApiClientTest extends TestCase {
 
     public void testSendMultiTx() throws Exception {
         CosmosRestApiClient cosmosRestApiClient = new CosmosRestApiClient("https://api.cosmos.network", "cosmoshub-4", "uatom");
+
+        BigDecimal balanceInAtom = cosmosRestApiClient.getBalanceInAtom("cosmos1xxkueklal9vejv9unqu80w9vptyepfa95pd53u");
+        System.out.println(balanceInAtom);
         // 私钥生成公钥、地址
         byte[] privateKey = Hex.decode("c2ad7a31c06ea8bb560a0467898ef844523f2f804dec96fedf65906dbb951f24");
         CosmosCredentials credentials = CosmosCredentials.create(privateKey);
