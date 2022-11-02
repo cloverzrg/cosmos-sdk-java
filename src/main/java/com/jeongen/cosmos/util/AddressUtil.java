@@ -35,7 +35,7 @@ public class AddressUtil {
     }
 
     public static boolean verifyCosmosAddress(String address) {
-        if (address == null || address.length() != 45) {
+        if (address == null) {
             return false;
         }
         Bech32.Bech32Data decodeData = null;
