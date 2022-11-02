@@ -14,16 +14,16 @@ public class CosmosCredentials {
 
     }
 
-    public static CosmosCredentials create(ECKey ecKey) {
+    public static CosmosCredentials create(ECKey ecKey, String addressPrefix) {
         CosmosCredentials credentials = new CosmosCredentials();
         credentials.ecKey = ecKey;
-        credentials.address = AddressUtil.ecKeyToAddress(ecKey);
+        credentials.address = AddressUtil.ecKeyToAddress(ecKey, addressPrefix);
         return credentials;
     }
 
-    public static CosmosCredentials create(byte[] privateKey) {
+    public static CosmosCredentials create(byte[] privateKey, String addressPrefix) {
         ECKey ecKey = ECKey.fromPrivate(privateKey);
-        return create(ecKey);
+        return create(ecKey, addressPrefix);
     }
 
 }

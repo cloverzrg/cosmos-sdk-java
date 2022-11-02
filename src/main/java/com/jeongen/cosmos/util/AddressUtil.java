@@ -17,26 +17,27 @@ import java.util.List;
 
 public class AddressUtil {
 
-    private static final String AddressHRP = "cosmos";
-
-    public static String publicKeyToAddress(byte[] publicKey) {
+    public static String publicKeyToAddress(byte[] publicKey, String addressPrefix) {
         byte[] pubKeyHash = Utils.sha256hash160(publicKey);
-        return convertAndEncode(pubKeyHash);
+        return convertAndEncode(pubKeyHash, addressPrefix);
     }
 
-    public static String ecKeyToAddress(ECKey ecKey) {
+    public static String ecKeyToAddress(ECKey ecKey, String addressPrefix) {
         byte[] pubKeyHash = ecKey.getPubKeyHash();
-        return convertAndEncode(pubKeyHash);
+        return convertAndEncode(pubKeyHash, addressPrefix);
     }
 
-    private static String convertAndEncode(byte[] pubKeyHash) {
+    private static String convertAndEncode(byte[] pubKeyHash, String prefix) {
         byte[] convertBits = AddressUtil.convertBits(pubKeyHash, 8, 5, true);
-        return Bech32.encode(AddressHRP, convertBits);
+        return Bech32.encode(prefix, convertBits);
     }
 
-    public static boolean verifyCosmosAddress(String address) {
+    public static boolean verifyCosmosAddress(String address, String prefix) throws Exception {
         if (address == null) {
             return false;
+        }
+        if (prefix == null) {
+            throw new Exception("prefix can't not be null");
         }
         Bech32.Bech32Data decodeData = null;
         try {
@@ -44,7 +45,7 @@ public class AddressUtil {
         } catch (Exception e) {
             return false;
         }
-        if (!AddressHRP.equals(decodeData.hrp)) {
+        if (!prefix.equals(decodeData.hrp)) {
             return false;
         }
         if (decodeData.data.length != 32) {
@@ -53,7 +54,7 @@ public class AddressUtil {
         return true;
     }
 
-    public static CosmosCredentials getCredentials(String mnemonic, String password, String derivePath) {
+    public static CosmosCredentials getCredentials(String mnemonic, String password, String derivePath, String addressPrefix) {
         if (StringUtil.isNullOrEmpty(derivePath)) {
             return null;
         }
@@ -66,7 +67,7 @@ public class AddressUtil {
         List<ChildNumber> childNumbers = decodePath(derivePath);
         DeterministicKey deterministicKey = deterministicKeyChain.getKeyByPath(childNumbers, true);
 
-        return CosmosCredentials.create(deterministicKey);
+        return CosmosCredentials.create(deterministicKey, addressPrefix);
     }
 
     public static List<ChildNumber> decodePath(String path) {

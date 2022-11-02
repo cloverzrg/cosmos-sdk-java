@@ -20,7 +20,7 @@ public class CosmosRestApiClientTest extends TestCase {
         System.out.println(balanceInAtom);
         // 私钥生成公钥、地址
         byte[] privateKey = Hex.decode("c2ad7a31c06ea8bb560a0467898ef844523f2f804dec96fedf65906dbb951f24");
-        CosmosCredentials credentials = CosmosCredentials.create(privateKey);
+        CosmosCredentials credentials = CosmosCredentials.create(privateKey, "cosmos");
         // 获取地址
         System.out.println("address:" + credentials.getAddress());
         List<SendInfo> sendList = new ArrayList<>();
